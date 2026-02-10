@@ -24,21 +24,21 @@
             type="text"
             id="searchInput"
             class="search-input"
-            placeholder="搜索球员名、系列、编号..."
+            placeholder="搜索球员名（支持中英文）、系列、编号..."
           >
           <button class="search-btn" onclick="app.search()">搜索</button>
         </div>
 
         <div class="filters">
-          <select id="brandFilter" class="filter-select" onchange="app.filterByBrand()">
-            <option value="">全部品牌</option>
-            <option value="Panini">Panini</option>
-            <option value="Topps">Topps</option>
-            <option value="Upper Deck">Upper Deck</option>
-            <option value="Fleer">Fleer</option>
+          <select id="playerFilter" class="filter-select" onchange="app.applyFilters()">
+            <option value="">全部球员</option>
           </select>
 
-          <select id="yearFilter" class="filter-select" onchange="app.filterByYear()">
+          <select id="brandFilter" class="filter-select" onchange="app.applyFilters()">
+            <option value="">全部品牌</option>
+          </select>
+
+          <select id="yearFilter" class="filter-select" onchange="app.applyFilters()">
             <option value="">全部年份</option>
           </select>
 
@@ -46,8 +46,7 @@
         </div>
 
         <div class="stats">
-          <span class="stat-item">总计: <strong id="totalCount">0</strong> 张</span>
-          <span class="stat-item">有变化: <strong id="changedCount">0</strong> 张</span>
+          <span class="stat-item">记录总数: <strong id="totalCount">0</strong> 张</span>
         </div>
       </div>
     </div>
@@ -76,7 +75,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>数据来源于收藏者社区 | 仅供参考，请谨慎交易</p>
+        <p>数据来源于群聊、社区、球星卡TV等 | 仅供参考，请谨慎交易</p>
         <p class="footer-link">
           <a href="https://github.com/yourusername/card" target="_blank">GitHub</a> |
           <a href="#" onclick="app.showAbout()">关于</a>

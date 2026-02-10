@@ -78,30 +78,31 @@ function renderDetail() {
 
         <div class="image-timeline">
           <div class="timeline-title">
-            照片历史记录
-            <span class="timeline-count">(按时间顺序)</span>
+            照片记录
+            <span class="timeline-count">(共${currentCard.images.length}张)</span>
           </div>
 
           <div class="timeline-items">
-            ${currentCard.images.map((image, index) => `
+            ${currentCard.images.slice().reverse().map((image, reverseIndex) => {
+              const originalIndex = currentCard.images.length - 1 - reverseIndex;
+              return `
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-header">
-                  <span class="timeline-index">记录 ${index + 1}</span>
-                  <span class="timeline-date">📅 ${image.date}</span>
+                  <span class="timeline-index">记录 ${originalIndex + 1}</span>
                 </div>
                 <img
                   class="timeline-image"
                   src="${image.url}"
-                  alt="记录 ${index + 1}"
+                  alt="记录 ${originalIndex + 1}"
                   onerror="this.src='images/placeholder.jpg'"
-                  onclick="openModal(${index})"
+                  onclick="openModal(${originalIndex})"
                 >
                 <div class="timeline-note">
                   📝 ${image.note}
                 </div>
               </div>
-            `).join('')}
+            `}).join('')}
           </div>
         </div>
       </div>
@@ -121,7 +122,7 @@ function openModal(index) {
   modal.style.display = 'block';
   modalImg.src = image.url;
   caption.innerHTML = `
-    <strong>记录 ${index + 1}</strong> - ${image.date}<br>
+    <strong>记录 ${index + 1}</strong><br>
     ${image.note}
   `;
 }

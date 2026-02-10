@@ -9,11 +9,37 @@ const app = {
   // 初始化
   init() {
     this.currentCards = [...this.allCards];
+    this.populatePlayerFilter();
+    this.populateBrandFilter();
     this.populateYearFilter();
     this.renderCards();
     this.updateStats();
     this.hideLoading();
     this.setupSearchEnter();
+  },
+
+  // 填充球员筛选器
+  populatePlayerFilter() {
+    const players = [...new Set(this.allCards.map(card => card.player))].sort();
+    const playerFilter = document.getElementById('playerFilter');
+    players.forEach(player => {
+      const option = document.createElement('option');
+      option.value = player;
+      option.textContent = player;
+      playerFilter.appendChild(option);
+    });
+  },
+
+  // 填充品牌筛选器
+  populateBrandFilter() {
+    const brands = [...new Set(this.allCards.map(card => card.brand))].sort();
+    const brandFilter = document.getElementById('brandFilter');
+    brands.forEach(brand => {
+      const option = document.createElement('option');
+      option.value = brand;
+      option.textContent = brand;
+      brandFilter.appendChild(option);
+    });
   },
 
   // 填充年份筛选器
@@ -43,15 +69,13 @@ const app = {
     emptyState.style.display = 'none';
 
     cardList.innerHTML = this.currentCards.map(card => {
-      const hasChanged = card.images.length > 1;
-      const badgeClass = hasChanged ? 'changed' : 'normal';
-      const badgeText = hasChanged ? '有变化记录' : '初次记录';
+      // 显示最后一张图片（最新状态）
+      const latestImage = card.images[card.images.length - 1];
 
       return `
         <div class="card-item" onclick="app.goToDetail(${card.id})">
           <div class="card-image-wrapper">
-            <img class="card-image" src="${card.images[0].url}" alt="${card.player}" onerror="this.src='images/placeholder.jpg'">
-            <span class="card-badge ${badgeClass}">${badgeText}</span>
+            <img class="card-image" src="${latestImage.url}" alt="${card.player}" onerror="this.src='images/placeholder.jpg'">
           </div>
           <div class="card-info">
             <div class="card-player">${card.player}</div>
@@ -75,6 +99,7 @@ const app = {
     } else {
       this.currentCards = this.allCards.filter(card =>
         card.player.toLowerCase().includes(keyword) ||
+        (card.playerCN && card.playerCN.includes(keyword)) ||
         card.series.toLowerCase().includes(keyword) ||
         card.number.toLowerCase().includes(keyword)
       );
@@ -84,35 +109,34 @@ const app = {
     this.updateStats();
   },
 
-  // 按品牌筛选
-  filterByBrand() {
+  // 应用所有筛选条件
+  applyFilters() {
+    const player = document.getElementById('playerFilter').value;
     const brand = document.getElementById('brandFilter').value;
-    const keyword = document.getElementById('searchInput').value.toLowerCase().trim();
     const year = document.getElementById('yearFilter').value;
+    const keyword = document.getElementById('searchInput').value.toLowerCase().trim();
 
     this.currentCards = this.allCards.filter(card => {
+      const matchPlayer = !player || card.player === player;
       const matchBrand = !brand || card.brand === brand;
+      const matchYear = !year || card.year === year;
       const matchKeyword = !keyword ||
         card.player.toLowerCase().includes(keyword) ||
+        (card.playerCN && card.playerCN.includes(keyword)) ||
         card.series.toLowerCase().includes(keyword) ||
         card.number.toLowerCase().includes(keyword);
-      const matchYear = !year || card.year === year;
 
-      return matchBrand && matchKeyword && matchYear;
+      return matchPlayer && matchBrand && matchYear && matchKeyword;
     });
 
     this.renderCards();
     this.updateStats();
   },
 
-  // 按年份筛选
-  filterByYear() {
-    this.filterByBrand(); // 复用品牌筛选逻辑
-  },
-
   // 重置筛选
   resetFilters() {
     document.getElementById('searchInput').value = '';
+    document.getElementById('playerFilter').value = '';
     document.getElementById('brandFilter').value = '';
     document.getElementById('yearFilter').value = '';
     this.currentCards = [...this.allCards];
@@ -123,10 +147,7 @@ const app = {
   // 更新统计信息
   updateStats() {
     const total = this.currentCards.length;
-    const changed = this.currentCards.filter(card => card.images.length > 1).length;
-
     document.getElementById('totalCount').textContent = total;
-    document.getElementById('changedCount').textContent = changed;
   },
 
   // 跳转到详情页
