@@ -19,7 +19,7 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate",
-    number: "27/75",
+    number: "27/75编",
     images: [
       {
         url: "images/sample/kyrie-1.jpg",
@@ -38,7 +38,7 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "Immaculate",
-    number: "1/10",
+    number: "1/10编",
     images: [
       {
         url: "images/sample/kyrie-2016-1.jpg",
@@ -53,7 +53,7 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "Immaculate",
-    number: "6/10",
+    number: "6/10编",
     images: [
       {
         url: "images/sample/kyrie-2016-2.jpg",
@@ -68,7 +68,7 @@ const cardsData = [
     brand: "Panini",
     year: "2017-18",
     series: "Immaculate",
-    number: "1/1",
+    number: "1/1编",
     images: [
       {
         url: "images/sample/vince-carter-1.jpg",
@@ -87,7 +87,7 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate",
-    number: "3/75",
+    number: "3/75编",
     images: [
       {
         url: "images/sample/kobe-1.jpg",
@@ -110,7 +110,7 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2005-06",
     series: "Exquisite Noble Nameplates",
-    number: "10/25",
+    number: "10/25编",
     images: [
       {
         url: "images/sample/tmac-1.jpg",
@@ -125,7 +125,7 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Silhouette",
-    number: "9/10",
+    number: "9/10编",
     images: [
       {
         url: "images/sample/gerald-wallace-2.jpg",
@@ -144,7 +144,7 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Silhouette Threads",
-    number: "22/25",
+    number: "22/25编",
     images: [
       {
         url: "images/sample/alec-burks-1.jpg",
@@ -159,7 +159,7 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "One and One",
-    number: "15/35",
+    number: "15/35编",
     images: [
       {
         url: "images/sample/pj-washington-old.jpg",
@@ -178,7 +178,7 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Silhouette",
-    number: "10/10",
+    number: "10/10编",
     images: [
       {
         url: "images/sample/enrique-freeman-old.jpg",
@@ -197,7 +197,7 @@ const cardsData = [
     brand: "Panini",
     year: "2023-24",
     series: "Immaculate Rookie Jerseys",
-    number: "44/75",
+    number: "44/75编",
     images: [
       {
         url: "images/sample/black-howard-old.jpg",
@@ -216,7 +216,7 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Preferred Silhouettes",
-    number: "21/25",
+    number: "21/25编",
     images: [
       {
         url: "images/sample/kobe-2015-old.jpg",
@@ -235,7 +235,7 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Immaculate Rookie Patch Autographs",
-    number: "4/5",
+    number: "4/5编",
     images: [
       {
         url: "images/sample/franz-wagner-old.jpg",
@@ -254,7 +254,7 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Immaculate Remarkable Jerseys",
-    number: "73/99",
+    number: "73/99编",
     images: [
       {
         url: "images/sample/josh-giddey-old.jpg",
@@ -273,7 +273,7 @@ const cardsData = [
     brand: "Panini",
     year: "2023-24",
     series: "Immaculate Jersey Number",
-    number: "16/50",
+    number: "16/50编",
     images: [
       {
         url: "images/sample/harrison-ingram-old.jpg",
@@ -292,7 +292,7 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Flawless Signature Prime Materials Gold",
-    number: "4/10",
+    number: "4/10编",
     images: [
       {
         url: "images/sample/chris-paul-old.jpg",
@@ -311,7 +311,7 @@ const cardsData = [
     brand: "Panini",
     year: "2023-24",
     series: "Noir Box Office Memorabilia",
-    number: "70/99",
+    number: "70/99编",
     images: [
       {
         url: "images/sample/tyrese-haliburton-old.jpg",
@@ -330,7 +330,7 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Immaculate Collection Premium Autograph Patches",
-    number: "07/25",
+    number: "07/25编",
     images: [
       {
         url: "images/sample/stephen-curry-07-old.jpg",
@@ -349,7 +349,7 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Immaculate Collection Premium Autograph Patches",
-    number: "08/25",
+    number: "08/25编",
     images: [
       {
         url: "images/sample/stephen-curry-08-old.jpg",
@@ -368,7 +368,7 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "Preferred Silhouettes",
-    number: "06/10",
+    number: "06/10编",
     images: [
       {
         url: "images/sample/porzingis-old.jpg",
@@ -387,7 +387,7 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Impeccable Elegance RC",
-    number: "53/99",
+    number: "53/99编",
     images: [
       {
         url: "images/sample/jalen-williams-old.jpg",
@@ -406,7 +406,7 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2008-09",
     series: "Premier Rare Patches Triple",
-    number: "3/15",
+    number: "3/15编",
     images: [
       {
         url: "images/sample/rockets-triple-old.jpg",
@@ -425,7 +425,7 @@ const cardsData = [
     brand: "Panini",
     year: "2018-19",
     series: "Flawless Vertical Patch Autographs",
-    number: "15/25",
+    number: "15/25编",
     images: [
       {
         url: "images/sample/curry-flawless-old.jpg",
@@ -444,11 +444,116 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "National Treasures Colossal Jersey Autos",
-    number: "15/25",
+    number: "15/25编",
     images: [
       {
         url: "images/sample/magic-johnson-comparison.jpg",
         note: "对比图 - 上方PSA版(黄白蓝patch) vs 下方BGS版(紫金A字母patch)"
+      }
+    ]
+  },
+  {
+    id: 25,
+    player: "Clyde Drexler",
+    playerCN: "克莱德·德雷克斯勒",
+    brand: "Panini",
+    year: "2015-16",
+    series: "Immaculate Collection",
+    number: "5/10编",
+    images: [
+      {
+        url: "images/sample/clyde-drexler-comparison.jpg",
+        note: "对比图 - 左侧红白N字母patch vs 右侧卡淘交易记录同编号不同patch"
+      }
+    ]
+  },
+  {
+    id: 26,
+    player: "Karl Malone",
+    playerCN: "卡尔·马龙",
+    brand: "Panini",
+    year: "2015-16",
+    series: "Immaculate Collection",
+    number: "5/10编",
+    images: [
+      {
+        url: "images/sample/karl-malone-comparison.jpg",
+        note: "对比图 - 左侧紫金J字母patch vs 右侧卡淘交易记录同编号不同patch"
+      }
+    ]
+  },
+  {
+    id: 27,
+    player: "Shaquille O'Neal",
+    playerCN: "沙奎尔·奥尼尔",
+    brand: "Panini",
+    year: "2015-16",
+    series: "Immaculate Collection",
+    number: "26/34编",
+    images: [
+      {
+        url: "images/sample/shaq-comparison.jpg",
+        note: "对比图 - 左侧现状(签字+patch) vs 右侧eBay原始记录(签字形态不同)"
+      }
+    ]
+  },
+  {
+    id: 28,
+    player: "Karl Malone",
+    playerCN: "卡尔·马龙",
+    brand: "Panini",
+    year: "2015-16",
+    series: "Flawless",
+    number: "4/10编",
+    images: [
+      {
+        url: "images/sample/malone-flawless-comparison.jpg",
+        note: "对比图 - 左侧蓝红白patch vs 右侧紫金patch 签字落点位置也不同"
+      }
+    ]
+  },
+  {
+    id: 29,
+    player: "Zach LaVine",
+    playerCN: "扎克·拉文",
+    brand: "Panini",
+    year: "2015-16",
+    series: "National Treasures Colossal Jersey Patch Auto",
+    number: "23/25编",
+    images: [
+      {
+        url: "images/sample/zach-lavine-comparison.jpg",
+        note: "对比图 - 左侧蓝底白M字母patch vs 右侧eBay 2018年记录棕白patch"
+      }
+    ]
+  },
+  {
+    id: 30,
+    player: "John Stockton",
+    playerCN: "约翰·斯托克顿",
+    brand: "Panini",
+    year: "2013-14",
+    series: "Immaculate Premium Patches Jumbo Patch Auto",
+    number: "19/25编",
+    images: [
+      {
+        url: "images/sample/john-stockton-comparison.jpg",
+        note: "对比图 - 左侧紫黄白多色patch vs 右侧eBay 2014年记录紫金patch"
+      }
+    ]
+  },
+  {
+    id: 31,
+    player: "Karl Malone",
+    playerCN: "卡尔·马龙",
+    brand: "Panini",
+    year: "2013-14",
+    series: "Immaculate Premium Patches",
+    number: "⚠️同系列对比：未找到相同编号的换patch记录，此卡通过与同系列真品patch质感对比判断疑似被换",
+    images: [
+      {
+        url: "images/sample/malone-imm-series-comparison.jpg",
+        note: "同系列对比 - 左侧三张实物patch质感颜色一致(透气孔染色劣等球衣) vs 右侧eBay同系列真品patch质感对比"
       }
     ]
   }

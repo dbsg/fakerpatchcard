@@ -85,7 +85,7 @@ const app = {
             <div class="card-details">${card.brand} · ${card.year} · ${card.series}</div>
             <div class="card-meta">
               <span class="card-images-count">📸 ${card.images.length} 张照片</span>
-              <span class="card-number">${card.number}编</span>
+              <span class="card-number">${card.number}</span>
             </div>
           </div>
         </div>
