@@ -1,0 +1,187 @@
+// 详情页逻辑
+let currentCard = null;
+let currentImageIndex = 0;
+
+// 获取URL参数
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+// 加载卡片详情
+function loadCardDetail() {
+  const cardId = parseInt(getQueryParam('id'));
+
+  if (!cardId) {
+    showError('未找到卡片ID');
+    return;
+  }
+
+  currentCard = cardsData.find(card => card.id === cardId);
+
+  if (!currentCard) {
+    showError('未找到该卡片');
+    return;
+  }
+
+  renderDetail();
+  hideLoading();
+}
+
+// 渲染详情内容
+function renderDetail() {
+  const detailContent = document.getElementById('detailContent');
+  const hasChanged = currentCard.images.length > 1;
+
+  const warningBox = hasChanged ? `
+    <div class="warning-box">
+      <p><strong>⚠️ 警告：此卡片有Patch变化记录</strong></p>
+      <p>该卡片在不同时间点拍摄的照片中，Patch存在明显差异，疑似被换过Patch。购买前请务必仔细核对。</p>
+    </div>
+  ` : '';
+
+  detailContent.innerHTML = `
+    <div class="detail-container">
+      <div class="detail-card">
+        <h2 class="detail-title">${currentCard.player}</h2>
+
+        ${warningBox}
+
+        <div class="detail-info-grid">
+          <div class="detail-info-item">
+            <span class="detail-label">品牌</span>
+            <span class="detail-value">${currentCard.brand}</span>
+          </div>
+          <div class="detail-info-item">
+            <span class="detail-label">年份</span>
+            <span class="detail-value">${currentCard.year}</span>
+          </div>
+          <div class="detail-info-item">
+            <span class="detail-label">系列</span>
+            <span class="detail-value">${currentCard.series}</span>
+          </div>
+          <div class="detail-info-item">
+            <span class="detail-label">编号</span>
+            <span class="detail-value">${currentCard.number}</span>
+          </div>
+          <div class="detail-info-item">
+            <span class="detail-label">照片记录</span>
+            <span class="detail-value">${currentCard.images.length} 张</span>
+          </div>
+          <div class="detail-info-item">
+            <span class="detail-label">状态</span>
+            <span class="detail-value" style="color: ${hasChanged ? '#ff4d4f' : '#52c41a'}">
+              ${hasChanged ? '有变化' : '正常'}
+            </span>
+          </div>
+        </div>
+
+        <div class="image-timeline">
+          <div class="timeline-title">
+            照片历史记录
+            <span class="timeline-count">(按时间顺序)</span>
+          </div>
+
+          <div class="timeline-items">
+            ${currentCard.images.map((image, index) => `
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <span class="timeline-index">记录 ${index + 1}</span>
+                  <span class="timeline-date">📅 ${image.date}</span>
+                </div>
+                <img
+                  class="timeline-image"
+                  src="${image.url}"
+                  alt="记录 ${index + 1}"
+                  onerror="this.src='images/placeholder.jpg'"
+                  onclick="openModal(${index})"
+                >
+                <div class="timeline-note">
+                  📝 ${image.note}
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// 打开图片模态框
+function openModal(index) {
+  currentImageIndex = index;
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const caption = document.getElementById('modalCaption');
+
+  const image = currentCard.images[index];
+
+  modal.style.display = 'block';
+  modalImg.src = image.url;
+  caption.innerHTML = `
+    <strong>记录 ${index + 1}</strong> - ${image.date}<br>
+    ${image.note}
+  `;
+}
+
+// 关闭模态框
+function closeModal() {
+  const modal = document.getElementById('imageModal');
+  modal.style.display = 'none';
+}
+
+// 切换图片
+function navigateImage(direction) {
+  currentImageIndex += direction;
+
+  if (currentImageIndex < 0) {
+    currentImageIndex = currentCard.images.length - 1;
+  } else if (currentImageIndex >= currentCard.images.length) {
+    currentImageIndex = 0;
+  }
+
+  openModal(currentImageIndex);
+}
+
+// 显示错误
+function showError(message) {
+  const detailContent = document.getElementById('detailContent');
+  detailContent.innerHTML = `
+    <div class="empty-state">
+      <div class="empty-icon">❌</div>
+      <p class="empty-text">${message}</p>
+      <br>
+      <a href="index.html" class="search-btn">返回首页</a>
+    </div>
+  `;
+  hideLoading();
+}
+
+// 隐藏加载动画
+function hideLoading() {
+  const loading = document.getElementById('loading');
+  if (loading) {
+    loading.style.display = 'none';
+  }
+}
+
+// 键盘事件
+document.addEventListener('keydown', (e) => {
+  const modal = document.getElementById('imageModal');
+  if (modal.style.display === 'block') {
+    if (e.key === 'Escape') {
+      closeModal();
+    } else if (e.key === 'ArrowLeft') {
+      navigateImage(-1);
+    } else if (e.key === 'ArrowRight') {
+      navigateImage(1);
+    }
+  }
+});
+
+// 页面加载完成后初始化
+document.addEventListener('DOMContentLoaded', () => {
+  loadCardDetail();
+});
