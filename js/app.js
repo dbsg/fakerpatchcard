@@ -68,7 +68,10 @@ const app = {
     cardList.style.display = 'grid';
     emptyState.style.display = 'none';
 
-    cardList.innerHTML = this.currentCards.map(card => {
+    // 按 ID 降序排列（新添加的在前面）
+    const sortedCards = [...this.currentCards].sort((a, b) => b.id - a.id);
+
+    cardList.innerHTML = sortedCards.map(card => {
       // 显示最后一张图片（最新状态）
       const latestImage = card.images[card.images.length - 1];
 
@@ -82,7 +85,7 @@ const app = {
             <div class="card-details">${card.brand} · ${card.year} · ${card.series}</div>
             <div class="card-meta">
               <span class="card-images-count">📸 ${card.images.length} 张照片</span>
-              <span class="card-number">${card.number}</span>
+              <span class="card-number">${card.number}编</span>
             </div>
           </div>
         </div>
@@ -179,18 +182,11 @@ const app = {
 
 这是一个用于记录被换Patch的球星卡的公益项目，帮助收藏者识别和避免购买到被篡改的卡片。
 
-数据来源：
-- eBay、PWCC、Goldin等拍卖平台
-- 社交媒体晒卡照片
-- 收藏者社区举报
-
 注意事项：
 - 本站信息仅供参考，不构成法律依据
 - 交易前请务必仔细核对
 - 建议通过正规渠道购买
-- 发现可疑卡片请及时举报
-
-GitHub: https://github.com/yourusername/card`);
+- 发现可疑卡片请及时举报`);
   }
 };
 

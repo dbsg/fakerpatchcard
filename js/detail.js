@@ -68,12 +68,6 @@ function renderDetail() {
             <span class="detail-label">照片记录</span>
             <span class="detail-value">${currentCard.images.length} 张</span>
           </div>
-          <div class="detail-info-item">
-            <span class="detail-label">状态</span>
-            <span class="detail-value" style="color: ${hasChanged ? '#ff4d4f' : '#52c41a'}">
-              ${hasChanged ? '有变化' : '正常'}
-            </span>
-          </div>
         </div>
 
         <div class="image-timeline">

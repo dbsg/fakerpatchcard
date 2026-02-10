@@ -436,6 +436,21 @@ const cardsData = [
         note: "换patch后 - BGS9评级版 蓝金双色带WARRIORS字母patch"
       }
     ]
+  },
+  {
+    id: 24,
+    player: "Magic Johnson",
+    playerCN: "魔术师约翰逊",
+    brand: "Panini",
+    year: "2016-17",
+    series: "National Treasures Colossal Jersey Autos",
+    number: "15/25",
+    images: [
+      {
+        url: "images/sample/magic-johnson-comparison.jpg",
+        note: "对比图 - 上方PSA版(黄白蓝patch) vs 下方BGS版(紫金A字母patch)"
+      }
+    ]
   }
 ];
 
