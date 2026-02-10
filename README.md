@@ -15,7 +15,7 @@ MIT License
 
 ## 📮 联系方式
 
-- GitHub Issues: [提交问题](https://github.com/yourusername/card/issues)
+- GitHub Issues: [提交问题](https://github.com/dbsg/fakerpatchcard/issues)
 ---
 
 **⚠️ 重要提醒**：购买高价卡片前，请务必通过多个渠道核实卡片真伪，避免经济损失。
