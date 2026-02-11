@@ -1554,7 +1554,7 @@ const cardsData = [
     player: "Dwyane Wade",
     playerCN: "德韦恩·韦德",
     brand: "Panini",
-    year: "年份待确认",
+    year: "2015-16",
     series: "Flawless",
     number: "7/10编",
     status: "confirmed",
