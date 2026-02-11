@@ -266,7 +266,7 @@ const cardsData = [
     player: "Josh Giddey",
     playerCN: "约什·吉迪",
     brand: "Panini",
-    year: "2021-22",
+    year: "2023-24",
     series: "Immaculate Remarkable Jerseys",
     number: "73/99编",
     status: "confirmed",
@@ -286,7 +286,7 @@ const cardsData = [
     player: "Harrison Ingram",
     playerCN: "哈里森·英格拉姆",
     brand: "Panini",
-    year: "2023-24",
+    year: "2024-25",
     series: "Immaculate Jersey Number",
     number: "16/50编",
     status: "confirmed",
@@ -514,7 +514,7 @@ const cardsData = [
     player: "Shaquille O'Neal",
     playerCN: "沙奎尔·奥尼尔",
     brand: "Panini",
-    year: "2015-16",
+    year: "2013-14",
     series: "Immaculate Collection",
     number: "26/34编",
     status: "confirmed",
@@ -530,7 +530,7 @@ const cardsData = [
     player: "Karl Malone",
     playerCN: "卡尔·马龙",
     brand: "Panini",
-    year: "2015-16",
+    year: "2014-15",
     series: "Flawless",
     number: "4/10编",
     status: "confirmed",
@@ -665,7 +665,7 @@ const cardsData = [
       },
       {
         url: "images/sample/garnett-silhouettes-new.jpg",
-        note: "换patch后 - 森林狼队狼头logo patch（灰黑色狼+红舌头）"
+        note: "换patch后 - eBay标注ALTERED PATCH 森林狼狼头logo patch"
       }
     ]
   }
