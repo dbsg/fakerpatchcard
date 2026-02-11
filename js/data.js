@@ -7,6 +7,7 @@
 // - year: 年份
 // - series: 系列
 // - number: 编号
+// - status: 状态 (confirmed=确定换patch, suspected=高危/对比发现)
 // - images: 照片数组
 //   - url: 图片路径（相对于项目根目录）
 //   - note: 备注说明
@@ -20,6 +21,7 @@ const cardsData = [
     year: "2012-13",
     series: "Immaculate",
     number: "27/75编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/kyrie-1.jpg",
@@ -39,6 +41,7 @@ const cardsData = [
     year: "2016-17",
     series: "Immaculate",
     number: "1/10编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/kyrie-2016-1.jpg",
@@ -54,6 +57,7 @@ const cardsData = [
     year: "2016-17",
     series: "Immaculate",
     number: "6/10编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/kyrie-2016-2.jpg",
@@ -69,6 +73,7 @@ const cardsData = [
     year: "2017-18",
     series: "Immaculate",
     number: "1/1编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/vince-carter-1.jpg",
@@ -88,6 +93,7 @@ const cardsData = [
     year: "2012-13",
     series: "Immaculate",
     number: "3/75编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/kobe-1.jpg",
@@ -111,6 +117,7 @@ const cardsData = [
     year: "2005-06",
     series: "Exquisite Noble Nameplates",
     number: "10/25编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/tmac-1.jpg",
@@ -126,6 +133,7 @@ const cardsData = [
     year: "2024-25",
     series: "Silhouette",
     number: "9/10编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/gerald-wallace-2.jpg",
@@ -145,6 +153,7 @@ const cardsData = [
     year: "2024-25",
     series: "Silhouette Threads",
     number: "22/25编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/alec-burks-1.jpg",
@@ -160,6 +169,7 @@ const cardsData = [
     year: "2020-21",
     series: "One and One",
     number: "15/35编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/pj-washington-old.jpg",
@@ -179,6 +189,7 @@ const cardsData = [
     year: "2024-25",
     series: "Silhouette",
     number: "10/10编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/enrique-freeman-old.jpg",
@@ -198,6 +209,7 @@ const cardsData = [
     year: "2023-24",
     series: "Immaculate Rookie Jerseys",
     number: "44/75编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/black-howard-old.jpg",
@@ -217,6 +229,7 @@ const cardsData = [
     year: "2015-16",
     series: "Preferred Silhouettes",
     number: "21/25编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/kobe-2015-old.jpg",
@@ -236,6 +249,7 @@ const cardsData = [
     year: "2021-22",
     series: "Immaculate Rookie Patch Autographs",
     number: "4/5编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/franz-wagner-old.jpg",
@@ -255,6 +269,7 @@ const cardsData = [
     year: "2021-22",
     series: "Immaculate Remarkable Jerseys",
     number: "73/99编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/josh-giddey-old.jpg",
@@ -274,6 +289,7 @@ const cardsData = [
     year: "2023-24",
     series: "Immaculate Jersey Number",
     number: "16/50编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/harrison-ingram-old.jpg",
@@ -293,6 +309,7 @@ const cardsData = [
     year: "2021-22",
     series: "Flawless Signature Prime Materials Gold",
     number: "4/10编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/chris-paul-old.jpg",
@@ -312,6 +329,7 @@ const cardsData = [
     year: "2023-24",
     series: "Noir Box Office Memorabilia",
     number: "70/99编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/tyrese-haliburton-old.jpg",
@@ -331,6 +349,7 @@ const cardsData = [
     year: "2015-16",
     series: "Immaculate Collection Premium Autograph Patches",
     number: "07/25编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/stephen-curry-07-old.jpg",
@@ -350,6 +369,7 @@ const cardsData = [
     year: "2015-16",
     series: "Immaculate Collection Premium Autograph Patches",
     number: "08/25编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/stephen-curry-08-old.jpg",
@@ -369,6 +389,7 @@ const cardsData = [
     year: "2016-17",
     series: "Preferred Silhouettes",
     number: "06/10编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/porzingis-old.jpg",
@@ -388,6 +409,7 @@ const cardsData = [
     year: "2022-23",
     series: "Impeccable Elegance RC",
     number: "53/99编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/jalen-williams-old.jpg",
@@ -407,6 +429,7 @@ const cardsData = [
     year: "2008-09",
     series: "Premier Rare Patches Triple",
     number: "3/15编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/rockets-triple-old.jpg",
@@ -426,6 +449,7 @@ const cardsData = [
     year: "2018-19",
     series: "Flawless Vertical Patch Autographs",
     number: "15/25编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/curry-flawless-old.jpg",
@@ -445,6 +469,7 @@ const cardsData = [
     year: "2016-17",
     series: "National Treasures Colossal Jersey Autos",
     number: "15/25编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/magic-johnson-comparison.jpg",
@@ -460,6 +485,7 @@ const cardsData = [
     year: "2015-16",
     series: "Immaculate Collection",
     number: "5/10编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/clyde-drexler-comparison.jpg",
@@ -475,6 +501,7 @@ const cardsData = [
     year: "2015-16",
     series: "Immaculate Collection",
     number: "5/10编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/karl-malone-comparison.jpg",
@@ -490,6 +517,7 @@ const cardsData = [
     year: "2015-16",
     series: "Immaculate Collection",
     number: "26/34编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/shaq-comparison.jpg",
@@ -505,6 +533,7 @@ const cardsData = [
     year: "2015-16",
     series: "Flawless",
     number: "4/10编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/malone-flawless-comparison.jpg",
@@ -520,6 +549,7 @@ const cardsData = [
     year: "2015-16",
     series: "National Treasures Colossal Jersey Patch Auto",
     number: "23/25编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/zach-lavine-comparison.jpg",
@@ -535,6 +565,7 @@ const cardsData = [
     year: "2013-14",
     series: "Immaculate Premium Patches Jumbo Patch Auto",
     number: "19/25编",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/john-stockton-comparison.jpg",
@@ -550,6 +581,7 @@ const cardsData = [
     year: "2013-14",
     series: "Immaculate Premium Patches",
     number: "⚠️同系列对比：未找到相同编号的换patch记录，此卡通过与同系列真品patch质感对比判断疑似被换",
+    status: "suspected",
     images: [
       {
         url: "images/sample/malone-imm-series-comparison.jpg",
