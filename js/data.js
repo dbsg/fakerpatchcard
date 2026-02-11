@@ -654,7 +654,7 @@ const cardsData = [
     player: "Kevin Garnett",
     playerCN: "凯文·加内特",
     brand: "Panini",
-    year: "2015-16",
+    year: "2020-21",
     series: "Crown Royale Silhouettes",
     number: "12/12编",
     status: "confirmed",
