@@ -668,6 +668,182 @@ const cardsData = [
         note: "换patch后 - eBay标注ALTERED PATCH 森林狼狼头logo patch"
       }
     ]
+  },
+  {
+    id: 36,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2018-19",
+    series: "Immaculate Collection",
+    number: "01/35编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-imm-old.jpg",
+        note: "原版 - 纯黄色点状球衣patch"
+      },
+      {
+        url: "images/sample/durant-imm-new.jpg",
+        note: "换patch后 - 闲鱼在售 黄色L字母patch"
+      }
+    ]
+  },
+  {
+    id: 37,
+    player: "Eddie Jones",
+    playerCN: "埃迪·琼斯",
+    brand: "Panini",
+    year: "2014-15",
+    series: "Immaculate Collection",
+    number: "10/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/eddie-jones-old.jpg",
+        note: "原版 - 紫白双色球衣patch"
+      },
+      {
+        url: "images/sample/eddie-jones-new.jpg",
+        note: "换patch后 - 紫金LA字母patch"
+      }
+    ]
+  },
+  {
+    id: 38,
+    player: "Vince Carter",
+    playerCN: "文斯·卡特",
+    brand: "Panini",
+    year: "2013-14",
+    series: "Immaculate Premium Patches",
+    number: "25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/vince-carter-premium.jpg",
+        note: "对比图 - 上图蓝白条纹patch vs 下图黑白蓝D字母patch"
+      }
+    ]
+  },
+  {
+    id: 39,
+    player: "Gary Payton",
+    playerCN: "加里·佩顿",
+    brand: "Panini",
+    year: "2014-15",
+    series: "Flawless Greats",
+    number: "04/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/gary-payton-old.jpg",
+        note: "原版 - 左右两块黄绿双色竖条纹patch"
+      },
+      {
+        url: "images/sample/gary-payton-new.jpg",
+        note: "换patch后 - 左右两块鲜艳黄绿斜条纹patch"
+      }
+    ]
+  },
+  {
+    id: 40,
+    player: "Karl Malone",
+    playerCN: "卡尔·马龙",
+    brand: "Panini",
+    year: "2014-15",
+    series: "Flawless Greats",
+    number: "09/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/malone-flawless-greats-old.jpg",
+        note: "原版 - 左紫色+右白紫横条纹patch"
+      },
+      {
+        url: "images/sample/malone-flawless-greats-new.jpg",
+        note: "换patch后 - 左紫白横条纹+右紫色patch"
+      }
+    ]
+  },
+  {
+    id: 41,
+    player: "Kawhi Leonard",
+    playerCN: "卡哇伊·莱昂纳德",
+    brand: "Panini",
+    year: "2014-15",
+    series: "Immaculate Collection Premium Patches",
+    number: "04/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kawhi-leonard-comparison.jpg",
+        note: "对比图 - 上图BGS8.5版黑白灰马刺logo patch vs 下图原版白灰patch"
+      }
+    ]
+  },
+  {
+    id: 42,
+    player: "Clyde Drexler",
+    playerCN: "克莱德·德雷克斯勒",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Flawless Greats",
+    number: "08/15编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/drexler-flawless.jpg",
+        note: "左图实物+右图放大 - 红白蓝条纹patch"
+      }
+    ]
+  },
+  {
+    id: 43,
+    player: "John Stockton",
+    playerCN: "约翰·斯托克顿",
+    brand: "Panini",
+    year: "2013-14",
+    series: "Flawless",
+    number: "09/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/stockton-flawless.jpg",
+        note: "对比图 - 左图紫红多色patch vs 右图纯黄色patch"
+      }
+    ]
+  },
+  {
+    id: 44,
+    player: "David Robinson",
+    playerCN: "大卫·罗宾逊",
+    brand: "Panini",
+    year: "2013-14",
+    series: "Flawless",
+    number: "01/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/david-robinson-flawless.jpg",
+        note: "对比图 - 左图白L字母patch vs 右图纯黑色patch"
+      }
+    ]
+  },
+  {
+    id: 45,
+    player: "Magic Johnson",
+    playerCN: "魔术师约翰逊",
+    brand: "Panini",
+    year: "2015-16",
+    series: "Spectra",
+    number: "08/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/magic-spectra.jpg",
+        note: "左图实物+右图放大 - 黄紫双色patch"
+      }
+    ]
   }
 ];
 
