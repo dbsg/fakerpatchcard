@@ -588,6 +588,86 @@ const cardsData = [
         note: "同系列对比 - 左侧三张实物patch质感颜色一致(透气孔染色劣等球衣) vs 右侧eBay同系列真品patch质感对比"
       }
     ]
+  },
+  {
+    id: 32,
+    player: "Kevin Garnett",
+    playerCN: "凯文·加内特",
+    brand: "Panini",
+    year: "2020-21",
+    series: "National Treasures Logoman Autograph",
+    number: "1/1编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kevin-garnett-old.jpg",
+        note: "原版 - 球衣标签patch（EVERY PLAYER EVERY GAME + 编号MT102464）"
+      },
+      {
+        url: "images/sample/kevin-garnett-new.jpg",
+        note: "换patch后 - PSA评级版 NBA Logoman patch（红白蓝NBA标志）"
+      }
+    ]
+  },
+  {
+    id: 33,
+    player: "Derrick Rose",
+    playerCN: "德里克·罗斯",
+    brand: "Upper Deck",
+    year: "2008-09",
+    series: "Exquisite Collection Prime",
+    number: "50/50编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/derrick-rose-old.jpg",
+        note: "原版 - NBA Logoman patch（红白蓝NBA标志）"
+      },
+      {
+        url: "images/sample/derrick-rose-new.jpg",
+        note: "换patch后 - PSA评级版 公牛队logo patch（红色公牛头像）"
+      }
+    ]
+  },
+  {
+    id: 34,
+    player: "Derrick Rose",
+    playerCN: "德里克·罗斯",
+    brand: "Upper Deck",
+    year: "2009-10",
+    series: "Exquisite Collection Extra Exquisite",
+    number: "10/15编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/rose-extra-old.jpg",
+        note: "原版 - 红黑白竖条纹小patch"
+      },
+      {
+        url: "images/sample/rose-extra-new.jpg",
+        note: "换patch后 - 大号51号码patch（红白黑三色）"
+      }
+    ]
+  },
+  {
+    id: 35,
+    player: "Kevin Garnett",
+    playerCN: "凯文·加内特",
+    brand: "Panini",
+    year: "2015-16",
+    series: "Crown Royale Silhouettes",
+    number: "12/12编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/garnett-silhouettes-old.jpg",
+        note: "原版 - 纯深蓝色球衣patch"
+      },
+      {
+        url: "images/sample/garnett-silhouettes-new.jpg",
+        note: "换patch后 - 森林狼队狼头logo patch（灰黑色狼+红舌头）"
+      }
+    ]
   }
 ];
 
