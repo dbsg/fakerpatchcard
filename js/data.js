@@ -2504,6 +2504,194 @@ const cardsData = [
         note: "对比图 - 左:纯红色大尺寸patch（12/25） vs 右:红白黑三色拼接patch（12/25）"
       }
     ]
+  },
+  {
+    id: 143,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2015-16",
+    series: "National Treasures NBA Game Gear",
+    number: "11/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-nt-11-1.jpg",
+        note: "版本1 - 红橙黑三色拼接patch（中文标注\"三色球衣切割 暴力切割 雷霆\"）"
+      },
+      {
+        url: "images/sample/durant-nt-11-2.jpg",
+        note: "版本对比 - 左:红橙黑三色拼接patch vs 右:浅灰白色球衣patch（11/25）"
+      }
+    ]
+  },
+  {
+    id: 144,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2014-15",
+    series: "National Treasures",
+    number: "26/35编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-nt-26.jpg",
+        note: "对比图 - 上:深蓝黄橙三色拼接patch（26/35） vs 下:纯蓝色大尺寸patch（26/35，中文标注\"衣物料 特\"）"
+      }
+    ]
+  },
+  {
+    id: 145,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2015-16",
+    series: "National Treasures Legacies",
+    number: "13/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-nt-13.jpg",
+        note: "对比图 - 左:红橙深蓝三色拼接patch（13/25） vs 右:纯蓝色大尺寸patch（13/25，中文标注\"一比什么\"）"
+      }
+    ]
+  },
+  {
+    id: 146,
+    player: "Tyrese Haliburton",
+    playerCN: "泰瑞斯·哈利伯顿",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Flawless",
+    number: "06/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/haliburton-flawless-06.jpg",
+        note: "对比图 - 上:白黑紫三色拼接patch（06/25） vs 下:纯紫色大尺寸patch（中文标注\"球衣切割 低编 原封砖 步行者核心 新秀年 投资必备\"）"
+      }
+    ]
+  },
+  {
+    id: 147,
+    player: "Tyrese Haliburton",
+    playerCN: "泰瑞斯·哈利伯顿",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Flawless",
+    number: "08/15编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/haliburton-flawless-08.jpg",
+        note: "对比图 - 上:蓝黑白三色拼接patch（08/15） vs 下:纯白色大尺寸patch（中文标注\"单色patch BGS8.5墨迹10 不累计 老夫子\"）"
+      }
+    ]
+  },
+  {
+    id: 148,
+    player: "Tyrese Haliburton",
+    playerCN: "泰瑞斯·哈利伯顿",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Noir Rookie Patch Autographs",
+    number: "28/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/haliburton-noir-28.jpg",
+        note: "对比图 - 上:白紫拼接patch（28/99） vs 下:纯紫色大尺寸patch（中文标注\"超暴力球衣物料切割 卡签签字\"）"
+      }
+    ]
+  },
+  {
+    id: 149,
+    player: "Dwight Howard",
+    playerCN: "德怀特·霍华德",
+    brand: "Panini",
+    year: "2021-22",
+    series: "National Treasures Biography Materials",
+    number: "1/1编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/howard-nt-01-1.jpg",
+        note: "版本1 - 黄白红三色拼接patch（1/1编，中文标注\"魔术巅峰时期 德怀特霍华德 tag logoman切割 原封顶级好卡 One of One 仅一张\"）"
+      },
+      {
+        url: "images/sample/howard-nt-01-2.jpg",
+        note: "版本2 - 浅灰黑条纹拼接patch（1/1编，中文标注\"1of1 biography PATCH 四色切割\"）"
+      }
+    ]
+  },
+  {
+    id: 150,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Playoff",
+    year: "2009",
+    series: "National Treasures NBA Gear Dual Prime",
+    number: "07/49编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-nt-07.jpg",
+        note: "对比图 - 左:蓝黄红白多色拼接双patch（7/49，含GBTC封装正反面） vs 右:深蓝白黑三色拼接双patch（正反面展示Warriors Guard字样）"
+      }
+    ]
+  },
+  {
+    id: 151,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Upper Deck",
+    year: "2008-09",
+    series: "Premier Triple",
+    number: "34/50编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-premier-34.jpg",
+        note: "对比图 - 左:蓝黄白三色拼接三格patch（34/50） vs 右:紫黄白三色拼接三格patch（34/50，Rare Remnants版）"
+      }
+    ]
+  },
+  {
+    id: 152,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2016-17",
+    series: "Immaculate Special Event Materials",
+    number: "1/4编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-imm-01.jpg",
+        note: "对比图 - 左:黑色adidas logo patch（含GBTC封装，中文标注\"2281想卖39000\"） vs 右:红黑黄三色patch（右侧交易详情显示2281元成交）"
+      }
+    ]
+  },
+  {
+    id: 153,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2022-23",
+    series: "National Treasures Treasured Threads",
+    number: "10编",
+    status: "suspected",
+    images: [
+      {
+        url: "images/sample/curry-nt-10-2.jpg",
+        note: "版本1 - 黄蓝拼接大尺寸patch（同款对比）"
+      },
+      {
+        url: "images/sample/curry-nt-10-1.jpg",
+        note: "版本2 - 蓝白S字母拼接patch⚠️ 注意：同系列同编号10编出现不同patch版本，标注为高危"
+      }
+    ]
   }
 ];
 
