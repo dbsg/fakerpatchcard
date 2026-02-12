@@ -1676,6 +1676,362 @@ const cardsData = [
         note: "对比图 - 版本1: 黄绿色拼接patch vs 版本2: 深绿白色拼接patch"
       }
     ]
+  },
+  {
+    id: 95,
+    player: "Ben Gordon",
+    playerCN: "本·戈登",
+    brand: "Upper Deck",
+    year: "2004-05",
+    series: "Ultimate Collection",
+    number: "60/75编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/gordon-ultimate-60-1.jpg",
+        note: "版本1 - 纯红色公牛logo patch"
+      },
+      {
+        url: "images/sample/gordon-ultimate-60-2.jpg",
+        note: "版本2 - 黑红拼接公牛logo patch"
+      }
+    ]
+  },
+  {
+    id: 96,
+    player: "Michael Jordan",
+    playerCN: "迈克尔·乔丹",
+    brand: "Upper Deck",
+    year: "2004",
+    series: "SP Game Used",
+    number: "041/100编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/jordan-sp-041-1.jpg",
+        note: "版本1 - 纯红色公牛logo patch"
+      },
+      {
+        url: "images/sample/jordan-sp-041-2.jpg",
+        note: "版本2 - 黑红拼接公牛logo patch"
+      }
+    ]
+  },
+  {
+    id: 97,
+    player: "Wayne Simien",
+    playerCN: "韦恩·西米恩",
+    brand: "Upper Deck",
+    year: "2005-06",
+    series: "Trilogy Rookie Premiere Patch Auto",
+    number: "05/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/simien-trilogy-05-1.jpg",
+        note: "版本1 - 黑红白三色拼接patch"
+      },
+      {
+        url: "images/sample/simien-trilogy-05-2.jpg",
+        note: "版本2 - 纯白色patch"
+      }
+    ]
+  },
+  {
+    id: 98,
+    player: "Andre Iguodala",
+    playerCN: "安德烈·伊戈达拉",
+    brand: "Upper Deck",
+    year: "2006-07",
+    series: "Ultimate Collection",
+    number: "09/15编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/iguodala-ultimate-09-1.jpg",
+        note: "版本1 - 白红蓝三色拼接patch"
+      },
+      {
+        url: "images/sample/iguodala-ultimate-09-2.jpg",
+        note: "版本2 - 纯黑色patch"
+      }
+    ]
+  },
+  {
+    id: 99,
+    player: "Chris Paul",
+    playerCN: "克里斯·保罗",
+    brand: "Upper Deck",
+    year: "2007-08",
+    series: "Exquisite Collection Limited Logos",
+    number: "42/50编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/paul-exquisite-42-1.jpg",
+        note: "版本1 - 蓝紫黄多色拼接patch"
+      },
+      {
+        url: "images/sample/paul-exquisite-42-2.jpg",
+        note: "版本2 - 黄蓝横条纹拼接patch"
+      }
+    ]
+  },
+  {
+    id: 100,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2012-13",
+    series: "National Treasures NBA Gear Dual Patch",
+    number: "10/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-nt-gear-10-1.jpg",
+        note: "版本1 - 左:黑橙红三色拼接patch + 右:白色带48号码patch"
+      },
+      {
+        url: "images/sample/lebron-nt-gear-10-2.jpg",
+        note: "版本2 - 左:纯白色patch + 右:黑白拼接patch"
+      }
+    ]
+  },
+  {
+    id: 101,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2012-13",
+    series: "National Treasures NBA Gear Dual Patch",
+    number: "13/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-nt-gear-13-1.jpg",
+        note: "版本1 - 左:蓝NBA logo patch + 右:黑橙红三色拼接patch（含eBay拍卖截图）"
+      },
+      {
+        url: "images/sample/lebron-nt-gear-13-2.jpg",
+        note: "版本2 - 左:纯白色patch + 右:纯黑色patch（含成交记录截图）"
+      }
+    ]
+  },
+  {
+    id: 102,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Upper Deck",
+    year: "2003-04",
+    series: "Exquisite Collection Rookie Patch Autograph",
+    number: "编号待确认",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-exquisite-rpa-1.jpg",
+        note: "版本1 - 纯白色patch"
+      },
+      {
+        url: "images/sample/lebron-exquisite-rpa-2.jpg",
+        note: "版本2 - 纯白色patch（不同图案纹理）"
+      }
+    ]
+  },
+  {
+    id: 103,
+    player: "Alonzo Mourning",
+    playerCN: "阿朗佐·莫宁",
+    brand: "Upper Deck",
+    year: "2007-08",
+    series: "Exquisite Collection Limited Logos",
+    number: "22/50编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/mourning-exquisite-22-1.jpg",
+        note: "版本1 - 红黑拼接patch"
+      },
+      {
+        url: "images/sample/mourning-exquisite-22-2.jpg",
+        note: "版本2 - 橙白红横条纹拼接patch"
+      }
+    ]
+  },
+  {
+    id: 104,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Upper Deck",
+    year: "2007-08",
+    series: "Exquisite Collection Rookie Patch Autograph",
+    number: "97/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-exquisite-97.jpg",
+        note: "对比图 - 左:绿白黄三色拼接patch vs 右:黄绿色拼接patch（含eBay拍卖截图）"
+      }
+    ]
+  },
+  {
+    id: 105,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Immaculate Collection Patch Auto",
+    number: "04/75编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-imm-04.jpg",
+        note: "对比图 - 左:蓝橙色拼接patch vs 右:橙蓝色拼接patch（含eBay拍卖截图）"
+      }
+    ]
+  },
+  {
+    id: 106,
+    player: "Grant Hill",
+    playerCN: "格兰特·希尔",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Immaculate Collection Patch Auto",
+    number: "12/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/hill-imm-12.jpg",
+        note: "对比图 - 左:纯红色patch vs 右:红白橙三色横条纹patch（含eBay拍卖截图）"
+      }
+    ]
+  },
+  {
+    id: 107,
+    player: "LeBron James / Allen Iverson / Joe Johnson",
+    playerCN: "勒布朗·詹姆斯 / 阿伦·艾弗森 / 乔·约翰逊",
+    brand: "Upper Deck",
+    year: "2008-09",
+    series: "Exquisite Collection 6 Color Patch Jersey Logo",
+    number: "04/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-iverson-exquisite-04.jpg",
+        note: "对比图 - 左:三人六色patch（含logo） vs 右:三人纯色patch（含eBay拍卖截图）"
+      }
+    ]
+  },
+  {
+    id: 108,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Flawless",
+    number: "07/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-flawless-07.jpg",
+        note: "对比图 - 左:纯白色patch vs 右:紫黄拼接patch（含eBay拍卖截图及PSA封装对比）"
+      }
+    ]
+  },
+  {
+    id: 109,
+    player: "Kobe Bryant / Magic Johnson",
+    playerCN: "科比·布莱恩特 / 魔术师·约翰逊",
+    brand: "Upper Deck",
+    year: "年份待确认",
+    series: "SP Game Used Dual Jersey Patch",
+    number: "08/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-magic-sp-08.jpg",
+        note: "对比图 - 左:双人四色patch（紫黄色湖人配色） vs 右:双人纯色patch（含eBay拍卖截图）"
+      }
+    ]
+  },
+  {
+    id: 110,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Upper Deck",
+    year: "2006-07",
+    series: "Exquisite Collection Autograph Logo Jersey Patch",
+    number: "88/100编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-exquisite-88.jpg",
+        note: "对比图 - 左:红白双色logo patch vs 右:纯白色patch（含PSA封装及eBay拍卖截图）"
+      }
+    ]
+  },
+  {
+    id: 111,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Flawless Jumbo GU Patch",
+    number: "16/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-flawless-16.jpg",
+        note: "对比图 - 左:红黑白三色拼接jumbo patch vs 右:纯白色patch（含PSA 10封装及eBay拍卖截图）"
+      }
+    ]
+  },
+  {
+    id: 112,
+    player: "Karl Malone",
+    playerCN: "卡尔·马龙",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Flawless Jersey Patch Ruby",
+    number: "11/15编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/malone-flawless-11.jpg",
+        note: "对比图 - 左:蓝紫红三色拼接patch vs 右:蓝紫色拼接patch（含eBay拍卖截图）"
+      }
+    ]
+  },
+  {
+    id: 113,
+    player: "Tony Parker",
+    playerCN: "托尼·帕克",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Flawless Patches Autographs",
+    number: "21/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/parker-flawless-21.jpg",
+        note: "对比图 - 左:灰黑蓝三色拼接patch vs 右:纯黑色patch（含亚马逊及eBay拍卖截图）"
+      }
+    ]
+  },
+  {
+    id: 114,
+    player: "Gary Payton",
+    playerCN: "加里·佩顿",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Immaculate Collection Patch Auto",
+    number: "10/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/payton-imm-10.jpg",
+        note: "对比图 - 左:白黄绿三色拼接patch vs 右:黄绿橙三色拼接patch（含eBay拍卖截图）"
+      }
+    ]
   }
 ];
 
