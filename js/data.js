@@ -1386,6 +1386,10 @@ const cardsData = [
       {
         url: "images/sample/mitchell-nt-06.jpg",
         note: "对比图 - 版本1: 黄蓝黑三色拼接patch vs 版本2: 白绿黄蓝多色拼接patch"
+      },
+      {
+        url: "images/sample/mitchell-nt-06-versions.jpg",
+        note: "三版本时间线对比 - ORIGINAL(黄蓝黑) vs MAY 2019(白绿黄蓝) vs AUGUST 2020(黄黑) 同一张06/99编号卡在不同时期的patch变化"
       }
     ]
   },
@@ -2030,6 +2034,474 @@ const cardsData = [
       {
         url: "images/sample/payton-imm-10.jpg",
         note: "对比图 - 左:白黄绿三色拼接patch vs 右:黄绿橙三色拼接patch（含eBay拍卖截图）"
+      }
+    ]
+  },
+  {
+    id: 115,
+    player: "Dirk Nowitzki",
+    playerCN: "德克·诺维茨基",
+    brand: "Panini",
+    year: "2020",
+    series: "Crown Royale Silhouettes Autograph RLC FOTL",
+    number: "12/12编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/nowitzki-crown-12-1.jpg",
+        note: "版本1 - 白黑蓝灰四色拼接大logo patch（含PSA 10封装）"
+      },
+      {
+        url: "images/sample/nowitzki-crown-12-2.jpg",
+        note: "版本2 - 蓝白拼接小logo patch"
+      }
+    ]
+  },
+  {
+    id: 116,
+    player: "Andrew Wiggins / Khris Middleton",
+    playerCN: "安德鲁·威金斯 / 克里斯·米德尔顿",
+    brand: "Panini",
+    year: "2018",
+    series: "Immaculate Dual Patch Number 22",
+    number: "09/22编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/wiggins-middleton-imm-09.jpg",
+        note: "对比图 - 左:真球衣patch vs 右:假patch覆盖真球衣（标注\"Fake Patch over Real Jersey\"）双人四patch卡"
+      }
+    ]
+  },
+  {
+    id: 117,
+    player: "Cade Cunningham",
+    playerCN: "凯德·坎宁安",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate Collection Patch Auto",
+    number: "14/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/cunningham-imm-14-1.jpg",
+        note: "版本1 - 蓝红拼接patch（活塞队配色）"
+      },
+      {
+        url: "images/sample/cunningham-imm-14-2.jpg",
+        note: "版本2 - 纯红色patch"
+      }
+    ]
+  },
+  {
+    id: 118,
+    player: "D'Angelo Russell",
+    playerCN: "德安吉洛·拉塞尔",
+    brand: "Panini",
+    year: "2015",
+    series: "National Treasures Colossal Jersey Auto",
+    number: "03/49编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/russell-nt-03.jpg",
+        note: "对比图 - 左:纯紫色大尺寸patch vs 右:紫黄白多色拼接大尺寸patch（含BGS封装）"
+      }
+    ]
+  },
+  {
+    id: 119,
+    player: "De'Aaron Fox",
+    playerCN: "迪阿伦·福克斯",
+    brand: "Panini",
+    year: "2017",
+    series: "Noir Jersey Auto",
+    number: "96/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/fox-noir-96.jpg",
+        note: "对比图 - 左:紫色大尺寸patch vs 右:白色网格点状patch（标注\"15/49\"）"
+      }
+    ]
+  },
+  {
+    id: 120,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2012",
+    series: "Anthology Memorabilia",
+    number: "2/8编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-anthology-02.jpg",
+        note: "对比图 - 左:纯紫色patch vs 右:紫黄白三色拼接patch（含BGS 8.5封装，标注\"是换的patch\"）"
+      }
+    ]
+  },
+  {
+    id: 121,
+    player: "Kyrie Irving",
+    playerCN: "凯里·欧文",
+    brand: "Panini",
+    year: "2015-16",
+    series: "National Treasures Legacies",
+    number: "01/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/irving-nt-01.jpg",
+        note: "对比图 - 左:纯白色patch vs 右:黄红蓝多色拼接patch（含中文标注\"这张欧文1杠25的卡呢 卖掉了\"）"
+      }
+    ]
+  },
+  {
+    id: 122,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2009",
+    series: "Limited Jumbo Jersey",
+    number: "01/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-limited-01.jpg",
+        note: "对比图 - 左:紫色大尺寸patch（标注01/10） vs 右:白紫拼接大尺寸patch（含GBTC BGS封装，中文标注\"那科比这张1杠十的卡呢\"）"
+      }
+    ]
+  },
+  {
+    id: 123,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Noir Jumbo Material",
+    number: "01/3编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-noir-01.jpg",
+        note: "对比图 - 左:白蓝拼接大尺寸patch vs 右:白蓝黄三色拼接大尺寸patch（含GBTC BGS封装，中文标注\"那库里这张1杠三的卡呢\"）"
+      }
+    ]
+  },
+  {
+    id: 124,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Upper Deck",
+    year: "2002",
+    series: "Ultimate Collection Game Jersey Patch",
+    number: "47/100编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-ultimate-47.jpg",
+        note: "对比图 - 左:纯白色patch vs 右:黄紫拼接patch（含GBTC BGS封装，中文标注\"还有这张科比的47杠100的卡呢\"）"
+      }
+    ]
+  },
+  {
+    id: 125,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2017",
+    series: "Noir Box Office Materials",
+    number: "15/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-noir-15.jpg",
+        note: "对比图 - 左:纯白色大尺寸patch vs 右:黄蓝拼接大尺寸patch（含GBTC BGS封装，中文标注\"那还有这张库里的15跟25的卡呢\"）"
+      }
+    ]
+  },
+  {
+    id: 126,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2015",
+    series: "National Treasures NBA Material Prime",
+    number: "09/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-nt-prime-09.jpg",
+        note: "对比图 - 左:纯白色大尺寸patch vs 右:紫黄白三色拼接大尺寸patch（含GBTC BGS封装，中文标注\"9杠25那也被换了patch\"）"
+      }
+    ]
+  },
+  {
+    id: 127,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2014",
+    series: "Threads Authentic Threads Prime",
+    number: "7/7编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-threads-07.jpg",
+        note: "对比图 - 左:白黄拼接大尺寸patch vs 右:黄紫白三色拼接大尺寸patch（含GBTC BGS封装，中文标注\"还有这张科比的七杠七的卡呢\"）"
+      }
+    ]
+  },
+  {
+    id: 128,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate The Standard",
+    number: "16/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-imm-16.jpg",
+        note: "对比图 - 左:蓝黄拼接大尺寸patch（含BGS 9评级） vs 右:纯黑色大尺寸patch（含GBTC BGS封装，中文标注\"我们刚介绍过是这张，这是这张卡\"）"
+      }
+    ]
+  },
+  {
+    id: 129,
+    player: "Cade Cunningham",
+    playerCN: "凯德·坎宁安",
+    brand: "Panini",
+    year: "2021-22",
+    series: "National Treasures Clutch Factor",
+    number: "06/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/cunningham-nt-06-1.jpg",
+        note: "版本1 - 红蓝白多色拼接大尺寸patch（中文标注\"所以它价值就大打折扣了\"）"
+      },
+      {
+        url: "images/sample/cunningham-nt-06-2.jpg",
+        note: "版本2 - 纯白色大尺寸patch（中文标注\"那你要如何防止这个换PATCH的\"）"
+      }
+    ]
+  },
+  {
+    id: 130,
+    player: "Ziaire Williams",
+    playerCN: "扎伊尔·威廉姆斯",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Flawless",
+    number: "1/1编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/williams-flawless-01-1.jpg",
+        note: "版本1 - 白紫白竖条纹字母patch（中文标注\"这在卡淘截标的扎伊尔\"）"
+      },
+      {
+        url: "images/sample/williams-flawless-01-2.jpg",
+        note: "版本对比 - 左:白灰黑横条纹patch vs 右:白紫白竖条纹字母patch（中文标注\"那我个人觉得这两个签字是一模一样的\"）"
+      }
+    ]
+  },
+  {
+    id: 131,
+    player: "Jake LaRavia",
+    playerCN: "杰克·拉拉维亚",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Flawless Patch Autograph Emerald",
+    number: "2/5编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/laravia-flawless-02-1.jpg",
+        note: "版本1 - 白蓝黑条纹patch（含PSA评级标签，中文标注\"那这张PSA评过级的flawless的新秀卡呢\"）"
+      },
+      {
+        url: "images/sample/laravia-flawless-02-2.jpg",
+        note: "版本对比 - 左:深蓝白字母拼接patch（无铭文） vs 右:白蓝黑条纹patch（签名带假铭文\"#3Nicky\"）⚠️ 注意：此卡同时存在换patch和假铭文两个问题"
+      }
+    ]
+  },
+  {
+    id: 132,
+    player: "Vince Carter",
+    playerCN: "文斯·卡特",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Immaculate Jersey Patch Autographs Au",
+    number: "13/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/carter-imm-13.jpg",
+        note: "对比图 - 左:白色网格状球衣patch（签名带铭文\"15\"） vs 右:橙色大尺寸patch（签名带铭文\"15\"）"
+      }
+    ]
+  },
+  {
+    id: 133,
+    player: "Paul Reed",
+    playerCN: "保罗·里德",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Immaculate",
+    number: "29/50编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/reed-imm-29.jpg",
+        note: "对比图 - 左:白红蓝三色拼接patch vs 右:纯蓝色大尺寸patch"
+      }
+    ]
+  },
+  {
+    id: 134,
+    player: "Tyrese Maxey",
+    playerCN: "泰瑞斯·马克西",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Impeccable",
+    number: "15/88编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/maxey-impeccable-15.jpg",
+        note: "对比图 - 左:纯蓝色大尺寸patch vs 右:白红蓝三色拼接patch"
+      }
+    ]
+  },
+  {
+    id: 135,
+    player: "Scottie Barnes",
+    playerCN: "斯科蒂·巴恩斯",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Noir Rookie Patch Autographs",
+    number: "66/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/barnes-noir-66.jpg",
+        note: "对比图 - 左:纯红色大尺寸patch vs 右:红黑白三色拼接patch"
+      }
+    ]
+  },
+  {
+    id: 136,
+    player: "Tyrese Maxey",
+    playerCN: "泰瑞斯·马克西",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Immaculate",
+    number: "46/50编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/maxey-imm-46.jpg",
+        note: "对比图 - 左:纯蓝色大尺寸patch vs 右:白红蓝三色拼接patch（含黑色边框）"
+      }
+    ]
+  },
+  {
+    id: 137,
+    player: "Nikola Jokic",
+    playerCN: "尼古拉·约基奇",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Flawless",
+    number: "22/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/jokic-flawless-22.jpg",
+        note: "对比图 - 左:红黑白三色拼接patch vs 右:白色网格点状patch"
+      }
+    ]
+  },
+  {
+    id: 138,
+    player: "Tyrese Haliburton",
+    playerCN: "泰瑞斯·哈利伯顿",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Impeccable",
+    number: "73/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/haliburton-impeccable-73.jpg",
+        note: "对比图 - 左:纯紫色大尺寸patch（Elegance 17/35） vs 右:紫白拼接patch（Impeccable 73/99）"
+      }
+    ]
+  },
+  {
+    id: 139,
+    player: "Tyrese Haliburton",
+    playerCN: "泰瑞斯·哈利伯顿",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Immaculate",
+    number: "60/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/haliburton-imm-60.jpg",
+        note: "对比图 - 左:浅紫白拼接patch（标注60/99） vs 右:深紫色大尺寸patch（Immaculate 99编）"
+      }
+    ]
+  },
+  {
+    id: 140,
+    player: "Tyrese Haliburton",
+    playerCN: "泰瑞斯·哈利伯顿",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Flawless",
+    number: "02/15编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/haliburton-flawless-02.jpg",
+        note: "对比图 - 左:白色网格点状patch（步行者队配色，02/15） vs 右:白紫拼接patch（32/35）"
+      }
+    ]
+  },
+  {
+    id: 141,
+    player: "Shai Gilgeous-Alexander",
+    playerCN: "谢伊·吉尔杰斯-亚历山大",
+    brand: "Panini",
+    year: "2018-19",
+    series: "Noir Rookie Patch Autographs",
+    number: "16/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/sga-noir-16.jpg",
+        note: "对比图 - 左:白色网格点状patch（16/99） vs 右:白蓝拼接patch（16/99）"
+      }
+    ]
+  },
+  {
+    id: 142,
+    player: "Lauri Markkanen",
+    playerCN: "劳里·马尔卡宁",
+    brand: "Panini",
+    year: "2017-18",
+    series: "Flawless",
+    number: "12/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/markkanen-flawless-12.jpg",
+        note: "对比图 - 左:纯红色大尺寸patch（12/25） vs 右:红白黑三色拼接patch（12/25）"
       }
     ]
   }
