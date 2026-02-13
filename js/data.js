@@ -2522,6 +2522,10 @@ const cardsData = [
       {
         url: "images/sample/durant-nt-11-2.jpg",
         note: "版本对比 - 左:红橙黑三色拼接patch vs 右:浅灰白色球衣patch（11/25）"
+      },
+      {
+        url: "images/sample/durant-nt-11-3.jpg",
+        note: "多版本交易记录 - 显示同一编号11/25卡片的多个交易记录，价格从¥1,950到¥3,688.88不等，证实该卡被曝光换patch后又换回，但无法保证是原装球衣，且封装可能是假的"
       }
     ]
   },
@@ -2777,11 +2781,19 @@ const cardsData = [
     year: "2018-19",
     series: "Opulence Precious Swatch Signatures",
     number: "08/10编",
-    status: "suspected",
+    status: "confirmed",
     images: [
       {
         url: "images/sample/curry-opulence-8.jpg",
-        note: "蓝黄白三色拼接大尺寸三杠patch带勇士队Logo（含签名，08/10编）⚠️ 高危警示：同系列已确认存在换patch情况（如3/10编），此卡patch样式异常，换patch概率很高，请谨慎购买"
+        note: "版本1 - 蓝黄白三色拼接大尺寸三杠patch带勇士队Logo（含签名，08/10编）"
+      },
+      {
+        url: "images/sample/curry-opulence-8-new1.jpg",
+        note: "版本2 - 黄蓝三色拼接大尺寸patch带勇士队Logo（含签名，08/10编）"
+      },
+      {
+        url: "images/sample/curry-opulence-8-new2.jpg",
+        note: "多编号对比 - 该系列至少5个不同编号(1/10、2/10、7/10、8/10，以及之前的3/10)出现不同patch样式🚫 系统性换patch证据确凿，确认为换patch"
       }
     ]
   },
@@ -3054,6 +3066,626 @@ const cardsData = [
       {
         url: "images/sample/kolek-noir-21.jpg",
         note: "同编号对比 - 左：橙灰白三色拼接patch（含签名），右：纯橙色单块patch（含签名）🚫 同一编号（21/49）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 176,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2017-18",
+    series: "Immaculate Standout Memorabilia",
+    number: "47/49编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-imm-standout-47.jpg",
+        note: "同编号对比 - 左：ALTERED（改动的）蓝白拼接大尺寸patch，右：REAL（真实的）纯蓝色单块patch 🚫 同一编号（47/49）出现完全不同的patch样式，左侧明确标注为ALTERED，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 177,
+    player: "James Harden",
+    playerCN: "詹姆斯·哈登",
+    brand: "Panini",
+    year: "2009",
+    series: "Absolute Memorabilia Rookie Premiere Materials",
+    number: "1/5编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/harden-abs-2.jpg",
+        note: "原始卡片 - NBA logo patch（红白蓝拼接）+ 橙色jersey + 黑色雷霆队logo patch，右下角无\"Prime\"标识"
+      },
+      {
+        url: "images/sample/harden-abs-1.jpg",
+        note: "换patch后 - NBA logo patch（红白蓝拼接）+ 橙色patch + 黑色雷霆队logo patch（含PSA 10 AUTO评级）🚫 右下角无\"Prime\"字样证明此卡应为jersey材质，却出现了大尺寸patch，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 178,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2010-11",
+    series: "National Treasures NBA Gear Laundry Tag Combos Signatures",
+    number: "5编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-nt-gear-5-2.jpg",
+        note: "原始卡片 - 左：白蓝拼接patch + 右：纯蓝色jersey（含签名）"
+      },
+      {
+        url: "images/sample/durant-nt-gear-5-1.jpg",
+        note: "换patch后 - 左：黑白灰三色拼接adidas logo patch + 右：黑灰拼接adidas logo patch（含签名，BGS 8.5 AUTO 10评级）🚫 同一编号出现完全不同的双patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 179,
+    player: "Anton Watson",
+    playerCN: "安东·沃森",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Obsidian Rookie Patch Autograph",
+    number: "55/75编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/watson-obsidian-55-2.jpg",
+        note: "原始卡片 - 白蓝白三色拼接大尺寸patch（含签名）"
+      },
+      {
+        url: "images/sample/watson-obsidian-55-1.jpg",
+        note: "换patch后 - 白黑拼接耐克logo patch（含签名）🚫 同一编号（55/75）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 180,
+    player: "Anton Watson",
+    playerCN: "安东·沃森",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Mosaic Rookie Patch Autograph",
+    number: "编号待确认",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/watson-mosaic-2.jpg",
+        note: "原始卡片 - 纯绿色单块patch（含签名）"
+      },
+      {
+        url: "images/sample/watson-mosaic-1.jpg",
+        note: "换patch后 - 白绿拼接大尺寸patch（含签名）🚫 同系列出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 181,
+    player: "Kyrie Irving",
+    playerCN: "凯里·欧文",
+    brand: "Panini",
+    year: "2019-20",
+    series: "National Treasures Colossal Game Used Patch Auto",
+    number: "08/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/irving-nt-colossal-8-2.jpg",
+        note: "原始卡片 - 黄紫拼接大尺寸patch（含签名，08/10编）"
+      },
+      {
+        url: "images/sample/irving-nt-colossal-8-1.jpg",
+        note: "换patch后 - 白红拼接大尺寸patch（含签名，08/10编，PSA NM-MT 8评级）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 182,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2014-15",
+    series: "Immaculate Collection",
+    number: "18/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-imm-18-2.jpg",
+        note: "原始卡片 - 纯蓝色单块patch（含签名，18/25编）"
+      },
+      {
+        url: "images/sample/durant-imm-18-1.jpg",
+        note: "换patch后 - 白蓝拼接大尺寸patch（含签名，18/25编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 183,
+    player: "Damian Lillard",
+    playerCN: "达米安·利拉德",
+    brand: "Panini",
+    year: "2016-17",
+    series: "Flawless",
+    number: "06/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lillard-flawless-6-3.jpg",
+        note: "版本3 - 灰红黑三色拼接patch（含签名，06/25编）"
+      },
+      {
+        url: "images/sample/lillard-flawless-6-2.jpg",
+        note: "版本2 - 黑红拼接patch（含签名，06/25编，BGS 7评级）"
+      },
+      {
+        url: "images/sample/lillard-flawless-6-1.jpg",
+        note: "版本1 - 灰红拼接patch（含签名，06/25编）🚫 同一编号（06/25）出现至少三种完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 184,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2017-18",
+    series: "National Treasures",
+    number: "04/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-nt-4-2.jpg",
+        note: "原始卡片 - 纯黄色单块patch（含签名，04/25编）"
+      },
+      {
+        url: "images/sample/durant-nt-4-1.jpg",
+        note: "换patch后 - 蓝黄拼接大尺寸patch（含签名，04/25编，PSA签字评分10）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 185,
+    player: "Scottie Barnes",
+    playerCN: "斯科蒂·巴恩斯",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Immaculate",
+    number: "06/49编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/barnes-imm-6-2.jpg",
+        note: "原始卡片 - 红白黑三色拼接patch（含签名，06/49编）"
+      },
+      {
+        url: "images/sample/barnes-imm-6-1.jpg",
+        note: "换patch后 - 红白拼接patch（含签名，06/49编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 186,
+    player: "Tyrese Maxey",
+    playerCN: "泰瑞斯·马克西",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Noir Rookie Patch Autograph",
+    number: "29/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/maxey-noir-29-2.jpg",
+        note: "原始卡片 - 纯白色单块patch（含签名，29/99编）"
+      },
+      {
+        url: "images/sample/maxey-noir-29-1.jpg",
+        note: "换patch后 - 红蓝拼接patch（含签名，29/99编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 187,
+    player: "Tyrese Haliburton",
+    playerCN: "泰瑞斯·哈利伯顿",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Noir Rookie Patch Autograph",
+    number: "09/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/haliburton-noir-9-2.jpg",
+        note: "原始卡片 - 纯紫色单块patch（含签名，09/99编）"
+      },
+      {
+        url: "images/sample/haliburton-noir-9-1.jpg",
+        note: "换patch后 - 白紫拼接patch（含签名，09/99编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 188,
+    player: "Shai Gilgeous-Alexander",
+    playerCN: "谢伊·吉尔杰斯-亚历山大",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Flawless Signatures Prime Material Emerald",
+    number: "5/5编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/sga-flawless-5-2.jpg",
+        note: "原始卡片 - 纯蓝色单块patch（含签名，5/5编）"
+      },
+      {
+        url: "images/sample/sga-flawless-5-1.jpg",
+        note: "换patch后 - 蓝红拼接patch（含签名，5/5编，PSA NM-MT 8 AUTO 10评级）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 189,
+    player: "Tyrese Maxey",
+    playerCN: "泰雷塞·马克西",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Noir Rookie Patch Autograph",
+    number: "88/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/maxey-noir-88-2.jpg",
+        note: "原始卡片 - 纯白色单块patch（含签名，76人新秀卡）"
+      },
+      {
+        url: "images/sample/maxey-noir-88-1.jpg",
+        note: "换patch后 - 红蓝拼接patch（含签名，88/99编）🚫 同一系列同一球员出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 190,
+    player: "Tyrese Haliburton",
+    playerCN: "泰瑞斯·哈利伯顿",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Impeccable Elegance Rookie 3Color Patch",
+    number: "4/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/haliburton-impeccable-10-2.jpg",
+        note: "原始卡片 - 纯紫色单块patch（含签名，金版RPA，国王队新秀卡）"
+      },
+      {
+        url: "images/sample/haliburton-impeccable-10-1.jpg",
+        note: "换patch后 - 蓝白拼接patch（含签名，4/10编，金版RPA）🚫 同一系列同一球员出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 191,
+    player: "Max Christie",
+    playerCN: "马克斯·克里斯蒂",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Noir Rookie Patch Autograph",
+    number: "02/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/christie-noir-2-2.jpg",
+        note: "原始卡片 - 纯紫色单块patch（含签名，湖人队新秀卡，02/99编）"
+      },
+      {
+        url: "images/sample/christie-noir-2-1.jpg",
+        note: "换patch后 - 黄白拼接patch（含签名，02/99编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 192,
+    player: "Jalen Johnson",
+    playerCN: "杰伦·约翰逊",
+    brand: "Panini",
+    year: "2021-22",
+    series: "One And One Rookie Patch Autograph Purple",
+    number: "16/35编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/johnson-oneandone-16-2.jpg",
+        note: "原始卡片 - 纯红色单块patch（含签名，老鹰队新秀卡，16/35编）"
+      },
+      {
+        url: "images/sample/johnson-oneandone-16-1.jpg",
+        note: "换patch后 - 黄红拼接patch（含签名，16/35编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 193,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2022",
+    series: "Flawless Vertical Patch",
+    number: "15/15编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-flawless-15.jpg",
+        note: "换patch对比 - 左侧标注\"ALTERED\"的PSA评级卡显示黄色patch，右侧原卡显示纯黄色patch（含签名，15/15编）🚫 明确标注ALTERED，确认为换patch卡片"
+      }
+    ]
+  },
+  {
+    id: 194,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2014-15",
+    series: "National Treasures Colossal",
+    number: "11/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-colossal-11-2.jpg",
+        note: "原始卡片 - 纯蓝色大窗patch（含签名，雷霆队球衣，11/25编）"
+      },
+      {
+        url: "images/sample/durant-colossal-11-1.jpg",
+        note: "换patch后 - 蓝白红三色拼接patch（含签名，11/25编）🚫 同一编号出现完全不同的patch样式，确认为换patch。成交价¥4,651（2024年），远高于原版¥2,888（2021年）"
+      }
+    ]
+  },
+  {
+    id: 195,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Immaculate Collection",
+    number: "14/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-imm-14-3.jpg",
+        note: "版本3 - 紫黄拼接patch（含签名，14/25编）🚫 同一编号出现至少三种完全不同的patch样式，确认为换patch。Immaculate元年产品，意义重大"
+      },
+      {
+        url: "images/sample/kobe-imm-14-2.jpg",
+        note: "版本2 - 黄紫白三色大尺寸patch（含签名，14/25编）"
+      },
+      {
+        url: "images/sample/kobe-imm-14-1.jpg",
+        note: "版本1 - 紫白拼接patch（含签名，湖人队球衣，14/25编）"
+      }
+    ]
+  },
+  {
+    id: 196,
+    player: "Allen Iverson",
+    playerCN: "艾伦·艾弗森",
+    brand: "Panini",
+    year: "2013-14",
+    series: "Immaculate Collection",
+    number: "16/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/iverson-imm-16.jpg",
+        note: "换patch卡片 - 红白蓝三色拼接大尺寸patch（含签名，16/25编，BGS 9评级）🚫 eBay卖家明确标注\"fake patch\"，证实为换patch卡片"
+      }
+    ]
+  },
+  {
+    id: 197,
+    player: "Allen Iverson",
+    playerCN: "艾伦·艾弗森",
+    brand: "Panini",
+    year: "2013-14",
+    series: "Immaculate Collection",
+    number: "08/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/iverson-imm-8.jpg",
+        note: "换patch卡片 - 红白黑三色拼接大尺寸patch（含签名，08/25编）🚫 eBay卖家明确标注\"fake patch\"，证实为换patch卡片"
+      }
+    ]
+  },
+  {
+    id: 198,
+    player: "Allen Iverson",
+    playerCN: "艾伦·艾弗森",
+    brand: "Panini",
+    year: "2013-14",
+    series: "Immaculate Collection",
+    number: "24/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/iverson-imm-24.jpg",
+        note: "换patch卡片 - 红黑蓝白条纹拼接大尺寸patch（含签名，24/25编）🚫 eBay卖家明确标注\"fake patch\"，售价仅US $0.99，证实为换patch卡片"
+      }
+    ]
+  },
+  {
+    id: 199,
+    player: "Jayson Tatum",
+    playerCN: "杰森·塔图姆",
+    brand: "Panini",
+    year: "2018-19",
+    series: "National Treasures Colossal",
+    number: "16/49编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/tatum-nt-16-2.jpg",
+        note: "换patch卡片 - 纯绿色大窗patch（含签名，凯尔特人队配色，16/49编）🚫 违反系列规则：2018-19 NT系列中49编全部应为jersey，只有25编及以下才是patch。此卡本应是jersey却被换成patch"
+      },
+      {
+        url: "images/sample/tatum-nt-16-1.jpg",
+        note: "换patch卡片 - 黑色大窗patch（含签名，16/49编）"
+      }
+    ]
+  },
+  {
+    id: 200,
+    player: "Tyrese Haliburton",
+    playerCN: "泰瑞斯·哈利伯顿",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Immaculate Collection Rookie Patch Autograph",
+    number: "67/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/haliburton-imm-67-2.jpg",
+        note: "换patch后 - 紫色球衣patch（含签名，国王队配色，67/99编）🚫 同一编号出现完全不同的材质样式，确认为换patch"
+      },
+      {
+        url: "images/sample/haliburton-imm-67-1.jpg",
+        note: "原始卡片 - 镜面球衣签字卡（含签名，国王队新秀卡，67/99编，未开封状态）"
+      }
+    ]
+  },
+  {
+    id: 201,
+    player: "Chet Holmgren",
+    playerCN: "切特·霍姆格伦",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Impeccable Elegance Rookie Patch Autograph",
+    number: "03/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/holmgren-imp-3-2.jpg",
+        note: "换patch后 - 纯蓝色单块patch（含签名#7，雷霆队配色，03/99编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      },
+      {
+        url: "images/sample/holmgren-imp-3-1.jpg",
+        note: "原始卡片 - 蓝白红三色拼接patch（含签名#7，雷霆队新秀卡，03/99编）"
+      }
+    ]
+  },
+  {
+    id: 202,
+    player: "Cade Cunningham",
+    playerCN: "凯德·坎宁安",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Impeccable Elegance Rookie Patch Autograph",
+    number: "24/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/cunningham-imp-24-2.jpg",
+        note: "换patch后 - 纯红色单块patch（含签名，活塞队配色，24/99编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      },
+      {
+        url: "images/sample/cunningham-imp-24-1.jpg",
+        note: "原始卡片 - 红蓝拼接patch（含签名，活塞队新秀卡，24/99编）"
+      }
+    ]
+  },
+  {
+    id: 203,
+    player: "Tracy McGrady",
+    playerCN: "特雷西·麦格雷迪",
+    brand: "Upper Deck",
+    year: "2005-06",
+    series: "Exquisite Collection Limited Logos",
+    number: "32/50编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/mcgrady-ud-32.jpg",
+        note: "换patch对比 - 左：BGS 9评级，纯白色球衣patch（含签名，32/50编）；右：PSA NM 7评级，红白黑三色拼接球队Logo patch（含签名，32/50编）🚫 同一编号出现完全不同的patch样式，从普通球衣换成球队Logo patch，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 204,
+    player: "Tracy McGrady",
+    playerCN: "特雷西·麦格雷迪",
+    brand: "Upper Deck",
+    year: "2005-06",
+    series: "Exquisite Collection Limited Logos",
+    number: "13/50编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/mcgrady-ud-13.jpg",
+        note: "换patch对比 - 左：纯红色球衣patch（含签名，13/50编）；右：PSA Authentic评级，红白球队Logo patch（含签名，13/50编）🚫 同一编号出现完全不同的patch样式，从普通球衣换成球队Logo patch，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 205,
+    player: "Chet Holmgren",
+    playerCN: "切特·霍姆格伦",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Impeccable Elegance Rookie Patch Autograph",
+    number: "83/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/holmgren-imp-83-2.jpg",
+        note: "换patch后 - 蓝白红三色拼接patch（含签名#7，雷霆队配色，83/99编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      },
+      {
+        url: "images/sample/holmgren-imp-83-1.jpg",
+        note: "原始卡片 - 橙蓝白三色拼接patch（含签名#7，雷霆队新秀卡，83/99编，成交价仅¥1.00）"
+      }
+    ]
+  },
+  {
+    id: 206,
+    player: "Paul Pierce",
+    playerCN: "保罗·皮尔斯",
+    brand: "Upper Deck",
+    year: "2007",
+    series: "Exquisite Collection Quad Jersey Extra",
+    number: "04/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/pierce-ud-4-comment.jpg",
+        note: "评论截图 - 藏家指出：该版本3编才应该是patch，10编都是单色球衣。评论者表示拥有两张同款毕比卡片作为对比证据"
+      },
+      {
+        url: "images/sample/pierce-ud-4.jpg",
+        note: "四窗球衣卡 - 四块绿白拼接球衣patch（含签名，凯尔特人队配色，04/10编）🚫 违反系列规则：该系列10编应为四窗球衣，3编才是两球衣两patch。此卡04/10编本应是四窗球衣，但据评论显示有收藏者持有毕比同款卡片对比，确认存在换patch问题"
+      }
+    ]
+  },
+  {
+    id: 207,
+    player: "Cade Cunningham",
+    playerCN: "凯德·坎宁安",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Impeccable Elegance Rookie Patch Autograph",
+    number: "06/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/cunningham-imp-6-2.jpg",
+        note: "换patch后 - 蓝白拼接patch（含签名，活塞队配色，06/25编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      },
+      {
+        url: "images/sample/cunningham-imp-6-1.jpg",
+        note: "原始卡片 - 蓝色单块patch（含签名，活塞队新秀卡，06/25编）"
       }
     ]
   }

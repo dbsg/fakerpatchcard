@@ -84,6 +84,7 @@ const app = {
           <div class="card-image-wrapper">
             <img class="card-image" src="${latestImage.url}" alt="${card.player}" onerror="this.src='images/placeholder.jpg'">
             <span class="card-badge ${badgeClass}">${badgeText}</span>
+            <span class="card-id">ID: ${card.id}</span>
           </div>
           <div class="card-info">
             <div class="card-player">${card.player}</div>
