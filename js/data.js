@@ -1140,12 +1140,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/bird-1.jpg",
-        note: "版本1 - 白绿双色patch"
-      },
-      {
         url: "images/sample/bird-2.jpg",
         note: "版本2 - 黄白绿三色拼接patch"
+      },
+      {
+        url: "images/sample/bird-1.jpg",
+        note: "版本1 - 白绿双色patch"
       }
     ]
   },
@@ -1692,12 +1692,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/gordon-ultimate-60-1.jpg",
-        note: "版本1 - 纯红色公牛logo patch"
-      },
-      {
         url: "images/sample/gordon-ultimate-60-2.jpg",
         note: "版本2 - 黑红拼接公牛logo patch"
+      },
+      {
+        url: "images/sample/gordon-ultimate-60-1.jpg",
+        note: "版本1 - 纯红色公牛logo patch"
       }
     ]
   },
@@ -1712,12 +1712,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/jordan-sp-041-1.jpg",
-        note: "版本1 - 纯红色公牛logo patch"
-      },
-      {
         url: "images/sample/jordan-sp-041-2.jpg",
         note: "版本2 - 黑红拼接公牛logo patch"
+      },
+      {
+        url: "images/sample/jordan-sp-041-1.jpg",
+        note: "版本1 - 纯红色公牛logo patch"
       }
     ]
   },
@@ -1732,12 +1732,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/simien-trilogy-05-1.jpg",
-        note: "版本1 - 黑红白三色拼接patch"
-      },
-      {
         url: "images/sample/simien-trilogy-05-2.jpg",
         note: "版本2 - 纯白色patch"
+      },
+      {
+        url: "images/sample/simien-trilogy-05-1.jpg",
+        note: "版本1 - 黑红白三色拼接patch"
       }
     ]
   },
@@ -1752,12 +1752,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/iguodala-ultimate-09-1.jpg",
-        note: "版本1 - 白红蓝三色拼接patch"
-      },
-      {
         url: "images/sample/iguodala-ultimate-09-2.jpg",
         note: "版本2 - 纯黑色patch"
+      },
+      {
+        url: "images/sample/iguodala-ultimate-09-1.jpg",
+        note: "版本1 - 白红蓝三色拼接patch"
       }
     ]
   },
@@ -1772,12 +1772,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/paul-exquisite-42-1.jpg",
-        note: "版本1 - 蓝紫黄多色拼接patch"
-      },
-      {
         url: "images/sample/paul-exquisite-42-2.jpg",
         note: "版本2 - 黄蓝横条纹拼接patch"
+      },
+      {
+        url: "images/sample/paul-exquisite-42-1.jpg",
+        note: "版本1 - 蓝紫黄多色拼接patch"
       }
     ]
   },
@@ -1792,12 +1792,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/lebron-nt-gear-10-1.jpg",
-        note: "版本1 - 左:黑橙红三色拼接patch + 右:白色带48号码patch"
-      },
-      {
         url: "images/sample/lebron-nt-gear-10-2.jpg",
         note: "版本2 - 左:纯白色patch + 右:黑白拼接patch"
+      },
+      {
+        url: "images/sample/lebron-nt-gear-10-1.jpg",
+        note: "版本1 - 左:黑橙红三色拼接patch + 右:白色带48号码patch"
       }
     ]
   },
@@ -1812,12 +1812,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/lebron-nt-gear-13-1.jpg",
-        note: "版本1 - 左:蓝NBA logo patch + 右:黑橙红三色拼接patch（含eBay拍卖截图）"
-      },
-      {
         url: "images/sample/lebron-nt-gear-13-2.jpg",
         note: "版本2 - 左:纯白色patch + 右:纯黑色patch（含成交记录截图）"
+      },
+      {
+        url: "images/sample/lebron-nt-gear-13-1.jpg",
+        note: "版本1 - 左:蓝NBA logo patch + 右:黑橙红三色拼接patch（含eBay拍卖截图）"
       }
     ]
   },
@@ -1832,12 +1832,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/lebron-exquisite-rpa-1.jpg",
-        note: "版本1 - 纯白色patch"
-      },
-      {
         url: "images/sample/lebron-exquisite-rpa-2.jpg",
         note: "版本2 - 纯白色patch（不同图案纹理）"
+      },
+      {
+        url: "images/sample/lebron-exquisite-rpa-1.jpg",
+        note: "版本1 - 纯白色patch"
       }
     ]
   },
@@ -1852,12 +1852,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/mourning-exquisite-22-1.jpg",
-        note: "版本1 - 红黑拼接patch"
-      },
-      {
         url: "images/sample/mourning-exquisite-22-2.jpg",
         note: "版本2 - 橙白红横条纹拼接patch"
+      },
+      {
+        url: "images/sample/mourning-exquisite-22-1.jpg",
+        note: "版本1 - 红黑拼接patch"
       }
     ]
   },
@@ -2048,12 +2048,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/nowitzki-crown-12-1.jpg",
-        note: "版本1 - 白黑蓝灰四色拼接大logo patch（含PSA 10封装）"
-      },
-      {
         url: "images/sample/nowitzki-crown-12-2.jpg",
         note: "版本2 - 蓝白拼接小logo patch"
+      },
+      {
+        url: "images/sample/nowitzki-crown-12-1.jpg",
+        note: "版本1 - 白黑蓝灰四色拼接大logo patch（含PSA 10封装）"
       }
     ]
   },
@@ -2084,12 +2084,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/cunningham-imm-14-1.jpg",
-        note: "版本1 - 蓝红拼接patch（活塞队配色）"
-      },
-      {
         url: "images/sample/cunningham-imm-14-2.jpg",
         note: "版本2 - 纯红色patch"
+      },
+      {
+        url: "images/sample/cunningham-imm-14-1.jpg",
+        note: "版本1 - 蓝红拼接patch（活塞队配色）"
       }
     ]
   },
@@ -2280,12 +2280,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/cunningham-nt-06-1.jpg",
-        note: "版本1 - 红蓝白多色拼接大尺寸patch（中文标注\"所以它价值就大打折扣了\"）"
-      },
-      {
         url: "images/sample/cunningham-nt-06-2.jpg",
         note: "版本2 - 纯白色大尺寸patch（中文标注\"那你要如何防止这个换PATCH的\"）"
+      },
+      {
+        url: "images/sample/cunningham-nt-06-1.jpg",
+        note: "版本1 - 红蓝白多色拼接大尺寸patch（中文标注\"所以它价值就大打折扣了\"）"
       }
     ]
   },
@@ -2616,12 +2616,12 @@ const cardsData = [
     status: "confirmed",
     images: [
       {
-        url: "images/sample/howard-nt-01-1.jpg",
-        note: "版本1 - 黄白红三色拼接patch（1/1编，中文标注\"魔术巅峰时期 德怀特霍华德 tag logoman切割 原封顶级好卡 One of One 仅一张\"）"
-      },
-      {
         url: "images/sample/howard-nt-01-2.jpg",
         note: "版本2 - 浅灰黑条纹拼接patch（1/1编，中文标注\"1of1 biography PATCH 四色切割\"）"
+      },
+      {
+        url: "images/sample/howard-nt-01-1.jpg",
+        note: "版本1 - 黄白红三色拼接patch（1/1编，中文标注\"魔术巅峰时期 德怀特霍华德 tag logoman切割 原封顶级好卡 One of One 仅一张\"）"
       }
     ]
   },
@@ -2690,6 +2690,370 @@ const cardsData = [
       {
         url: "images/sample/curry-nt-10-1.jpg",
         note: "版本2 - 蓝白S字母拼接patch⚠️ 注意：同系列同编号10编出现不同patch版本，标注为高危"
+      }
+    ]
+  },
+  {
+    id: 154,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Immaculate The Standard",
+    number: "15/25编",
+    status: "suspected",
+    images: [
+      {
+        url: "images/sample/lebron-imm-15-2.jpg",
+        note: "对比证据 - 同系列其他编号对比：左为25编（纯黑色patch），右为25编（紫色patch），同系列不同编号patch差异明显异常"
+      },
+      {
+        url: "images/sample/lebron-imm-15-1.jpg",
+        note: "疑似卡片 - 紫黄白三色拼接大尺寸patch（含GBTC封装正反面，15/25编）⚠️ 高危警示：根据同系列对比，此卡patch与其他编号差异过大，换patch概率很高，请谨慎购买"
+      }
+    ]
+  },
+  {
+    id: 155,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Flawless Patch",
+    number: "14/20编",
+    status: "suspected",
+    images: [
+      {
+        url: "images/sample/lebron-flawless-14-2.jpg",
+        note: "对比证据 - 同系列其他编号对比：左为05/20编（黄白紫三色拼接双格patch），右为另一版本（纯紫色单格patch含PSA封装），同系列patch样式存在明显异常"
+      },
+      {
+        url: "images/sample/lebron-flawless-14-1.jpg",
+        note: "疑似卡片 - 紫黄白三色拼接双格patch（含GBTC封装正反面，14/20编）⚠️ 高危警示：根据同系列对比，此卡patch样式与其他编号差异明显，换patch概率很高，请谨慎购买"
+      }
+    ]
+  },
+  {
+    id: 156,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Immaculate The Standard",
+    number: "16/25编",
+    status: "suspected",
+    images: [
+      {
+        url: "images/sample/curry-imm-standard-16.jpg",
+        note: "蓝黄白三色拼接大尺寸库里patch（含GBTC封装正反面，16/25编）⚠️ 高危警示：根据同款卡片对比或相关经验判断，此卡换patch概率很大，请谨慎购买"
+      }
+    ]
+  },
+  {
+    id: 157,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2018-19",
+    series: "Opulence Precious Swatch Signatures",
+    number: "3/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-opulence-3-2.jpg",
+        note: "原始卡片 - 蓝白两色拼接单块patch（含签名，3/10编）"
+      },
+      {
+        url: "images/sample/curry-opulence-3-1.jpg",
+        note: "换patch后 - 蓝黄三色拼接大尺寸三杠patch（含签名，3/10编）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 158,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2018-19",
+    series: "Opulence Precious Swatch Signatures",
+    number: "08/10编",
+    status: "suspected",
+    images: [
+      {
+        url: "images/sample/curry-opulence-8.jpg",
+        note: "蓝黄白三色拼接大尺寸三杠patch带勇士队Logo（含签名，08/10编）⚠️ 高危警示：同系列已确认存在换patch情况（如3/10编），此卡patch样式异常，换patch概率很高，请谨慎购买"
+      }
+    ]
+  },
+  {
+    id: 159,
+    player: "Jaden Ivey",
+    playerCN: "杰登·艾维",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Noir",
+    number: "02/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/ivey-noir-2.jpg",
+        note: "同编号对比 - 左：纯红色单块patch（含签名），右：红白两色拼接patch（含签名）🚫 同一编号（02/99）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 160,
+    player: "Cade Cunningham",
+    playerCN: "凯德·坎宁安",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Noir Rookie Patch Autograph",
+    number: "94/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/cunningham-noir-94.jpg",
+        note: "同编号对比 - 左：纯红色单块patch（含签名），右：红白蓝三色拼接patch（含签名）🚫 同一编号（94/99）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 161,
+    player: "Scottie Barnes",
+    playerCN: "斯科蒂·巴恩斯",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Noir Rookie Patch Autograph",
+    number: "81/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/barnes-noir-81.jpg",
+        note: "同编号对比 - 左：纯红色单块patch（含签名），右：红白两色拼接patch（含签名）🚫 同一编号（81/99）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 162,
+    player: "Jalen Johnson",
+    playerCN: "杰伦·约翰逊",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Noir Rookie Patch Autograph",
+    number: "72/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/johnson-noir-72.jpg",
+        note: "同编号对比 - 上：纯红色单块patch（含签名），下：白红黄三色拼接patch（含签名）🚫 同一编号（72/99）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 163,
+    player: "Bennedict Mathurin",
+    playerCN: "本尼迪克特·马瑟林",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Impeccable Elegance",
+    number: "99/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/mathurin-elegance-99.jpg",
+        note: "同编号对比 - 左：深蓝色单块patch（含签名），右：深蓝色和米色拼接patch（含签名）🚫 同一编号（99/99）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 164,
+    player: "Bennedict Mathurin",
+    playerCN: "本尼迪克特·马瑟林",
+    brand: "Panini",
+    year: "2022-23",
+    series: "One and One",
+    number: "21/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/mathurin-one-21.jpg",
+        note: "同系列对比 - 上：黄黑两色拼接patch（含签名，21/99编），下：白蓝两色拼接patch（含签名）🚫 同系列不同编号patch样式差异巨大，确认存在换patch"
+      }
+    ]
+  },
+  {
+    id: 165,
+    player: "Jalen Williams",
+    playerCN: "杰伦·威廉姆斯",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Noir Rookie Patch Autograph",
+    number: "70/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/williams-noir-70.jpg",
+        note: "同编号对比 - 上：蓝黄红三色拼接patch（含签名），下：纯蓝色单块patch（含签名）🚫 同一编号（70/99）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 166,
+    player: "Stephon Castle",
+    playerCN: "斯蒂芬·卡斯尔",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Noir New Wave Jerseys",
+    number: "10/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/castle-noir-10.jpg",
+        note: "同编号对比 - 左：白黑两色拼接patch，右：纯白色单块patch 🚫 同一编号（10/25）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 167,
+    player: "Brandin Podziemski",
+    playerCN: "布兰丁·波杰姆斯基",
+    brand: "Panini",
+    year: "2023-24",
+    series: "Impeccable Elegance",
+    number: "02/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/podziemski-elegance-2.jpg",
+        note: "同编号对比 - 左：白蓝两色拼接patch（含签名），右：纯蓝色单块patch（含签名）🚫 同一编号（02/25）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 168,
+    player: "Kyshawn George",
+    playerCN: "凯肖恩·乔治",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Noir Rookie Patch Autograph",
+    number: "75/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/george-noir-75.jpg",
+        note: "同编号对比 - 左：白红蓝三色拼接patch（含签名），右：纯蓝色单块patch（含签名）🚫 同一编号（75/99）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 169,
+    player: "Yves Missi",
+    playerCN: "伊夫·米西",
+    brand: "Panini",
+    year: "2024-25",
+    series: "National Treasures Clutch Factor",
+    number: "08/49编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/missi-nt-8.jpg",
+        note: "同编号对比 - 左：深蓝白金三色拼接patch（含签名），右：纯深蓝色单块patch（含签名）🚫 同一编号（08/49）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 170,
+    player: "Myles Turner",
+    playerCN: "迈尔斯·特纳",
+    brand: "Panini",
+    year: "2016-17",
+    series: "Grand Reserve Cornerstones",
+    number: "02/49编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/turner-grand-2.jpg",
+        note: "同编号对比 - 左：四块patch（深蓝、黑、黄色拼接，含签名），右：四块patch（全为白色和深蓝色，含签名）🚫 同一编号（02/49）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 171,
+    player: "Jalen Pickett",
+    playerCN: "杰伦·皮克特",
+    brand: "Panini",
+    year: "2023-24",
+    series: "National Treasures Colossal",
+    number: "31/49编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/pickett-nt-31.jpg",
+        note: "同编号对比 - 左：深蓝白黄三色拼接大尺寸patch（含签名），右：纯深蓝色单块patch（含签名）🚫 同一编号（31/49）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 172,
+    player: "Jalen Pickett",
+    playerCN: "杰伦·皮克特",
+    brand: "Panini",
+    year: "2023-24",
+    series: "Immaculate",
+    number: "41/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/pickett-imm-41.jpg",
+        note: "同编号对比 - 左：蓝黄白三色拼接patch（含签名），右：纯深蓝色单块patch（含签名）🚫 同一编号（41/99）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 173,
+    player: "CJ McCollum",
+    playerCN: "CJ·麦科勒姆",
+    brand: "Panini",
+    year: "2022-23",
+    series: "One and One",
+    number: "25/49编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/mccollum-one-25.jpg",
+        note: "同编号对比 - 左：白色和金色拼接patch（含签名），右：纯红色单块patch（含签名）🚫 同一编号（25/49）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 174,
+    player: "Kobe Brown",
+    playerCN: "科比·布朗",
+    brand: "Panini",
+    year: "2023-24",
+    series: "Immaculate",
+    number: "10/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/brown-imm-10.jpg",
+        note: "同编号对比 - 左：白蓝两色拼接patch（含签名），右：纯红色单块patch（含签名）🚫 同一编号（10/99）出现完全不同的patch样式，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 175,
+    player: "Tyler Kolek",
+    playerCN: "泰勒·科莱克",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Noir Rookie Patch Autograph",
+    number: "21/49编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kolek-noir-21.jpg",
+        note: "同编号对比 - 左：橙灰白三色拼接patch（含签名），右：纯橙色单块patch（含签名）🚫 同一编号（21/49）出现完全不同的patch样式，确认为换patch"
       }
     ]
   }
