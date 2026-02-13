@@ -6,6 +6,10 @@ const app = {
   // 所有卡片数据
   allCards: cardsData,
 
+  // 分页相关
+  currentPage: 1,
+  pageSize: 6,
+
   // 初始化
   init() {
     this.currentCards = [...this.allCards];
@@ -14,6 +18,7 @@ const app = {
     this.populateYearFilter();
     this.renderCards();
     this.updateStats();
+    this.renderPagination();
     this.hideLoading();
     this.setupSearchEnter();
   },
@@ -62,16 +67,24 @@ const app = {
     if (this.currentCards.length === 0) {
       cardList.style.display = 'none';
       emptyState.style.display = 'block';
+      document.getElementById('pagination').style.display = 'none';
       return;
     }
 
     cardList.style.display = 'grid';
     emptyState.style.display = 'none';
+    document.getElementById('pagination').style.display = 'flex';
 
     // 按 ID 降序排列（新添加的在前面）
     const sortedCards = [...this.currentCards].sort((a, b) => b.id - a.id);
 
-    cardList.innerHTML = sortedCards.map(card => {
+    // 计算分页
+    const totalPages = Math.ceil(sortedCards.length / this.pageSize);
+    const startIndex = (this.currentPage - 1) * this.pageSize;
+    const endIndex = startIndex + this.pageSize;
+    const paginatedCards = sortedCards.slice(startIndex, endIndex);
+
+    cardList.innerHTML = paginatedCards.map(card => {
       // 显示最后一张图片（最新状态）
       const latestImage = card.images[card.images.length - 1];
 
@@ -97,6 +110,8 @@ const app = {
         </div>
       `;
     }).join('');
+
+    this.renderPagination();
   },
 
   // 搜索
@@ -124,6 +139,7 @@ const app = {
       return matchPlayer && matchBrand && matchYear && matchKeyword;
     });
 
+    this.currentPage = 1; // 重置到第一页
     this.renderCards();
     this.updateStats();
   },
@@ -135,8 +151,88 @@ const app = {
     document.getElementById('brandFilter').value = '';
     document.getElementById('yearFilter').value = '';
     this.currentCards = [...this.allCards];
+    this.currentPage = 1; // 重置到第一页
     this.renderCards();
     this.updateStats();
+  },
+
+  // 渲染分页
+  renderPagination() {
+    const pagination = document.getElementById('pagination');
+    const totalPages = Math.ceil(this.currentCards.length / this.pageSize);
+
+    if (totalPages <= 1) {
+      pagination.style.display = 'none';
+      return;
+    }
+
+    pagination.style.display = 'flex';
+
+    let paginationHTML = '';
+
+    // 上一页按钮
+    paginationHTML += `
+      <button class="page-btn ${this.currentPage === 1 ? 'disabled' : ''}" 
+              onclick="app.goToPage(${this.currentPage - 1})"
+              ${this.currentPage === 1 ? 'disabled' : ''}>
+        上一页
+      </button>
+    `;
+
+    // 页码按钮
+    const maxVisiblePages = 5;
+    let startPage = Math.max(1, this.currentPage - Math.floor(maxVisiblePages / 2));
+    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+    if (endPage - startPage < maxVisiblePages - 1) {
+      startPage = Math.max(1, endPage - maxVisiblePages + 1);
+    }
+
+    if (startPage > 1) {
+      paginationHTML += `<button class="page-btn" onclick="app.goToPage(1)">1</button>`;
+      if (startPage > 2) {
+        paginationHTML += `<span class="page-ellipsis">...</span>`;
+      }
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      paginationHTML += `
+        <button class="page-btn ${i === this.currentPage ? 'active' : ''}" 
+                onclick="app.goToPage(${i})">
+          ${i}
+        </button>
+      `;
+    }
+
+    if (endPage < totalPages) {
+      if (endPage < totalPages - 1) {
+        paginationHTML += `<span class="page-ellipsis">...</span>`;
+      }
+      paginationHTML += `<button class="page-btn" onclick="app.goToPage(${totalPages})">${totalPages}</button>`;
+    }
+
+    // 下一页按钮
+    paginationHTML += `
+      <button class="page-btn ${this.currentPage === totalPages ? 'disabled' : ''}" 
+              onclick="app.goToPage(${this.currentPage + 1})"
+              ${this.currentPage === totalPages ? 'disabled' : ''}>
+        下一页
+      </button>
+    `;
+
+    pagination.innerHTML = paginationHTML;
+  },
+
+  // 跳转到指定页
+  goToPage(page) {
+    const totalPages = Math.ceil(this.currentCards.length / this.pageSize);
+    if (page < 1 || page > totalPages) return;
+    
+    this.currentPage = page;
+    this.renderCards();
+    
+    // 滚动到顶部
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   },
 
   // 更新统计信息
