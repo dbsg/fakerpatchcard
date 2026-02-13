@@ -19,17 +19,14 @@
     <!-- Search & Filter -->
     <div class="search-section">
       <div class="container">
-        <div class="search-bar">
+        <div class="filters-row">
           <input
             type="text"
             id="searchInput"
             class="search-input"
             placeholder="搜索球员名（支持中英文）、系列、编号..."
           >
-          <button class="search-btn" onclick="app.search()">搜索</button>
-        </div>
 
-        <div class="filters">
           <select id="playerFilter" class="filter-select" onchange="app.applyFilters()">
             <option value="">全部球员</option>
           </select>
@@ -42,7 +39,7 @@
             <option value="">全部年份</option>
           </select>
 
-          <button class="reset-btn" onclick="app.resetFilters()">重置筛选</button>
+          <button class="reset-btn" onclick="app.resetFilters()">重置</button>
         </div>
 
         <div class="stats">

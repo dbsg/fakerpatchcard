@@ -101,21 +101,7 @@ const app = {
 
   // 搜索
   search() {
-    const keyword = document.getElementById('searchInput').value.toLowerCase().trim();
-
-    if (!keyword) {
-      this.currentCards = [...this.allCards];
-    } else {
-      this.currentCards = this.allCards.filter(card =>
-        card.player.toLowerCase().includes(keyword) ||
-        (card.playerCN && card.playerCN.includes(keyword)) ||
-        card.series.toLowerCase().includes(keyword) ||
-        card.number.toLowerCase().includes(keyword)
-      );
-    }
-
-    this.renderCards();
-    this.updateStats();
+    this.applyFilters();
   },
 
   // 应用所有筛选条件
@@ -175,9 +161,14 @@ const app = {
   // 设置搜索框回车事件
   setupSearchEnter() {
     const searchInput = document.getElementById('searchInput');
+    // 实时搜索：input事件
+    searchInput.addEventListener('input', () => {
+      this.applyFilters();
+    });
+    // 同时保留回车事件
     searchInput.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') {
-        this.search();
+        this.applyFilters();
       }
     });
   },
