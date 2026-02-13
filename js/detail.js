@@ -31,14 +31,24 @@ function loadCardDetail() {
 // 渲染详情内容
 function renderDetail() {
   const detailContent = document.getElementById('detailContent');
-  const hasChanged = currentCard.images.length > 1;
 
-  const warningBox = hasChanged ? `
-    <div class="warning-box">
-      <p><strong>⚠️ 警告：此卡片有Patch变化记录</strong></p>
-      <p>该卡片在不同时间点拍摄的照片中，Patch存在明显差异，疑似被换过Patch。购买前请务必仔细核对。</p>
-    </div>
-  ` : '';
+  // 根据状态显示不同的警告
+  let warningBox = '';
+  if (currentCard.status === 'confirmed') {
+    warningBox = `
+      <div class="warning-box warning-danger">
+        <p><strong>🚫 确认警告：此卡片已确认为换Patch卡</strong></p>
+        <p>该卡片经过对比和验证，已确认Patch被替换。<strong>强烈建议不要购买此类卡片。</strong></p>
+      </div>
+    `;
+  } else if (currentCard.status === 'suspected') {
+    warningBox = `
+      <div class="warning-box warning-caution">
+        <p><strong>⚠️ 高危警示：此卡片疑似换Patch</strong></p>
+        <p>虽未找到该卡片的原始对比图片，但根据同款卡片对比或相关经验判断，该卡换Patch的概率很大。<strong>请谨慎购买，建议进一步核实。</strong></p>
+      </div>
+    `;
+  }
 
   detailContent.innerHTML = `
     <div class="detail-container">
