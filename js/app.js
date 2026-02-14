@@ -172,7 +172,7 @@ const app = {
 
     // 上一页按钮
     paginationHTML += `
-      <button class="page-btn ${this.currentPage === 1 ? 'disabled' : ''}" 
+      <button class="page-btn ${this.currentPage === 1 ? 'disabled' : ''}"
               onclick="app.goToPage(${this.currentPage - 1})"
               ${this.currentPage === 1 ? 'disabled' : ''}>
         上一页
@@ -197,7 +197,7 @@ const app = {
 
     for (let i = startPage; i <= endPage; i++) {
       paginationHTML += `
-        <button class="page-btn ${i === this.currentPage ? 'active' : ''}" 
+        <button class="page-btn ${i === this.currentPage ? 'active' : ''}"
                 onclick="app.goToPage(${i})">
           ${i}
         </button>
@@ -213,7 +213,7 @@ const app = {
 
     // 下一页按钮
     paginationHTML += `
-      <button class="page-btn ${this.currentPage === totalPages ? 'disabled' : ''}" 
+      <button class="page-btn ${this.currentPage === totalPages ? 'disabled' : ''}"
               onclick="app.goToPage(${this.currentPage + 1})"
               ${this.currentPage === totalPages ? 'disabled' : ''}>
         下一页
@@ -227,10 +227,10 @@ const app = {
   goToPage(page) {
     const totalPages = Math.ceil(this.currentCards.length / this.pageSize);
     if (page < 1 || page > totalPages) return;
-    
+
     this.currentPage = page;
     this.renderCards();
-    
+
     // 滚动到顶部
     window.scrollTo({ top: 0, behavior: 'smooth' });
   },

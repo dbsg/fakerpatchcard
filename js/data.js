@@ -3688,6 +3688,70 @@ const cardsData = [
         note: "原始卡片 - 蓝色单块patch（含签名，活塞队新秀卡，06/25编）"
       }
     ]
+  },
+  {
+    id: 208,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Upper Deck",
+    year: "1998-99",
+    series: "Game Jerseys",
+    number: "GJ19",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-ud-gj19.jpg",
+        note: "换patch对比 - 左：纯黄色单块球衣（原始卡片，标注ALTERED）；右：BGS 9.5评级，黄紫白三色拼接大尺寸patch（换patch后）🚫 明确标注\"Fake Patch\"和\"Previously listed and sold as ALTERED\"，原本是纯黄色球衣卡被换成多色patch。图片说明：左侧卡片才是原版未改动的球衣样式"
+      }
+    ]
+  },
+  {
+    id: 209,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Immaculate Collection",
+    number: "19/75编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-imm-19.jpg",
+        note: "换patch对比 - 上：白紫黄三色拼接patch（含签名，19/75编）；下：紫橙白三色拼接大尺寸patch（含签名，19/75编）🚫 同一编号出现完全不同的patch样式，确认为换patch。Immaculate元年产品"
+      }
+    ]
+  },
+  {
+    id: 210,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Immaculate Collection",
+    number: "27/75编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-imm-27.jpg",
+        note: "换patch对比 - 上：黄橙紫白四色拼接大尺寸patch（PSA评级，27/75编）；下：白色为主带黄边和紫色小块的小尺寸patch（21/75编）🚫 同系列不同编号，patch样式差异巨大，进一步证明Immaculate元年产品的换patch现象。注意：27/75编卡片与之前记录的14/25、19/75编呈现相似的多色拼接风格，而21/75编却是普通白色球衣"
+      }
+    ]
+  },
+  {
+    id: 211,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2022",
+    series: "Flawless Dual Player Patch",
+    number: "DPH-LBJ 13/15编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-flawless-13.jpg",
+        note: "换patch对比 - 左：白黑紫三色拼接的简单patch（原始卡片）；右：黄白紫三色拼接的复杂patch（换patch后，假原封）🚫 图片明确标注\"Patch Swap\"，从简单三色patch被换成更华丽的黄色湖人配色patch。来源：球星卡TV (www.tiffanycards.com)"
+      }
+    ]
   }
 ];
 
