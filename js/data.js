@@ -4125,6 +4125,46 @@ const cardsData = [
         note: "换patch卡片 - 紫黄白三色拼接patch（有AUTH认证标签，16/25编）🚫 图片展示卡片正反面，#6号球衣的LeBron，patch为紫黄白三色拼接样式。Panini Noir Box Office Memorabilia Prime系列，该系列已有ID 221（11/25编，2020年）和ID 234（Ja Morant 10/25编），证明系列性问题严重"
       }
     ]
+  },
+  {
+    id: 236,
+    player: "Shai Gilgeous-Alexander",
+    playerCN: "谢伊·吉尔杰斯-亚历山大",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate Standout Memorabilia",
+    number: "11/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/sga-imm-standout-11-2.jpg",
+        note: "换patch对比 - 纯橙色patch（11/99编，另一版本）"
+      },
+      {
+        url: "images/sample/sga-imm-standout-11-1.jpg",
+        note: "换patch对比 - 雷霆队logo patch（11/99编，未封装原卡）🚫 同一编号11/99出现完全不同的patch样式，一个是雷霆队logo patch，另一个是纯橙色patch，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 237,
+    player: "Shai Gilgeous-Alexander",
+    playerCN: "谢伊·吉尔杰斯-亚历山大",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Immaculate The Standard",
+    number: "84/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/sga-imm-standard-84-2.jpg",
+        note: "换patch卡片 - eBay拍卖列表截图，同系列99编成交截图"
+      },
+      {
+        url: "images/sample/sga-imm-standard-84.jpg",
+        note: "换patch卡片 - 蓝白红黄多色拼接雷霆队logo patch（84/99编）图片展示卡片正面，patch为蓝白红黄多色拼接的雷霆队logo样式。与同系列99编 patch 完全不一致，确认为换patch"
+      }
+    ]
   }
 ];
 
