@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /f444e5776e4e565cc885b2cc432746d9.txt
+
+Sitemap: https://dbsg.github.io/fakerpatchcard/sitemap.xml

@@ -13,6 +13,18 @@ body {
   line-height: 1.6;
 }
 
+/* Global Link Styles */
+a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #5568d3;
+  text-decoration: underline;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
