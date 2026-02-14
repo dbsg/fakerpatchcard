@@ -50,6 +50,14 @@ function renderDetail() {
     `;
   }
 
+  // 构建高危原因的信息项（如果有的话）
+  const highRiskReasonItem = currentCard.highRiskReason
+    ? `<div class="detail-info-item detail-info-full">
+        <span class="detail-label">高危原因</span>
+        <span class="detail-value">${currentCard.highRiskReason}</span>
+      </div>`
+    : '';
+
   detailContent.innerHTML = `
     <div class="detail-container">
       <div class="detail-card">
@@ -78,6 +86,7 @@ function renderDetail() {
             <span class="detail-label">照片记录</span>
             <span class="detail-value">${currentCard.images.length} 张</span>
           </div>
+          ${highRiskReasonItem}
         </div>
 
         <div class="image-timeline">

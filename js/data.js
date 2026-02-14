@@ -580,8 +580,9 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Premium Patches",
-    number: "⚠️同系列对比：未找到相同编号的换patch记录，此卡通过与同系列真品patch质感对比判断疑似被换",
+    number: "未知",
     status: "suspected",
+    highRiskReason: "未找到相同编号的换patch记录，此卡通过与同系列其他卡片patch对比判断疑似被换",
     images: [
       {
         url: "images/sample/malone-imm-series-comparison.jpg",
@@ -838,6 +839,7 @@ const cardsData = [
     series: "Spectra",
     number: "08/10编",
     status: "suspected",
+    highRiskReason: "仅有正面照片无法100%确认，patch质感与同系列有差异但由于编号在卡片背面无法实锤",
     images: [
       {
         url: "images/sample/magic-spectra.jpg",
@@ -2686,6 +2688,7 @@ const cardsData = [
     series: "National Treasures Treasured Threads",
     number: "10编",
     status: "suspected",
+    highRiskReason: "与同系列10编出现不同patch的版本",
     images: [
       {
         url: "images/sample/curry-nt-10-2.jpg",
@@ -2706,6 +2709,7 @@ const cardsData = [
     series: "Immaculate The Standard",
     number: "15/25编",
     status: "suspected",
+    highRiskReason: "来自球星卡TV的视频，为同一换patch团伙送评的卡片",
     images: [
       {
         url: "images/sample/lebron-imm-15-2.jpg",
@@ -2726,6 +2730,7 @@ const cardsData = [
     series: "Flawless Patch",
     number: "14/20编",
     status: "suspected",
+    highRiskReason: "来自球星卡TV的视频，为同一换patch团伙送评的卡片",
     images: [
       {
         url: "images/sample/lebron-flawless-14-2.jpg",
@@ -2746,6 +2751,7 @@ const cardsData = [
     series: "Immaculate The Standard",
     number: "16/25编",
     status: "suspected",
+    highRiskReason: "来自球星卡TV的视频，为同一换patch团伙送评的卡片",
     images: [
       {
         url: "images/sample/curry-imm-standard-16.jpg",

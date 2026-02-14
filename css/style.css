@@ -296,6 +296,9 @@ body {
 .detail-value {
   font-size: 16px;
   color: #333;
+}
+
+.detail-info-full {
   font-weight: 500;
 }
 
