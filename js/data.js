@@ -2743,23 +2743,6 @@ const cardsData = [
     ]
   },
   {
-    id: 156,
-    player: "Stephen Curry",
-    playerCN: "斯蒂芬·库里",
-    brand: "Panini",
-    year: "2021-22",
-    series: "Immaculate The Standard",
-    number: "16/25编",
-    status: "suspected",
-    highRiskReason: "来自球星卡TV的视频，为同一换patch团伙送评的卡片",
-    images: [
-      {
-        url: "images/sample/curry-imm-standard-16.jpg",
-        note: "蓝黄白三色拼接大尺寸库里patch（含GBTC封装正反面，16/25编）⚠️ 高危警示：根据同款卡片对比或相关经验判断，此卡换patch概率很大，请谨慎购买"
-      }
-    ]
-  },
-  {
     id: 157,
     player: "Stephen Curry",
     playerCN: "斯蒂芬·库里",
@@ -3750,12 +3733,396 @@ const cardsData = [
     brand: "Panini",
     year: "2022",
     series: "Flawless Dual Player Patch",
-    number: "DPH-LBJ 13/15编",
+    number: "13/15编",
     status: "confirmed",
     images: [
       {
         url: "images/sample/lebron-flawless-13.jpg",
         note: "换patch对比 - 左：白黑紫三色拼接的简单patch（原始卡片）；右：黄白紫三色拼接的复杂patch（换patch后，假原封）🚫 图片明确标注\"Patch Swap\"，从简单三色patch被换成更华丽的黄色湖人配色patch。来源：球星卡TV (www.tiffanycards.com)"
+      }
+    ]
+  },
+  {
+    id: 212,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Upper Deck",
+    year: "2004",
+    series: "Ultimate Collection Game Patches",
+    number: "90/100编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-ud-90.jpg",
+        note: "换patch卡片 - 紫黄白三色拼接大尺寸patch（GBTC 9 MINT评级，90/100编）🚫 图片展示卡片正反面，patch为紫黄白三色拼接样式。Upper Deck Ultimate Collection系列早期产品，换patch现象严重"
+      }
+    ]
+  },
+  {
+    id: 213,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2012",
+    series: "Kobe Anthology Memorabilia",
+    number: "4/8编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-anthology-4.jpg",
+        note: "换patch卡片 - 黄紫拼接大尺寸patch（GBTC 9 MINT评级，4/8编）🚫 图片展示卡片正反面，左侧正面显示#8号球衣的Kobe，patch为黄紫色拼接大尺寸样式。Panini Kobe Anthology系列特别纪念产品"
+      }
+    ]
+  },
+  {
+    id: 214,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2015",
+    series: "Noir Jumbo Material Prime",
+    number: "16/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-noir-16.jpg",
+        note: "换patch卡片 - 黄白紫三色拼接大尺寸jumbo patch（GBTC 9 MINT评级，16/25编）🚫 图片展示卡片正反面，patch为黄白紫三色垂直拼接的大尺寸样式。Panini Noir Jumbo Material Prime系列，高端产品线"
+      }
+    ]
+  },
+  {
+    id: 215,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2017",
+    series: "National Treasures Century Materials Gold",
+    number: "3/5编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-nt-century-3.jpg",
+        note: "换patch卡片 - 蓝黄色勇士队logo patch（GBTC 9 MINT评级，3/5编）🚫 图片展示卡片正反面，patch为蓝黄色拼接的勇士队logo样式。National Treasures Century Materials Gold系列超稀有金版，仅5张。注：尾号9551"
+      }
+    ]
+  },
+  {
+    id: 216,
+    player: "Klay Thompson",
+    playerCN: "克莱·汤普森",
+    brand: "Panini",
+    year: "2018",
+    series: "Spectra Spectacular Swatches Neon Orange",
+    number: "3/5编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/klay-spectra-3.jpg",
+        note: "换patch卡片 - 蓝黄色拼接patch（GBTC 8.5 NM-MT+评级，3/5编）🚫 图片展示卡片正反面，左侧正面显示#11球衣的Klay Thompson，patch为蓝黄色拼接样式。Panini Spectra Spectacular Swatches Neon Orange系列超稀有橙版，仅5张"
+      }
+    ]
+  },
+  {
+    id: 217,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate The Standard",
+    number: "15/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-imm-standard-15.jpg",
+        note: "换patch卡片 - 黄白紫三色拼接大尺寸patch（GBTC 9 MINT评级，15/25编）🚫 图片展示卡片正反面，patch为黄白紫三色拼接样式。Panini Immaculate The Standard系列，与ID 154同系列，证明该系列换patch问题严重"
+      }
+    ]
+  },
+  {
+    id: 218,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate The Standard",
+    number: "16/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-imm-standard-16.jpg",
+        note: "换patch卡片 - 蓝黄色勇士队logo拼接大尺寸patch（GBTC 9 MINT评级，16/25编）🚫 图片展示卡片正反面，patch为蓝黄色勇士队logo拼接样式。Panini Immaculate The Standard系列，与ID 156（高危）同系列同编号，证明该系列换patch问题系统性严重"
+      }
+    ]
+  },
+  {
+    id: 219,
+    player: "Evan Mobley",
+    playerCN: "埃文·莫布利",
+    brand: "Panini",
+    year: "2021",
+    series: "Noir Rookie Jumbo Material Brand Logo",
+    number: "5/5编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/mobley-noir-5.jpg",
+        note: "换patch卡片 - 红酒色和黄色拼接骑士队logo patch（GBTC 9 MINT评级，5/5编最后一张）🚫 图片展示卡片正反面，patch为红酒色和黄色拼接的骑士队brand logo样式。Panini Noir Rookie Jumbo Material Brand Logo系列，新秀超大尺寸logo patch卡"
+      }
+    ]
+  },
+  {
+    id: 220,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2021",
+    series: "Prizm Sensational Swatches Prize Green Ice",
+    number: "10/21编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-prizm-10.jpg",
+        note: "换patch卡片 - 蓝色patch（GBTC 9.5 GEM MINT评级，10/21编）🚫 图片展示卡片正反面，左侧正面显示#30号球衣的Curry，patch为蓝色样式。Panini Prizm Sensational Swatches Prize Green Ice系列超稀有绿冰版，仅21张"
+      }
+    ]
+  },
+  {
+    id: 221,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2020",
+    series: "Noir Box Office Memorabilia Prime",
+    number: "11/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-noir-boxoffice-11.jpg",
+        note: "换patch卡片 - 黄白紫三色拼接patch（GBTC 9 MINT评级，11/25编）🚫 图片展示卡片正反面，patch为黄白紫三色拼接样式。Panini Noir Box Office Memorabilia Prime系列，高端湖人队配色patch"
+      }
+    ]
+  },
+  {
+    id: 222,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate Materials Gold",
+    number: "5/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-imm-materials-5.jpg",
+        note: "换patch卡片 - 黄白紫三色拼接patch（GBTC 9 MINT评级，5/10编）🚫 图片展示卡片正反面，#6号球衣的LeBron，patch为黄白紫三色拼接样式。Panini Immaculate Materials Gold系列超稀有金版，仅10张"
+      }
+    ]
+  },
+  {
+    id: 223,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate Materials Red",
+    number: "10/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-imm-materials-red-10.jpg",
+        note: "换patch卡片 - 纯黄色patch（GBTC 8.5 NM-MT+评级，10/25编）🚫 图片展示卡片正反面，#6号球衣的LeBron，patch为纯黄色样式。Panini Immaculate Materials Red系列稀有红版，仅25张。注：尾号1467"
+      }
+    ]
+  },
+  {
+    id: 224,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate The Standard",
+    number: "11/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-imm-standard-11.jpg",
+        note: "换patch卡片 - 蓝白色勇士队logo拼接patch（GBTC 9 MINT评级，11/25编）🚫 图片展示卡片正反面，patch为蓝白色勇士队logo拼接样式。Panini Immaculate The Standard系列，该系列已有ID 156（16/25编，高危）、ID 218（16/25编，confirmed）、ID 217（LeBron 15/25编），证明系列性问题极其严重"
+      }
+    ]
+  },
+  {
+    id: 225,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate Standout Memorabilia Gold",
+    number: "1/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-imm-standout-1.jpg",
+        note: "换patch卡片 - 蓝黄色拼接patch（GBTC 8.5 NM-MT+评级，1/10编第一张）🚫 图片展示卡片正反面，patch为蓝黄色拼接样式。Panini Immaculate Standout Memorabilia Gold系列超稀有金版，仅10张，这是1/10编第一张，极其珍贵"
+      }
+    ]
+  },
+  {
+    id: 226,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate Remarkable Jerseys Red",
+    number: "19/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-imm-jerseys-red-19.jpg",
+        note: "换patch卡片 - 黄白紫三色拼接patch（GBTC 9 MINT评级，19/25编）🚫 图片展示卡片正反面，#6号球衣的LeBron，patch为黄白紫三色拼接样式。Panini Immaculate Remarkable Jerseys Red系列稀有红版，仅25张"
+      }
+    ]
+  },
+  {
+    id: 227,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2022",
+    series: "Origins Origins Memorabilia Turquoise",
+    number: "8/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-origins-turquoise-8.jpg",
+        note: "换patch卡片 - 黄紫色拼接patch（GBTC 8.5 NM-MT+评级，8/25编）🚫 图片展示卡片正反面，#6号球衣的LeBron，patch为黄紫色拼接样式。Panini Origins Origins Memorabilia Turquoise系列稀有绿松石版，仅25张"
+      }
+    ]
+  },
+  {
+    id: 228,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2012",
+    series: "Prestige Inside the No. Prime Materials",
+    number: "20/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/kobe-prestige-20.jpg",
+        note: "换patch卡片 - 黄紫色拼接patch（有AUTH认证标签，20/25编）🚫 图片展示卡片正反面，#24号球衣的Kobe，patch为黄紫色拼接样式。Panini Prestige Inside the No. Prime Materials系列，Prime级别高端材质卡"
+      }
+    ]
+  },
+  {
+    id: 229,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2016",
+    series: "National Treasures Lasting Legacies",
+    number: "9/20编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/durant-nt-legacies-9.jpg",
+        note: "换patch卡片 - 蓝白黄三色拼接patch带签名（有AUTH认证标签，9/20编）🚫 图片展示卡片正反面，#35号球衣的Durant，patch为蓝白黄三色拼接样式，含Durant签名。Panini National Treasures Lasting Legacies系列，仅20张超稀有签字patch卡"
+      }
+    ]
+  },
+  {
+    id: 230,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2016",
+    series: "Spectra Spectacular Swatches Gold",
+    number: "3/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/curry-spectra-gold-3.jpg",
+        note: "换patch卡片 - 白蓝色拼接patch（有AUTH认证标签，3/10编）🚫 图片展示卡片正反面，#30号球衣的Curry，patch为白蓝色拼接样式。Panini Spectra Spectacular Swatches Gold系列超稀有金版，仅10张"
+      }
+    ]
+  },
+  {
+    id: 231,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2021",
+    series: "Immaculate Remarkable Jerseys Red",
+    number: "3/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-imm-jerseys-red-3.jpg",
+        note: "换patch卡片 - 黄白黑三色拼接patch（有AUTH认证标签，3/25编）🚫 图片展示卡片正反面，#6号球衣的LeBron，patch为黄白黑三色拼接样式。Panini Immaculate Remarkable Jerseys Red系列稀有红版，仅25张。与ID 226同系列不同编号，证明该系列换patch问题严重"
+      }
+    ]
+  },
+  {
+    id: 232,
+    player: "Evan Mobley",
+    playerCN: "埃文·莫布利",
+    brand: "Panini",
+    year: "2021",
+    series: "Impeccable Elegance Rookie Jersey Auto",
+    number: "25/99编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/mobley-impeccable-25.jpg",
+        note: "换patch卡片 - 黄白红三色拼接patch带签名（有AUTH认证标签，25/99编）🚫 图片展示卡片正反面，新秀年份的Mobley，patch为黄白红三色拼接样式，含Mobley签名。Panini Impeccable Elegance Rookie系列，新秀签字patch卡"
+      }
+    ]
+  },
+  {
+    id: 233,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2021",
+    series: "National Treasures NBA Materials Prime",
+    number: "5/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-nt-materials-5.jpg",
+        note: "换patch卡片 - 黄白紫三色拼接patch（有AUTH认证标签，5/25编）🚫 图片展示卡片正反面，#6号球衣的LeBron，patch为黄白紫三色拼接样式。Panini National Treasures NBA Materials Prime系列，Prime级别高端材质卡"
+      }
+    ]
+  },
+  {
+    id: 234,
+    player: "Ja Morant",
+    playerCN: "贾·莫兰特",
+    brand: "Panini",
+    year: "2021",
+    series: "Noir Box Office Memorabilia Prime",
+    number: "10/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/morant-noir-boxoffice-10.jpg",
+        note: "换patch卡片 - 蓝白色拼接patch（有AUTH认证标签，10/25编）🚫 图片展示卡片正反面，#12号球衣的Ja Morant，patch为蓝白色拼接样式。Panini Noir Box Office Memorabilia Prime系列，与ID 221 LeBron同系列"
+      }
+    ]
+  },
+  {
+    id: 235,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2021",
+    series: "Noir Box Office Memorabilia Prime",
+    number: "16/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/lebron-noir-boxoffice-16.jpg",
+        note: "换patch卡片 - 紫黄白三色拼接patch（有AUTH认证标签，16/25编）🚫 图片展示卡片正反面，#6号球衣的LeBron，patch为紫黄白三色拼接样式。Panini Noir Box Office Memorabilia Prime系列，该系列已有ID 221（11/25编，2020年）和ID 234（Ja Morant 10/25编），证明系列性问题严重"
       }
     ]
   }
