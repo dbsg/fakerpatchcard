@@ -4165,6 +4165,46 @@ const cardsData = [
         note: "换patch卡片 - 蓝白红黄多色拼接雷霆队logo patch（84/99编）图片展示卡片正面，patch为蓝白红黄多色拼接的雷霆队logo样式。与同系列99编 patch 完全不一致，确认为换patch"
       }
     ]
+  },
+  {
+    id: 238,
+    player: "Nick Young",
+    playerCN: "尼克·杨",
+    brand: "Panini",
+    year: "2015-16",
+    series: "Immaculate",
+    number: "09/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/young-imm-9-2.jpg",
+        note: "同款卡片 ptach，这卡切的是 76人球衣"
+      },
+      {
+        url: "images/sample/young-imm-9-1.jpg",
+        note: "换patch对比 - 原卡切的是76人球衣patch，换patch后的卡片切的是湖人队球衣"
+      }
+    ]
+  },
+  {
+    id: 239,
+    player: "Yao Ming",
+    playerCN: "姚明",
+    brand: "Panini",
+    year: "2011-12",
+    series: "Limited Glass Cleaners",
+    number: "1/1编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/yao-limited-1-2.jpg",
+        note: "换patch卡片 - 交易详情截图，2019年11月成交价¥540，卡片名称：2011-12 Panini Limited 一编 patch 火箭 姚明 展会包 1/1"
+      },
+      {
+        url: "images/sample/yao-limited-1.jpg",
+        note: "换patch卡片 - NBA logo与白色布料拼接patch（1/1编）卡片展示姚明火箭队球衣，patch包含NBA logo和白色布料，Limited Glass Cleaners系列独版卡"
+      }
+    ]
   }
 ];
 
