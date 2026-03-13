@@ -4205,6 +4205,26 @@ const cardsData = [
         note: "换patch卡片 - NBA logo与白色布料拼接patch（1/1编）卡片展示姚明火箭队球衣，patch包含NBA logo和白色布料，Limited Glass Cleaners系列独版卡"
       }
     ]
+  },
+  {
+    id: 240,
+    player: "Damian Lillard / Stephen Curry / Trae Young",
+    playerCN: "达米安·利拉德 / 斯蒂芬·库里 / 特雷·杨",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Flawless Triple Materials",
+    number: "23/25编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/triple-flawless-23-2.jpg",
+        note: "换patch卡片 - 交易详情截图，成交价¥1,650.00，卡片名称：2024-25 Panini Flawless 1 手提 利拉德 斯蒂芬库里 特雷杨 三人 三窗 物料 25编"
+      },
+      {
+        url: "images/sample/triple-flawless-23-1.jpg",
+        note: "换patch卡片 - 三人三窗物料卡（23/25编）左侧利拉德Trail Blazers红白拼接patch，中间库里Warriors蓝色MCM标志patch，右侧特雷杨Hawks红白拼接patch。Flawless系列三人三窗物料卡"
+      }
+    ]
   }
 ];
 
