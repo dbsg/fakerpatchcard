@@ -2660,6 +2660,10 @@ const cardsData = [
       {
         url: "images/sample/kobe-premier-34.jpg",
         note: "对比图 - 左:蓝黄白三色拼接三格patch（34/50） vs 右:紫黄白三色拼接三格patch（34/50，Rare Remnants版）"
+      },
+      {
+        url: "images/sample/kobe-premier-50.jpg",
+        note: "拍卖图 - 湖人队紫黄白三色拼接三窗口Game Patch球衣切割卡（标注为50编，实际为34/50）"
       }
     ]
   },
@@ -3303,18 +3307,18 @@ const cardsData = [
     player: "Shai Gilgeous-Alexander",
     playerCN: "谢伊·吉尔杰斯-亚历山大",
     brand: "Panini",
-    year: "2021-22",
+    year: "2022-23",
     series: "Flawless Signatures Prime Material Emerald",
     number: "5/5编",
     status: "confirmed",
     images: [
       {
-        url: "images/sample/sga-flawless-5-2.jpg",
-        note: "原始卡片 - 纯蓝色单块patch（含签名，5/5编）"
+        url: "images/sample/sga-flawless-5-3.jpg",
+        note: "换patch前 - 纯蓝色单块patch（含签名，5/5编）"
       },
       {
-        url: "images/sample/sga-flawless-5-1.jpg",
-        note: "换patch后 - 蓝红拼接patch（含签名，5/5编，PSA NM-MT 8 AUTO 10评级）🚫 同一编号出现完全不同的patch样式，确认为换patch"
+        url: "images/sample/sga-flawless-5-4.jpg",
+        note: "换patch后 - 蓝红双色拼接patch（含签名，PSA NM-MT 8 AUTO 10评级，编号104256504）🚫 同一编号5/5出现完全不同的patch样式，确认为换patch"
       }
     ]
   },
@@ -4223,6 +4227,46 @@ const cardsData = [
       {
         url: "images/sample/triple-flawless-23-1.jpg",
         note: "换patch卡片 - 三人三窗物料卡（23/25编）左侧利拉德Trail Blazers红白拼接patch，中间库里Warriors蓝色MCM标志patch，右侧特雷杨Hawks红白拼接patch。Flawless系列三人三窗物料卡"
+      }
+    ]
+  },
+  {
+    id: 241,
+    player: "Bobby Portis",
+    playerCN: "鲍比·波蒂斯",
+    brand: "Panini",
+    year: "2024",
+    series: "Silhouette Jumbo Memorabilia",
+    number: "09/15编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/portis-silhouette-9-2.jpg",
+        note: "换patch对比 - 黑白红三色条纹patch（09/15编，另一版本）"
+      },
+      {
+        url: "images/sample/portis-silhouette-9-1.jpg",
+        note: "换patch对比 - 红底白色Nike swoosh logo patch（09/15编）🚫 同一编号09/15出现完全不同的patch样式，一个是Nike swoosh logo patch，另一个是黑白红三色条纹patch，确认为换patch"
+      }
+    ]
+  },
+  {
+    id: 279,
+    player: "Shai Gilgeous-Alexander",
+    playerCN: "谢伊·吉尔杰斯-亚历山大",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Flawless Signature Prime Material Gold Auto",
+    number: "08/10编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/sga-flawless-8-1.jpg",
+        note: "换patch前 - 纯蓝色单块patch"
+      },
+      {
+        url: "images/sample/sga-flawless-8-2.jpg",
+        note: "换patch后 - 蓝黄双色拼接patch（PSA评级 Mint 9/Auto 10）"
       }
     ]
   }
