@@ -4269,6 +4269,26 @@ const cardsData = [
         note: "换patch后 - 蓝黄双色拼接patch（PSA评级 Mint 9/Auto 10）"
       }
     ]
+  },
+  {
+    id: 280,
+    player: "Karl Malone",
+    playerCN: "卡尔·马龙",
+    brand: "Panini",
+    year: "2014-15",
+    series: "Spectra Hall of Fame Signatures",
+    number: "1/1编",
+    status: "confirmed",
+    images: [
+      {
+        url: "images/sample/malone-spectra-1-1.jpg",
+        note: "换patch前 - 紫色网格纹理patch（含签名）"
+      },
+      {
+        url: "images/sample/malone-spectra-1-2.jpg",
+        note: "换patch后 - 彩色UT Jazz logo patch（含签名）🚫 同一1/1编号出现完全不同的patch样式，确认为换patch"
+      }
+    ]
   }
 ];
 
