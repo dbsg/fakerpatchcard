@@ -4859,6 +4859,29 @@ const cardsData = [
         type: "after"
       }
     ]
+  },
+  {
+    id: 281,
+    player: "Jayson Tatum",
+    playerCN: "杰森 塔图姆",
+    brand: "Panini",
+    year: "2022-23",
+    series: "Noir",
+    number: "16/49",
+    status: "confirmed",
+    category: "fake-auto",
+    images: [
+      {
+        url: "images/sample/card_1775731012979_after_0.png",
+        note: "存在明显涂改",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1775731012979_before_0.jpg",
+        note: "墨迹淡化严重",
+        type: "before"
+      }
+    ]
   }
 ];
 
