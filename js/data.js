@@ -1138,13 +1138,13 @@ const cardsData = [
     images: [
       {
         url: "images/sample/wiggins-2.jpg",
-        note: "版本1 - BGS 6.5评级 浅蓝白色patch",
-        type: "before"
+        note: "粗体是假签字，是偷出来的板子，然后在上面签字的，卡是真的，所以也能过评级",
+        type: "after"
       },
       {
         url: "images/sample/wiggins-1.jpg",
-        note: "版本2 - 彩虹色patch 手提箱白金卡签字（假铭文）",
-        type: "after"
+        note: "真签字的墨迹是细笔的",
+        type: "before"
       }
     ]
   },
