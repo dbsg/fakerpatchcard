@@ -6,7 +6,7 @@ const { execSync } = require('child_process')
 
 const CDN_BASE = 'https://7072-prod-8g8ay186059e4264-1418320285.tcb.qcloud.la'
 const CARDS_JSON_URL = `${CDN_BASE}/exports/cards.json`
-const CARD_DIR = path.join(__dirname, 'card')
+const CARD_DIR = __dirname
 const IMAGES_DIR = path.join(CARD_DIR, 'images', 'sample')
 const DATA_JS_PATH = path.join(CARD_DIR, 'js', 'data.js')
 
@@ -67,6 +67,7 @@ function generateDataJs(cards) {
     lines.push(`${indent}${indent}series: ${JSON.stringify(card.series)},`)
     lines.push(`${indent}${indent}number: ${JSON.stringify(card.number)},`)
     lines.push(`${indent}${indent}status: ${JSON.stringify(card.status || 'confirmed')},`)
+    lines.push(`${indent}${indent}category: ${JSON.stringify(card.category || 'fake-patch')},`)
     if (card.highRiskReason) {
       lines.push(`${indent}${indent}highRiskReason: ${JSON.stringify(card.highRiskReason)},`)
     }

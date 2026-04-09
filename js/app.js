@@ -3,8 +3,11 @@ const app = {
   // 当前显示的卡片数据
   currentCards: [],
 
-  // 所有卡片数据
-  allCards: cardsData,
+  // 所有卡片数据（补全 category）
+  allCards: cardsData.map(c => ({ ...c, category: c.category || 'fake-patch' })),
+
+  // 当前分类
+  activeCategory: 'fake-patch',
 
   // 分页相关
   currentPage: 1,
@@ -12,7 +15,8 @@ const app = {
 
   // 初始化
   init() {
-    this.currentCards = [...this.allCards];
+    this.updateCategoryCounts();
+    this.currentCards = this.allCards.filter(c => c.category === this.activeCategory);
     this.populatePlayerFilter();
     this.populateBrandFilter();
     this.populateYearFilter();
@@ -21,6 +25,27 @@ const app = {
     this.renderPagination();
     this.hideLoading();
     this.setupSearchEnter();
+  },
+
+  updateCategoryCounts() {
+    const counts = { 'fake-patch': 0, 'counterfeit': 0, 'fake-auto': 0 };
+    this.allCards.forEach(c => { if (counts[c.category] !== undefined) counts[c.category]++; });
+    ['fake-patch', 'counterfeit', 'fake-auto'].forEach(cat => {
+      const el = document.getElementById('count-' + cat);
+      if (el) el.textContent = counts[cat] ? counts[cat] : '';
+    });
+  },
+
+  switchCategory(category) {
+    this.activeCategory = category;
+    document.querySelectorAll('.category-tab').forEach(tab => {
+      tab.classList.toggle('active', tab.dataset.category === category);
+    });
+    document.getElementById('searchInput').value = '';
+    document.getElementById('playerFilter').value = '';
+    document.getElementById('brandFilter').value = '';
+    document.getElementById('yearFilter').value = '';
+    this.applyFilters();
   },
 
   // 填充球员筛选器
@@ -127,6 +152,7 @@ const app = {
     const keyword = document.getElementById('searchInput').value.toLowerCase().trim();
 
     this.currentCards = this.allCards.filter(card => {
+      if (card.category !== this.activeCategory) return false;
       const matchPlayer = !player || card.player === player;
       const matchBrand = !brand || card.brand === brand;
       const matchYear = !year || card.year === year;
@@ -139,7 +165,7 @@ const app = {
       return matchPlayer && matchBrand && matchYear && matchKeyword;
     });
 
-    this.currentPage = 1; // 重置到第一页
+    this.currentPage = 1;
     this.renderCards();
     this.updateStats();
   },
@@ -150,8 +176,8 @@ const app = {
     document.getElementById('playerFilter').value = '';
     document.getElementById('brandFilter').value = '';
     document.getElementById('yearFilter').value = '';
-    this.currentCards = [...this.allCards];
-    this.currentPage = 1; // 重置到第一页
+    this.currentCards = this.allCards.filter(c => c.category === this.activeCategory);
+    this.currentPage = 1;
     this.renderCards();
     this.updateStats();
   },

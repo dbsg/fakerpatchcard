@@ -8,6 +8,7 @@ const cardsData = [
     series: "Immaculate",
     number: "27/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kyrie-1.jpg",
@@ -30,6 +31,7 @@ const cardsData = [
     series: "Immaculate",
     number: "1/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kyrie-2016-1.jpg",
@@ -47,6 +49,7 @@ const cardsData = [
     series: "Immaculate",
     number: "6/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kyrie-2016-2.jpg",
@@ -64,6 +67,7 @@ const cardsData = [
     series: "Immaculate",
     number: "1/1编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/vince-carter-1.jpg",
@@ -86,6 +90,7 @@ const cardsData = [
     series: "Immaculate",
     number: "3/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-1.jpg",
@@ -113,6 +118,7 @@ const cardsData = [
     series: "Exquisite Noble Nameplates",
     number: "10/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/tmac-1.jpg",
@@ -130,6 +136,7 @@ const cardsData = [
     series: "Silhouette",
     number: "9/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/gerald-wallace-2.jpg",
@@ -152,6 +159,7 @@ const cardsData = [
     series: "Silhouette Threads",
     number: "22/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/alec-burks-1.jpg",
@@ -169,6 +177,7 @@ const cardsData = [
     series: "One and One",
     number: "15/35编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/pj-washington-old.jpg",
@@ -191,6 +200,7 @@ const cardsData = [
     series: "Silhouette",
     number: "10/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/enrique-freeman-old.jpg",
@@ -213,6 +223,7 @@ const cardsData = [
     series: "Immaculate Rookie Jerseys",
     number: "44/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/black-howard-old.jpg",
@@ -235,6 +246,7 @@ const cardsData = [
     series: "Preferred Silhouettes",
     number: "21/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-2015-old.jpg",
@@ -257,6 +269,7 @@ const cardsData = [
     series: "Immaculate Rookie Patch Autographs",
     number: "4/5编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/franz-wagner-old.jpg",
@@ -279,6 +292,7 @@ const cardsData = [
     series: "Immaculate Remarkable Jerseys",
     number: "73/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/josh-giddey-old.jpg",
@@ -301,6 +315,7 @@ const cardsData = [
     series: "Immaculate Jersey Number",
     number: "16/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/harrison-ingram-old.jpg",
@@ -323,6 +338,7 @@ const cardsData = [
     series: "Flawless Signature Prime Materials Gold",
     number: "4/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/chris-paul-old.jpg",
@@ -345,6 +361,7 @@ const cardsData = [
     series: "Noir Box Office Memorabilia",
     number: "70/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/tyrese-haliburton-old.jpg",
@@ -367,6 +384,7 @@ const cardsData = [
     series: "Immaculate Collection Premium Autograph Patches",
     number: "07/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/stephen-curry-07-old.jpg",
@@ -389,6 +407,7 @@ const cardsData = [
     series: "Immaculate Collection Premium Autograph Patches",
     number: "08/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/stephen-curry-08-old.jpg",
@@ -411,6 +430,7 @@ const cardsData = [
     series: "Preferred Silhouettes",
     number: "06/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/porzingis-old.jpg",
@@ -433,6 +453,7 @@ const cardsData = [
     series: "Impeccable Elegance RC",
     number: "53/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/jalen-williams-old.jpg",
@@ -455,6 +476,7 @@ const cardsData = [
     series: "Premier Rare Patches Triple",
     number: "3/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/rockets-triple-old.jpg",
@@ -477,6 +499,7 @@ const cardsData = [
     series: "Flawless Vertical Patch Autographs",
     number: "15/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-flawless-old.jpg",
@@ -499,6 +522,7 @@ const cardsData = [
     series: "National Treasures Colossal Jersey Autos",
     number: "15/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/magic-johnson-comparison.jpg",
@@ -516,6 +540,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "5/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/clyde-drexler-comparison.jpg",
@@ -533,6 +558,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "5/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/karl-malone-comparison.jpg",
@@ -550,6 +576,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "26/34编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/shaq-comparison.jpg",
@@ -567,6 +594,7 @@ const cardsData = [
     series: "Flawless",
     number: "4/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/malone-flawless-comparison.jpg",
@@ -584,6 +612,7 @@ const cardsData = [
     series: "National Treasures Colossal Jersey Patch Auto",
     number: "23/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/zach-lavine-comparison.jpg",
@@ -601,6 +630,7 @@ const cardsData = [
     series: "Immaculate Premium Patches Jumbo Patch Auto",
     number: "19/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/john-stockton-comparison.jpg",
@@ -618,6 +648,7 @@ const cardsData = [
     series: "Immaculate Premium Patches",
     number: "未知",
     status: "suspected",
+    category: "fake-patch",
     highRiskReason: "未找到相同编号的换patch记录，此卡通过与同系列其他卡片patch对比判断疑似被换",
     images: [
       {
@@ -636,6 +667,7 @@ const cardsData = [
     series: "National Treasures Logoman Autograph",
     number: "1/1编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kevin-garnett-old.jpg",
@@ -658,6 +690,7 @@ const cardsData = [
     series: "Exquisite Collection Prime",
     number: "50/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/derrick-rose-old.jpg",
@@ -680,6 +713,7 @@ const cardsData = [
     series: "Exquisite Collection Extra Exquisite",
     number: "10/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/rose-extra-old.jpg",
@@ -702,6 +736,7 @@ const cardsData = [
     series: "Crown Royale Silhouettes",
     number: "12/12编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/garnett-silhouettes-old.jpg",
@@ -724,6 +759,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "01/35编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-imm-old.jpg",
@@ -746,6 +782,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "10/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/eddie-jones-old.jpg",
@@ -768,6 +805,7 @@ const cardsData = [
     series: "Immaculate Premium Patches",
     number: "25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/vince-carter-premium.jpg",
@@ -785,6 +823,7 @@ const cardsData = [
     series: "Flawless Greats",
     number: "04/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/gary-payton-old.jpg",
@@ -807,6 +846,7 @@ const cardsData = [
     series: "Flawless Greats",
     number: "09/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/malone-flawless-greats-old.jpg",
@@ -829,6 +869,7 @@ const cardsData = [
     series: "Immaculate Collection Premium Patches",
     number: "04/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kawhi-leonard-comparison.jpg",
@@ -846,6 +887,7 @@ const cardsData = [
     series: "Flawless Greats",
     number: "08/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/drexler-flawless.jpg",
@@ -863,6 +905,7 @@ const cardsData = [
     series: "Flawless",
     number: "09/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/stockton-flawless.jpg",
@@ -880,6 +923,7 @@ const cardsData = [
     series: "Flawless",
     number: "01/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/david-robinson-flawless.jpg",
@@ -897,6 +941,7 @@ const cardsData = [
     series: "Spectra",
     number: "08/10编",
     status: "suspected",
+    category: "fake-patch",
     highRiskReason: "仅有正面照片无法100%确认，patch质感与同系列有差异但由于编号在卡片背面无法实锤",
     images: [
       {
@@ -915,6 +960,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "26/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-2012-comparison.jpg",
@@ -932,6 +978,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "23/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-2012-23.jpg",
@@ -949,6 +996,7 @@ const cardsData = [
     series: "Flawless",
     number: "25/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-flawless-2.jpg",
@@ -976,6 +1024,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "6/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/doncic-1.jpg",
@@ -998,6 +1047,7 @@ const cardsData = [
     series: "Flawless",
     number: "05/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-flawless-05-1.jpg",
@@ -1020,6 +1070,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "13/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/maxey-1.jpg",
@@ -1042,6 +1093,7 @@ const cardsData = [
     series: "Impeccable",
     number: "69/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/bridges-1.jpg",
@@ -1064,6 +1116,7 @@ const cardsData = [
     series: "Flawless",
     number: "03/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-flawless-03.jpg",
@@ -1081,6 +1134,7 @@ const cardsData = [
     series: "Flawless",
     number: "1/1",
     status: "confirmed",
+    category: "fake-auto",
     images: [
       {
         url: "images/sample/wiggins-2.jpg",
@@ -1103,6 +1157,7 @@ const cardsData = [
     series: "National Treasures",
     number: "114/199编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kawhi-1.jpg",
@@ -1125,6 +1180,7 @@ const cardsData = [
     series: "Impeccable",
     number: "14/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/doncic-elegance-1.jpg",
@@ -1147,6 +1203,7 @@ const cardsData = [
     series: "National Treasures Colossal",
     number: "17/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/doncic-colossal-1.jpg",
@@ -1169,6 +1226,7 @@ const cardsData = [
     series: "Crown Royale Rookie Silhouettes",
     number: "10/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/cunningham-1.jpg",
@@ -1191,6 +1249,7 @@ const cardsData = [
     series: "Chronology Stitches in Time",
     number: "13/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-ud-chronology.jpg",
@@ -1208,6 +1267,7 @@ const cardsData = [
     series: "Flawless",
     number: "1/1",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/zion-legacy.jpg",
@@ -1225,6 +1285,7 @@ const cardsData = [
     series: "Eminence",
     number: "6/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/bird-2.jpg",
@@ -1247,6 +1308,7 @@ const cardsData = [
     series: "Exquisite Collection",
     number: "编号待确认",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-exquisite.jpg",
@@ -1264,6 +1326,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "04/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-imm-04.jpg",
@@ -1281,6 +1344,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "61/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-imm-61.jpg",
@@ -1298,6 +1362,7 @@ const cardsData = [
     series: "Exquisite Collection Limited Logos",
     number: "04/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-exquisite-04.jpg",
@@ -1315,6 +1380,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "30/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-imm-30.jpg",
@@ -1332,6 +1398,7 @@ const cardsData = [
     series: "Exquisite Collection",
     number: "14/24编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-exquisite-14.jpg",
@@ -1349,6 +1416,7 @@ const cardsData = [
     series: "Flawless",
     number: "16/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/nowitzki-flawless.jpg",
@@ -1366,6 +1434,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "13/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-imm-13.jpg",
@@ -1383,6 +1452,7 @@ const cardsData = [
     series: "Exquisite Collection Rookie",
     number: "41/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-rookie-41.jpg",
@@ -1400,6 +1470,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "17/30编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/jabbar-imm-17.jpg",
@@ -1417,6 +1488,7 @@ const cardsData = [
     series: "Exquisite Collection Limited Logos",
     number: "13/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mcgrady-exquisite-13.jpg",
@@ -1434,6 +1506,7 @@ const cardsData = [
     series: "Flawless",
     number: "08/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/wade-flawless-08.jpg",
@@ -1451,6 +1524,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "14/30编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-imm-14.jpg",
@@ -1468,6 +1542,7 @@ const cardsData = [
     series: "Exquisite Collection",
     number: "45或46/100编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-exquisite-45.jpg",
@@ -1485,6 +1560,7 @@ const cardsData = [
     series: "National Treasures",
     number: "06/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mitchell-nt-06.jpg",
@@ -1507,6 +1583,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "04/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/olajuwon-imm-04.jpg",
@@ -1524,6 +1601,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "10/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/carter-imm-10.jpg",
@@ -1541,6 +1619,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "25/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-imm-25.jpg",
@@ -1558,6 +1637,7 @@ const cardsData = [
     series: "Flawless",
     number: "12/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/nowitzki-flawless-12.jpg",
@@ -1575,6 +1655,7 @@ const cardsData = [
     series: "National Treasures",
     number: "013/199编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/davis-nt-013.jpg",
@@ -1592,6 +1673,7 @@ const cardsData = [
     series: "National Treasures",
     number: "019/199编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/davis-nt-019.jpg",
@@ -1609,6 +1691,7 @@ const cardsData = [
     series: "National Treasures",
     number: "071/199编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/davis-nt-071.jpg",
@@ -1626,6 +1709,7 @@ const cardsData = [
     series: "National Treasures",
     number: "076/199编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/davis-nt-076.jpg",
@@ -1643,6 +1727,7 @@ const cardsData = [
     series: "National Treasures",
     number: "170/199编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/davis-nt-170.jpg",
@@ -1660,6 +1745,7 @@ const cardsData = [
     series: "National Treasures",
     number: "009/199编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/davis-nt-009.jpg",
@@ -1677,6 +1763,7 @@ const cardsData = [
     series: "Flawless",
     number: "7/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/wade-flawless-07.jpg",
@@ -1694,6 +1781,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "9/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-imm-14-09.jpg",
@@ -1711,6 +1799,7 @@ const cardsData = [
     series: "Exquisite Collection Limited Logos",
     number: "32/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mcgrady-exquisite-32.jpg",
@@ -1728,6 +1817,7 @@ const cardsData = [
     series: "Flawless",
     number: "02/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/olajuwon-flawless-02.jpg",
@@ -1745,6 +1835,7 @@ const cardsData = [
     series: "Eminence",
     number: "5/5编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/malone-immense-05.jpg",
@@ -1762,6 +1853,7 @@ const cardsData = [
     series: "Flawless",
     number: "24/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/allen-flawless-24.jpg",
@@ -1779,6 +1871,7 @@ const cardsData = [
     series: "Flawless",
     number: "5/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/olajuwon-flawless-05.jpg",
@@ -1796,6 +1889,7 @@ const cardsData = [
     series: "National Treasures",
     number: "编号待确认",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/allen-nt-15.jpg",
@@ -1813,6 +1907,7 @@ const cardsData = [
     series: "Ultimate Collection",
     number: "60/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/gordon-ultimate-60-2.jpg",
@@ -1835,6 +1930,7 @@ const cardsData = [
     series: "SP Game Used",
     number: "041/100编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/jordan-sp-041-2.jpg",
@@ -1857,6 +1953,7 @@ const cardsData = [
     series: "Trilogy Rookie Premiere Patch Auto",
     number: "05/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/simien-trilogy-05-2.jpg",
@@ -1879,6 +1976,7 @@ const cardsData = [
     series: "Ultimate Collection",
     number: "09/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/iguodala-ultimate-09-2.jpg",
@@ -1901,6 +1999,7 @@ const cardsData = [
     series: "Exquisite Collection Limited Logos",
     number: "42/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/paul-exquisite-42-2.jpg",
@@ -1923,6 +2022,7 @@ const cardsData = [
     series: "National Treasures NBA Gear Dual Patch",
     number: "10/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-nt-gear-10-2.jpg",
@@ -1945,6 +2045,7 @@ const cardsData = [
     series: "National Treasures NBA Gear Dual Patch",
     number: "13/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-nt-gear-13-2.jpg",
@@ -1967,6 +2068,7 @@ const cardsData = [
     series: "Exquisite Collection Rookie Patch Autograph",
     number: "编号待确认",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-exquisite-rpa-2.jpg",
@@ -1989,6 +2091,7 @@ const cardsData = [
     series: "Exquisite Collection Limited Logos",
     number: "22/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mourning-exquisite-22-2.jpg",
@@ -2011,6 +2114,7 @@ const cardsData = [
     series: "Exquisite Collection Rookie Patch Autograph",
     number: "97/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-exquisite-97.jpg",
@@ -2028,6 +2132,7 @@ const cardsData = [
     series: "Immaculate Collection Patch Auto",
     number: "04/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-imm-04.jpg",
@@ -2045,6 +2150,7 @@ const cardsData = [
     series: "Immaculate Collection Patch Auto",
     number: "12/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/hill-imm-12.jpg",
@@ -2062,6 +2168,7 @@ const cardsData = [
     series: "Exquisite Collection 6 Color Patch Jersey Logo",
     number: "04/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-iverson-exquisite-04.jpg",
@@ -2079,6 +2186,7 @@ const cardsData = [
     series: "Flawless",
     number: "07/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-flawless-07.jpg",
@@ -2096,6 +2204,7 @@ const cardsData = [
     series: "SP Game Used Dual Jersey Patch",
     number: "08/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-magic-sp-08.jpg",
@@ -2113,6 +2222,7 @@ const cardsData = [
     series: "Exquisite Collection Autograph Logo Jersey Patch",
     number: "88/100编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-exquisite-88.jpg",
@@ -2130,6 +2240,7 @@ const cardsData = [
     series: "Flawless Jumbo GU Patch",
     number: "16/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-flawless-16.jpg",
@@ -2147,6 +2258,7 @@ const cardsData = [
     series: "Flawless Jersey Patch Ruby",
     number: "11/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/malone-flawless-11.jpg",
@@ -2164,6 +2276,7 @@ const cardsData = [
     series: "Flawless Patches Autographs",
     number: "21/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/parker-flawless-21.jpg",
@@ -2181,6 +2294,7 @@ const cardsData = [
     series: "Immaculate Collection Patch Auto",
     number: "10/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/payton-imm-10.jpg",
@@ -2198,6 +2312,7 @@ const cardsData = [
     series: "Crown Royale Silhouettes Autograph RLC FOTL",
     number: "12/12编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/nowitzki-crown-12-2.jpg",
@@ -2220,6 +2335,7 @@ const cardsData = [
     series: "Immaculate Dual Patch Number 22",
     number: "09/22编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/wiggins-middleton-imm-09.jpg",
@@ -2237,6 +2353,7 @@ const cardsData = [
     series: "Immaculate Collection Patch Auto",
     number: "14/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/cunningham-imm-14-2.jpg",
@@ -2259,6 +2376,7 @@ const cardsData = [
     series: "National Treasures Colossal Jersey Auto",
     number: "03/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/russell-nt-03.jpg",
@@ -2276,6 +2394,7 @@ const cardsData = [
     series: "Noir Jersey Auto",
     number: "96/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/fox-noir-96.jpg",
@@ -2293,6 +2412,7 @@ const cardsData = [
     series: "Anthology Memorabilia",
     number: "2/8编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-anthology-02.jpg",
@@ -2310,6 +2430,7 @@ const cardsData = [
     series: "National Treasures Legacies",
     number: "01/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/irving-nt-01.jpg",
@@ -2327,6 +2448,7 @@ const cardsData = [
     series: "Limited Jumbo Jersey",
     number: "01/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-limited-01.jpg",
@@ -2344,6 +2466,7 @@ const cardsData = [
     series: "Noir Jumbo Material",
     number: "01/3编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-noir-01.jpg",
@@ -2361,6 +2484,7 @@ const cardsData = [
     series: "Ultimate Collection Game Jersey Patch",
     number: "47/100编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-ultimate-47.jpg",
@@ -2378,6 +2502,7 @@ const cardsData = [
     series: "Noir Box Office Materials",
     number: "15/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-noir-15.jpg",
@@ -2395,6 +2520,7 @@ const cardsData = [
     series: "National Treasures NBA Material Prime",
     number: "09/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-nt-prime-09.jpg",
@@ -2412,6 +2538,7 @@ const cardsData = [
     series: "Threads Authentic Threads Prime",
     number: "7/7编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-threads-07.jpg",
@@ -2429,6 +2556,7 @@ const cardsData = [
     series: "Immaculate The Standard",
     number: "16/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-imm-16.jpg",
@@ -2446,6 +2574,7 @@ const cardsData = [
     series: "National Treasures Clutch Factor",
     number: "06/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/cunningham-nt-06-2.jpg",
@@ -2468,6 +2597,7 @@ const cardsData = [
     series: "Flawless",
     number: "1/1编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/williams-flawless-01-1.jpg",
@@ -2490,6 +2620,7 @@ const cardsData = [
     series: "Flawless Patch Autograph Emerald",
     number: "2/5编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/laravia-flawless-02-1.jpg",
@@ -2512,6 +2643,7 @@ const cardsData = [
     series: "Immaculate Jersey Patch Autographs Au",
     number: "13/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/carter-imm-13.jpg",
@@ -2529,6 +2661,7 @@ const cardsData = [
     series: "Immaculate",
     number: "29/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/reed-imm-29.jpg",
@@ -2546,6 +2679,7 @@ const cardsData = [
     series: "Impeccable",
     number: "15/88编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/maxey-impeccable-15.jpg",
@@ -2563,6 +2697,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autographs",
     number: "66/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/barnes-noir-66.jpg",
@@ -2580,6 +2715,7 @@ const cardsData = [
     series: "Immaculate",
     number: "46/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/maxey-imm-46.jpg",
@@ -2597,6 +2733,7 @@ const cardsData = [
     series: "Flawless",
     number: "22/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/jokic-flawless-22.jpg",
@@ -2614,6 +2751,7 @@ const cardsData = [
     series: "Impeccable",
     number: "73/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-impeccable-73.jpg",
@@ -2631,6 +2769,7 @@ const cardsData = [
     series: "Immaculate",
     number: "60/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-imm-60.jpg",
@@ -2648,6 +2787,7 @@ const cardsData = [
     series: "Flawless",
     number: "02/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-flawless-02.jpg",
@@ -2665,6 +2805,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autographs",
     number: "16/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/sga-noir-16.jpg",
@@ -2682,6 +2823,7 @@ const cardsData = [
     series: "Flawless",
     number: "12/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/markkanen-flawless-12.jpg",
@@ -2699,6 +2841,7 @@ const cardsData = [
     series: "National Treasures NBA Game Gear",
     number: "11/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-nt-11-1.jpg",
@@ -2726,6 +2869,7 @@ const cardsData = [
     series: "National Treasures",
     number: "26/35编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-nt-26.jpg",
@@ -2743,6 +2887,7 @@ const cardsData = [
     series: "National Treasures Legacies",
     number: "13/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-nt-13.jpg",
@@ -2760,6 +2905,7 @@ const cardsData = [
     series: "Flawless",
     number: "06/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-flawless-06.jpg",
@@ -2777,6 +2923,7 @@ const cardsData = [
     series: "Flawless",
     number: "08/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-flawless-08.jpg",
@@ -2794,6 +2941,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autographs",
     number: "28/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-noir-28.jpg",
@@ -2811,6 +2959,7 @@ const cardsData = [
     series: "National Treasures Biography Materials",
     number: "1/1编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/howard-nt-01-2.jpg",
@@ -2833,6 +2982,7 @@ const cardsData = [
     series: "National Treasures NBA Gear Dual Prime",
     number: "07/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-nt-07.jpg",
@@ -2850,6 +3000,7 @@ const cardsData = [
     series: "Premier Triple",
     number: "34/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-premier-34.jpg",
@@ -2872,6 +3023,7 @@ const cardsData = [
     series: "Immaculate Special Event Materials",
     number: "1/4编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-imm-01.jpg",
@@ -2889,6 +3041,7 @@ const cardsData = [
     series: "National Treasures Treasured Threads",
     number: "10编",
     status: "suspected",
+    category: "fake-patch",
     highRiskReason: "与同系列10编出现不同patch的版本",
     images: [
       {
@@ -2912,6 +3065,7 @@ const cardsData = [
     series: "Immaculate The Standard",
     number: "15/25编",
     status: "suspected",
+    category: "fake-patch",
     highRiskReason: "来自球星卡TV的视频，为同一换patch团伙送评的卡片",
     images: [
       {
@@ -2935,6 +3089,7 @@ const cardsData = [
     series: "Flawless Patch",
     number: "14/20编",
     status: "suspected",
+    category: "fake-patch",
     highRiskReason: "来自球星卡TV的视频，为同一换patch团伙送评的卡片",
     images: [
       {
@@ -2958,6 +3113,7 @@ const cardsData = [
     series: "Opulence Precious Swatch Signatures",
     number: "3/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-opulence-3-2.jpg",
@@ -2980,6 +3136,7 @@ const cardsData = [
     series: "Opulence Precious Swatch Signatures",
     number: "08/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-opulence-8.jpg",
@@ -3007,6 +3164,7 @@ const cardsData = [
     series: "Noir",
     number: "02/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/ivey-noir-2.jpg",
@@ -3024,6 +3182,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autograph",
     number: "94/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/cunningham-noir-94.jpg",
@@ -3041,6 +3200,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autograph",
     number: "81/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/barnes-noir-81.jpg",
@@ -3058,6 +3218,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autograph",
     number: "72/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/johnson-noir-72.jpg",
@@ -3075,6 +3236,7 @@ const cardsData = [
     series: "Impeccable Elegance",
     number: "99/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mathurin-elegance-99.jpg",
@@ -3092,6 +3254,7 @@ const cardsData = [
     series: "One and One",
     number: "21/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mathurin-one-21.jpg",
@@ -3109,6 +3272,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autograph",
     number: "70/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/williams-noir-70.jpg",
@@ -3126,6 +3290,7 @@ const cardsData = [
     series: "Noir New Wave Jerseys",
     number: "10/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/castle-noir-10.jpg",
@@ -3143,6 +3308,7 @@ const cardsData = [
     series: "Impeccable Elegance",
     number: "02/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/podziemski-elegance-2.jpg",
@@ -3160,6 +3326,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autograph",
     number: "75/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/george-noir-75.jpg",
@@ -3177,6 +3344,7 @@ const cardsData = [
     series: "National Treasures Clutch Factor",
     number: "08/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/missi-nt-8.jpg",
@@ -3194,6 +3362,7 @@ const cardsData = [
     series: "Grand Reserve Cornerstones",
     number: "02/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/turner-grand-2.jpg",
@@ -3211,6 +3380,7 @@ const cardsData = [
     series: "National Treasures Colossal",
     number: "31/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/pickett-nt-31.jpg",
@@ -3228,6 +3398,7 @@ const cardsData = [
     series: "Immaculate",
     number: "41/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/pickett-imm-41.jpg",
@@ -3245,6 +3416,7 @@ const cardsData = [
     series: "One and One",
     number: "25/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mccollum-one-25.jpg",
@@ -3262,6 +3434,7 @@ const cardsData = [
     series: "Immaculate",
     number: "10/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/brown-imm-10.jpg",
@@ -3279,6 +3452,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autograph",
     number: "21/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kolek-noir-21.jpg",
@@ -3296,6 +3470,7 @@ const cardsData = [
     series: "Immaculate Standout Memorabilia",
     number: "47/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-imm-standout-47.jpg",
@@ -3313,6 +3488,7 @@ const cardsData = [
     series: "Absolute Memorabilia Rookie Premiere Materials",
     number: "1/5编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/harden-abs-2.jpg",
@@ -3335,6 +3511,7 @@ const cardsData = [
     series: "National Treasures NBA Gear Laundry Tag Combos Signatures",
     number: "5编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-nt-gear-5-2.jpg",
@@ -3357,6 +3534,7 @@ const cardsData = [
     series: "Obsidian Rookie Patch Autograph",
     number: "55/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/watson-obsidian-55-2.jpg",
@@ -3379,6 +3557,7 @@ const cardsData = [
     series: "Mosaic Rookie Patch Autograph",
     number: "编号待确认",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/watson-mosaic-2.jpg",
@@ -3401,6 +3580,7 @@ const cardsData = [
     series: "National Treasures Colossal Game Used Patch Auto",
     number: "08/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/irving-nt-colossal-8-2.jpg",
@@ -3423,6 +3603,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "18/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-imm-18-2.jpg",
@@ -3445,6 +3626,7 @@ const cardsData = [
     series: "Flawless",
     number: "06/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lillard-flawless-6-3.jpg",
@@ -3472,6 +3654,7 @@ const cardsData = [
     series: "National Treasures",
     number: "04/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-nt-4-2.jpg",
@@ -3494,6 +3677,7 @@ const cardsData = [
     series: "Immaculate",
     number: "06/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/barnes-imm-6-2.jpg",
@@ -3516,6 +3700,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autograph",
     number: "29/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/maxey-noir-29-2.jpg",
@@ -3538,6 +3723,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autograph",
     number: "09/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-noir-9-2.jpg",
@@ -3560,6 +3746,7 @@ const cardsData = [
     series: "Flawless Signatures Prime Material Emerald",
     number: "5/5编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/sga-flawless-5-3.jpg",
@@ -3582,6 +3769,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autograph",
     number: "88/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/maxey-noir-88-2.jpg",
@@ -3604,6 +3792,7 @@ const cardsData = [
     series: "Impeccable Elegance Rookie 3Color Patch",
     number: "4/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-impeccable-10-2.jpg",
@@ -3626,6 +3815,7 @@ const cardsData = [
     series: "Noir Rookie Patch Autograph",
     number: "02/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/christie-noir-2-2.jpg",
@@ -3648,6 +3838,7 @@ const cardsData = [
     series: "One And One Rookie Patch Autograph Purple",
     number: "16/35编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/johnson-oneandone-16-2.jpg",
@@ -3670,6 +3861,7 @@ const cardsData = [
     series: "Flawless Vertical Patch",
     number: "15/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-flawless-15.jpg",
@@ -3687,6 +3879,7 @@ const cardsData = [
     series: "National Treasures Colossal",
     number: "11/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-colossal-11-2.jpg",
@@ -3709,6 +3902,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "14/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-imm-14-3.jpg",
@@ -3736,6 +3930,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "16/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/iverson-imm-16.jpg",
@@ -3753,6 +3948,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "08/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/iverson-imm-8.jpg",
@@ -3770,6 +3966,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "24/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/iverson-imm-24.jpg",
@@ -3787,6 +3984,7 @@ const cardsData = [
     series: "National Treasures Colossal",
     number: "16/49编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/tatum-nt-16-2.jpg",
@@ -3809,6 +4007,7 @@ const cardsData = [
     series: "Immaculate Collection Rookie Patch Autograph",
     number: "67/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/haliburton-imm-67-2.jpg",
@@ -3831,6 +4030,7 @@ const cardsData = [
     series: "Impeccable Elegance Rookie Patch Autograph",
     number: "03/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/holmgren-imp-3-2.jpg",
@@ -3853,6 +4053,7 @@ const cardsData = [
     series: "Impeccable Elegance Rookie Patch Autograph",
     number: "24/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/cunningham-imp-24-2.jpg",
@@ -3875,6 +4076,7 @@ const cardsData = [
     series: "Exquisite Collection Limited Logos",
     number: "32/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mcgrady-ud-32.jpg",
@@ -3892,6 +4094,7 @@ const cardsData = [
     series: "Exquisite Collection Limited Logos",
     number: "13/50编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mcgrady-ud-13.jpg",
@@ -3909,6 +4112,7 @@ const cardsData = [
     series: "Impeccable Elegance Rookie Patch Autograph",
     number: "83/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/holmgren-imp-83-2.jpg",
@@ -3931,6 +4135,7 @@ const cardsData = [
     series: "Exquisite Collection Quad Jersey Extra",
     number: "04/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/pierce-ud-4-comment.jpg",
@@ -3953,6 +4158,7 @@ const cardsData = [
     series: "Impeccable Elegance Rookie Patch Autograph",
     number: "06/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/cunningham-imp-6-2.jpg",
@@ -3975,6 +4181,7 @@ const cardsData = [
     series: "Game Jerseys",
     number: "GJ19",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-ud-gj19.jpg",
@@ -3992,6 +4199,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "19/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-imm-19.jpg",
@@ -4009,6 +4217,7 @@ const cardsData = [
     series: "Immaculate Collection",
     number: "27/75编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-imm-27.jpg",
@@ -4026,6 +4235,7 @@ const cardsData = [
     series: "Flawless Dual Player Patch",
     number: "13/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-flawless-13.jpg",
@@ -4043,6 +4253,7 @@ const cardsData = [
     series: "Ultimate Collection Game Patches",
     number: "90/100编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-ud-90.jpg",
@@ -4060,6 +4271,7 @@ const cardsData = [
     series: "Kobe Anthology Memorabilia",
     number: "4/8编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-anthology-4.jpg",
@@ -4077,6 +4289,7 @@ const cardsData = [
     series: "Noir Jumbo Material Prime",
     number: "16/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-noir-16.jpg",
@@ -4094,6 +4307,7 @@ const cardsData = [
     series: "National Treasures Century Materials Gold",
     number: "3/5编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-nt-century-3.jpg",
@@ -4111,6 +4325,7 @@ const cardsData = [
     series: "Spectra Spectacular Swatches Neon Orange",
     number: "3/5编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/klay-spectra-3.jpg",
@@ -4128,6 +4343,7 @@ const cardsData = [
     series: "Immaculate The Standard",
     number: "15/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-imm-standard-15.jpg",
@@ -4145,6 +4361,7 @@ const cardsData = [
     series: "Immaculate The Standard",
     number: "16/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-imm-standard-16.jpg",
@@ -4162,6 +4379,7 @@ const cardsData = [
     series: "Noir Rookie Jumbo Material Brand Logo",
     number: "5/5编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mobley-noir-5.jpg",
@@ -4179,6 +4397,7 @@ const cardsData = [
     series: "Prizm Sensational Swatches Prize Green Ice",
     number: "10/21编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-prizm-10.jpg",
@@ -4196,6 +4415,7 @@ const cardsData = [
     series: "Noir Box Office Memorabilia Prime",
     number: "11/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-noir-boxoffice-11.jpg",
@@ -4213,6 +4433,7 @@ const cardsData = [
     series: "Immaculate Materials Gold",
     number: "5/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-imm-materials-5.jpg",
@@ -4230,6 +4451,7 @@ const cardsData = [
     series: "Immaculate Materials Red",
     number: "10/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-imm-materials-red-10.jpg",
@@ -4247,6 +4469,7 @@ const cardsData = [
     series: "Immaculate The Standard",
     number: "11/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-imm-standard-11.jpg",
@@ -4264,6 +4487,7 @@ const cardsData = [
     series: "Immaculate Standout Memorabilia Gold",
     number: "1/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-imm-standout-1.jpg",
@@ -4281,6 +4505,7 @@ const cardsData = [
     series: "Immaculate Remarkable Jerseys Red",
     number: "19/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-imm-jerseys-red-19.jpg",
@@ -4298,6 +4523,7 @@ const cardsData = [
     series: "Origins Origins Memorabilia Turquoise",
     number: "8/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-origins-turquoise-8.jpg",
@@ -4315,6 +4541,7 @@ const cardsData = [
     series: "Prestige Inside the No. Prime Materials",
     number: "20/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/kobe-prestige-20.jpg",
@@ -4332,6 +4559,7 @@ const cardsData = [
     series: "National Treasures Lasting Legacies",
     number: "9/20编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/durant-nt-legacies-9.jpg",
@@ -4349,6 +4577,7 @@ const cardsData = [
     series: "Spectra Spectacular Swatches Gold",
     number: "3/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/curry-spectra-gold-3.jpg",
@@ -4366,6 +4595,7 @@ const cardsData = [
     series: "Immaculate Remarkable Jerseys Red",
     number: "3/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-imm-jerseys-red-3.jpg",
@@ -4383,6 +4613,7 @@ const cardsData = [
     series: "Impeccable Elegance Rookie Jersey Auto",
     number: "25/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/mobley-impeccable-25.jpg",
@@ -4400,6 +4631,7 @@ const cardsData = [
     series: "National Treasures NBA Materials Prime",
     number: "5/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-nt-materials-5.jpg",
@@ -4417,6 +4649,7 @@ const cardsData = [
     series: "Noir Box Office Memorabilia Prime",
     number: "10/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/morant-noir-boxoffice-10.jpg",
@@ -4434,6 +4667,7 @@ const cardsData = [
     series: "Noir Box Office Memorabilia Prime",
     number: "16/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/lebron-noir-boxoffice-16.jpg",
@@ -4451,6 +4685,7 @@ const cardsData = [
     series: "Immaculate Standout Memorabilia",
     number: "11/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/sga-imm-standout-11-2.jpg",
@@ -4473,6 +4708,7 @@ const cardsData = [
     series: "Immaculate The Standard",
     number: "84/99编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/sga-imm-standard-84-2.jpg",
@@ -4495,6 +4731,7 @@ const cardsData = [
     series: "Immaculate",
     number: "09/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/young-imm-9-2.jpg",
@@ -4517,6 +4754,7 @@ const cardsData = [
     series: "Limited Glass Cleaners",
     number: "1/1编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/yao-limited-1-2.jpg",
@@ -4539,6 +4777,7 @@ const cardsData = [
     series: "Flawless Triple Materials",
     number: "23/25编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/triple-flawless-23-2.jpg",
@@ -4561,6 +4800,7 @@ const cardsData = [
     series: "Silhouette Jumbo Memorabilia",
     number: "09/15编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/portis-silhouette-9-2.jpg",
@@ -4583,6 +4823,7 @@ const cardsData = [
     series: "Flawless Signature Prime Material Gold Auto",
     number: "08/10编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/sga-flawless-8-1.jpg",
@@ -4605,6 +4846,7 @@ const cardsData = [
     series: "Spectra Hall of Fame Signatures",
     number: "1/1编",
     status: "confirmed",
+    category: "fake-patch",
     images: [
       {
         url: "images/sample/malone-spectra-1-1.jpg",

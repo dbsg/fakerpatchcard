@@ -66,20 +66,30 @@ function loadCardDetail() {
 function renderDetail() {
   const detailContent = document.getElementById('detailContent');
 
-  // 根据状态显示不同的警告
+  const category = currentCard.category || 'fake-patch';
+  const warningTexts = {
+    'fake-patch': {
+      confirmed: { title: '🚫 确认警告：此卡片已确认为换Patch卡', desc: '该卡片经过对比和验证，已确认Patch被替换。<strong>强烈建议不要购买此类卡片。</strong>' },
+      suspected: { title: '⚠️ 高危警示：此卡片疑似换Patch', desc: '根据同款卡片对比或相关经验判断，该卡换Patch的概率很大。<strong>请谨慎购买，建议进一步核实。</strong>' }
+    },
+    'counterfeit': {
+      confirmed: { title: '🚫 确认警告：此卡片已确认为假卡（伪造/复刻）', desc: '该卡片经过验证，已确认为伪造或复刻卡。<strong>强烈建议不要购买此类卡片。</strong>' },
+      suspected: { title: '⚠️ 高危警示：此卡片疑似为假卡', desc: '根据相关经验判断，该卡为伪造/复刻的概率很大。<strong>请谨慎购买，建议进一步核实。</strong>' }
+    },
+    'fake-auto': {
+      confirmed: { title: '🚫 确认警告：此卡片签字已确认被涂改或伪造', desc: '该卡片签字经过验证，已确认存在涂改或伪造。<strong>强烈建议不要购买此类卡片。</strong>' },
+      suspected: { title: '⚠️ 高危警示：此卡片签字疑似被涂改或伪造', desc: '根据相关经验判断，该卡签字被涂改或伪造的概率很大。<strong>请谨慎购买，建议进一步核实。</strong>' }
+    }
+  };
+
   let warningBox = '';
-  if (currentCard.status === 'confirmed') {
+  const wt = (warningTexts[category] || warningTexts['fake-patch'])[currentCard.status];
+  if (wt) {
+    const cls = currentCard.status === 'confirmed' ? 'warning-danger' : 'warning-caution';
     warningBox = `
-      <div class="warning-box warning-danger">
-        <p><strong>🚫 确认警告：此卡片已确认为换Patch卡</strong></p>
-        <p>该卡片经过对比和验证，已确认Patch被替换。<strong>强烈建议不要购买此类卡片。</strong></p>
-      </div>
-    `;
-  } else if (currentCard.status === 'suspected') {
-    warningBox = `
-      <div class="warning-box warning-caution">
-        <p><strong>⚠️ 高危警示：此卡片疑似换Patch</strong></p>
-        <p>虽未找到该卡片的原始对比图片，但根据同款卡片对比或相关经验判断，该卡换Patch的概率很大。<strong>请谨慎购买，建议进一步核实。</strong></p>
+      <div class="warning-box ${cls}">
+        <p><strong>${wt.title}</strong></p>
+        <p>${wt.desc}</p>
       </div>
     `;
   }
@@ -123,8 +133,8 @@ function renderDetail() {
           ${highRiskReasonItem}
         </div>
 
-        ${renderImageGroup(currentCard, 'after', '🔴 换 Patch 后')}
-        ${renderImageGroup(currentCard, 'before', '🟢 换 Patch 前')}
+        ${renderImageGroup(currentCard, 'after', category === 'counterfeit' ? '🔴 问题卡片照片' : category === 'fake-auto' ? '🔴 涂改/伪造后' : '🔴 换 Patch 后')}
+        ${category !== 'counterfeit' ? renderImageGroup(currentCard, 'before', category === 'fake-auto' ? '🟢 原始签字' : '🟢 换 Patch 前') : ''}
         ${renderImageGroup(currentCard, 'compare', '🔍 对比图')}
       </div>
     </div>
