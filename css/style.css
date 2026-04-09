@@ -418,6 +418,21 @@ a:hover {
   box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
 }
 
+.timeline-dot.dot-after {
+  background: #e53e3e;
+  box-shadow: 0 2px 8px rgba(229, 62, 62, 0.3);
+}
+
+.timeline-dot.dot-before {
+  background: #38a169;
+  box-shadow: 0 2px 8px rgba(56, 161, 105, 0.3);
+}
+
+.timeline-dot.dot-compare {
+  background: #d69e2e;
+  box-shadow: 0 2px 8px rgba(214, 158, 46, 0.3);
+}
+
 .timeline-header {
   display: flex;
   justify-content: space-between;

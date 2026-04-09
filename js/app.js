@@ -85,8 +85,8 @@ const app = {
     const paginatedCards = sortedCards.slice(startIndex, endIndex);
 
     cardList.innerHTML = paginatedCards.map(card => {
-      // 显示最后一张图片（最新状态）
-      const latestImage = card.images[card.images.length - 1];
+      const afterImg = card.images.find(img => img.type === 'after');
+      const latestImage = afterImg || card.images[card.images.length - 1];
 
       // 根据状态显示标签
       const badgeClass = card.status === 'suspected' ? 'suspected' : 'fake';

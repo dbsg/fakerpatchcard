@@ -2,6 +2,40 @@
 let currentCard = null;
 let currentImageIndex = 0;
 
+function renderImageGroup(card, type, title) {
+  const images = card.images.filter(img => img.type === type);
+  if (images.length === 0) return '';
+
+  const dotClass = type === 'after' ? 'dot-after' : type === 'before' ? 'dot-before' : 'dot-compare';
+
+  return `
+    <div class="image-timeline">
+      <div class="timeline-title">
+        ${title}
+        <span class="timeline-count">(${images.length}张)</span>
+      </div>
+      <div class="timeline-items">
+        ${images.map(image => {
+          const originalIndex = card.images.indexOf(image);
+          return `
+            <div class="timeline-item">
+              <div class="timeline-dot ${dotClass}"></div>
+              <img
+                class="timeline-image"
+                src="${image.url}"
+                alt="${image.note}"
+                onerror="this.src='images/placeholder.jpg'"
+                onclick="openModal(${originalIndex})"
+              >
+              <div class="timeline-note">📝 ${image.note}</div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+}
+
 // 获取URL参数
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
@@ -89,35 +123,9 @@ function renderDetail() {
           ${highRiskReasonItem}
         </div>
 
-        <div class="image-timeline">
-          <div class="timeline-title">
-            照片记录
-            <span class="timeline-count">(共${currentCard.images.length}张)</span>
-          </div>
-
-          <div class="timeline-items">
-            ${currentCard.images.slice().reverse().map((image, reverseIndex) => {
-              const originalIndex = currentCard.images.length - 1 - reverseIndex;
-              return `
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-header">
-                  <span class="timeline-index">记录 ${originalIndex + 1}</span>
-                </div>
-                <img
-                  class="timeline-image"
-                  src="${image.url}"
-                  alt="记录 ${originalIndex + 1}"
-                  onerror="this.src='images/placeholder.jpg'"
-                  onclick="openModal(${originalIndex})"
-                >
-                <div class="timeline-note">
-                  📝 ${image.note}
-                </div>
-              </div>
-            `}).join('')}
-          </div>
-        </div>
+        ${renderImageGroup(currentCard, 'after', '🔴 换 Patch 后')}
+        ${renderImageGroup(currentCard, 'before', '🟢 换 Patch 前')}
+        ${renderImageGroup(currentCard, 'compare', '🔍 对比图')}
       </div>
     </div>
   `;
