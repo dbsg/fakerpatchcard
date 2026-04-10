@@ -1355,24 +1355,6 @@ const cardsData = [
     ]
   },
   {
-    id: 62,
-    player: "LeBron James",
-    playerCN: "勒布朗·詹姆斯",
-    brand: "Upper Deck",
-    year: "2006-07",
-    series: "Exquisite Collection",
-    number: "编号待确认",
-    status: "confirmed",
-    category: "fake-patch",
-    images: [
-      {
-        url: "images/sample/lebron-exquisite.jpg",
-        note: "对比图 - 版本1: 黄白红三色条纹patch vs 版本2: PSA评级 红白双色patch（含签名对比）",
-        type: "before"
-      }
-    ]
-  },
-  {
     id: 63,
     player: "Kobe Bryant",
     playerCN: "科比·布莱恩特",
@@ -1994,6 +1976,7 @@ const cardsData = [
     number: "60/75编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/gordon-ultimate-60-2.jpg",
@@ -2017,6 +2000,7 @@ const cardsData = [
     number: "041/100编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/jordan-sp-041-2.jpg",
@@ -2040,6 +2024,7 @@ const cardsData = [
     number: "05/10编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/simien-trilogy-05-2.jpg",
@@ -2063,6 +2048,7 @@ const cardsData = [
     number: "09/15编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/iguodala-ultimate-09-2.jpg",
@@ -2086,6 +2072,7 @@ const cardsData = [
     number: "42/50编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/paul-exquisite-42-2.jpg",
@@ -2109,6 +2096,7 @@ const cardsData = [
     number: "10/99编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/lebron-nt-gear-10-2.jpg",
@@ -2132,6 +2120,7 @@ const cardsData = [
     number: "13/99编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/lebron-nt-gear-13-2.jpg",
@@ -2155,6 +2144,7 @@ const cardsData = [
     number: "编号待确认",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/lebron-exquisite-rpa-2.jpg",
@@ -2178,6 +2168,7 @@ const cardsData = [
     number: "22/50编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/mourning-exquisite-22-2.jpg",
@@ -2201,11 +2192,12 @@ const cardsData = [
     number: "97/99编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/durant-exquisite-97.jpg",
         note: "对比图 - 左:绿白黄三色拼接patch vs 右:黄绿色拼接patch（含eBay拍卖截图）",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -2219,11 +2211,12 @@ const cardsData = [
     number: "04/75编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/durant-imm-04.jpg",
         note: "对比图 - 左:蓝橙色拼接patch vs 右:橙蓝色拼接patch（含eBay拍卖截图）",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -2237,11 +2230,12 @@ const cardsData = [
     number: "12/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/hill-imm-12.jpg",
         note: "对比图 - 左:纯红色patch vs 右:红白橙三色横条纹patch（含eBay拍卖截图）",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -2255,11 +2249,12 @@ const cardsData = [
     number: "04/10编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/lebron-iverson-exquisite-04.jpg",
         note: "对比图 - 左:三人六色patch（含logo） vs 右:三人纯色patch（含eBay拍卖截图）",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -2273,11 +2268,12 @@ const cardsData = [
     number: "07/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/kobe-flawless-07.jpg",
         note: "对比图 - 左:纯白色patch vs 右:紫黄拼接patch（含eBay拍卖截图及PSA封装对比）",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -2291,11 +2287,12 @@ const cardsData = [
     number: "08/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/kobe-magic-sp-08.jpg",
         note: "对比图 - 左:双人四色patch（紫黄色湖人配色） vs 右:双人纯色patch（含eBay拍卖截图）",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -2333,11 +2330,12 @@ const cardsData = [
     number: "16/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/lebron-flawless-16.jpg",
         note: "对比图 - 左:红黑白三色拼接jumbo patch vs 右:纯白色patch（含PSA 10封装及eBay拍卖截图）",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -2351,11 +2349,12 @@ const cardsData = [
     number: "11/15编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/malone-flawless-11.jpg",
         note: "对比图 - 左:蓝紫红三色拼接patch vs 右:蓝紫色拼接patch（含eBay拍卖截图）",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -2369,11 +2368,12 @@ const cardsData = [
     number: "21/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/parker-flawless-21.jpg",
         note: "对比图 - 左:灰黑蓝三色拼接patch vs 右:纯黑色patch（含亚马逊及eBay拍卖截图）",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -2387,11 +2387,12 @@ const cardsData = [
     number: "10/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
     images: [
       {
         url: "images/sample/payton-imm-10.jpg",
         note: "对比图 - 左:白黄绿三色拼接patch vs 右:黄绿橙三色拼接patch（含eBay拍卖截图）",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -4971,6 +4972,7 @@ const cardsData = [
     number: "08/10编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://v.douyin.com/kuSr_nx5IpE/",
     images: [
       {
         url: "images/sample/sga-flawless-8-1.jpg",
@@ -5318,6 +5320,25 @@ const cardsData = [
     images: [
       {
         url: "images/sample/card_1775807839755_after_0.png",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 298,
+    player: "Shaquille O'Neal",
+    playerCN: "沙奎尔·奥尼尔",
+    brand: "Panini",
+    year: "2012-13",
+    series: "Immaculate Collection",
+    number: "30/32",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    images: [
+      {
+        url: "images/sample/card_1775813878577_after_0.jpg",
         note: "after_0",
         type: "after"
       }
