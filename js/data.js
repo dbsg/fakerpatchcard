@@ -691,6 +691,7 @@ const cardsData = [
     number: "50/50编",
     status: "confirmed",
     category: "fake-patch",
+    source: "微信好友15大佬反馈",
     images: [
       {
         url: "images/sample/derrick-rose-old.jpg",
@@ -714,6 +715,7 @@ const cardsData = [
     number: "10/15编",
     status: "confirmed",
     category: "fake-patch",
+    source: "微信好友15大佬反馈",
     images: [
       {
         url: "images/sample/rose-extra-old.jpg",
@@ -737,6 +739,7 @@ const cardsData = [
     number: "12/12编",
     status: "confirmed",
     category: "fake-patch",
+    source: "微信好友15大佬反馈",
     images: [
       {
         url: "images/sample/garnett-silhouettes-old.jpg",
@@ -4801,6 +4804,7 @@ const cardsData = [
     number: "09/15编",
     status: "confirmed",
     category: "fake-patch",
+    source: "微信好友15大佬反馈",
     images: [
       {
         url: "images/sample/portis-silhouette-9-2.jpg",
@@ -4847,6 +4851,7 @@ const cardsData = [
     number: "1/1编",
     status: "confirmed",
     category: "fake-patch",
+    source: "微信好友15大佬反馈",
     images: [
       {
         url: "images/sample/malone-spectra-1-1.jpg",
@@ -4870,6 +4875,7 @@ const cardsData = [
     number: "16/49",
     status: "confirmed",
     category: "fake-auto",
+    source: "https://www.xiaohongshu.com/explore/69d27dee000000001a036d4f?app_platform=ios&app_version=9.23&share_from_user_hidden=true&xsec_source=app_s",
     images: [
       {
         url: "images/sample/card_1775731012979_after_0.png",
@@ -4879,6 +4885,78 @@ const cardsData = [
       {
         url: "images/sample/card_1775731012979_before_0.jpg",
         note: "墨迹淡化严重",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 282,
+    player: "Derrick Rose",
+    playerCN: "德里克·罗斯",
+    brand: "Panini",
+    year: "2013-14",
+    series: "National Treasures",
+    number: "27/65",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "微信好友15大佬反馈",
+    images: [
+      {
+        url: "images/sample/card_1775732250101_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1775732250101_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 283,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2011-12",
+    series: "Gold Standard",
+    number: "无编",
+    status: "confirmed",
+    category: "fake-auto",
+    source: "小程序用户反馈",
+    images: [
+      {
+        url: "images/sample/fb_1775731412903_after_0.png",
+        note: "疑似出现 kd 的假铭文，可以通过签字的瑕疵位置对比",
+        type: "after"
+      },
+      {
+        url: "images/sample/fb_1775731412903_before_0.png",
+        note: "原始图片",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 286,
+    player: "Manu Ginobili",
+    playerCN: "马努 吉诺比利",
+    brand: "Panini",
+    year: "2016-17",
+    series: "Immaculate",
+    number: "3/3",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "https://www.xiaohongshu.com/explore/69cfb4d8000000001b0210cb?app_platform=ios&app_version=9.23&share_from_user_hidden=true&xsec_source=app_s",
+    images: [
+      {
+        url: "images/sample/card_1775738935817_after_0.png",
+        note: "patch 球衣为白色布料，实际应该为灰色",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1775738935817_before_0.jpg",
+        note: "原始全明星所穿球衣",
         type: "before"
       }
     ]

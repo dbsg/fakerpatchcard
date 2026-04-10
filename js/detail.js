@@ -102,6 +102,13 @@ function renderDetail() {
       </div>`
     : '';
 
+  const sourceItem = currentCard.source
+    ? `<div class="detail-info-item detail-info-full">
+        <span class="detail-label">来源</span>
+        <span class="detail-value">${currentCard.source.startsWith('http') ? `<a href="${currentCard.source}" target="_blank" rel="noopener" class="source-link">${currentCard.source}</a>` : currentCard.source}</span>
+      </div>`
+    : '';
+
   detailContent.innerHTML = `
     <div class="detail-container">
       <div class="detail-card">
@@ -131,6 +138,7 @@ function renderDetail() {
             <span class="detail-value">${currentCard.images.length} 张</span>
           </div>
           ${highRiskReasonItem}
+          ${sourceItem}
         </div>
 
         ${renderImageGroup(currentCard, 'after', category === 'counterfeit' ? '🔴 问题卡片照片' : category === 'fake-auto' ? '🔴 涂改/伪造后' : '🔴 换 Patch 后')}

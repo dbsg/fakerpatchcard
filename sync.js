@@ -71,6 +71,9 @@ function generateDataJs(cards) {
     if (card.highRiskReason) {
       lines.push(`${indent}${indent}highRiskReason: ${JSON.stringify(card.highRiskReason)},`)
     }
+    if (card.source) {
+      lines.push(`${indent}${indent}source: ${JSON.stringify(card.source)},`)
+    }
     lines.push(`${indent}${indent}images: [`)
     card.images.forEach((img, imgIdx) => {
       const comma = imgIdx < card.images.length - 1 ? ',' : ''

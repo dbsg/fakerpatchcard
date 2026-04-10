@@ -369,6 +369,16 @@ a:hover {
   font-weight: 500;
 }
 
+.source-link {
+  color: #4a90d9;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.source-link:hover {
+  text-decoration: underline;
+}
+
 .warning-box {
   background: #fff3e0;
   border-left: 4px solid #ff9800;
@@ -695,12 +705,42 @@ a:hover {
   font-size: 16px;
 }
 
+/* Header Layout */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.miniprogram-qr {
+  width: 110px;
+  height: 110px;
+  border-radius: 14px;
+}
+
+.miniprogram-hint {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
 /* Footer */
 .footer {
   background: #2d3748;
   color: #a0aec0;
   padding: 30px 0;
-  margin-top: 50px;
   text-align: center;
 }
 
@@ -824,5 +864,24 @@ a:hover {
   .stats {
     flex-direction: column;
     gap: 5px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-right {
+    margin-top: 12px;
+    gap: 10px;
+  }
+
+  .miniprogram-qr {
+    width: 90px;
+    height: 90px;
+  }
+
+  .miniprogram-hint {
+    font-size: 12px;
   }
 }
