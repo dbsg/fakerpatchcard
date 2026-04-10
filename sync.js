@@ -4,18 +4,31 @@ const fs = require('fs')
 const path = require('path')
 const { execSync } = require('child_process')
 
+const APPID = 'wx13497267f3b92c0f'
 const CDN_BASE = 'https://7072-prod-8g8ay186059e4264-1418320285.tcb.qcloud.la'
-const CARDS_JSON_URL = `${CDN_BASE}/exports/cards.json`
+const CLOUD_ENV = 'prod-8g8ay186059e4264'
 const CARD_DIR = __dirname
 const IMAGES_DIR = path.join(CARD_DIR, 'images', 'sample')
 const DATA_JS_PATH = path.join(CARD_DIR, 'js', 'data.js')
+const ENV_PATH = path.join(CARD_DIR, '.env')
 
-function fetch(url) {
+function loadEnv() {
+  if (!fs.existsSync(ENV_PATH)) return {}
+  const content = fs.readFileSync(ENV_PATH, 'utf8')
+  const env = {}
+  content.split('\n').forEach(line => {
+    const match = line.match(/^\s*([^#=]+?)\s*=\s*(.+?)\s*$/)
+    if (match) env[match[1]] = match[2]
+  })
+  return env
+}
+
+function httpGet(url) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http
     client.get(url, (res) => {
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return fetch(res.headers.location).then(resolve).catch(reject)
+        return httpGet(res.headers.location).then(resolve).catch(reject)
       }
       if (res.statusCode !== 200) {
         return reject(new Error(`HTTP ${res.statusCode} for ${url}`))
@@ -28,23 +41,79 @@ function fetch(url) {
   })
 }
 
+function httpPost(url, body) {
+  return new Promise((resolve, reject) => {
+    const data = JSON.stringify(body)
+    const parsed = new URL(url)
+    const options = {
+      hostname: parsed.hostname,
+      port: parsed.port || 443,
+      path: parsed.pathname + parsed.search,
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(data) }
+    }
+    const req = https.request(options, (res) => {
+      const chunks = []
+      res.on('data', chunk => chunks.push(chunk))
+      res.on('end', () => {
+        try { resolve(JSON.parse(Buffer.concat(chunks).toString('utf8'))) }
+        catch (e) { reject(new Error('Invalid JSON response')) }
+      })
+      res.on('error', reject)
+    })
+    req.on('error', reject)
+    req.write(data)
+    req.end()
+  })
+}
+
+async function getAccessToken(appSecret) {
+  const url = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${appSecret}`
+  const buf = await httpGet(url)
+  const result = JSON.parse(buf.toString('utf8'))
+  if (result.errcode) throw new Error(`获取 access_token 失败: ${result.errmsg} (${result.errcode})`)
+  return result.access_token
+}
+
+async function queryCloudDB(accessToken, query) {
+  const url = `https://api.weixin.qq.com/tcb/databasequery?access_token=${accessToken}`
+  return httpPost(url, { env: CLOUD_ENV, query })
+}
+
+async function fetchCardsFromCloudDB(accessToken) {
+  console.log('   从云数据库 exports 集合读取...')
+  const result = await queryCloudDB(accessToken,
+    `db.collection("exports").where({key:"cards"}).orderBy("chunkIndex","asc").get()`
+  )
+  if (result.errcode !== 0) throw new Error(`查询失败: ${result.errmsg} (${result.errcode})`)
+
+  const docs = result.data.map(d => JSON.parse(d))
+  if (docs.length === 0) throw new Error('exports 集合为空，请先在小程序管理页点击「同步到网站」')
+
+  docs.sort((a, b) => a.chunkIndex - b.chunkIndex)
+  const fullJson = docs.map(d => d.json).join('')
+  return JSON.parse(fullJson)
+}
+
+async function fetchCardsFromCDN() {
+  console.log('   从 CDN 下载 cards.json (旧模式)...')
+  const buf = await httpGet(`${CDN_BASE}/exports/cards.json`)
+  return JSON.parse(buf.toString('utf8'))
+}
+
 async function downloadImage(url, destPath) {
   if (fs.existsSync(destPath)) return false
-  const data = await fetch(url)
+  const data = await httpGet(url)
   fs.writeFileSync(destPath, data)
   return true
 }
 
 function cdnUrlToLocalPath(url) {
   if (!url.startsWith(CDN_BASE + '/')) return url
-
   const cloudPath = url.slice(CDN_BASE.length + 1)
-
   if (cloudPath.startsWith('images/')) {
-    const filename = path.basename(cloudPath)
-    return `images/sample/${filename}`
+    return `images/sample/${path.basename(cloudPath)}`
   }
-
   const filename = cloudPath
     .replace(/^(card-images|feedback-images|correction-images)\//, '')
     .replace(/\//g, '_')
@@ -84,7 +153,6 @@ function generateDataJs(cards) {
       lines.push(`${indent}${indent}${indent}}${comma}`)
     })
     lines.push(`${indent}${indent}]`)
-
     const comma = cardIdx < cards.length - 1 ? ',' : ''
     lines.push(`${indent}}${comma}`)
   })
@@ -102,15 +170,25 @@ function generateDataJs(cards) {
 async function main() {
   console.log('=== 同步小程序数据到 card 项目 ===\n')
 
-  console.log('1. 下载 cards.json ...')
+  const env = loadEnv()
+  const appSecret = env.APP_SECRET || process.env.APP_SECRET
+
   let cards
-  try {
-    const buf = await fetch(CARDS_JSON_URL)
-    cards = JSON.parse(buf.toString('utf8'))
-  } catch (e) {
-    console.error(`下载失败: ${e.message}`)
-    console.error('请先在小程序管理页点击「同步到网站」导出数据')
-    process.exit(1)
+  console.log('1. 获取卡片数据 ...')
+
+  if (appSecret) {
+    try {
+      const token = await getAccessToken(appSecret)
+      cards = await fetchCardsFromCloudDB(token)
+    } catch (e) {
+      console.warn(`   云数据库读取失败: ${e.message}`)
+      console.log('   尝试 CDN 兜底...')
+      cards = await fetchCardsFromCDN()
+    }
+  } else {
+    console.log('   未配置 APP_SECRET，使用 CDN 模式')
+    console.log('   如需云数据库直读，在 card/.env 中添加 APP_SECRET=你的小程序密钥')
+    cards = await fetchCardsFromCDN()
   }
   console.log(`   获取到 ${cards.length} 张卡片\n`)
 

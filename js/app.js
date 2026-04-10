@@ -157,6 +157,7 @@ const app = {
       const matchBrand = !brand || card.brand === brand;
       const matchYear = !year || card.year === year;
       const matchKeyword = !keyword ||
+        String(card.id) === keyword ||
         card.player.toLowerCase().includes(keyword) ||
         (card.playerCN && card.playerCN.includes(keyword)) ||
         card.series.toLowerCase().includes(keyword) ||

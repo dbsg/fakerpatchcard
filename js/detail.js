@@ -2,11 +2,14 @@
 let currentCard = null;
 let currentImageIndex = 0;
 
+const placeholderNoteRe = /^(after|before|compare)_\d+$/;
+
 function renderImageGroup(card, type, title) {
-  const images = card.images.filter(img => img.type === type);
+  const types = type === 'after' ? ['after', 'compare'] : [type];
+  const images = card.images.filter(img => types.includes(img.type));
   if (images.length === 0) return '';
 
-  const dotClass = type === 'after' ? 'dot-after' : type === 'before' ? 'dot-before' : 'dot-compare';
+  const dotClass = type === 'after' ? 'dot-after' : 'dot-before';
 
   return `
     <div class="image-timeline">
@@ -17,17 +20,18 @@ function renderImageGroup(card, type, title) {
       <div class="timeline-items">
         ${images.map(image => {
           const originalIndex = card.images.indexOf(image);
+          const hasNote = image.note && !placeholderNoteRe.test(image.note);
           return `
             <div class="timeline-item">
               <div class="timeline-dot ${dotClass}"></div>
               <img
                 class="timeline-image"
                 src="${image.url}"
-                alt="${image.note}"
+                alt="${hasNote ? image.note : ''}"
                 onerror="this.src='images/placeholder.jpg'"
                 onclick="openModal(${originalIndex})"
               >
-              <div class="timeline-note">📝 ${image.note}</div>
+              ${hasNote ? `<div class="timeline-note">📝 ${image.note}</div>` : ''}
             </div>
           `;
         }).join('')}
@@ -133,17 +137,12 @@ function renderDetail() {
             <span class="detail-label">编号</span>
             <span class="detail-value">${currentCard.number}</span>
           </div>
-          <div class="detail-info-item">
-            <span class="detail-label">照片记录</span>
-            <span class="detail-value">${currentCard.images.length} 张</span>
-          </div>
           ${highRiskReasonItem}
           ${sourceItem}
         </div>
 
         ${renderImageGroup(currentCard, 'after', category === 'counterfeit' ? '🔴 问题卡片照片' : category === 'fake-auto' ? '🔴 涂改/伪造后' : '🔴 换 Patch 后')}
         ${category !== 'counterfeit' ? renderImageGroup(currentCard, 'before', category === 'fake-auto' ? '🟢 原始签字' : '🟢 换 Patch 前') : ''}
-        ${renderImageGroup(currentCard, 'compare', '🔍 对比图')}
       </div>
     </div>
   `;
@@ -157,12 +156,13 @@ function openModal(index) {
   const caption = document.getElementById('modalCaption');
 
   const image = currentCard.images[index];
+  const hasNote = image.note && !placeholderNoteRe.test(image.note);
 
   modal.style.display = 'block';
   modalImg.src = image.url;
   caption.innerHTML = `
-    <strong>记录 ${index + 1}</strong><br>
-    ${image.note}
+    <strong>记录 ${index + 1}</strong>
+    ${hasNote ? `<br>${image.note}` : ''}
   `;
 }
 
