@@ -83,24 +83,27 @@ async function queryCloudDB(accessToken, query) {
 async function fetchCardsFromCloudDB(accessToken) {
   console.log('   从云数据库 cards 集合直接读取...')
 
-  const countResult = await queryCloudDB(accessToken,
-    `db.collection("cards").where({deleted:db.command.neq(true)}).count()`
+  const firstPage = await queryCloudDB(accessToken,
+    `db.collection("cards").limit(1).get()`
   )
-  if (countResult.errcode !== 0) throw new Error(`count 查询失败: ${countResult.errmsg} (${countResult.errcode})`)
-  const total = JSON.parse(countResult.data[0]).total
-  console.log(`   共 ${total} 张卡片`)
+  if (firstPage.errcode !== 0) throw new Error(`查询失败: ${firstPage.errmsg} (${firstPage.errcode})`)
+  const total = firstPage.pager.Total
+  console.log(`   共 ${total} 条记录`)
 
   const allDocs = []
   const PAGE = 100
   for (let skip = 0; skip < total; skip += PAGE) {
     const result = await queryCloudDB(accessToken,
-      `db.collection("cards").where({deleted:db.command.neq(true)}).skip(${skip}).limit(${PAGE}).get()`
+      `db.collection("cards").skip(${skip}).limit(${PAGE}).get()`
     )
     if (result.errcode !== 0) throw new Error(`查询失败(skip=${skip}): ${result.errmsg} (${result.errcode})`)
     result.data.forEach(d => allDocs.push(JSON.parse(d)))
   }
 
-  return allDocs.map(c => ({
+  const activeCards = allDocs.filter(c => !c.deleted)
+  console.log(`   过滤后 ${activeCards.length} 张有效卡片`)
+
+  return activeCards.map(c => ({
     id: c.id,
     player: c.player,
     playerCN: c.playerCN || '',
