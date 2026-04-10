@@ -6,7 +6,7 @@ const { execSync } = require('child_process')
 
 const APPID = 'wx13497267f3b92c0f'
 const CDN_BASE = 'https://7072-prod-8g8ay186059e4264-1418320285.tcb.qcloud.la'
-const CLOUD_ENV = 'prod-8g8ay186059e4264'
+const CLOUD_ENV = 'cloudbase-1g5rcsava7547769'
 const CARD_DIR = __dirname
 const IMAGES_DIR = path.join(CARD_DIR, 'images', 'sample')
 const DATA_JS_PATH = path.join(CARD_DIR, 'js', 'data.js')
@@ -81,30 +81,43 @@ async function queryCloudDB(accessToken, query) {
 }
 
 async function fetchCardsFromCloudDB(accessToken) {
-  console.log('   从云数据库 exports 集合读取...')
+  console.log('   从云数据库 cards 集合直接读取...')
 
   const countResult = await queryCloudDB(accessToken,
-    `db.collection("exports").where({key:"cards"}).count()`
+    `db.collection("cards").where({deleted:db.command.neq(true)}).count()`
   )
   if (countResult.errcode !== 0) throw new Error(`count 查询失败: ${countResult.errmsg} (${countResult.errcode})`)
   const total = JSON.parse(countResult.data[0]).total
-  console.log(`   共 ${total} 条分块记录`)
+  console.log(`   共 ${total} 张卡片`)
 
   const allDocs = []
-  const PAGE = 20
+  const PAGE = 100
   for (let skip = 0; skip < total; skip += PAGE) {
     const result = await queryCloudDB(accessToken,
-      `db.collection("exports").where({key:"cards"}).skip(${skip}).limit(${PAGE}).get()`
+      `db.collection("cards").where({deleted:db.command.neq(true)}).skip(${skip}).limit(${PAGE}).get()`
     )
-    if (result.errcode !== 0) throw new Error(`查询失败: ${result.errmsg} (${result.errcode})`)
+    if (result.errcode !== 0) throw new Error(`查询失败(skip=${skip}): ${result.errmsg} (${result.errcode})`)
     result.data.forEach(d => allDocs.push(JSON.parse(d)))
   }
 
-  if (allDocs.length === 0) throw new Error('exports 集合为空，请先在小程序管理页点击「同步到网站」')
-
-  allDocs.sort((a, b) => a.chunkIndex - b.chunkIndex)
-  const fullJson = allDocs.map(d => d.json).join('')
-  return JSON.parse(fullJson)
+  return allDocs.map(c => ({
+    id: c.id,
+    player: c.player,
+    playerCN: c.playerCN || '',
+    brand: c.brand,
+    year: c.year,
+    series: c.series,
+    number: c.number,
+    status: c.status || 'confirmed',
+    highRiskReason: c.highRiskReason || '',
+    category: c.category || 'fake-patch',
+    source: c.source || '',
+    images: (c.images || []).map(img => ({
+      url: img.url,
+      note: img.note || '',
+      type: img.type || 'after'
+    }))
+  }))
 }
 
 async function fetchCardsFromCDN() {
