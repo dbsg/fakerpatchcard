@@ -82,16 +82,28 @@ async function queryCloudDB(accessToken, query) {
 
 async function fetchCardsFromCloudDB(accessToken) {
   console.log('   从云数据库 exports 集合读取...')
-  const result = await queryCloudDB(accessToken,
-    `db.collection("exports").where({key:"cards"}).orderBy("chunkIndex","asc").get()`
+
+  const countResult = await queryCloudDB(accessToken,
+    `db.collection("exports").where({key:"cards"}).count()`
   )
-  if (result.errcode !== 0) throw new Error(`查询失败: ${result.errmsg} (${result.errcode})`)
+  if (countResult.errcode !== 0) throw new Error(`count 查询失败: ${countResult.errmsg} (${countResult.errcode})`)
+  const total = JSON.parse(countResult.data[0]).total
+  console.log(`   共 ${total} 条分块记录`)
 
-  const docs = result.data.map(d => JSON.parse(d))
-  if (docs.length === 0) throw new Error('exports 集合为空，请先在小程序管理页点击「同步到网站」')
+  const allDocs = []
+  const PAGE = 20
+  for (let skip = 0; skip < total; skip += PAGE) {
+    const result = await queryCloudDB(accessToken,
+      `db.collection("exports").where({key:"cards"}).skip(${skip}).limit(${PAGE}).get()`
+    )
+    if (result.errcode !== 0) throw new Error(`查询失败: ${result.errmsg} (${result.errcode})`)
+    result.data.forEach(d => allDocs.push(JSON.parse(d)))
+  }
 
-  docs.sort((a, b) => a.chunkIndex - b.chunkIndex)
-  const fullJson = docs.map(d => d.json).join('')
+  if (allDocs.length === 0) throw new Error('exports 集合为空，请先在小程序管理页点击「同步到网站」')
+
+  allDocs.sort((a, b) => a.chunkIndex - b.chunkIndex)
+  const fullJson = allDocs.map(d => d.json).join('')
   return JSON.parse(fullJson)
 }
 
