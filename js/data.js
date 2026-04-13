@@ -4087,6 +4087,7 @@ const cardsData = [
     number: "16/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://tieba.baidu.com/p/7310790568",
     images: [
       {
         url: "images/sample/iverson-imm-16.jpg",
@@ -4105,6 +4106,7 @@ const cardsData = [
     number: "08/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://tieba.baidu.com/p/7310790568",
     images: [
       {
         url: "images/sample/iverson-imm-8.jpg",
@@ -4123,6 +4125,7 @@ const cardsData = [
     number: "24/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "https://tieba.baidu.com/p/7310790568",
     images: [
       {
         url: "images/sample/iverson-imm-24.jpg",
@@ -4141,7 +4144,7 @@ const cardsData = [
     number: "16/49编",
     status: "confirmed",
     category: "fake-patch",
-    source: "https://tieba.baidu.com/p/8264469818?&share=9105&fr=sharewise&is_video=false&unique=29EC5BB973454E6C1361266BF81F807D&st=1775814885&client_ty",
+    source: "https://tieba.baidu.com/p/8264469818",
     images: [
       {
         url: "images/sample/tatum-nt-16-2.jpg",
@@ -5350,6 +5353,45 @@ const cardsData = [
       {
         url: "images/sample/card_1775813878577_after_0.jpg",
         note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 299,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2009-10",
+    series: "National Treasures",
+    number: "24/25",
+    status: "suspected",
+    category: "fake-patch",
+    highRiskReason: "详情查看来源的帖子",
+    source: "https://tieba.baidu.com/p/7735027390",
+    images: [
+      {
+        url: "images/sample/card_1776077811563_after_0.png",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 300,
+    player: "Jayson Tatum",
+    playerCN: "杰森·塔图姆",
+    brand: "Panini",
+    year: "2018-19",
+    series: "Dominion",
+    number: "48/49",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "https://tieba.baidu.com/p/8268459748",
+    images: [
+      {
+        url: "images/sample/card_1776078049524_after_0.png",
+        note: "49编都是单色的而且这年没有用过黑色球衣",
         type: "after"
       }
     ]
