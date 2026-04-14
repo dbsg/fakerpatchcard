@@ -33,11 +33,12 @@ const cardsData = [
     number: "1/10编",
     status: "confirmed",
     category: "fake-patch",
+    source: "http://xhslink.com/o/AHDD9kzsYzN",
     images: [
       {
         url: "images/sample/kyrie-2016-1.jpg",
         note: "对比图 - 左右两版本patch差异明显",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -51,12 +52,12 @@ const cardsData = [
     number: "6/10编",
     status: "confirmed",
     category: "fake-patch",
-    source: "https://www.youtube.com/post/Ugkx8H14NHgWSzJ1yK3Qv3k0B6lPQvcWEp3A",
+    source: "http://xhslink.com/o/AHDD9kzsYzN",
     images: [
       {
         url: "images/sample/kyrie-2016-2.jpg",
         note: "对比图 - 左右两版本patch差异明显",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -123,11 +124,12 @@ const cardsData = [
     number: "10/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "http://xhslink.com/o/610pIZIB4eq",
     images: [
       {
         url: "images/sample/tmac-1.jpg",
         note: "对比图 - 上图BGS评级版黑色B字母patch vs 中图卡片红色patch",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -165,11 +167,12 @@ const cardsData = [
     number: "22/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "http://xhslink.com/o/4aw93aHWjL6",
     images: [
       {
         url: "images/sample/alec-burks-1.jpg",
         note: "对比图 - 左侧Thunder队logo patch vs 右侧橙蓝双色patch",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -207,6 +210,7 @@ const cardsData = [
     number: "10/10编",
     status: "confirmed",
     category: "fake-patch",
+    source: "http://xhslink.com/o/91gwJiZ4A0S",
     images: [
       {
         url: "images/sample/enrique-freeman-old.jpg",
@@ -230,6 +234,7 @@ const cardsData = [
     number: "44/75编",
     status: "confirmed",
     category: "fake-patch",
+    source: "http://xhslink.com/o/91gwJiZ4A0S",
     images: [
       {
         url: "images/sample/black-howard-old.jpg",
@@ -394,6 +399,7 @@ const cardsData = [
     number: "07/25编",
     status: "confirmed",
     category: "fake-patch",
+    source: "http://xhslink.com/o/4lAIt93S3VP",
     images: [
       {
         url: "images/sample/stephen-curry-07-old.jpg",
@@ -441,6 +447,7 @@ const cardsData = [
     number: "06/10编",
     status: "confirmed",
     category: "fake-patch",
+    source: "http://xhslink.com/o/90qBpbHnWd8",
     images: [
       {
         url: "images/sample/porzingis-old.jpg",
@@ -464,6 +471,7 @@ const cardsData = [
     number: "53/99编",
     status: "confirmed",
     category: "fake-patch",
+    source: "http://xhslink.com/o/1vVMg52VDFS",
     images: [
       {
         url: "images/sample/jalen-williams-old.jpg",
@@ -4348,11 +4356,12 @@ const cardsData = [
     number: "27/75编",
     status: "confirmed",
     category: "fake-patch",
+    source: "http://xhslink.com/o/AAWbyal8oY1",
     images: [
       {
         url: "images/sample/kobe-imm-27.jpg",
         note: "换patch对比 - 上：黄橙紫白四色拼接大尺寸patch（PSA评级，27/75编）；下：白色为主带黄边和紫色小块的小尺寸patch（21/75编）🚫 同系列不同编号，patch样式差异巨大，进一步证明Immaculate元年产品的换patch现象。注意：27/75编卡片与之前记录的14/25、19/75编呈现相似的多色拼接风格，而21/75编却是普通白色球衣",
-        type: "compare"
+        type: "after"
       }
     ]
   },
@@ -4867,6 +4876,7 @@ const cardsData = [
     number: "84/99编",
     status: "confirmed",
     category: "fake-patch",
+    source: "http://xhslink.com/o/5fdwjBdKrOI",
     images: [
       {
         url: "images/sample/sga-imm-standard-84-2.jpg",
