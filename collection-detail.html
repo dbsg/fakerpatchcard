@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的收藏 - 小丁卡册</title>
+  <title>系列详情 - 小丁卡册</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/collection.css">
@@ -13,31 +13,40 @@
     <header class="header">
       <div class="container header-inner">
         <div class="header-left">
-          <h1 class="logo">🃏 我的收藏</h1>
-          <p class="subtitle">球星卡图鉴收集记录</p>
-        </div>
-        <div class="header-right">
-          <a href="index.html" class="nav-link">← 返回首页</a>
+          <a href="collection.html" class="back-link">← 返回收藏</a>
+          <h1 id="seriesTitle" class="logo"></h1>
         </div>
       </div>
     </header>
 
     <!-- 密码验证 -->
-    <div id="authPanel" class="auth-panel">
+    <div id="authPanel" class="auth-panel" style="display: none;">
       <div class="auth-box">
         <h2 class="auth-title">🔒 需要验证</h2>
         <p class="auth-desc">请输入密码查看收藏内容</p>
         <input type="password" id="authPassword" class="auth-input" placeholder="请输入密码" autofocus>
-        <button class="auth-btn" onclick="collection.authenticate()">确认</button>
+        <button class="auth-btn" onclick="seriesDetail.authenticate()">确认</button>
       </div>
     </div>
 
-    <!-- 主内容（验证后显示） -->
+    <!-- 系列统计 -->
+    <div id="seriesStats" class="detail-stats-bar" style="display: none;">
+      <div class="container">
+        <div id="statsContent" class="detail-stats-content"></div>
+      </div>
+    </div>
+
+    <!-- 主内容 -->
     <main id="mainContent" class="main-content" style="display: none;">
       <div class="container">
-        <div id="seriesList" class="series-list"></div>
+        <div id="seriesContent" class="series-detail-content"></div>
       </div>
     </main>
+
+    <!-- 图片预览 -->
+    <div id="imagePreview" class="image-preview" style="display: none;" onclick="seriesDetail.closePreview()">
+      <img id="previewImg" class="preview-img" src="" alt="">
+    </div>
 
     <footer class="footer">
       <div class="container">
@@ -47,6 +56,6 @@
   </div>
 
   <script src="js/collection-data.js"></script>
-  <script src="js/collection.js"></script>
+  <script src="js/collection-detail.js"></script>
 </body>
 </html>
