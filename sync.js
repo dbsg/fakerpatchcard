@@ -9,7 +9,9 @@ const CDN_BASE = 'https://7072-prod-8g8ay186059e4264-1418320285.tcb.qcloud.la'
 const CLOUD_ENV = 'cloudbase-1g5rcsava7547769'
 const CARD_DIR = __dirname
 const IMAGES_DIR = path.join(CARD_DIR, 'images', 'sample')
+const COLLECTION_IMAGES_DIR = path.join(CARD_DIR, 'images', 'collection')
 const DATA_JS_PATH = path.join(CARD_DIR, 'js', 'data.js')
+const COLLECTION_JS_PATH = path.join(CARD_DIR, 'js', 'collection-data.js')
 const ENV_PATH = path.join(CARD_DIR, '.env')
 
 function loadEnv() {
@@ -148,6 +150,60 @@ function cdnUrlToLocalPath(url) {
   return `images/sample/${filename}`
 }
 
+function collectionUrlToLocalPath(url) {
+  if (!url.startsWith(CDN_BASE + '/')) return url
+  const cloudPath = url.slice(CDN_BASE.length + 1)
+  const filename = cloudPath.replace(/^collection-series\//, '').replace(/\//g, '_')
+  return `images/collection/${filename}`
+}
+
+async function fetchSeriesFromCloudDB(accessToken) {
+  console.log('   从云数据库 my_series 集合读取...')
+
+  const firstPage = await queryCloudDB(accessToken,
+    `db.collection("my_series").limit(1).get()`
+  )
+  if (firstPage.errcode !== 0) throw new Error(`查询失败: ${firstPage.errmsg} (${firstPage.errcode})`)
+  const total = firstPage.pager.Total
+  console.log(`   共 ${total} 个系列`)
+
+  const allDocs = []
+  const PAGE = 20
+  for (let skip = 0; skip < total; skip += PAGE) {
+    const result = await queryCloudDB(accessToken,
+      `db.collection("my_series").skip(${skip}).limit(${PAGE}).get()`
+    )
+    if (result.errcode !== 0) throw new Error(`查询失败(skip=${skip}): ${result.errmsg} (${result.errcode})`)
+    result.data.forEach(d => allDocs.push(JSON.parse(d)))
+  }
+
+  return allDocs.map(s => ({
+    _id: s._id,
+    name: s.name || '',
+    checklist: (s.checklist || []).map(item => ({
+      text: item.text || '',
+      subset: item.subset || '',
+      images: (item.images || []).map(img => {
+        if (typeof img === 'string') return { url: img, owned: false, number: '' }
+        return { url: img.url || '', owned: !!img.owned, number: img.number || '' }
+      })
+    })),
+    freeImages: (s.freeImages || []).map(img => {
+      if (typeof img === 'string') return { url: img, owned: false, number: '' }
+      return { url: img.url || '', owned: !!img.owned, number: img.number || '' }
+    })
+  }))
+}
+
+function generateCollectionJs(seriesList) {
+  return `const collectionData = ${JSON.stringify(seriesList, null, 2)};
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = collectionData;
+}
+`
+}
+
 function generateDataJs(cards) {
   const indent = '  '
   const lines = ['const cardsData = [']
@@ -254,7 +310,49 @@ async function main() {
   fs.writeFileSync(DATA_JS_PATH, content, 'utf8')
   console.log(`   写入 ${DATA_JS_PATH}\n`)
 
-  console.log('4. Git 提交并推送 ...')
+  console.log('4. 同步收藏数据 (my_series) ...')
+  if (appSecret) {
+    try {
+      const token2 = await getAccessToken(appSecret)
+      const seriesList = await fetchSeriesFromCloudDB(token2)
+
+      if (!fs.existsSync(COLLECTION_IMAGES_DIR)) {
+        fs.mkdirSync(COLLECTION_IMAGES_DIR, { recursive: true })
+      }
+
+      let colDownloaded = 0
+      let colSkipped = 0
+      for (const series of seriesList) {
+        const allImages = [
+          ...series.checklist.flatMap(item => item.images),
+          ...series.freeImages
+        ]
+        for (const img of allImages) {
+          const originalUrl = img.url
+          if (originalUrl.startsWith(CDN_BASE + '/')) {
+            const localRelPath = collectionUrlToLocalPath(originalUrl)
+            const localAbsPath = path.join(CARD_DIR, localRelPath)
+            const didDownload = await downloadImage(originalUrl, localAbsPath)
+            if (didDownload) { colDownloaded++; console.log(`   下载: ${path.basename(localAbsPath)}`) }
+            else { colSkipped++ }
+            img.url = localRelPath
+          }
+        }
+      }
+      console.log(`   下载 ${colDownloaded} 张收藏图片，跳过 ${colSkipped} 张已有\n`)
+
+      console.log('5. 生成 collection-data.js ...')
+      const colContent = generateCollectionJs(seriesList)
+      fs.writeFileSync(COLLECTION_JS_PATH, colContent, 'utf8')
+      console.log(`   写入 ${COLLECTION_JS_PATH}\n`)
+    } catch (e) {
+      console.warn(`   收藏数据同步失败: ${e.message}\n`)
+    }
+  } else {
+    console.log('   未配置 APP_SECRET，跳过收藏数据同步\n')
+  }
+
+  console.log('6. Git 提交并推送 ...')
   try {
     execSync('git add .', { cwd: CARD_DIR, stdio: 'pipe' })
     const status = execSync('git status --porcelain', { cwd: CARD_DIR, encoding: 'utf8' })

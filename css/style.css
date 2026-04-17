@@ -73,6 +73,23 @@ a:hover {
   background: rgba(255, 255, 255, 0.3);
 }
 
+.header-collection-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 14px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 6px;
+  margin-right: 16px;
+  transition: all 0.3s;
+}
+.header-collection-link:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Category Tabs */
 .category-tabs-wrapper {
   background: #fff;
