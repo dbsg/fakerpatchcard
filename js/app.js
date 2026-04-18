@@ -1,302 +1,323 @@
 // 主应用逻辑
 const app = {
-  // 当前显示的卡片数据
   currentCards: [],
 
-  // 所有卡片数据（补全 category）
   allCards: cardsData.map(c => ({ ...c, category: c.category || 'fake-patch' })),
 
-  // 当前分类
-  activeCategory: 'fake-patch',
+  activeTab: 'cards',
 
-  // 分页相关
   currentPage: 1,
   pageSize: 6,
 
-  // 初始化
+  categoryLabel(category) {
+    if (category === 'fake-auto') return '假签'
+    if (category === 'counterfeit') return '假卡'
+    return '换Patch'
+  },
+
+  categoryClass(category) {
+    if (category === 'fake-auto' || category === 'counterfeit' || category === 'fake-patch') return category
+    return 'fake-patch'
+  },
+
+  escAttr(s) {
+    if (s == null) return ''
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;')
+      .replace(/</g, '&lt;')
+  },
+
+  escHtml(s) {
+    if (s == null) return ''
+    const d = document.createElement('div')
+    d.textContent = String(s)
+    return d.innerHTML
+  },
+
   init() {
-    this.updateCategoryCounts();
-    this.currentCards = this.allCards.filter(c => c.category === this.activeCategory);
-    this.populatePlayerFilter();
-    this.populateBrandFilter();
-    this.populateYearFilter();
-    this.renderCards();
-    this.updateStats();
-    this.renderPagination();
-    this.hideLoading();
-    this.setupSearchEnter();
+    this.currentCards = [...this.allCards]
+    this.populatePlayerFilter()
+    this.populateBrandFilter()
+    this.populateYearFilter()
+    this.renderCards()
+    this.updateStats()
+    this.renderPagination()
+    this.hideLoading()
+    this.setupSearchEnter()
+    this.setupMainTabs()
+    if (window.location.hash === '#collection') {
+      this.switchTab('collection')
+    }
   },
 
-  updateCategoryCounts() {
-    const counts = { 'fake-patch': 0, 'counterfeit': 0, 'fake-auto': 0 };
-    this.allCards.forEach(c => { if (counts[c.category] !== undefined) counts[c.category]++; });
-    ['fake-patch', 'counterfeit', 'fake-auto'].forEach(cat => {
-      const el = document.getElementById('count-' + cat);
-      if (el) el.textContent = counts[cat] ? counts[cat] : '';
-    });
+  setupMainTabs() {
+    const root = document.getElementById('mainTabs')
+    if (!root) return
+    root.addEventListener('click', e => {
+      const tab = e.target.closest('.main-tab')
+      if (!tab || !tab.dataset.tab) return
+      e.preventDefault()
+      this.switchTab(tab.dataset.tab)
+    })
   },
 
-  switchCategory(category) {
-    this.activeCategory = category;
-    document.querySelectorAll('.category-tab').forEach(tab => {
-      tab.classList.toggle('active', tab.dataset.category === category);
-    });
-    document.getElementById('searchInput').value = '';
-    document.getElementById('playerFilter').value = '';
-    document.getElementById('brandFilter').value = '';
-    document.getElementById('yearFilter').value = '';
-    this.applyFilters();
+  switchTab(tab) {
+    this.activeTab = tab
+    document.querySelectorAll('.main-tab').forEach(t => {
+      const on = t.dataset.tab === tab
+      t.classList.toggle('active', on)
+      t.setAttribute('aria-selected', on ? 'true' : 'false')
+    })
+    const panelCards = document.getElementById('panelCards')
+    const panelCollection = document.getElementById('panelCollection')
+    if (panelCards) panelCards.style.display = tab === 'cards' ? '' : 'none'
+    if (panelCollection) panelCollection.style.display = tab === 'collection' ? '' : 'none'
+    if (tab === 'collection' && typeof collection !== 'undefined') {
+      const idxEl = document.getElementById('seriesListIndex')
+      if (idxEl) collection.renderInto(idxEl)
+    }
+    if (tab === 'collection') {
+      window.location.hash = 'collection'
+    } else {
+      if (window.location.hash === '#collection') {
+        history.replaceState(null, '', window.location.pathname + window.location.search)
+      }
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   },
 
-  // 填充球员筛选器
   populatePlayerFilter() {
-    const players = [...new Set(this.allCards.map(card => card.player))].sort();
-    const playerFilter = document.getElementById('playerFilter');
+    const players = [...new Set(this.allCards.map(card => card.player))].sort()
+    const playerFilter = document.getElementById('playerFilter')
     players.forEach(player => {
-      const option = document.createElement('option');
-      option.value = player;
-      option.textContent = player;
-      playerFilter.appendChild(option);
-    });
+      const option = document.createElement('option')
+      option.value = player
+      option.textContent = player
+      playerFilter.appendChild(option)
+    })
   },
 
-  // 填充品牌筛选器
   populateBrandFilter() {
-    const brands = [...new Set(this.allCards.map(card => card.brand))].sort();
-    const brandFilter = document.getElementById('brandFilter');
+    const brands = [...new Set(this.allCards.map(card => card.brand))].sort()
+    const brandFilter = document.getElementById('brandFilter')
     brands.forEach(brand => {
-      const option = document.createElement('option');
-      option.value = brand;
-      option.textContent = brand;
-      brandFilter.appendChild(option);
-    });
+      const option = document.createElement('option')
+      option.value = brand
+      option.textContent = brand
+      brandFilter.appendChild(option)
+    })
   },
 
-  // 填充年份筛选器
   populateYearFilter() {
-    const years = [...new Set(this.allCards.map(card => card.year))].sort((a, b) => b - a);
-    const yearFilter = document.getElementById('yearFilter');
+    const years = [...new Set(this.allCards.map(card => card.year))].sort((a, b) => b - a)
+    const yearFilter = document.getElementById('yearFilter')
     years.forEach(year => {
-      const option = document.createElement('option');
-      option.value = year;
-      option.textContent = year;
-      yearFilter.appendChild(option);
-    });
+      const option = document.createElement('option')
+      option.value = year
+      option.textContent = year
+      yearFilter.appendChild(option)
+    })
   },
 
-  // 渲染卡片列表
   renderCards() {
-    const cardList = document.getElementById('cardList');
-    const emptyState = document.getElementById('emptyState');
+    const cardList = document.getElementById('cardList')
+    const emptyState = document.getElementById('emptyState')
 
     if (this.currentCards.length === 0) {
-      cardList.style.display = 'none';
-      emptyState.style.display = 'block';
-      document.getElementById('pagination').style.display = 'none';
-      return;
+      cardList.style.display = 'none'
+      emptyState.style.display = 'block'
+      document.getElementById('pagination').style.display = 'none'
+      return
     }
 
-    cardList.style.display = 'grid';
-    emptyState.style.display = 'none';
-    document.getElementById('pagination').style.display = 'flex';
+    cardList.style.display = 'grid'
+    emptyState.style.display = 'none'
+    document.getElementById('pagination').style.display = 'flex'
 
-    // 按 ID 降序排列（新添加的在前面）
-    const sortedCards = [...this.currentCards].sort((a, b) => b.id - a.id);
-
-    // 计算分页
-    const totalPages = Math.ceil(sortedCards.length / this.pageSize);
-    const startIndex = (this.currentPage - 1) * this.pageSize;
-    const endIndex = startIndex + this.pageSize;
-    const paginatedCards = sortedCards.slice(startIndex, endIndex);
+    const sortedCards = [...this.currentCards].sort((a, b) => b.id - a.id)
+    const totalPages = Math.ceil(sortedCards.length / this.pageSize)
+    const startIndex = (this.currentPage - 1) * this.pageSize
+    const endIndex = startIndex + this.pageSize
+    const paginatedCards = sortedCards.slice(startIndex, endIndex)
 
     cardList.innerHTML = paginatedCards.map(card => {
-      const afterImg = card.images.find(img => img.type === 'after');
-      const latestImage = afterImg || card.images[card.images.length - 1];
-
-      // 根据状态显示标签
-      const badgeClass = card.status === 'suspected' ? 'suspected' : 'fake';
-      const badgeText = card.status === 'suspected' ? '高危' : '假';
+      const afterImg = card.images.find(img => img.type === 'after')
+      const latestImage = afterImg || (card.images && card.images[card.images.length - 1])
+      const imgUrl = latestImage && latestImage.url ? this.escAttr(latestImage.url) : 'images/placeholder.jpg'
+      const badgeClass = card.status === 'suspected' ? 'suspected' : 'fake'
+      const badgeText = card.status === 'suspected' ? '高危' : '假'
+      const cat = card.category || 'fake-patch'
+      const catClass = this.categoryClass(cat)
+      const catText = this.categoryLabel(cat)
+      const playerEsc = this.escAttr(card.player)
 
       return `
-        <div class="card-item" onclick="app.goToDetail(${card.id})">
+        <div class="card-item" onclick="window.app.goToDetail(${card.id})">
           <div class="card-image-wrapper">
-            <img class="card-image" src="${latestImage.url}" alt="${card.player}" onerror="this.src='images/placeholder.jpg'">
+            <img class="card-image" src="${imgUrl}" alt="${playerEsc}" onerror="this.src='images/placeholder.jpg'">
+            <span class="card-category-label ${catClass}">${catText}</span>
             <span class="card-badge ${badgeClass}">${badgeText}</span>
             <span class="card-id">ID: ${card.id}</span>
           </div>
           <div class="card-info">
-            <div class="card-player">${card.player}</div>
-            <div class="card-details">${card.brand} · ${card.year} · ${card.series}</div>
+            <div class="card-player">${this.escHtml(card.player)}</div>
+            <div class="card-type-line"><span class="card-type-pill ${catClass}">${catText}</span></div>
+            <div class="card-details">${this.escHtml(card.brand)} · ${this.escHtml(card.year)} · ${this.escHtml(card.series)}</div>
             <div class="card-meta">
               <span class="card-images-count">📸 ${card.images.length} 张照片</span>
               <span class="card-number">${card.number}</span>
             </div>
           </div>
         </div>
-      `;
-    }).join('');
+      `
+    }).join('')
 
-    this.renderPagination();
+    this.renderPagination()
   },
 
-  // 搜索
   search() {
-    this.applyFilters();
+    this.applyFilters()
   },
 
-  // 应用所有筛选条件
   applyFilters() {
-    const player = document.getElementById('playerFilter').value;
-    const brand = document.getElementById('brandFilter').value;
-    const year = document.getElementById('yearFilter').value;
-    const keyword = document.getElementById('searchInput').value.toLowerCase().trim();
+    const player = document.getElementById('playerFilter').value
+    const brand = document.getElementById('brandFilter').value
+    const year = document.getElementById('yearFilter').value
+    const keyword = document.getElementById('searchInput').value.toLowerCase().trim()
 
     this.currentCards = this.allCards.filter(card => {
-      if (card.category !== this.activeCategory) return false;
-      const matchPlayer = !player || card.player === player;
-      const matchBrand = !brand || card.brand === brand;
-      const matchYear = !year || card.year === year;
+      const matchPlayer = !player || card.player === player
+      const matchBrand = !brand || card.brand === brand
+      const matchYear = !year || card.year === year
       const matchKeyword = !keyword ||
         String(card.id) === keyword ||
         card.player.toLowerCase().includes(keyword) ||
         (card.playerCN && card.playerCN.includes(keyword)) ||
         card.series.toLowerCase().includes(keyword) ||
-        card.number.toLowerCase().includes(keyword);
+        card.number.toLowerCase().includes(keyword)
 
-      return matchPlayer && matchBrand && matchYear && matchKeyword;
-    });
+      return matchPlayer && matchBrand && matchYear && matchKeyword
+    })
 
-    this.currentPage = 1;
-    this.renderCards();
-    this.updateStats();
+    this.currentPage = 1
+    this.renderCards()
+    this.updateStats()
   },
 
-  // 重置筛选
   resetFilters() {
-    document.getElementById('searchInput').value = '';
-    document.getElementById('playerFilter').value = '';
-    document.getElementById('brandFilter').value = '';
-    document.getElementById('yearFilter').value = '';
-    this.currentCards = this.allCards.filter(c => c.category === this.activeCategory);
-    this.currentPage = 1;
-    this.renderCards();
-    this.updateStats();
+    document.getElementById('searchInput').value = ''
+    document.getElementById('playerFilter').value = ''
+    document.getElementById('brandFilter').value = ''
+    document.getElementById('yearFilter').value = ''
+    this.currentCards = [...this.allCards]
+    this.currentPage = 1
+    this.renderCards()
+    this.updateStats()
   },
 
-  // 渲染分页
   renderPagination() {
-    const pagination = document.getElementById('pagination');
-    const totalPages = Math.ceil(this.currentCards.length / this.pageSize);
+    const pagination = document.getElementById('pagination')
+    const totalPages = Math.ceil(this.currentCards.length / this.pageSize)
 
     if (totalPages <= 1) {
-      pagination.style.display = 'none';
-      return;
+      pagination.style.display = 'none'
+      return
     }
 
-    pagination.style.display = 'flex';
+    pagination.style.display = 'flex'
 
-    let paginationHTML = '';
+    let paginationHTML = ''
 
-    // 上一页按钮
     paginationHTML += `
-      <button class="page-btn ${this.currentPage === 1 ? 'disabled' : ''}"
-              onclick="app.goToPage(${this.currentPage - 1})"
+      <button type="button" class="page-btn ${this.currentPage === 1 ? 'disabled' : ''}"
+              onclick="window.app.goToPage(${this.currentPage - 1})"
               ${this.currentPage === 1 ? 'disabled' : ''}>
         上一页
       </button>
-    `;
+    `
 
-    // 页码按钮
-    const maxVisiblePages = 5;
-    let startPage = Math.max(1, this.currentPage - Math.floor(maxVisiblePages / 2));
-    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+    const maxVisiblePages = 5
+    let startPage = Math.max(1, this.currentPage - Math.floor(maxVisiblePages / 2))
+    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1)
 
     if (endPage - startPage < maxVisiblePages - 1) {
-      startPage = Math.max(1, endPage - maxVisiblePages + 1);
+      startPage = Math.max(1, endPage - maxVisiblePages + 1)
     }
 
     if (startPage > 1) {
-      paginationHTML += `<button class="page-btn" onclick="app.goToPage(1)">1</button>`;
+      paginationHTML += `<button type="button" class="page-btn" onclick="window.app.goToPage(1)">1</button>`
       if (startPage > 2) {
-        paginationHTML += `<span class="page-ellipsis">...</span>`;
+        paginationHTML += `<span class="page-ellipsis">...</span>`
       }
     }
 
     for (let i = startPage; i <= endPage; i++) {
       paginationHTML += `
-        <button class="page-btn ${i === this.currentPage ? 'active' : ''}"
-                onclick="app.goToPage(${i})">
+        <button type="button" class="page-btn ${i === this.currentPage ? 'active' : ''}"
+                onclick="window.app.goToPage(${i})">
           ${i}
         </button>
-      `;
+      `
     }
 
     if (endPage < totalPages) {
       if (endPage < totalPages - 1) {
-        paginationHTML += `<span class="page-ellipsis">...</span>`;
+        paginationHTML += `<span class="page-ellipsis">...</span>`
       }
-      paginationHTML += `<button class="page-btn" onclick="app.goToPage(${totalPages})">${totalPages}</button>`;
+      paginationHTML += `<button type="button" class="page-btn" onclick="window.app.goToPage(${totalPages})">${totalPages}</button>`
     }
 
-    // 下一页按钮
     paginationHTML += `
-      <button class="page-btn ${this.currentPage === totalPages ? 'disabled' : ''}"
-              onclick="app.goToPage(${this.currentPage + 1})"
+      <button type="button" class="page-btn ${this.currentPage === totalPages ? 'disabled' : ''}"
+              onclick="window.app.goToPage(${this.currentPage + 1})"
               ${this.currentPage === totalPages ? 'disabled' : ''}>
         下一页
       </button>
-    `;
+    `
 
-    pagination.innerHTML = paginationHTML;
+    pagination.innerHTML = paginationHTML
   },
 
-  // 跳转到指定页
   goToPage(page) {
-    const totalPages = Math.ceil(this.currentCards.length / this.pageSize);
-    if (page < 1 || page > totalPages) return;
+    const totalPages = Math.ceil(this.currentCards.length / this.pageSize)
+    if (page < 1 || page > totalPages) return
 
-    this.currentPage = page;
-    this.renderCards();
+    this.currentPage = page
+    this.renderCards()
 
-    // 滚动到顶部
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   },
 
-  // 更新统计信息
   updateStats() {
-    const total = this.currentCards.length;
-    document.getElementById('totalCount').textContent = total;
+    const total = this.currentCards.length
+    document.getElementById('totalCount').textContent = total
   },
 
-  // 跳转到详情页
   goToDetail(id) {
-    window.location.href = `detail.html?id=${id}`;
+    window.location.href = `detail.html?id=${id}`
   },
 
-  // 隐藏加载动画
   hideLoading() {
-    const loading = document.getElementById('loading');
+    const loading = document.getElementById('loading')
     if (loading) {
-      loading.style.display = 'none';
+      loading.style.display = 'none'
     }
   },
 
-  // 设置搜索框回车事件
   setupSearchEnter() {
-    const searchInput = document.getElementById('searchInput');
-    // 实时搜索：input事件
+    const searchInput = document.getElementById('searchInput')
     searchInput.addEventListener('input', () => {
-      this.applyFilters();
-    });
-    // 同时保留回车事件
-    searchInput.addEventListener('keypress', (e) => {
+      this.applyFilters()
+    })
+    searchInput.addEventListener('keypress', e => {
       if (e.key === 'Enter') {
-        this.applyFilters();
+        this.applyFilters()
       }
-    });
+    })
   },
 
-  // 显示关于信息
   showAbout() {
     alert(`球星卡换 Patch 记录系统
 
@@ -306,11 +327,12 @@ const app = {
 - 本站信息仅供参考，不构成法律依据
 - 交易前请务必仔细核对
 - 建议通过正规渠道购买
-- 发现可疑卡片请及时举报`);
+- 发现可疑卡片请及时举报`)
   }
-};
+}
 
-// 页面加载完成后初始化
+window.app = app
+
 document.addEventListener('DOMContentLoaded', () => {
-  app.init();
-});
+  app.init()
+})

@@ -1,8 +1,11 @@
 const seriesDetail = {
-  PASSWORD: '232323',
-  SESSION_KEY: 'col_auth',
   seriesData: typeof collectionData !== 'undefined' ? collectionData : [],
   series: null,
+
+  isFreeMode(s) {
+    const cl = s.checklist || []
+    return cl.length === 0 && !s.hasSubset
+  },
 
   init() {
     const params = new URLSearchParams(window.location.search)
@@ -18,64 +21,20 @@ const seriesDetail = {
 
     document.getElementById('seriesTitle').textContent = this.series.name
     document.title = `${this.series.name} - 小丁卡册`
-
-    if (sessionStorage.getItem(this.SESSION_KEY) === '1') {
-      this.showContent()
-    } else {
-      document.getElementById('authPanel').style.display = 'flex'
-    }
-  },
-
-  authenticate() {
-    const input = document.getElementById('authPassword')
-    if (input.value === this.PASSWORD) {
-      sessionStorage.setItem(this.SESSION_KEY, '1')
-      document.getElementById('authPanel').style.display = 'none'
-      this.showContent()
-    } else {
-      input.value = ''
-      input.placeholder = '密码错误，请重试'
-      input.classList.add('auth-input-error')
-      setTimeout(() => {
-        input.placeholder = '请输入密码'
-        input.classList.remove('auth-input-error')
-      }, 1500)
-    }
+    this.showContent()
   },
 
   showContent() {
-    document.getElementById('seriesStats').style.display = 'block'
     document.getElementById('mainContent').style.display = 'block'
-    this.renderStats()
     this.renderDetail()
-  },
-
-  renderStats() {
-    const s = this.series
-    const cl = s.checklist || []
-    const isFree = cl.length === 0
-    const container = document.getElementById('statsContent')
-
-    if (isFree) {
-      const count = (s.freeImages || []).length
-      container.innerHTML = `<span class="detail-stat-text">${count} 张图片</span>`
-    } else {
-      const withImages = cl.filter(i => i.images && i.images.length > 0).length
-      const pct = cl.length ? Math.round(withImages / cl.length * 100) : 0
-      container.innerHTML = `
-        <div class="detail-progress"><div class="detail-progress-fill" style="width:${pct}%"></div></div>
-        <span class="detail-stat-text">已收集 ${withImages} / ${cl.length} (${pct}%)</span>
-      `
-    }
   },
 
   renderDetail() {
     const s = this.series
     const cl = s.checklist || []
-    const isFree = cl.length === 0
     const content = document.getElementById('seriesContent')
 
-    if (isFree) {
+    if (this.isFreeMode(s)) {
       const images = s.freeImages || []
       content.innerHTML = images.length
         ? `<div class="col-images">${images.map(img => this.renderImage(img)).join('')}</div>`
@@ -101,12 +60,11 @@ const seriesDetail = {
   },
 
   renderImage(img) {
-    const ownedLabel = img.owned ? '<span class="col-img-owned">拥有</span>' : ''
     const numberLabel = img.number ? `<span class="col-img-number">#${this.escHtml(img.number)}</span>` : ''
     return `
       <div class="col-img-wrap" onclick="seriesDetail.previewImage('${this.escAttr(img.url)}')">
         <img class="col-img" src="${this.escAttr(img.url)}" alt="" loading="lazy">
-        ${ownedLabel}${numberLabel}
+        ${numberLabel}
       </div>
     `
   },
@@ -158,10 +116,4 @@ const seriesDetail = {
 
 document.addEventListener('DOMContentLoaded', () => {
   seriesDetail.init()
-  const authInput = document.getElementById('authPassword')
-  if (authInput) {
-    authInput.addEventListener('keypress', e => {
-      if (e.key === 'Enter') seriesDetail.authenticate()
-    })
-  }
 })

@@ -96,20 +96,65 @@
   text-decoration: none;
   color: inherit;
 }
-.col-series-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: #fff;
-  font-size: 22px;
-  font-weight: 700;
+
+.col-series-card-block {
+  flex-direction: column;
+  align-items: stretch;
+}
+.col-series-card-inner {
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.col-series-card-inner-minimal {
+  align-items: flex-start;
+}
+
+.col-series-info-full {
+  margin-left: 0;
+  flex: 1;
+}
+
+.col-series-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.col-series-title-row .col-series-name {
+  flex: 1;
+  min-width: 0;
+}
+
+.col-series-count-muted {
+  font-size: 13px;
+  color: #999;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+.col-series-thumbs {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  overflow-x: auto;
+  padding-top: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+.col-series-thumb {
+  height: 72px;
+  width: auto;
+  max-width: 140px;
+  object-fit: cover;
+  border-radius: 6px;
   flex-shrink: 0;
 }
-.col-series-info { flex: 1; margin-left: 16px; overflow: hidden; }
+.col-series-empty-thumbs {
+  font-size: 13px;
+  color: #bbb;
+  padding-top: 12px;
+}
+.col-series-info { flex: 1; overflow: hidden; }
 .col-series-name {
   font-size: 16px;
   font-weight: 600;
@@ -118,52 +163,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.col-series-stat { font-size: 13px; color: #999; margin-top: 4px; display: block; }
-.col-progress {
-  height: 6px;
-  background: #eee;
-  border-radius: 3px;
-  margin-top: 8px;
-  overflow: hidden;
-}
-.col-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  border-radius: 3px;
-  transition: width 0.3s;
-}
 .col-empty {
   text-align: center;
   padding: 80px 0;
   color: #bbb;
   font-size: 16px;
 }
-
-/* 详情页统计条 */
-.detail-stats-bar {
-  background: #fff;
-  border-bottom: 1px solid #f0f0f0;
-  padding: 16px 0;
-}
-.detail-stats-content {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.detail-progress {
-  flex: 1;
-  max-width: 300px;
-  height: 8px;
-  background: #eee;
-  border-radius: 4px;
-  overflow: hidden;
-}
-.detail-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  border-radius: 4px;
-}
-.detail-stat-text { font-size: 14px; color: #666; }
 
 /* 系列详情内容 */
 .series-detail-content { padding: 24px 0; }
@@ -207,17 +212,6 @@
   width: auto;
   display: block;
   border-radius: 6px;
-}
-.col-img-owned {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(25,190,107,0.85);
-  color: #fff;
-  font-size: 11px;
-  text-align: center;
-  padding: 2px 0;
 }
 .col-img-number {
   position: absolute;

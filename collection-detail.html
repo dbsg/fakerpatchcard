@@ -13,28 +13,11 @@
     <header class="header">
       <div class="container header-inner">
         <div class="header-left">
-          <a href="collection.html" class="back-link">← 返回收藏</a>
+          <a href="index.html#collection" class="back-link">← 返回图鉴</a>
           <h1 id="seriesTitle" class="logo"></h1>
         </div>
       </div>
     </header>
-
-    <!-- 密码验证 -->
-    <div id="authPanel" class="auth-panel" style="display: none;">
-      <div class="auth-box">
-        <h2 class="auth-title">🔒 需要验证</h2>
-        <p class="auth-desc">请输入密码查看收藏内容</p>
-        <input type="password" id="authPassword" class="auth-input" placeholder="请输入密码" autofocus>
-        <button class="auth-btn" onclick="seriesDetail.authenticate()">确认</button>
-      </div>
-    </div>
-
-    <!-- 系列统计 -->
-    <div id="seriesStats" class="detail-stats-bar" style="display: none;">
-      <div class="container">
-        <div id="statsContent" class="detail-stats-content"></div>
-      </div>
-    </div>
 
     <!-- 主内容 -->
     <main id="mainContent" class="main-content" style="display: none;">
