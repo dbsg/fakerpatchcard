@@ -5405,6 +5405,116 @@ const cardsData = [
         type: "after"
       }
     ]
+  },
+  {
+    id: 301,
+    player: "Dwyane Wade",
+    playerCN: "德韦恩·韦德",
+    brand: "Panini",
+    year: "2020",
+    series: "Select",
+    number: "15/49",
+    status: "confirmed",
+    category: "fake-auto",
+    source: "https://tieba.baidu.com/p/10564451682?share_from=weixin",
+    images: [
+      {
+        url: "images/sample/card_1776417485299_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1776417485299_before_0.png",
+        note: "before_0",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 302,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2009",
+    series: "National Treasures",
+    number: "7/49",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "https://tieba.baidu.com/p/7919981160?share_from=weixin",
+    images: [
+      {
+        url: "images/sample/card_1776417713661_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1776417713661_before_0.png",
+        note: "before_0",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 303,
+    player: "Dwight Howard",
+    playerCN: "德怀特·霍华德",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Silhouette",
+    number: "29/49",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "http://xhslink.com/o/2pm18yi8NbL",
+    images: [
+      {
+        url: "images/sample/card_1776417924671_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1776417924671_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 304,
+    player: "MARVIN BAGLEY Ill",
+    playerCN: "马文 巴格利 三世",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Silhouette",
+    number: "31/49",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "http://xhslink.com/o/9LA2DMCBP9o",
+    images: [
+      {
+        url: "images/sample/card_1776418054023_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 305,
+    player: "Andrei Kirilenko",
+    playerCN: "安德烈 基里连科",
+    brand: "Upper Deck",
+    year: "2004-05",
+    series: "Ultimate",
+    number: "64/75",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "http://xhslink.com/o/ApJXDMWtaw2",
+    images: [
+      {
+        url: "images/sample/card_1776418208185_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      }
+    ]
   }
 ];
 
