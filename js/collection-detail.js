@@ -50,9 +50,13 @@ const seriesDetail = {
         : '<div class="col-empty-detail">暂无图片</div>'
     } else {
       const groups = this.buildGroups(cl)
-      content.innerHTML = groups.map(g => `
-        ${g.subset ? `<div class="col-subset-title">${this.escHtml(g.subset)}</div>` : ''}
-        <div class="col-checklist">
+      content.innerHTML = groups.map((g, gi) => `
+        ${g.subset ? `<div class="col-subset-header" data-gi="${gi}" onclick="seriesDetail.toggleCollapse(${gi})">
+          <span class="col-subset-collapse-icon" id="collapseIcon${gi}">▼</span>
+          <span class="col-subset-header-name">${this.escHtml(g.subset)}</span>
+          <span class="col-subset-count-badge">${g.items.length} 卡种</span>
+        </div>` : ''}
+        <div class="col-checklist" id="collapseBody${gi}">
           ${g.items.map(item => {
             const sorted = this.sortImages(item.images, item.text)
             const hasImages = sorted.length > 0
@@ -100,6 +104,14 @@ const seriesDetail = {
       const nb = parseInt(b.number) || 9999
       return na - nb
     })
+  },
+
+  toggleCollapse(gi) {
+    const body = document.getElementById('collapseBody' + gi)
+    const icon = document.getElementById('collapseIcon' + gi)
+    if (!body) return
+    body.classList.toggle('collapsed')
+    if (icon) icon.classList.toggle('collapsed', body.classList.contains('collapsed'))
   },
 
   previewImage(url) {

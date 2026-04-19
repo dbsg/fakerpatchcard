@@ -125,7 +125,14 @@ a:hover {
   margin: 0;
   box-sizing: border-box;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
+.tab-title { font-size: 15px; }
+.tab-desc { font-size: 11px; color: #aaa; font-weight: 400; }
+.main-tab.active .tab-desc { color: #8b9cf7; }
 
 .main-tab:focus-visible {
   outline: 2px solid rgba(102, 126, 234, 0.55);

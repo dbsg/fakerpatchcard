@@ -66,8 +66,14 @@
     <div class="main-tabs-wrapper">
       <div class="container">
         <div class="main-tabs" id="mainTabs" role="tablist">
-          <button type="button" class="main-tab active" data-tab="cards" role="tab" aria-selected="true">问题球星卡</button>
-          <button type="button" class="main-tab" data-tab="collection" role="tab" aria-selected="false">球星卡图鉴</button>
+          <button type="button" class="main-tab active" data-tab="cards" role="tab" aria-selected="true">
+            <span class="tab-title">问题球星卡</span>
+            <span class="tab-desc">收集换patch·假签卡片</span>
+          </button>
+          <button type="button" class="main-tab" data-tab="collection" role="tab" aria-selected="false">
+            <span class="tab-title">球星卡图鉴</span>
+            <span class="tab-desc">收藏图鉴·卡种管理</span>
+          </button>
         </div>
       </div>
     </div>
@@ -133,7 +139,16 @@
       <main class="main-content">
         <div class="container">
           <p class="collection-home-hint">以下为球星卡图鉴收集记录，点击系列进入详情。</p>
+          <div class="series-toolbar">
+            <div class="series-search-bar">
+              <svg class="series-search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#999" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              <input type="text" id="seriesSearchInput" class="series-search-input" placeholder="搜索图鉴...">
+              <span id="seriesSearchClear" class="series-search-clear" style="display:none;">✕</span>
+            </div>
+            <button type="button" id="seriesSortBtn" class="series-sort-btn">名称排序</button>
+          </div>
           <div id="seriesListIndex" class="series-list"></div>
+          <div id="seriesEmptyState" class="col-empty" style="display:none;">未找到匹配的图鉴</div>
         </div>
       </main>
     </div>
