@@ -2,6 +2,7 @@ const collectionData = [
   {
     "_id": "f0df711e69e0abf80486fafe28f4cb3b",
     "name": "2024-25 Panini Silhouette NBA Finals 骑士",
+    "hasSubset": false,
     "checklist": [
       {
         "text": "9 LeBron James/Kyrie Irving, Cleveland Cavaliers /3",
@@ -820,6 +821,7 @@ const collectionData = [
   {
     "_id": "f6fcfb9c69e0b4ee0485c6c602c17789",
     "name": "2015-16 Panini Preferred NBA Finals 骑士",
+    "hasSubset": false,
     "checklist": [
       {
         "text": "1 LeBron James (勒布朗詹姆斯) /99",
@@ -1064,6 +1066,7 @@ const collectionData = [
   {
     "_id": "f0df711e69e0b83d0488ae594c90a672",
     "name": "骑士队 Slogan",
+    "hasSubset": false,
     "checklist": [],
     "freeImages": [
       {
@@ -1181,6 +1184,7 @@ const collectionData = [
   {
     "_id": "b3c6c3d569e0d1ea04905f351399853f",
     "name": "勒布朗 撒镁粉",
+    "hasSubset": false,
     "checklist": [],
     "freeImages": [
       {
@@ -1228,6 +1232,7 @@ const collectionData = [
   {
     "_id": "f0df711e69e1af3f04a448232b40520f",
     "name": "1986 Fleer",
+    "hasSubset": false,
     "checklist": [
       {
         "text": "1 Kareem Abdul-Jabbar - Los Angeles Lakers",
@@ -1895,6 +1900,7 @@ const collectionData = [
   {
     "_id": "71fe4ab869e1affe04a4e64863b69327",
     "name": "2016 Flawless 钻石",
+    "hasSubset": false,
     "checklist": [
       {
         "text": "1 Kobe Bryant - Los Angeles Lakers",
@@ -2663,6 +2669,7 @@ const collectionData = [
   {
     "_id": "b3c6c3d569e1cd1704a8a69046da85f6",
     "name": "2016-17 Panini Preferred NBA Final 骑士",
+    "hasSubset": false,
     "checklist": [
       {
         "text": "1 Channing Frye /99",
@@ -2868,6 +2875,7 @@ const collectionData = [
   {
     "_id": "f6fcfb9c69e1cfa904a268447069dc57",
     "name": "2017-18 Panini Opulence NBA Final 骑士",
+    "hasSubset": false,
     "checklist": [
       {
         "text": "1 LeBron James /26",
@@ -3021,6 +3029,7 @@ const collectionData = [
   {
     "_id": "f0b1036a69e1e645000050f730b70c9e",
     "name": "2018-19 Panini Opulence NBA Final 骑士",
+    "hasSubset": false,
     "checklist": [
       {
         "text": "1 Jeff Green /16",
@@ -3247,6 +3256,7 @@ const collectionData = [
   {
     "_id": "b3bf7c4c69e214650004146476e8cd0a",
     "name": "暴力切割",
+    "hasSubset": false,
     "checklist": [],
     "freeImages": [
       {
@@ -4479,6 +4489,7 @@ const collectionData = [
   {
     "_id": "6ac1532169e2f53d001384a5385a5378",
     "name": "队标 (Team Logo)",
+    "hasSubset": false,
     "checklist": [
       {
         "text": "未分类图片",
@@ -4502,6 +4513,7 @@ const collectionData = [
   {
     "_id": "bf476b7769e335ed0017fa571dfba1ab",
     "name": "纪念标",
+    "hasSubset": true,
     "checklist": [
       {
         "text": "拉塞尔纪念标",
@@ -4524,54 +4536,731 @@ const collectionData = [
   {
     "_id": "2e3df17869e335ee001949f33913bacb",
     "name": "Logoman",
-    "checklist": [],
+    "hasSubset": true,
+    "checklist": [
+      {
+        "text": "",
+        "subset": "克莱 汤普森",
+        "images": [
+          {
+            "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/2e3df17869e335ee001949f33913bacb/4_1776514377591_0.png",
+            "owned": false,
+            "number": ""
+          }
+        ]
+      },
+      {
+        "text": "",
+        "subset": "欧文",
+        "images": [
+          {
+            "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/2e3df17869e335ee001949f33913bacb/5_1776514427370_0.png",
+            "owned": false,
+            "number": ""
+          },
+          {
+            "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/2e3df17869e335ee001949f33913bacb/5_1776514429589_1.png",
+            "owned": false,
+            "number": ""
+          },
+          {
+            "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/2e3df17869e335ee001949f33913bacb/5_1776514433321_2.png",
+            "owned": false,
+            "number": ""
+          },
+          {
+            "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/2e3df17869e335ee001949f33913bacb/5_1776514436282_3.png",
+            "owned": false,
+            "number": ""
+          }
+        ]
+      },
+      {
+        "text": "",
+        "subset": "SGA",
+        "images": [
+          {
+            "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/2e3df17869e335ee001949f33913bacb/6_1776514457311_0.png",
+            "owned": false,
+            "number": ""
+          }
+        ]
+      },
+      {
+        "text": "",
+        "subset": "安东尼 戴维斯",
+        "images": [
+          {
+            "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/2e3df17869e335ee001949f33913bacb/7_1776514468585_0.png",
+            "owned": false,
+            "number": ""
+          },
+          {
+            "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/2e3df17869e335ee001949f33913bacb/7_1776514471844_1.png",
+            "owned": false,
+            "number": ""
+          }
+        ]
+      }
+    ],
     "freeImages": []
   },
   {
     "_id": "c82fc69769e335ef00199a07741d1fa3",
     "name": "Brand Logo (品牌标)",
+    "hasSubset": false,
     "checklist": [],
-    "freeImages": []
+    "freeImages": [
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335ef00199a07741d1fa3/free_1776512579952_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335ef00199a07741d1fa3/free_1776512805091_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335ef00199a07741d1fa3/free_1776513877332_0.png",
+        "owned": false,
+        "number": ""
+      }
+    ]
   },
   {
     "_id": "c82fc69769e335f000199a0f7bcee1d2",
     "name": "Sponsor Logo (赞助商标)",
+    "hasSubset": false,
     "checklist": [],
-    "freeImages": []
+    "freeImages": [
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776512487044_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776512544217_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776512671560_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776512673587_1.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776512776889_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776512834521_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776512929118_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776512966439_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776512993627_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776513009240_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776513115027_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776513117728_1.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776513146408_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776513628498_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776513806373_0.png",
+        "owned": false,
+        "number": ""
+      },
+      {
+        "url": "cloud://prod-8g8ay186059e4264.7072-prod-8g8ay186059e4264-1418320285/collection-series/c82fc69769e335f000199a0f7bcee1d2/free_1776513840466_0.png",
+        "owned": false,
+        "number": ""
+      }
+    ]
   },
   {
     "_id": "789230b469e335f0001718551f137c7c",
     "name": "Laundry Tag (洗标)",
+    "hasSubset": true,
     "checklist": [],
     "freeImages": []
   },
   {
     "_id": "1bbc242969e335f1001852584a9536f1",
     "name": "Jersey Number (号码)",
-    "checklist": [],
+    "hasSubset": true,
+    "checklist": [
+      {
+        "text": "",
+        "subset": "#0",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#1",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#2",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#3",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#4",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#5",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#6",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#7",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#8",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#9",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#10",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#11",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#12",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#13",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#14",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#15",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#16",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#17",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#18",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#19",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#20",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#21",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#22",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#23",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#24",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#25",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#26",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#27",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#28",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#29",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#30",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#31",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#32",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#33",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#34",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#35",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#36",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#37",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#38",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#39",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#40",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#41",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#42",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#43",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#44",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#45",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#46",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#47",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#48",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#49",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#50",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#51",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#52",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#53",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#54",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#55",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#56",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#57",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#58",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#59",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#60",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#61",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#62",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#63",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#64",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#65",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#66",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#67",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#68",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#69",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#70",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#71",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#72",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#73",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#74",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#75",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#76",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#77",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#78",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#79",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#80",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#81",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#82",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#83",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#84",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#85",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#86",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#87",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#88",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#89",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#90",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#91",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#92",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#93",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#94",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#95",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#96",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#97",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#98",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#99",
+        "images": []
+      },
+      {
+        "text": "",
+        "subset": "#100",
+        "images": []
+      }
+    ],
     "freeImages": []
   },
   {
     "_id": "789230b469e335f20017186a48f994f9",
     "name": "Tag Patch",
+    "hasSubset": true,
     "checklist": [],
     "freeImages": []
   },
   {
     "_id": "6cd8d0ff69e337ab00192a893d6c6a50",
     "name": "圣诞大战",
+    "hasSubset": true,
     "checklist": [],
     "freeImages": []
   },
   {
     "_id": "3e5080e169e3380a001983eb5f0b3e2d",
     "name": "全明星",
+    "hasSubset": false,
     "checklist": [],
     "freeImages": []
   },
   {
     "_id": "3b15ceb869e339fa00190544418b2826",
     "name": "1997-98 Metal Universe",
+    "hasSubset": true,
     "checklist": [
       {
         "text": "1 Charles Barkley",
@@ -6454,6 +7143,7 @@ const collectionData = [
   {
     "_id": "bdc6452e69e33d2d0018b72410c7f400",
     "name": "2003-04 Upper Deck Exquisite Collection",
+    "hasSubset": true,
     "checklist": [
       {
         "text": "1 Jason Terry - Atlanta Hawks",
@@ -8401,6 +9091,13 @@ const collectionData = [
         ]
       }
     ],
+    "freeImages": []
+  },
+  {
+    "_id": "291ff3e969e370a9001e61a01ba4b63a",
+    "name": "Team Slogan",
+    "hasSubset": true,
+    "checklist": [],
     "freeImages": []
   }
 ];

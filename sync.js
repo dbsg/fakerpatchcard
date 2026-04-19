@@ -157,42 +157,80 @@ function collectionUrlToLocalPath(url) {
   return `images/collection/${filename}`
 }
 
-async function fetchSeriesFromCloudDB(accessToken) {
-  console.log('   从云数据库 my_series 集合读取...')
-
+async function fetchAllDocs(accessToken, collectionName, pageSize = 20) {
   const firstPage = await queryCloudDB(accessToken,
-    `db.collection("my_series").limit(1).get()`
+    `db.collection("${collectionName}").limit(1).get()`
   )
-  if (firstPage.errcode !== 0) throw new Error(`查询失败: ${firstPage.errmsg} (${firstPage.errcode})`)
+  if (firstPage.errcode !== 0) throw new Error(`查询 ${collectionName} 失败: ${firstPage.errmsg} (${firstPage.errcode})`)
   const total = firstPage.pager.Total
-  console.log(`   共 ${total} 个系列`)
-
   const allDocs = []
-  const PAGE = 20
-  for (let skip = 0; skip < total; skip += PAGE) {
+  for (let skip = 0; skip < total; skip += pageSize) {
     const result = await queryCloudDB(accessToken,
-      `db.collection("my_series").skip(${skip}).limit(${PAGE}).get()`
+      `db.collection("${collectionName}").skip(${skip}).limit(${pageSize}).get()`
     )
-    if (result.errcode !== 0) throw new Error(`查询失败(skip=${skip}): ${result.errmsg} (${result.errcode})`)
+    if (result.errcode !== 0) throw new Error(`查询 ${collectionName}(skip=${skip}) 失败: ${result.errmsg} (${result.errcode})`)
     result.data.forEach(d => allDocs.push(JSON.parse(d)))
   }
+  return { total, docs: allDocs }
+}
 
-  return allDocs.map(s => ({
-    _id: s._id,
-    name: s.name || '',
-    checklist: (s.checklist || []).map(item => ({
-      text: item.text || '',
-      subset: item.subset || '',
-      images: (item.images || []).map(img => {
-        if (typeof img === 'string') return { url: img, owned: false, number: '' }
-        return { url: img.url || '', owned: !!img.owned, number: img.number || '' }
+function normalizeImage(img) {
+  if (typeof img === 'string') return { url: img, owned: false, number: '' }
+  return { url: img.url || '', owned: !!img.owned, number: img.number || '' }
+}
+
+function subsetDocsToChecklist(subsetDocs) {
+  const checklist = []
+  for (const doc of subsetDocs) {
+    const subsetName = doc.subset || ''
+    for (const item of (doc.items || [])) {
+      checklist.push({
+        text: item.text || '',
+        subset: subsetName,
+        images: (item.images || []).map(normalizeImage)
       })
-    })),
-    freeImages: (s.freeImages || []).map(img => {
-      if (typeof img === 'string') return { url: img, owned: false, number: '' }
-      return { url: img.url || '', owned: !!img.owned, number: img.number || '' }
-    })
-  }))
+    }
+  }
+  return checklist
+}
+
+async function fetchSeriesFromCloudDB(accessToken) {
+  console.log('   从云数据库 my_series 集合读取...')
+  const { total, docs: seriesDocs } = await fetchAllDocs(accessToken, 'my_series', 20)
+  console.log(`   共 ${total} 个系列`)
+
+  console.log('   从云数据库 my_series_subsets 集合读取...')
+  const { total: subTotal, docs: allSubsetDocs } = await fetchAllDocs(accessToken, 'my_series_subsets', 100)
+  console.log(`   共 ${subTotal} 个子系列文档`)
+
+  const subsetsBySeriesId = new Map()
+  for (const doc of allSubsetDocs) {
+    if (!doc.seriesId) continue
+    if (!subsetsBySeriesId.has(doc.seriesId)) subsetsBySeriesId.set(doc.seriesId, [])
+    subsetsBySeriesId.get(doc.seriesId).push(doc)
+  }
+
+  return seriesDocs.map(s => {
+    const subDocs = subsetsBySeriesId.get(s._id)
+    let checklist
+    if (subDocs && subDocs.length > 0) {
+      checklist = subsetDocsToChecklist(subDocs)
+    } else {
+      checklist = (s.checklist || []).map(item => ({
+        text: item.text || '',
+        subset: item.subset || '',
+        images: (item.images || []).map(normalizeImage)
+      }))
+    }
+
+    return {
+      _id: s._id,
+      name: s.name || '',
+      hasSubset: !!s.hasSubset,
+      checklist,
+      freeImages: (s.freeImages || []).map(normalizeImage)
+    }
+  })
 }
 
 function generateCollectionJs(seriesList) {
