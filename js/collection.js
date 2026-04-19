@@ -50,8 +50,9 @@ const collection = {
         ? `<div class="col-series-thumbs">${thumbs.map(u => `<img class="col-series-thumb" src="${this.escAttr(u)}" alt="" loading="lazy" onerror="this.style.display='none'">`).join('')}</div>`
         : '<div class="col-series-empty-thumbs">暂无图片</div>'
 
+      const seriesId = series._id || ''
       return `
-        <a href="collection-detail.html?idx=${idx}" class="col-series-card col-series-card-block">
+        <a href="collection-detail?id=${this.escAttr(seriesId)}&idx=${idx}" class="col-series-card col-series-card-block">
           <div class="col-series-card-inner col-series-card-inner-minimal">
             <div class="col-series-info col-series-info-full">
               <div class="col-series-title-row">

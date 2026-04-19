@@ -8,9 +8,18 @@ const seriesDetail = {
   },
 
   init() {
-    const params = new URLSearchParams(window.location.search)
+    let params = new URLSearchParams(window.location.search)
+    if (!params.get('id') && !params.get('idx') && window.location.hash) {
+      params = new URLSearchParams(window.location.hash.slice(1))
+    }
+    const id = params.get('id')
     const idx = parseInt(params.get('idx'))
-    this.series = this.seriesData[idx] || null
+    if (id) {
+      this.series = this.seriesData.find(s => s._id === id) || null
+    }
+    if (!this.series && !isNaN(idx)) {
+      this.series = this.seriesData[idx] || null
+    }
 
     if (!this.series) {
       document.getElementById('seriesTitle').textContent = '系列不存在'
