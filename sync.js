@@ -150,6 +150,15 @@ function cdnUrlToLocalPath(url) {
   return `images/sample/${filename}`
 }
 
+function fileIdToCdnUrl(fileId) {
+  if (!fileId || !fileId.startsWith('cloud://')) return fileId
+  const withoutProtocol = fileId.slice('cloud://'.length)
+  const slashIndex = withoutProtocol.indexOf('/')
+  if (slashIndex === -1) return fileId
+  const cloudPath = withoutProtocol.slice(slashIndex + 1)
+  return `${CDN_BASE}/${cloudPath}`
+}
+
 function collectionUrlToLocalPath(url) {
   if (!url.startsWith(CDN_BASE + '/')) return url
   const cloudPath = url.slice(CDN_BASE.length + 1)
@@ -323,12 +332,15 @@ async function main() {
   let skipped = 0
   for (const card of cards) {
     for (const img of card.images) {
-      const originalUrl = img.url
-      const localRelPath = cdnUrlToLocalPath(originalUrl)
+      let downloadUrl = img.url
+      if (downloadUrl.startsWith('cloud://')) {
+        downloadUrl = fileIdToCdnUrl(downloadUrl)
+      }
+      const localRelPath = cdnUrlToLocalPath(downloadUrl)
       const localAbsPath = path.join(CARD_DIR, localRelPath)
 
-      if (originalUrl.startsWith(CDN_BASE + '/')) {
-        const didDownload = await downloadImage(originalUrl, localAbsPath)
+      if (downloadUrl.startsWith(CDN_BASE + '/')) {
+        const didDownload = await downloadImage(downloadUrl, localAbsPath)
         if (didDownload) {
           downloaded++
           console.log(`   下载: ${path.basename(localAbsPath)}`)
@@ -366,11 +378,14 @@ async function main() {
           ...series.freeImages
         ]
         for (const img of allImages) {
-          const originalUrl = img.url
-          if (originalUrl.startsWith(CDN_BASE + '/')) {
-            const localRelPath = collectionUrlToLocalPath(originalUrl)
+          let downloadUrl = img.url
+          if (downloadUrl.startsWith('cloud://')) {
+            downloadUrl = fileIdToCdnUrl(downloadUrl)
+          }
+          if (downloadUrl.startsWith(CDN_BASE + '/')) {
+            const localRelPath = collectionUrlToLocalPath(downloadUrl)
             const localAbsPath = path.join(CARD_DIR, localRelPath)
-            const didDownload = await downloadImage(originalUrl, localAbsPath)
+            const didDownload = await downloadImage(downloadUrl, localAbsPath)
             if (didDownload) { colDownloaded++; console.log(`   下载: ${path.basename(localAbsPath)}`) }
             else { colSkipped++ }
             img.url = localRelPath
