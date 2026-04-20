@@ -175,8 +175,8 @@ async function fetchAllDocs(accessToken, collectionName, pageSize = 20) {
 }
 
 function normalizeImage(img) {
-  if (typeof img === 'string') return { url: img, owned: false, number: '' }
-  return { url: img.url || '', owned: !!img.owned, number: img.number || '' }
+  if (typeof img === 'string') return { url: img, owned: false, number: '', year: '' }
+  return { url: img.url || '', owned: !!img.owned, number: img.number || '', year: img.year || '' }
 }
 
 function subsetDocsToChecklist(subsetDocs) {

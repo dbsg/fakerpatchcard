@@ -73,11 +73,14 @@ const seriesDetail = {
   },
 
   renderImage(img) {
-    const numberLabel = img.number ? `<span class="col-img-number">#${this.escHtml(img.number)}</span>` : ''
+    const parts = []
+    if (img.number) parts.push('#' + this.escHtml(img.number))
+    if (img.year) parts.push(this.escHtml(img.year))
+    const label = parts.length ? `<span class="col-img-number">${parts.join(' ')}</span>` : ''
     return `
       <div class="col-img-wrap" onclick="seriesDetail.previewImage('${this.escAttr(img.url)}')">
         <img class="col-img" src="${this.escAttr(img.url)}" alt="" loading="lazy">
-        ${numberLabel}
+        ${label}
       </div>
     `
   },
@@ -98,11 +101,23 @@ const seriesDetail = {
   sortImages(images, text) {
     if (!images || !images.length) return []
     const isNumbered = /\/\d+\s*$/.test(text || '')
-    if (!isNumbered) return [...images]
+    const hasAny = isNumbered || images.some(i => (i.number && i.number.trim()) || (i.year && i.year.trim()))
+    if (!hasAny) return [...images]
+    const parseYear = y => { const m = (y || '').match(/^(\d{4})/); return m ? parseInt(m[1]) : 9999 }
+    const parseNum = n => {
+      if (!n) return { num: 9999, den: -1 }
+      const s = String(n).trim(), si = s.indexOf('/')
+      if (si >= 0) return { num: parseInt(s.slice(0, si)) || 9999, den: parseInt(s.slice(si + 1)) || 9999 }
+      return { num: parseInt(s) || 9999, den: -1 }
+    }
     return [...images].sort((a, b) => {
-      const na = parseInt(a.number) || 9999
-      const nb = parseInt(b.number) || 9999
-      return na - nb
+      const ya = parseYear(a.year), yb = parseYear(b.year)
+      if (ya !== yb) return ya - yb
+      const pa = parseNum(a.number), pb = parseNum(b.number)
+      if (pa.num !== pb.num) return pa.num - pb.num
+      if (pa.den === -1 && pb.den !== -1) return -1
+      if (pa.den !== -1 && pb.den === -1) return 1
+      return pa.den - pb.den
     })
   },
 
