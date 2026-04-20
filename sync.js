@@ -405,7 +405,47 @@ async function main() {
     console.log('   未配置 APP_SECRET，跳过收藏数据同步\n')
   }
 
-  console.log('6. Git 提交并推送 ...')
+  console.log('6. 清理无用图片 ...')
+  const usedFiles = new Set()
+  for (const card of cards) {
+    for (const img of card.images) {
+      if (img.url.startsWith('images/')) usedFiles.add(img.url)
+    }
+  }
+  if (appSecret) {
+    try {
+      const colData = fs.readFileSync(COLLECTION_JS_PATH, 'utf8')
+      const colMatch = colData.match(/const collectionData = (\[[\s\S]*?\]);/)
+      if (colMatch) {
+        const seriesArr = JSON.parse(colMatch[1])
+        for (const s of seriesArr) {
+          for (const item of (s.checklist || [])) {
+            for (const img of (item.images || [])) {
+              if (img.url && img.url.startsWith('images/')) usedFiles.add(img.url)
+            }
+          }
+          for (const img of (s.freeImages || [])) {
+            if (img.url && img.url.startsWith('images/')) usedFiles.add(img.url)
+          }
+        }
+      }
+    } catch (_) {}
+  }
+
+  let cleaned = 0
+  for (const dir of [IMAGES_DIR, COLLECTION_IMAGES_DIR]) {
+    if (!fs.existsSync(dir)) continue
+    for (const file of fs.readdirSync(dir)) {
+      const rel = path.relative(CARD_DIR, path.join(dir, file))
+      if (!usedFiles.has(rel)) {
+        fs.unlinkSync(path.join(dir, file))
+        cleaned++
+      }
+    }
+  }
+  console.log(`   清理 ${cleaned} 个无用图片文件\n`)
+
+  console.log('7. Git 提交并推送 ...')
   try {
     execSync('git add .', { cwd: CARD_DIR, stdio: 'pipe' })
     const status = execSync('git status --porcelain', { cwd: CARD_DIR, encoding: 'utf8' })
