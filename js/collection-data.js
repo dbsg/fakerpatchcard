@@ -10,7 +10,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_0_1776354500905_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "1",
             "year": ""
           }
@@ -22,7 +22,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_1_1776335609638_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -39,7 +39,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_3_1776335633832_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -51,7 +51,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_4_1776335674062_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -63,7 +63,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_5_1776354883066_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -75,43 +75,43 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_6_1776337015366_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "7",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_6_1776337051538_1.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "11",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_6_1776411107295_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "18",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_6_1776411230475_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "14",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_6_1776411264304_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "1",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_6_1776411283301_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "2",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_6_1776411395701_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -123,7 +123,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_7_1776336052072_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "2",
             "year": ""
           }
@@ -150,7 +150,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_11_1776344258669_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -162,7 +162,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_12_1776344333180_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -174,7 +174,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_13_1776344407484_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -186,7 +186,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_14_1776344540940_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -198,7 +198,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_15_1776344631554_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -210,7 +210,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_16_1776344699348_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -227,7 +227,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_18_1776344739380_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -239,7 +239,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_19_1776344769087_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -251,7 +251,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_20_1776344823934_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -263,7 +263,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_21_1776344855625_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -275,7 +275,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_22_1776344928534_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -287,7 +287,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_23_1776409654257_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -299,7 +299,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_24_1776344991153_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -311,7 +311,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_25_1776345053994_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -323,7 +323,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_26_1776345248001_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -335,25 +335,25 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_27_1776354232786_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "18",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_27_1776409861527_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "21",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_27_1776409923247_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "2",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_27_1776411071822_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "8",
             "year": ""
           }
@@ -365,25 +365,25 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_28_1776352339008_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "1",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_28_1776352523172_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "10",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_28_1776355026315_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "21",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_28_1776409835803_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "13",
             "year": ""
           }
@@ -395,31 +395,31 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_29_1776353173297_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "1",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_29_1776353184154_1.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "10",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_29_1776353195682_2.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "32",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_29_1776353203403_3.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "3",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_29_1776353212295_4.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "19",
             "year": ""
           }
@@ -431,7 +431,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_30_1776352610816_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "3",
             "year": ""
           }
@@ -443,13 +443,13 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_31_1776352702558_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "6",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_31_1776352710505_1.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "14",
             "year": ""
           }
@@ -461,13 +461,13 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_32_1776410336248_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "9",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_32_1776411059010_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "10",
             "year": ""
           }
@@ -479,7 +479,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_33_1776352447750_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "1",
             "year": ""
           }
@@ -491,13 +491,13 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_34_1776353450963_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "15",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_34_1776411019229_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "16",
             "year": ""
           }
@@ -509,7 +509,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_35_1776354771160_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "2",
             "year": ""
           }
@@ -521,25 +521,25 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_36_1776353078857_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "12",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_36_1776353090157_1.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "21",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_36_1776353530351_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "8",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_36_1776354956203_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "18",
             "year": ""
           }
@@ -551,19 +551,19 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_37_1776352987653_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "10",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_37_1776352996157_1.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "19",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_37_1776354120451_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "1",
             "year": ""
           }
@@ -575,13 +575,13 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_38_1776352280490_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "4",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_38_1776409682952_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "16",
             "year": ""
           }
@@ -593,7 +593,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_39_1776411000442_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "4",
             "year": ""
           }
@@ -615,7 +615,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_42_1776354354796_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "1",
             "year": ""
           }
@@ -627,7 +627,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_43_1776353959939_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "3",
             "year": ""
           }
@@ -644,7 +644,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_45_1776354650114_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "1",
             "year": ""
           }
@@ -666,13 +666,13 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_48_1776354825481_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "1",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_48_1776486693980_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "2",
             "year": ""
           }
@@ -694,19 +694,19 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_51_1776353634985_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "6",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_51_1776409748808_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "3",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_51_1776410962067_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "5",
             "year": ""
           }
@@ -718,13 +718,13 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_52_1776352398921_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "5",
             "year": ""
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_52_1776409892018_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "6",
             "year": ""
           }
@@ -741,7 +741,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_54_1776354296743_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "2",
             "year": ""
           }
@@ -753,7 +753,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_55_1776410977863_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "2",
             "year": ""
           }
@@ -795,7 +795,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_62_1776353860467_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -822,7 +822,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_66_1776411040470_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -879,7 +879,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_76_1776409728520_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "1",
             "year": ""
           }
@@ -904,7 +904,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_0_1776337507026_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -916,7 +916,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_1_1776337539016_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -928,7 +928,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_2_1776337563335_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -940,7 +940,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_3_1776337593450_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -952,7 +952,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_4_1776337638044_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -964,7 +964,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_5_1776337676946_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -976,7 +976,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_6_1776337702998_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -988,7 +988,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_7_1776337738574_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -1000,7 +1000,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_8_1776337758832_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -1012,7 +1012,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_9_1776337777827_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -1024,19 +1024,19 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_10_1776412512876_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "11",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_10_1776412528120_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "9",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_10_1776412543883_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "18",
             "year": ""
           }
@@ -1048,7 +1048,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_11_1776337843415_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -1060,13 +1060,13 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_12_1776412205893_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "15",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_12_1776416441983_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "6",
             "year": ""
           }
@@ -1078,19 +1078,19 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_13_1776412425988_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "13",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_13_1776412441461_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "7",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_13_1776412461753_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -1107,7 +1107,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_15_1776412489870_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "21",
             "year": ""
           }
@@ -1129,19 +1129,19 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_18_1776337981097_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "15",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_18_1776412223743_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "20",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_18_1776416700437_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "2",
             "year": ""
           }
@@ -1153,7 +1153,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e0b4ee0485c6c602c17789_19_1776412604617_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "9",
             "year": ""
           }
@@ -1170,133 +1170,133 @@ const collectionData = [
     "freeImages": [
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335134974_0.png",
-        "owned": true,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335138612_1.png",
-        "owned": true,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335163269_0.png",
-        "owned": true,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335200303_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335201389_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335202165_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335202820_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335203640_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335204261_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335275003_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776335499115_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776423660892_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776423869482_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776423870441_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776423871147_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776423871974_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776423881663_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776423882982_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776423883599_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776429445328_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776429446055_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/f0df711e69e0b83d0488ae594c90a672_free_1776475468802_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       }
@@ -1309,50 +1309,50 @@ const collectionData = [
     "checklist": [],
     "freeImages": [
       {
-        "url": "images/collection/b3c6c3d569e0d1ea04905f351399853f_free_1776342834606_0.png",
-        "owned": true,
+        "url": "images/collection/b3c6c3d569e0d1ea04905f351399853f_replace_1776690877362.png",
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3c6c3d569e0d1ea04905f351399853f_free_1776342836110_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3c6c3d569e0d1ea04905f351399853f_free_1776342838699_3.png",
-        "owned": true,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3c6c3d569e0d1ea04905f351399853f_free_1776342839870_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3c6c3d569e0d1ea04905f351399853f_free_1776344187158_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3c6c3d569e0d1ea04905f351399853f_free_1776344188209_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3c6c3d569e0d1ea04905f351399853f_free_1776344189214_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3c6c3d569e0d1ea04905f351399853f_free_1776344190435_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       }
@@ -2034,7 +2034,20 @@ const collectionData = [
       {
         "text": "1 Kobe Bryant - Los Angeles Lakers",
         "subset": "Base",
-        "images": []
+        "images": [
+          {
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_0_1776683096070_0.png",
+            "ownedBy": [],
+            "number": "15",
+            "year": ""
+          },
+          {
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_0_1776683096939_1.png",
+            "ownedBy": [],
+            "number": "20",
+            "year": ""
+          }
+        ]
       },
       {
         "text": "2 Kevin Durant - Oklahoma City Thunder",
@@ -2042,7 +2055,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_25_2.2015-16_FLAWLESS_KEVIN_DURANT_14-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2054,7 +2069,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_34_3.2015-16_FLAWLESS_KYRIE_IRVING_12-15_PSA9.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2066,7 +2083,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_40_4.2015-16_FLAWLESS_JIMMY_BUTLER_11-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2078,7 +2097,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_53_5.2015-16_FLAWLESS_DAMIAN_LILLARD_1-1_PSA9.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "1",
             "year": ""
           }
@@ -2090,7 +2111,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_62_6.2015-16_FLAWLESS_DIRK_NOWITZKI_15-15_BGS9.5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2102,7 +2125,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_71_7.2015-16_FLAWLESS_ERIC_BLEDSOE_1-1_PSA9.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "1",
             "year": ""
           }
@@ -2114,7 +2139,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_80_8.2015-16_FLAWLESS_BRANDON_KNIGHT_10-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2126,7 +2153,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_88_9.2015-16_FLAWLESS_DWYANE_WADE_9-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2138,7 +2167,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_0_10.2015-16_FLAWLESS_CHRIS_BOSH_8-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2150,7 +2181,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_7_11.2015-16_FLAWLESS_PAUL_GRORGE_1-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -2167,7 +2200,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_18_13.2015-16_FLAWLESS_RUSSELL_WESTBROOK_2-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -2179,7 +2214,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_19_14.2015-16_FLAWLESS_ANTHONY_DAVIS_14-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -2191,7 +2228,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_20_15.2015-16_FLAWLESS_GORDON_HAYWARD_8-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2203,7 +2242,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_21_16.2015-16_FLAWLESS_KEMBA_WALKER_9-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2215,7 +2256,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_22_17.2015-16_FLAWLESS_NICOLAS_BATUM_4-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -2227,7 +2270,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_23_18.2015-16_FLAWLESS_LANCE_STEPHENSON_16-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -2239,8 +2284,34 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_24_19.2015-16_FLAWLESS_LEBRON_JAMES_14-15_PSA9.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
+            "year": ""
+          },
+          {
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_18_1776685158015_0.png",
+            "ownedBy": [],
+            "number": "20",
+            "year": ""
+          },
+          {
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_18_1776685159562_1.png",
+            "ownedBy": [],
+            "number": "5",
+            "year": ""
+          },
+          {
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_18_1776685160620_2.png",
+            "ownedBy": [],
+            "number": "10",
+            "year": ""
+          },
+          {
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_18_1776685161501_3.png",
+            "ownedBy": [],
+            "number": "1",
             "year": ""
           }
         ]
@@ -2251,8 +2322,22 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_26_20.2015-16_FLAWLESS_KEVIN_LOVE_14-15_PSA8.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
+            "year": ""
+          },
+          {
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_19_1776685267014_0.png",
+            "ownedBy": [],
+            "number": "20",
+            "year": ""
+          },
+          {
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_19_1776685336363_0.png",
+            "ownedBy": [],
+            "number": "5",
             "year": ""
           }
         ]
@@ -2263,7 +2348,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_108_21.2015-16_FLAWLESS_STEPHEN_CURRY_6-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2285,7 +2372,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_27_24.2015-16_FLAWLESS_KENNETH_FARIED_13-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2297,7 +2386,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_28_25.2015-16_FLAWLESS_JAMES_HARDAN_14-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2309,7 +2400,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_29_26.2015-16_FLAWLESS_DWIGHT_HOWARD_10-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2321,13 +2414,17 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_30_27.2015-16_FLAWLESS_GIANNIS_ANTETOKOUNMPO_3-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_31_27.2015-16_FLAWLESS_GIANNIS_ANTETOKOUNMPO_6-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2339,7 +2436,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_32_28.2015-16_FLAWLESS_JABARI_PARKER_10-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -2351,7 +2450,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_33_29.2015-16_FLAWLESS_CHRIS_PAUL_2-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2368,7 +2469,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_35_31.2015-16_FLAWLESS_PAUL_PIERCE_11-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2380,7 +2483,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_36_32.2015-16_FLAWLESS_DEMAR_DEROZAN_4-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -2392,7 +2497,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_37_33.2015-16_FLAWLESS_KYLE_LOWARY_6-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -2419,7 +2526,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_38_37.2015-16_FLAWLESS_LAMARCUS_ALDRIDGE_11-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2436,7 +2545,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_39_39.2015-16_FLAWLESS_MARC_GASOL_2-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2448,7 +2559,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_41_40.2015-16_FLAWLESS_MIKE_CONLEY_2-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -2460,37 +2573,49 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_42_41.2015-16_FLAWLESS_C.J._McCOLLUM_1-1_PSA10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "1",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_43_41.2015-16_FLAWLESS_C.J._McCOLLUM_14-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_44_41.2015-16_FLAWLESS_C.J._McCOLLUM_4-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_45_41.2015-16_FLAWLESS_C.J._McCOLLUM_5-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_46_41.2015-16_FLAWLESS_C.J._McCOLLUM_7-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_47_41.2015-16_FLAWLESS_C.J._McCOLLUM.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "",
             "year": ""
           }
@@ -2502,7 +2627,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_48_42.2015-16_FLAWLESS_ANDREW_WIGGINS_6-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2514,7 +2641,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_49_43.2015-16_FLAWLESS_ZACH_LAVINE_3-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2531,7 +2660,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_50_45.2015-16_FLAWLESS_CARMELO_ANTHONY_9-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2548,7 +2679,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_51_47.2015-16_FLAWLESS_JOHN_WALL_8-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2560,7 +2693,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_52_48.2015-16_FLAWLESS_BRADLEY_BEAL_8-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2592,7 +2727,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_54_53.2015-16_FLAWLESS_ALLEN_CRABBE_1-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -2604,7 +2741,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_55_54.2015-16_FLAWLESS_AL_HORFORD_2-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2616,7 +2755,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_56_55.2015-16_FLAWLESS_DENNIS_SCHRODER_18-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -2628,13 +2769,17 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_57_56.2015-16_FLAWLESS_JEFF_TEAGUE_3-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_58_56.2015-16_FLAWLESS_JEFF_TEAGUE_5-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2646,7 +2791,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_59_57.2015-16_FLAWLESS_JEREMY_LIN_8-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2658,7 +2805,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_60_58.2015-16_FLAWLESS_DERRICK_ROSE_5-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -2670,19 +2819,21 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_58_1776483116586_0.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "10",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_58_1776483122780_1.png",
-            "owned": true,
+            "ownedBy": [],
             "number": "15",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_61_59.2015-16_FLAWLESS_PAU_GASOL_7-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2709,7 +2860,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_63_63.2015-16_FLAWLESS_J.R._SMITH_10-15_PSA8.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2731,25 +2884,33 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_64_66.2015-16_FLAWLESS_REGGIE_JACKSON_1-1.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "1",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_65_66.2015-16_FLAWLESS_REGGIE_JACKSON_1-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_66_66.2015-16_FLAWLESS_REGGIE_JACKSON_10-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           },
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_67_66.2015-16_FLAWLESS_REGGIE_JACKSON_10-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2761,7 +2922,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_68_67.2015-16_FLAWLESS_ANDRE_DRUMMOND_4-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2773,7 +2936,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_69_68.2015-16_FLAWLESS_KENTAVIOUS_CALDWELL-POPE_5-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2785,7 +2950,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_70_69.2015-16_FLAWLESS_HARRISON_BARNES_6-10_PSA9.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2807,7 +2974,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_72_72.2015-16_FLAWLESS_JORDAN_CLARKSON_18-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -2819,7 +2988,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_73_73.2015-16_FLAWLESS_LOU_WILLIAMS_3-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -2831,7 +3002,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_74_74.2015-16_FLAWLESS_KHRIS_MIDDLETON_1-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -2843,7 +3016,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_75_75.2015-16_FLAWLESS_KEVIN_GARNETT_10-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2855,7 +3030,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_76_76.2015-16_FLAWLESS_RYAN_ANDERSON_6-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2867,7 +3044,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_77_77.2015-16_FLAWLESS_ENES_KANTER_7-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2879,7 +3058,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_78_78.2015-16_FLAWLESS_ISAIAH_THOMAS_3-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -2891,7 +3072,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_79_79.2015-16_FLAWLESS_AVERY_BRADLEY_1-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -2903,7 +3086,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_81_80.2015-16_FLAWLESS_JAE_CROWDER_6-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2915,7 +3100,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_82_81.2015-16_FLAWLESS_ARRON_AFFLALO_11-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2932,7 +3119,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_83_83.2015-16_FLAWLESS_NIKOLA_VUCEVIC_8-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -2944,7 +3133,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_84_84.2015-16_FLAWLESS_VICTOR_OLADIPO_5-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -2956,7 +3147,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_85_85.2015-16_FLAWLESS_ELFRID_PAYTON_9-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -2968,7 +3161,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_86_86.2015-16_FLAWLESS_AARON_GORDON_18-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -2980,7 +3175,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_87_87.2015-16_FLAWLESS_ISH_SMITH_8-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -3002,7 +3199,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_89_90.2015-16_FLAWLESS_DEMARCUS_COUSINS_12-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3014,7 +3213,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_90_91.2015-16_FLAWLESS_RUDY_GAY_6-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3026,7 +3227,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_91_92.2015-16_FLAWLESS_DEMARRE_CARROLL_15-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3038,7 +3241,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_92_93.2015-16_FLAWLESS_RODNEY_HOOD_14-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3050,7 +3255,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_93_94.2015-16_FLAWLESS_ALEC_BURKS_17-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -3062,7 +3269,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_94_95.2015-16_FLAWLESS_PAUL_MILLSAP_12-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3074,7 +3283,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_95_96.2015-16_FLAWLESS_EVAN_TURNER_10-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -3091,7 +3302,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_96_98.2015-16_FLAWLESS_NIKOLA_MIROTIC_2-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -3103,7 +3316,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_97_99.2015-16_FLAWLESS_DOUG_MCDERMOTT_4-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -3120,7 +3335,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_1_101.2015-16_FLAWLESS_TREVOR_ARIZA_1-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3132,7 +3349,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_2_102.2015-16_FLAWLESS_ALEX_LEN_10-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -3144,7 +3363,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_3_103.2015-16_FLAWLESS_CHANDLER_PARSONS_9-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -3161,7 +3382,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_4_105.2015-16_FLAWLESS_GEORGE_HILL_1-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -3178,7 +3401,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_5_107.2015-16_FLAWLESS_TRISTAN_THOMPSON_11-15_PSA10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3190,7 +3415,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_6_108.2015-16_FLAWLESS_ZACH_RANDOLPH_11-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3222,7 +3449,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_8_113.2015-16_FLAWLESS_MATTHEW_DELLAVEDOVA_18-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -3234,7 +3463,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_9_114.2015-16_FLAWLESS_ANDRE_IGUODALA_11-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3251,7 +3482,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_10_116.2015-16_FLAWLESS_KAWHI_LEONARD_18-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -3263,7 +3496,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_11_117.2015-16_FLAWLESS_RICKY_RUBIO_3-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -3275,7 +3510,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_12_118.2015-16_FLAWLESS_PATRICK_BEVERLEY_8-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3287,7 +3524,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_13_119.2015-16_FLAWLESS_GERALD_HENDERSON_5-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -3299,7 +3538,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_14_120.2015-16_FLAWLESS_OTTO_PORTER_7-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -3316,7 +3557,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_15_122.2015-16_FLAWLESS_MARCUS_MORRIS_10-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3333,7 +3576,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_16_124.2015-16_FLAWLESS_DANNY_GREEN_9-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3345,7 +3590,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_17_125.2015-16_FLAWLESS_VINCE_CARTER_18-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -3372,7 +3619,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_98_129.2015-16_FLAWLESS_WILT_CHAMBERLAIN_4-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -3399,7 +3648,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_99_133.2015-16_FLAWLESS_JOHN_STOCKTON_7-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -3436,7 +3687,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_100_139.2015-16_FLAWLESS_KRISTAPS_PORZINGIS_3-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -3448,7 +3701,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_101_140.2015-16_FLAWLESS_JUSTISE_WINSLOW_10-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3465,7 +3720,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_102_142.2015-16_FLAWLESS_EMMANUEL_MUDIAY_3-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -3477,7 +3734,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_103_143.2015-16_FLAWLESS_MYLES_TURNER_19-20.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "20",
             "year": ""
           }
@@ -3489,7 +3748,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_104_144.2015-16_FLAWLESS_BOBBY_PORTIS_2-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -3511,7 +3772,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_105_147.2015-16_FLAWLESS_MARIO_HEZONJA_8-10.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "10",
             "year": ""
           }
@@ -3523,7 +3786,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_106_148.2015-16_FLAWLESS_CAMERON_PAYNE_5-5.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "5",
             "year": ""
           }
@@ -3540,7 +3805,9 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_107_150.2015-16_FLAWLESS_STEPHEN_CURRY_7-15.jpg.jpg",
-            "owned": true,
+            "ownedBy": [
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+            ],
             "number": "15",
             "year": ""
           }
@@ -3570,7 +3837,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_2_1776412748294_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -3582,7 +3849,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_3_1776412710442_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -3599,7 +3866,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_5_1776412696472_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -3621,7 +3888,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_8_1776412780926_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -3638,7 +3905,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_10_1776412730071_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -3650,7 +3917,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_11_1776412674702_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "7",
             "year": ""
           }
@@ -3667,7 +3934,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_13_1776408636800_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "3",
             "year": ""
           }
@@ -3709,7 +3976,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_20_1776416760693_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -3774,13 +4041,13 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e1cfa904a268447069dc57_0_1776412904857_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "25",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e1cfa904a268447069dc57_0_1776412905501_1.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "9",
             "year": ""
           }
@@ -3792,13 +4059,13 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e1cfa904a268447069dc57_1_1776411943981_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "11",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e1cfa904a268447069dc57_1_1776412951140_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -3815,19 +4082,19 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e1cfa904a268447069dc57_3_1776412869318_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "16",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e1cfa904a268447069dc57_3_1776412870204_1.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           },
           {
             "url": "images/collection/f6fcfb9c69e1cfa904a268447069dc57_3_1776423627605_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -3844,7 +4111,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e1cfa904a268447069dc57_5_1776411917159_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "13",
             "year": ""
           }
@@ -3861,7 +4128,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e1cfa904a268447069dc57_7_1776411934723_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "13",
             "year": ""
           }
@@ -3888,7 +4155,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f6fcfb9c69e1cfa904a268447069dc57_11_1776417208028_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -3943,7 +4210,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0b1036a69e1e645000050f730b70c9e_1_1776416804180_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "5",
             "year": ""
           }
@@ -3960,25 +4227,25 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0b1036a69e1e645000050f730b70c9e_3_1776415540585_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "5",
             "year": ""
           },
           {
             "url": "images/collection/f0b1036a69e1e645000050f730b70c9e_3_1776415555379_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "12",
             "year": ""
           },
           {
             "url": "images/collection/f0b1036a69e1e645000050f730b70c9e_3_1776415572908_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "16",
             "year": ""
           },
           {
             "url": "images/collection/f0b1036a69e1e645000050f730b70c9e_3_1776415586357_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -4005,7 +4272,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0b1036a69e1e645000050f730b70c9e_7_1776415613423_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "3",
             "year": ""
           }
@@ -4017,7 +4284,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0b1036a69e1e645000050f730b70c9e_8_1776412271466_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "12",
             "year": ""
           }
@@ -4169,1498 +4436,1475 @@ const collectionData = [
     "freeImages": [
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428507964_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428509075_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428509953_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428511423_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428514323_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428515103_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428524762_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428539097_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428543110_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428529884_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428533943_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428535175_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428536188_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428538258_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428539229_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428542780_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428543544_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428545369_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428597432_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428598793_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428599561_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428600759_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428601727_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428602461_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428603367_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428603917_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428604961_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428637600_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428638645_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428639563_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428640262_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428641211_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428641758_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428642437_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428643267_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428643961_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428675263_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428676245_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428677070_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428677847_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428678596_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428679537_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428680193_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428681059_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428681849_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428712000_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428713111_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428714173_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428715287_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428716007_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428716580_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428717277_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428717879_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428718711_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428772347_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428773414_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428774465_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428775255_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428775890_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428776665_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428777562_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428778663_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428779504_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428808886_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428810078_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428810759_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428811561_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428812300_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428813038_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428814024_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428814839_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428816363_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428860361_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428861529_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428863099_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428863836_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428864683_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428865715_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428866802_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428867413_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428868110_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428891037_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428892023_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428892719_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428893495_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428895785_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428896706_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428897450_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428900984_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428902075_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428924335_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428925389_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428927162_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428928603_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428929218_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428929866_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428930599_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428931285_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428932241_8.png",
-        "owned": true,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428955148_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428956056_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428957035_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428957792_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428958474_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428959189_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428960121_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428961335_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428962163_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428989486_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428990626_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428991773_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428992825_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428993746_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428995016_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428995845_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428996889_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776428997929_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429027163_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429028161_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429029009_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429029922_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429039750_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429042995_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429043774_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429044523_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429045272_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429076273_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429077180_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429077940_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429078783_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429079562_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429080445_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429081204_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429082365_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429083385_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429109434_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429110657_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429111264_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429112152_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429113370_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429114114_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429115029_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429115769_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429116538_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429143390_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429144356_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429145140_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429145973_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429147401_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429148092_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429149076_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429149974_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429192105_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429193028_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429193999_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429194750_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429195871_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429196986_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429197849_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429206228_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429207170_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429229267_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429230337_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429231083_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429231818_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429232690_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429233396_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429235332_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429236268_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429241524_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429266342_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429267138_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429268129_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429269302_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429270243_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429271322_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429271911_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429272772_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429273531_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429298951_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429299768_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429300531_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429301373_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429302057_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429302926_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429303656_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429304599_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429305989_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429331545_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429332698_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429333324_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429333989_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429334628_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429335395_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429335962_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429336594_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429338763_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429388921_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429390124_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429391382_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429392575_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429402547_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429403585_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429404603_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776429405323_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430729834_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430731301_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430732208_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430733324_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430734807_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430736487_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430737608_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430739173_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430740316_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430759081_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430760205_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430761338_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430762415_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430763772_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430764866_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430766200_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430767057_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430767919_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430785607_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430786554_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430787353_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430788336_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430789373_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430790361_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430791431_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430792395_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430793476_8.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430811788_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430812944_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430813905_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430814776_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430815544_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430816426_5.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430817345_6.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776430818247_7.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776433391335_0.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776433393435_1.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776433415932_2.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776433417744_3.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       },
       {
         "url": "images/collection/b3bf7c4c69e214650004146476e8cd0a_free_1776433435965_4.png",
-        "owned": false,
+        "ownedBy": [],
         "number": "",
         "year": ""
       }
     ]
-  },
-  {
-    "_id": "bf476b7769e335ed0017fa571dfba1ab",
-    "name": "纪念标",
-    "hasSubset": true,
-    "checklist": [
-      {
-        "text": "",
-        "subset": "比尔 拉塞尔 纪念标",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "50 周年",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "森林狼主帅桑德斯纪念标",
-        "images": []
-      }
-    ],
-    "freeImages": []
   },
   {
     "_id": "2e3df17869e335ee001949f33913bacb",
@@ -5669,11 +5913,11 @@ const collectionData = [
     "checklist": [
       {
         "text": "",
-        "subset": "克莱 汤普森",
+        "subset": "克莱·汤普森 / Klay Thompson",
         "images": [
           {
             "url": "images/collection/2e3df17869e335ee001949f33913bacb_4_1776514377591_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -5681,29 +5925,29 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "欧文",
+        "subset": "凯里·欧文 / Kyrie Irving",
         "images": [
           {
             "url": "images/collection/2e3df17869e335ee001949f33913bacb_5_1776514427370_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           },
           {
             "url": "images/collection/2e3df17869e335ee001949f33913bacb_5_1776514429589_1.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           },
           {
             "url": "images/collection/2e3df17869e335ee001949f33913bacb_5_1776514433321_2.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           },
           {
             "url": "images/collection/2e3df17869e335ee001949f33913bacb_5_1776514436282_3.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -5711,11 +5955,11 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "SGA",
+        "subset": "谢伊·吉尔杰斯-亚历山大 / Shai Gilgeous-Alexander",
         "images": [
           {
             "url": "images/collection/2e3df17869e335ee001949f33913bacb_6_1776514457311_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -5723,812 +5967,23 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "安东尼 戴维斯",
+        "subset": "安东尼·戴维斯 / Anthony Davis",
         "images": [
           {
             "url": "images/collection/2e3df17869e335ee001949f33913bacb_7_1776514468585_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           },
           {
             "url": "images/collection/2e3df17869e335ee001949f33913bacb_7_1776514471844_1.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
         ]
       }
     ],
-    "freeImages": []
-  },
-  {
-    "_id": "c82fc69769e335ef00199a07741d1fa3",
-    "name": "Brand Logo (品牌标)",
-    "hasSubset": true,
-    "checklist": [],
-    "freeImages": [
-      {
-        "url": "images/collection/c82fc69769e335ef00199a07741d1fa3_free_1776512579952_0.png",
-        "owned": false,
-        "number": "",
-        "year": ""
-      },
-      {
-        "url": "images/collection/c82fc69769e335ef00199a07741d1fa3_free_1776512805091_0.png",
-        "owned": false,
-        "number": "",
-        "year": ""
-      },
-      {
-        "url": "images/collection/c82fc69769e335ef00199a07741d1fa3_free_1776513877332_0.png",
-        "owned": false,
-        "number": "",
-        "year": ""
-      }
-    ]
-  },
-  {
-    "_id": "c82fc69769e335f000199a0f7bcee1d2",
-    "name": "Sponsor Logo (赞助商标)",
-    "hasSubset": true,
-    "checklist": [
-      {
-        "text": "谢伊·吉尔杰斯-亚历山大 / Shai Gilgeous-Alexander",
-        "subset": "_batch_0",
-        "images": [
-          {
-            "url": "images/collection/c82fc69769e335f000199a0f7bcee1d2_free_1776512993627_0.png",
-            "owned": false,
-            "number": "",
-            "year": ""
-          },
-          {
-            "url": "images/collection/c82fc69769e335f000199a0f7bcee1d2_free_1776512776889_0.png",
-            "owned": false,
-            "number": "",
-            "year": ""
-          },
-          {
-            "url": "images/collection/c82fc69769e335f000199a0f7bcee1d2_free_1776513628498_0.png",
-            "owned": false,
-            "number": "",
-            "year": ""
-          },
-          {
-            "url": "images/collection/c82fc69769e335f000199a0f7bcee1d2_free_1776512929118_0.png",
-            "owned": false,
-            "number": "",
-            "year": ""
-          }
-        ]
-      },
-      {
-        "text": "杰伦·威廉姆斯 / Jalen Williams",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "尼古拉·约基奇 / Nikola Jokic",
-        "subset": "_batch_0",
-        "images": [
-          {
-            "url": "images/collection/c82fc69769e335f000199a0f7bcee1d2_free_1776513840466_0.png",
-            "owned": false,
-            "number": "",
-            "year": ""
-          }
-        ]
-      },
-      {
-        "text": "斯蒂芬·库里 / Stephen Curry",
-        "subset": "_batch_0",
-        "images": [
-          {
-            "url": "images/collection/c82fc69769e335f000199a0f7bcee1d2_free_1776513115027_0.png",
-            "owned": false,
-            "number": "",
-            "year": ""
-          },
-          {
-            "url": "images/collection/c82fc69769e335f000199a0f7bcee1d2_free_1776513117728_1.png",
-            "owned": false,
-            "number": "",
-            "year": ""
-          }
-        ]
-      },
-      {
-        "text": "特雷·杨 / Trae Young",
-        "subset": "_batch_0",
-        "images": [
-          {
-            "url": "images/collection/c82fc69769e335f000199a0f7bcee1d2_free_1776513009240_0.png",
-            "owned": false,
-            "number": "",
-            "year": ""
-          }
-        ]
-      },
-      {
-        "text": "杰森·塔图姆 / Jayson Tatum",
-        "subset": "_batch_0",
-        "images": [
-          {
-            "url": "images/collection/c82fc69769e335f000199a0f7bcee1d2_free_1776513806373_0.png",
-            "owned": false,
-            "number": "",
-            "year": ""
-          }
-        ]
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      }
-    ],
-    "freeImages": []
-  },
-  {
-    "_id": "789230b469e335f0001718551f137c7c",
-    "name": "Laundry Tag (洗标)",
-    "hasSubset": true,
-    "checklist": [],
-    "freeImages": []
-  },
-  {
-    "_id": "1bbc242969e335f1001852584a9536f1",
-    "name": "Jersey Number (号码)",
-    "hasSubset": true,
-    "checklist": [
-      {
-        "text": "",
-        "subset": "#0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#1",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#2",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#3",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#4",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#5",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#6",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#7",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#8",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#9",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#10",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#11",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#12",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#13",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#14",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#15",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#16",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#17",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#18",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#19",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#20",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#21",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#22",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#23",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#24",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#25",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#26",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#27",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#28",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#29",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#30",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#31",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#32",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#33",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#34",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#35",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#36",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#37",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#38",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#39",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#40",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#41",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#42",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#43",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#44",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#45",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#46",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#47",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#48",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#49",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#50",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#51",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#52",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#53",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#54",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#55",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#56",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#57",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#58",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#59",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#60",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#61",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#62",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#63",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#64",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#65",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#66",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#67",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#68",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#69",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#70",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#71",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#72",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#73",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#74",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#75",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#76",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#77",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#78",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#79",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#80",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#81",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#82",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#83",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#84",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#85",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#86",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#87",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#88",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#89",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#90",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#91",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#92",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#93",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#94",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#95",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#96",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#97",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#98",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#99",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "#100",
-        "images": []
-      }
-    ],
-    "freeImages": []
-  },
-  {
-    "_id": "789230b469e335f20017186a48f994f9",
-    "name": "Tag Patch",
-    "hasSubset": true,
-    "checklist": [],
-    "freeImages": []
-  },
-  {
-    "_id": "6cd8d0ff69e337ab00192a893d6c6a50",
-    "name": "圣诞大战",
-    "hasSubset": true,
-    "checklist": [],
-    "freeImages": []
-  },
-  {
-    "_id": "3e5080e169e3380a001983eb5f0b3e2d",
-    "name": "全明星",
-    "hasSubset": true,
-    "checklist": [],
     "freeImages": []
   },
   {
@@ -7164,7 +6619,14 @@ const collectionData = [
       {
         "text": "1 Charles Barkley",
         "subset": "红宝",
-        "images": []
+        "images": [
+          {
+            "url": "images/collection/3b15ceb869e339fa00190544418b2826_125_1776690855662_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": ""
+          }
+        ]
       },
       {
         "text": "2 Dell Curry",
@@ -7549,7 +7011,14 @@ const collectionData = [
       {
         "text": "78 David Robinson",
         "subset": "红宝",
-        "images": []
+        "images": [
+          {
+            "url": "images/collection/3b15ceb869e339fa00190544418b2826_202_1776690403914_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": ""
+          }
+        ]
       },
       {
         "text": "79 Erick Dampier",
@@ -7629,7 +7098,14 @@ const collectionData = [
       {
         "text": "94 Eddie Jones",
         "subset": "红宝",
-        "images": []
+        "images": [
+          {
+            "url": "images/collection/3b15ceb869e339fa00190544418b2826_218_1776690419728_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": ""
+          }
+        ]
       },
       {
         "text": "95 Jerry Stackhouse",
@@ -7644,12 +7120,26 @@ const collectionData = [
       {
         "text": "97 Karl Malone",
         "subset": "红宝",
-        "images": []
+        "images": [
+          {
+            "url": "images/collection/3b15ceb869e339fa00190544418b2826_221_1776698493211_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": ""
+          }
+        ]
       },
       {
         "text": "98 Reggie Miller",
         "subset": "红宝",
-        "images": []
+        "images": [
+          {
+            "url": "images/collection/3b15ceb869e339fa00190544418b2826_222_1776690838182_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": ""
+          }
+        ]
       },
       {
         "text": "99 Bryon Russell",
@@ -7679,7 +7169,14 @@ const collectionData = [
       {
         "text": "104 Ray Allen",
         "subset": "红宝",
-        "images": []
+        "images": [
+          {
+            "url": "images/collection/3b15ceb869e339fa00190544418b2826_228_1776690847249_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": ""
+          }
+        ]
       },
       {
         "text": "105 Sean Elliott",
@@ -8415,164 +7912,6 @@ const collectionData = [
     "freeImages": []
   },
   {
-    "_id": "291ff3e969e370a9001e61a01ba4b63a",
-    "name": "Team Slogan",
-    "hasSubset": true,
-    "checklist": [
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      },
-      {
-        "text": "",
-        "subset": "_batch_0",
-        "images": []
-      }
-    ],
-    "freeImages": []
-  },
-  {
     "_id": "291ff3e969e588a0004236b93bfae3ab",
     "name": "2003-04 Limited Logos Autographs",
     "hasSubset": true,
@@ -8583,7 +7922,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_0_LL-AJ_Antawn_Jamison_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8595,7 +7934,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_2_LL-AM_Andre_Miller_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8607,7 +7946,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_4_LL-AS_Amare_Stoudemire_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8619,7 +7958,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_6_LL-BD_Baron_Davis_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8631,7 +7970,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_8_LL-CA1_Carmelo_Anthony_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8643,7 +7982,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_10_LL-CA2_Carmelo_Anthony_Throwback_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8655,7 +7994,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_12_LL-CM_Corey_Maggette_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8667,7 +8006,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_13_LL-DA_David_Robinson_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8679,7 +8018,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_15_LL-DM_Darko_Milicic_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8691,7 +8030,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_16_LL-DR_Dennis_Rodman_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8703,7 +8042,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_18_LL-DY_Dwyane_Wade_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8715,7 +8054,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_20_LL-GA_Gilbert_Arenas_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8727,7 +8066,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_22_LL-GP_Gary_Payton_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8739,7 +8078,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_24_LL-JK_Jason_Kidd_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8751,7 +8090,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_26_LL-JM_John_Stockton_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8763,7 +8102,13 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_28_LL-KB_Kobe_Bryant_front.jpg",
-            "owned": false,
+            "ownedBy": [],
+            "number": "70",
+            "year": ""
+          },
+          {
+            "url": "images/collection/291ff3e969e588a0004236b93bfae3ab_15_1776691624216_0.png",
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8775,7 +8120,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_30_LL-KG_Kevin_Garnett_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8787,19 +8132,19 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_32_LL-LB_Larry_Bird_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "14",
             "year": ""
           },
           {
             "url": "images/collection/291ff3e969e588a0004236b93bfae3ab_17_1776677845618_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "40",
             "year": ""
           },
           {
             "url": "images/collection/291ff3e969e588a0004236b93bfae3ab_17_1776677863270_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "44",
             "year": ""
           }
@@ -8811,7 +8156,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_34_LL-LJ_LeBron_James_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8823,7 +8168,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_36_LL-MA_Magic_Johnson_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8835,7 +8180,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_38_LL-MJ_Michael_Jordan_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8847,7 +8192,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_40_LL-PE_Patrick_Ewing_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8859,7 +8204,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_42_LL-PP_Paul_Pierce_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8871,7 +8216,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_44_LL-PS_Peja_Stojakovic_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8883,7 +8228,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_46_LL-SA_Shareef_Abdur-Rahim_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8895,7 +8240,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_48_LL-SC_Sam_Cassell_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8907,7 +8252,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_50_LL-SM_Shawn_Marion_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8919,7 +8264,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_51_LL-ST_Stephon_Marbury_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -8931,8 +8276,14 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_52_LL-TM_Tracy_McGrady_front.jpg",
-            "owned": false,
-            "number": "",
+            "ownedBy": [],
+            "number": "41",
+            "year": ""
+          },
+          {
+            "url": "images/collection/291ff3e969e588a0004236b93bfae3ab_28_1776691183187_0.png",
+            "ownedBy": [],
+            "number": "48",
             "year": ""
           }
         ]
@@ -8943,7 +8294,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_53_LL-ZO_Alonzo_Mourning_front.jpg",
-            "owned": false,
+            "ownedBy": [],
             "number": "",
             "year": ""
           }
@@ -9098,7 +8449,7 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_27_1776677483927_0.png",
-            "owned": false,
+            "ownedBy": [],
             "number": "32",
             "year": ""
           }
@@ -9656,7 +9007,14 @@ const collectionData = [
       {
         "text": "LL-KB Kobe Bryant /50",
         "subset": "_batch_0",
-        "images": []
+        "images": [
+          {
+            "url": "images/collection/789230b469e5cb3d004754897e345ef3_18_1776691496133_0.png",
+            "ownedBy": [],
+            "number": "16",
+            "year": ""
+          }
+        ]
       },
       {
         "text": "LL-KD Kevin Durant /50",
@@ -9665,107 +9023,114 @@ const collectionData = [
       },
       {
         "text": "LL-KG Kevin Garnett /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-KH Kirk Hinrich /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-LA LaMarcus Aldridge /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-LH Larry Hughes /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-LJ LeBron James /50",
-        "subset": "_batch_1",
-        "images": []
+        "subset": "_batch_0",
+        "images": [
+          {
+            "url": "images/collection/789230b469e5cb3d004754897e345ef3_24_1776691674267_0.png",
+            "ownedBy": [],
+            "number": "12",
+            "year": ""
+          }
+        ]
       },
       {
         "text": "LL-MB Mike Bibby /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-NA Nate Archibald /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-PA Tony Parker /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-PP Paul Pierce /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-RF Randy Foye /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-RG Rudy Gay /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-RJ Richard Jefferson /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-RL Rashard Lewis /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-SB Shannon Brown /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-SL Shaun Livingston /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-SW Shelden Williams /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-TJ T.J. Ford /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-TM Tracy McGrady /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-TP Tayshaun Prince /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-VC Vince Carter /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-YM Yao Ming /50",
-        "subset": "_batch_2",
+        "subset": "_batch_0",
         "images": []
       }
     ],
@@ -9878,112 +9243,119 @@ const collectionData = [
       },
       {
         "text": "LL-JS J.R. Smith /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-KB Kobe Bryant /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-LA LaMarcus Aldridge /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-LB Larry Bird /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-LJ LeBron James /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-MA Magic Johnson /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-MJ Michael Jordan /50",
-        "subset": "_batch_1",
-        "images": []
+        "subset": "_batch_0",
+        "images": [
+          {
+            "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_26_1776691449531_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": ""
+          }
+        ]
       },
       {
         "text": "LL-MW Marcus Williams /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-RB Renaldo Balkman /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-RC Rodney Carney /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-RF Randy Foye /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-RG Rudy Gay /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-RJ Richard Jefferson /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-RO Brandon Roy /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-SN Steve Nash /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-ST John Stockton /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-SW Shawne Williams /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-TF T.J. Ford /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-TT Tyrus Thomas /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-VC Vince Carter /50",
-        "subset": "_batch_1",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-WI Shelden Williams /50",
-        "subset": "_batch_2",
+        "subset": "_batch_0",
         "images": []
       },
       {
         "text": "LL-WM Marvin Williams /50",
-        "subset": "_batch_2",
+        "subset": "_batch_0",
         "images": []
       }
     ],
@@ -10000,77 +9372,88 @@ const collectionData = [
         "images": [
           {
             "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670309289_0.png",
-            "owned": false,
-            "number": "2013",
-            "year": ""
+            "ownedBy": [],
+            "number": "",
+            "year": "2013"
           },
           {
             "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670917269_0.png",
-            "owned": false,
-            "number": "2014",
-            "year": ""
+            "ownedBy": [],
+            "number": "",
+            "year": "2014"
           },
           {
             "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670938298_0.png",
-            "owned": false,
-            "number": "2015",
-            "year": ""
+            "ownedBy": [],
+            "number": "",
+            "year": "2015"
           },
           {
             "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670950916_0.png",
-            "owned": false,
-            "number": "2016",
-            "year": ""
+            "ownedBy": [],
+            "number": "",
+            "year": "2016"
           },
           {
             "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670971458_0.png",
-            "owned": false,
-            "number": "2017",
-            "year": ""
+            "ownedBy": [],
+            "number": "",
+            "year": "2017"
           },
           {
             "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670985474_0.png",
-            "owned": false,
-            "number": "2018",
-            "year": ""
+            "ownedBy": [],
+            "number": "",
+            "year": "2018"
           },
           {
             "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670997009_0.png",
-            "owned": false,
-            "number": "2019",
-            "year": ""
+            "ownedBy": [],
+            "number": "",
+            "year": "2019"
           },
           {
             "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671038373_0.png",
-            "owned": false,
-            "number": "2020",
-            "year": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671052625_0.png",
-            "owned": false,
-            "number": "2021",
-            "year": ""
+            "ownedBy": [],
+            "number": "",
+            "year": "2020"
           },
           {
             "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671063917_0.png",
-            "owned": false,
-            "number": "2022",
-            "year": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671074360_0.png",
-            "owned": false,
-            "number": "2023",
-            "year": ""
+            "ownedBy": [],
+            "number": "",
+            "year": "2022"
           },
           {
             "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671083172_0.png",
-            "owned": false,
-            "number": "2024",
-            "year": ""
+            "ownedBy": [],
+            "number": "",
+            "year": "2024"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776683335277_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": "2012"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776683566799_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": "2021"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776683567850_1.png",
+            "ownedBy": [],
+            "number": "",
+            "year": "2023"
           }
         ]
+      },
+      {
+        "text": "",
+        "subset": "凯文·勒夫 / Kevin Love",
+        "images": []
       }
     ],
     "freeImages": []

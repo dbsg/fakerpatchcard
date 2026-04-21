@@ -5515,6 +5515,30 @@ const cardsData = [
         type: "after"
       }
     ]
+  },
+  {
+    id: 306,
+    player: "Jayson Tatum",
+    playerCN: "杰森·塔图姆",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Noir",
+    number: "3/25",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "【【球星卡TV】在售塔图姆走秀签字假卡-哔哩哔哩】 https://b23.tv/DOos8oB",
+    images: [
+      {
+        url: "images/sample/card_1776697552601_after_0.jpg",
+        note: "假卡",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1776697552601_after_1.jpg",
+        note: "真卡",
+        type: "after"
+      }
+    ]
   }
 ];
 
