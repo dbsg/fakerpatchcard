@@ -76,6 +76,11 @@ const seriesDetail = {
     const parts = []
     if (img.number) parts.push('#' + this.escHtml(img.number))
     if (img.year) parts.push(this.escHtml(img.year))
+    const ck = (img.cardKind && String(img.cardKind).trim()) ? this.escHtml(img.cardKind.trim()) : ''
+    if (ck) {
+      if (parts.length) parts.push('· ' + ck)
+      else parts.push(ck)
+    }
     const label = parts.length ? `<span class="col-img-number">${parts.join(' ')}</span>` : ''
     return `
       <div class="col-img-wrap" onclick="seriesDetail.previewImage('${this.escAttr(img.url)}')">
@@ -101,7 +106,8 @@ const seriesDetail = {
   sortImages(images, text) {
     if (!images || !images.length) return []
     const isNumbered = /\/\d+\s*$/.test(text || '')
-    const hasAny = isNumbered || images.some(i => (i.number && i.number.trim()) || (i.year && i.year.trim()))
+    const hasAny = isNumbered || images.some(i =>
+      (i.number && i.number.trim()) || (i.year && i.year.trim()) || (i.cardKind && String(i.cardKind).trim()))
     if (!hasAny) return [...images]
     const parseYear = y => { const m = (y || '').match(/^(\d{4})/); return m ? parseInt(m[1]) : 9999 }
     const parseNum = n => {
@@ -111,6 +117,8 @@ const seriesDetail = {
       return { num: parseInt(s) || 9999, den: -1 }
     }
     return [...images].sort((a, b) => {
+      const ckCmp = String(a.cardKind || '').localeCompare(String(b.cardKind || ''))
+      if (ckCmp !== 0) return ckCmp
       const ya = parseYear(a.year), yb = parseYear(b.year)
       if (ya !== yb) return ya - yb
       const pa = parseNum(a.number), pb = parseNum(b.number)

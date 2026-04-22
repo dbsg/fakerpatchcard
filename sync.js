@@ -184,10 +184,10 @@ async function fetchAllDocs(accessToken, collectionName, pageSize = 20) {
 }
 
 function normalizeImage(img) {
-  if (typeof img === 'string') return { url: img, ownedBy: [], number: '', year: '' }
+  if (typeof img === 'string') return { url: img, ownedBy: [], number: '', year: '', cardKind: '' }
   const ownedBy = Array.isArray(img.ownedBy) ? img.ownedBy
     : (img.owned && img.uploaderOpenid ? [img.uploaderOpenid] : [])
-  return { url: img.url || '', ownedBy, number: img.number || '', year: img.year || '' }
+  return { url: img.url || '', ownedBy, number: img.number || '', year: img.year || '', cardKind: img.cardKind != null ? String(img.cardKind) : '' }
 }
 
 function subsetDocsToChecklist(subsetDocs) {
