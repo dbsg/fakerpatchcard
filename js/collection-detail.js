@@ -101,11 +101,19 @@ const seriesDetail = {
     }
   },
 
+  formatNumberLabel(raw) {
+    const s = String(raw || '').trim()
+    if (!s) return ''
+    if (s.includes('/')) return this.escHtml(s)
+    return '#' + this.escHtml(s)
+  },
+
   renderImage(img) {
     const parts = []
-    if (img.number) parts.push('#' + this.escHtml(img.number))
+    if (img.number) parts.push(this.formatNumberLabel(img.number))
     if (img.year) parts.push(this.escHtml(img.year))
-    const ck = (img.cardKind && String(img.cardKind).trim()) ? this.escHtml(img.cardKind.trim()) : ''
+    const ckRaw = (img.cardKind && String(img.cardKind).trim()) ? img.cardKind.trim() : ''
+    const ck = ckRaw ? this.escHtml(ckRaw.charAt(0).toUpperCase() + ckRaw.slice(1)) : ''
     if (ck) {
       if (parts.length) parts.push('· ' + ck)
       else parts.push(ck)
