@@ -193,11 +193,12 @@ function normalizeImage(img) {
 function subsetDocsToChecklist(subsetDocs) {
   const checklist = []
   for (const doc of subsetDocs) {
-    const subsetName = doc.subset || ''
+    const docSubset = doc.subset || ''
+    const isBatch = docSubset.startsWith('_batch_')
     for (const item of (doc.items || [])) {
       checklist.push({
         text: item.text || '',
-        subset: subsetName,
+        subset: isBatch ? (item.subset || '') : docSubset,
         images: (item.images || []).map(normalizeImage)
       })
     }

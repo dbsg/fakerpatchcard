@@ -1332,662 +1332,662 @@ const collectionData = [
     "checklist": [
       {
         "text": "1 Kareem Abdul-Jabbar - Los Angeles Lakers",
-        "subset": "_batch_0",
+        "subset": "1 Kareem Abdul-Jabbar - Los Angeles Lakers",
         "images": []
       },
       {
         "text": "2 Alvan Adams - Phoenix Suns",
-        "subset": "_batch_0",
+        "subset": "2 Alvan Adams - Phoenix Suns",
         "images": []
       },
       {
         "text": "3 Mark Aguirre - Dallas Mavericks RC",
-        "subset": "_batch_0",
+        "subset": "3 Mark Aguirre - Dallas Mavericks RC",
         "images": []
       },
       {
         "text": "4 Danny Ainge - Boston Celtics RC",
-        "subset": "_batch_0",
+        "subset": "4 Danny Ainge - Boston Celtics RC",
         "images": []
       },
       {
         "text": "5 John Bagley - Cleveland Cavaliers RC",
-        "subset": "_batch_0",
+        "subset": "5 John Bagley - Cleveland Cavaliers RC",
         "images": []
       },
       {
         "text": "6 Thurl Bailey - Utah Jazz RC",
-        "subset": "_batch_0",
+        "subset": "6 Thurl Bailey - Utah Jazz RC",
         "images": []
       },
       {
         "text": "7 Charles Barkley - Philadelphia 76ers RC",
-        "subset": "_batch_0",
+        "subset": "7 Charles Barkley - Philadelphia 76ers RC",
         "images": []
       },
       {
         "text": "8 Benoit Benjamin - Los Angeles Clippers RC",
-        "subset": "_batch_0",
+        "subset": "8 Benoit Benjamin - Los Angeles Clippers RC",
         "images": []
       },
       {
         "text": "9 Larry Bird - Boston Celtics",
-        "subset": "_batch_0",
+        "subset": "9 Larry Bird - Boston Celtics",
         "images": []
       },
       {
         "text": "10 Otis Birdsong - New Jersey Nets",
-        "subset": "_batch_0",
+        "subset": "10 Otis Birdsong - New Jersey Nets",
         "images": []
       },
       {
         "text": "11 Rolando Blackman - Dallas Mavericks RC",
-        "subset": "_batch_0",
+        "subset": "11 Rolando Blackman - Dallas Mavericks RC",
         "images": []
       },
       {
         "text": "12 Manute Bol - Washington Bullets RC",
-        "subset": "_batch_0",
+        "subset": "12 Manute Bol - Washington Bullets RC",
         "images": []
       },
       {
         "text": "13 Sam Bowie - Portland Trail Blazers RC",
-        "subset": "_batch_0",
+        "subset": "13 Sam Bowie - Portland Trail Blazers RC",
         "images": []
       },
       {
         "text": "14 Joe Barry Carroll - Golden State Warriors",
-        "subset": "_batch_0",
+        "subset": "14 Joe Barry Carroll - Golden State Warriors",
         "images": []
       },
       {
         "text": "15 Tom Chambers - Seattle SuperSonics RC",
-        "subset": "_batch_0",
+        "subset": "15 Tom Chambers - Seattle SuperSonics RC",
         "images": []
       },
       {
         "text": "16 Maurice Cheeks - Philadelphia 76ers",
-        "subset": "_batch_0",
+        "subset": "16 Maurice Cheeks - Philadelphia 76ers",
         "images": []
       },
       {
         "text": "17 Michael Cooper - Los Angeles Lakers",
-        "subset": "_batch_0",
+        "subset": "17 Michael Cooper - Los Angeles Lakers",
         "images": []
       },
       {
         "text": "18 Wayne Cooper - Denver Nuggets",
-        "subset": "_batch_0",
+        "subset": "18 Wayne Cooper - Denver Nuggets",
         "images": []
       },
       {
         "text": "19 Pat Cummings - New York Knicks RC",
-        "subset": "_batch_0",
+        "subset": "19 Pat Cummings - New York Knicks RC",
         "images": []
       },
       {
         "text": "20 Terry Cummings - Milwaukee Bucks RC",
-        "subset": "_batch_0",
+        "subset": "20 Terry Cummings - Milwaukee Bucks RC",
         "images": []
       },
       {
         "text": "21 Adrian Dantley - Utah Jazz",
-        "subset": "_batch_0",
+        "subset": "21 Adrian Dantley - Utah Jazz",
         "images": []
       },
       {
         "text": "22 Brad Davis - Dallas Mavericks RC",
-        "subset": "_batch_0",
+        "subset": "22 Brad Davis - Dallas Mavericks RC",
         "images": []
       },
       {
         "text": "23 Walter Davis - Phoenix Suns",
-        "subset": "_batch_0",
+        "subset": "23 Walter Davis - Phoenix Suns",
         "images": []
       },
       {
         "text": "24 Darryl Dawkins - New Jersey Nets",
-        "subset": "_batch_0",
+        "subset": "24 Darryl Dawkins - New Jersey Nets",
         "images": []
       },
       {
         "text": "25 Larry Drew - Sacramento Kings RC",
-        "subset": "_batch_0",
+        "subset": "25 Larry Drew - Sacramento Kings RC",
         "images": []
       },
       {
         "text": "26 Clyde Drexler - Portland Trail Blazers RC",
-        "subset": "_batch_0",
+        "subset": "26 Clyde Drexler - Portland Trail Blazers RC",
         "images": []
       },
       {
         "text": "27 Joe Dumars - Detroit Pistons RC",
-        "subset": "_batch_0",
+        "subset": "27 Joe Dumars - Detroit Pistons RC",
         "images": []
       },
       {
         "text": "28 Mark Eaton - Utah Jazz RC",
-        "subset": "_batch_0",
+        "subset": "28 Mark Eaton - Utah Jazz RC",
         "images": []
       },
       {
         "text": "29 James Edwards - Phoenix Suns",
-        "subset": "_batch_0",
+        "subset": "29 James Edwards - Phoenix Suns",
         "images": []
       },
       {
         "text": "30 Alex English - Denver Nuggets",
-        "subset": "_batch_0",
+        "subset": "30 Alex English - Denver Nuggets",
         "images": []
       },
       {
         "text": "31 Julius Erving - Philadelphia 76ers",
-        "subset": "_batch_0",
+        "subset": "31 Julius Erving - Philadelphia 76ers",
         "images": []
       },
       {
         "text": "32 Patrick Ewing - New York Knicks RC",
-        "subset": "_batch_0",
+        "subset": "32 Patrick Ewing - New York Knicks RC",
         "images": []
       },
       {
         "text": "33 Vern Fleming - Indiana Pacers RC",
-        "subset": "_batch_0",
+        "subset": "33 Vern Fleming - Indiana Pacers RC",
         "images": []
       },
       {
         "text": "34 Sleepy Floyd - Golden State Warriors RC",
-        "subset": "_batch_0",
+        "subset": "34 Sleepy Floyd - Golden State Warriors RC",
         "images": []
       },
       {
         "text": "35 World B. Free - Cleveland Cavaliers",
-        "subset": "_batch_0",
+        "subset": "35 World B. Free - Cleveland Cavaliers",
         "images": []
       },
       {
         "text": "36 George Gervin - Chicago Bulls",
-        "subset": "_batch_0",
+        "subset": "36 George Gervin - Chicago Bulls",
         "images": []
       },
       {
         "text": "37 Artis Gilmore - San Antonio Spurs",
-        "subset": "_batch_0",
+        "subset": "37 Artis Gilmore - San Antonio Spurs",
         "images": []
       },
       {
         "text": "38 Mike Gminski - New Jersey Nets",
-        "subset": "_batch_0",
+        "subset": "38 Mike Gminski - New Jersey Nets",
         "images": []
       },
       {
         "text": "39 Rickey Green - Utah Jazz",
-        "subset": "_batch_0",
+        "subset": "39 Rickey Green - Utah Jazz",
         "images": []
       },
       {
         "text": "40 Sidney Green - Chicago Bulls RC",
-        "subset": "_batch_0",
+        "subset": "40 Sidney Green - Chicago Bulls RC",
         "images": []
       },
       {
         "text": "41 David Greenwood - San Antonio Spurs",
-        "subset": "_batch_0",
+        "subset": "41 David Greenwood - San Antonio Spurs",
         "images": []
       },
       {
         "text": "42 Darrell Griffith - Utah Jazz",
-        "subset": "_batch_0",
+        "subset": "42 Darrell Griffith - Utah Jazz",
         "images": []
       },
       {
         "text": "43 Bill Hanzlik - Denver Nuggets",
-        "subset": "_batch_0",
+        "subset": "43 Bill Hanzlik - Denver Nuggets",
         "images": []
       },
       {
         "text": "44 Derek Harper - Dallas Mavericks RC",
-        "subset": "_batch_0",
+        "subset": "44 Derek Harper - Dallas Mavericks RC",
         "images": []
       },
       {
         "text": "45 Gerald Henderson - Seattle SuperSonics",
-        "subset": "_batch_0",
+        "subset": "45 Gerald Henderson - Seattle SuperSonics",
         "images": []
       },
       {
         "text": "46 Roy Hinson - Philadelphia 76ers RC",
-        "subset": "_batch_0",
+        "subset": "46 Roy Hinson - Philadelphia 76ers RC",
         "images": []
       },
       {
         "text": "47 Craig Hodges - Milwaukee Bucks RC",
-        "subset": "_batch_0",
+        "subset": "47 Craig Hodges - Milwaukee Bucks RC",
         "images": []
       },
       {
         "text": "48 Phil Hubbard - Cleveland Cavaliers",
-        "subset": "_batch_0",
+        "subset": "48 Phil Hubbard - Cleveland Cavaliers",
         "images": []
       },
       {
         "text": "49 Jay Humphries - Phoenix Suns RC",
-        "subset": "_batch_0",
+        "subset": "49 Jay Humphries - Phoenix Suns RC",
         "images": []
       },
       {
         "text": "50 Dennis Johnson - Boston Celtics",
-        "subset": "_batch_0",
+        "subset": "50 Dennis Johnson - Boston Celtics",
         "images": []
       },
       {
         "text": "51 Eddie Johnson - Sacramento Kings RC",
-        "subset": "_batch_1",
+        "subset": "51 Eddie Johnson - Sacramento Kings RC",
         "images": []
       },
       {
         "text": "52 Frank Johnson - Washington Bullets RC",
-        "subset": "_batch_1",
+        "subset": "52 Frank Johnson - Washington Bullets RC",
         "images": []
       },
       {
         "text": "53 Magic Johnson - Los Angeles Lakers",
-        "subset": "_batch_1",
+        "subset": "53 Magic Johnson - Los Angeles Lakers",
         "images": []
       },
       {
         "text": "54 Marques Johnson - Los Angeles Clippers",
-        "subset": "_batch_1",
+        "subset": "54 Marques Johnson - Los Angeles Clippers",
         "images": []
       },
       {
         "text": "55 Steve Johnson - San Antonio Spurs",
-        "subset": "_batch_1",
+        "subset": "55 Steve Johnson - San Antonio Spurs",
         "images": []
       },
       {
         "text": "56 Vinnie Johnson - Detroit Pistons",
-        "subset": "_batch_1",
+        "subset": "56 Vinnie Johnson - Detroit Pistons",
         "images": []
       },
       {
         "text": "57 Michael Jordan - Chicago Bulls RC",
-        "subset": "_batch_1",
+        "subset": "57 Michael Jordan - Chicago Bulls RC",
         "images": []
       },
       {
         "text": "58 Clark Kellogg - Indiana Pacers RC",
-        "subset": "_batch_1",
+        "subset": "58 Clark Kellogg - Indiana Pacers RC",
         "images": []
       },
       {
         "text": "59 Albert King - New Jersey Nets",
-        "subset": "_batch_1",
+        "subset": "59 Albert King - New Jersey Nets",
         "images": []
       },
       {
         "text": "60 Bernard King - New York Knicks",
-        "subset": "_batch_1",
+        "subset": "60 Bernard King - New York Knicks",
         "images": []
       },
       {
         "text": "61 Bill Laimbeer - Detroit Pistons",
-        "subset": "_batch_1",
+        "subset": "61 Bill Laimbeer - Detroit Pistons",
         "images": []
       },
       {
         "text": "62 Allen Leavell - Houston Rockets",
-        "subset": "_batch_1",
+        "subset": "62 Allen Leavell - Houston Rockets",
         "images": []
       },
       {
         "text": "63 Lafayette Lever - Denver Nuggets RC",
-        "subset": "_batch_1",
+        "subset": "63 Lafayette Lever - Denver Nuggets RC",
         "images": []
       },
       {
         "text": "64 Alton Lister - Seattle SuperSonics RC",
-        "subset": "_batch_1",
+        "subset": "64 Alton Lister - Seattle SuperSonics RC",
         "images": []
       },
       {
         "text": "65 Lewis Lloyd - Houston Rockets",
-        "subset": "_batch_1",
+        "subset": "65 Lewis Lloyd - Houston Rockets",
         "images": []
       },
       {
         "text": "66 Maurice Lucas - Los Angeles Lakers",
-        "subset": "_batch_1",
+        "subset": "66 Maurice Lucas - Los Angeles Lakers",
         "images": []
       },
       {
         "text": "67 Jeff Malone - Washington Bullets RC",
-        "subset": "_batch_1",
+        "subset": "67 Jeff Malone - Washington Bullets RC",
         "images": []
       },
       {
         "text": "68 Karl Malone - Utah Jazz RC",
-        "subset": "_batch_1",
+        "subset": "68 Karl Malone - Utah Jazz RC",
         "images": []
       },
       {
         "text": "69 Moses Malone - Washington Bullets",
-        "subset": "_batch_1",
+        "subset": "69 Moses Malone - Washington Bullets",
         "images": []
       },
       {
         "text": "70 Cedric Maxwell - Los Angeles Clippers",
-        "subset": "_batch_1",
+        "subset": "70 Cedric Maxwell - Los Angeles Clippers",
         "images": []
       },
       {
         "text": "71 Rodney McCray - Houston Rockets RC",
-        "subset": "_batch_1",
+        "subset": "71 Rodney McCray - Houston Rockets RC",
         "images": []
       },
       {
         "text": "72 Xavier McDaniel - Seattle SuperSonics RC",
-        "subset": "_batch_1",
+        "subset": "72 Xavier McDaniel - Seattle SuperSonics RC",
         "images": []
       },
       {
         "text": "73 Kevin McHale - Boston Celtics",
-        "subset": "_batch_1",
+        "subset": "73 Kevin McHale - Boston Celtics",
         "images": []
       },
       {
         "text": "74 Mike Mitchell - San Antonio Spurs",
-        "subset": "_batch_1",
+        "subset": "74 Mike Mitchell - San Antonio Spurs",
         "images": []
       },
       {
         "text": "75 Sidney Moncrief - Milwaukee Bucks",
-        "subset": "_batch_1",
+        "subset": "75 Sidney Moncrief - Milwaukee Bucks",
         "images": []
       },
       {
         "text": "76 Johnny Moore - San Antonio Spurs",
-        "subset": "_batch_1",
+        "subset": "76 Johnny Moore - San Antonio Spurs",
         "images": []
       },
       {
         "text": "77 Chris Mullin - Golden State Warriors RC",
-        "subset": "_batch_1",
+        "subset": "77 Chris Mullin - Golden State Warriors RC",
         "images": []
       },
       {
         "text": "78 Larry Nance - Phoenix Suns RC",
-        "subset": "_batch_1",
+        "subset": "78 Larry Nance - Phoenix Suns RC",
         "images": []
       },
       {
         "text": "79 Calvin Natt - Denver Nuggets",
-        "subset": "_batch_1",
+        "subset": "79 Calvin Natt - Denver Nuggets",
         "images": []
       },
       {
         "text": "80 Norm Nixon - Los Angeles Clippers",
-        "subset": "_batch_1",
+        "subset": "80 Norm Nixon - Los Angeles Clippers",
         "images": []
       },
       {
         "text": "81 Charles Oakley - Chicago Bulls RC",
-        "subset": "_batch_1",
+        "subset": "81 Charles Oakley - Chicago Bulls RC",
         "images": []
       },
       {
         "text": "82 Akeem Olajuwon - Houston Rockets RC",
-        "subset": "_batch_1",
+        "subset": "82 Akeem Olajuwon - Houston Rockets RC",
         "images": []
       },
       {
         "text": "83 Louis Orr - New York Knicks",
-        "subset": "_batch_1",
+        "subset": "83 Louis Orr - New York Knicks",
         "images": []
       },
       {
         "text": "84 Robert Parish - Boston Celtics",
-        "subset": "_batch_1",
+        "subset": "84 Robert Parish - Boston Celtics",
         "images": []
       },
       {
         "text": "85 Jim Paxson - Portland Trail Blazers",
-        "subset": "_batch_1",
+        "subset": "85 Jim Paxson - Portland Trail Blazers",
         "images": []
       },
       {
         "text": "86 Sam Perkins - Dallas Mavericks RC",
-        "subset": "_batch_1",
+        "subset": "86 Sam Perkins - Dallas Mavericks RC",
         "images": []
       },
       {
         "text": "87 Ricky Pierce - Milwaukee Bucks",
-        "subset": "_batch_1",
+        "subset": "87 Ricky Pierce - Milwaukee Bucks",
         "images": []
       },
       {
         "text": "88 Paul Pressey - Milwaukee Bucks RC",
-        "subset": "_batch_1",
+        "subset": "88 Paul Pressey - Milwaukee Bucks RC",
         "images": []
       },
       {
         "text": "89 Kurt Rambis - Los Angeles Lakers RC",
-        "subset": "_batch_1",
+        "subset": "89 Kurt Rambis - Los Angeles Lakers RC",
         "images": []
       },
       {
         "text": "90 Robert Reid - Houston Rockets",
-        "subset": "_batch_1",
+        "subset": "90 Robert Reid - Houston Rockets",
         "images": []
       },
       {
         "text": "91 Doc Rivers - Atlanta Hawks RC",
-        "subset": "_batch_1",
+        "subset": "91 Doc Rivers - Atlanta Hawks RC",
         "images": []
       },
       {
         "text": "92 Alvin Robertson - San Antonio Spurs RC",
-        "subset": "_batch_1",
+        "subset": "92 Alvin Robertson - San Antonio Spurs RC",
         "images": []
       },
       {
         "text": "93 Cliff Robinson - Philadelphia 76ers",
-        "subset": "_batch_1",
+        "subset": "93 Cliff Robinson - Philadelphia 76ers",
         "images": []
       },
       {
         "text": "94 Tree Rollins - Atlanta Hawks",
-        "subset": "_batch_1",
+        "subset": "94 Tree Rollins - Atlanta Hawks",
         "images": []
       },
       {
         "text": "95 Dan Roundfield - Washington Bullets",
-        "subset": "_batch_1",
+        "subset": "95 Dan Roundfield - Washington Bullets",
         "images": []
       },
       {
         "text": "96 Jeff Ruland - Philadelphia 76ers",
-        "subset": "_batch_1",
+        "subset": "96 Jeff Ruland - Philadelphia 76ers",
         "images": []
       },
       {
         "text": "97 Ralph Sampson - Houston Rockets RC",
-        "subset": "_batch_1",
+        "subset": "97 Ralph Sampson - Houston Rockets RC",
         "images": []
       },
       {
         "text": "98 Danny Schayes - Denver Nuggets RC",
-        "subset": "_batch_1",
+        "subset": "98 Danny Schayes - Denver Nuggets RC",
         "images": []
       },
       {
         "text": "99 Byron Scott - Los Angeles Lakers RC",
-        "subset": "_batch_1",
+        "subset": "99 Byron Scott - Los Angeles Lakers RC",
         "images": []
       },
       {
         "text": "100 Purvis Short - Golden State Warriors",
-        "subset": "_batch_1",
+        "subset": "100 Purvis Short - Golden State Warriors",
         "images": []
       },
       {
         "text": "101 Jerry Sichting - Boston Celtics",
-        "subset": "_batch_2",
+        "subset": "101 Jerry Sichting - Boston Celtics",
         "images": []
       },
       {
         "text": "102 Jack Sikma - Milwaukee Bucks RC",
-        "subset": "_batch_2",
+        "subset": "102 Jack Sikma - Milwaukee Bucks RC",
         "images": []
       },
       {
         "text": "103 Derek Smith - Los Angeles Clippers",
-        "subset": "_batch_2",
+        "subset": "103 Derek Smith - Los Angeles Clippers",
         "images": []
       },
       {
         "text": "104 Larry Smith - Golden State Warriors RC",
-        "subset": "_batch_2",
+        "subset": "104 Larry Smith - Golden State Warriors RC",
         "images": []
       },
       {
         "text": "105 Rory Sparrow - New York Knicks RC",
-        "subset": "_batch_2",
+        "subset": "105 Rory Sparrow - New York Knicks RC",
         "images": []
       },
       {
         "text": "106 Steve Stipanovich - Indiana Pacers RC",
-        "subset": "_batch_2",
+        "subset": "106 Steve Stipanovich - Indiana Pacers RC",
         "images": []
       },
       {
         "text": "107 Terry Teagle - Golden State Warriors",
-        "subset": "_batch_2",
+        "subset": "107 Terry Teagle - Golden State Warriors",
         "images": []
       },
       {
         "text": "108 Reggie Theus - Sacramento Kings RC",
-        "subset": "_batch_2",
+        "subset": "108 Reggie Theus - Sacramento Kings RC",
         "images": []
       },
       {
         "text": "109 Isiah Thomas - Detroit Pistons RC",
-        "subset": "_batch_2",
+        "subset": "109 Isiah Thomas - Detroit Pistons RC",
         "images": []
       },
       {
         "text": "110 LaSalle Thompson - Sacramento Kings",
-        "subset": "_batch_2",
+        "subset": "110 LaSalle Thompson - Sacramento Kings",
         "images": []
       },
       {
         "text": "111 Mychal Thompson - Portland Trail Blazers RC",
-        "subset": "_batch_2",
+        "subset": "111 Mychal Thompson - Portland Trail Blazers RC",
         "images": []
       },
       {
         "text": "112 Sedale Threatt - Philadelphia 76ers RC",
-        "subset": "_batch_2",
+        "subset": "112 Sedale Threatt - Philadelphia 76ers RC",
         "images": []
       },
       {
         "text": "113 Wayman Tisdale - Indiana Pacers",
-        "subset": "_batch_2",
+        "subset": "113 Wayman Tisdale - Indiana Pacers",
         "images": []
       },
       {
         "text": "114 Andrew Toney - Philadelphia 76ers RC",
-        "subset": "_batch_2",
+        "subset": "114 Andrew Toney - Philadelphia 76ers RC",
         "images": []
       },
       {
         "text": "115 Kelly Tripucka - Detroit Pistons RC",
-        "subset": "_batch_2",
+        "subset": "115 Kelly Tripucka - Detroit Pistons RC",
         "images": []
       },
       {
         "text": "116 Mel Turpin - Cleveland Cavaliers RC",
-        "subset": "_batch_2",
+        "subset": "116 Mel Turpin - Cleveland Cavaliers RC",
         "images": []
       },
       {
         "text": "117 Kiki Vandeweghe - Portland Trail Blazers RC",
-        "subset": "_batch_2",
+        "subset": "117 Kiki Vandeweghe - Portland Trail Blazers RC",
         "images": []
       },
       {
         "text": "118 Jay Vincent - Dallas Mavericks",
-        "subset": "_batch_2",
+        "subset": "118 Jay Vincent - Dallas Mavericks",
         "images": []
       },
       {
         "text": "119 Bill Walton - Boston Celtics RC",
-        "subset": "_batch_2",
+        "subset": "119 Bill Walton - Boston Celtics RC",
         "images": []
       },
       {
         "text": "120 Spud Webb - Atlanta Hawks RC",
-        "subset": "_batch_2",
+        "subset": "120 Spud Webb - Atlanta Hawks RC",
         "images": []
       },
       {
         "text": "121 Dominique Wilkins - Atlanta Hawks RC",
-        "subset": "_batch_2",
+        "subset": "121 Dominique Wilkins - Atlanta Hawks RC",
         "images": []
       },
       {
         "text": "122 Gerald Wilkins - New York Knicks RC",
-        "subset": "_batch_2",
+        "subset": "122 Gerald Wilkins - New York Knicks RC",
         "images": []
       },
       {
         "text": "123 Buck Williams - New Jersey Nets",
-        "subset": "_batch_2",
+        "subset": "123 Buck Williams - New Jersey Nets",
         "images": []
       },
       {
         "text": "124 Gus Williams - Washington Bullets RC",
-        "subset": "_batch_2",
+        "subset": "124 Gus Williams - Washington Bullets RC",
         "images": []
       },
       {
         "text": "125 Herb Williams - Indiana Pacers RC",
-        "subset": "_batch_2",
+        "subset": "125 Herb Williams - Indiana Pacers RC",
         "images": []
       },
       {
         "text": "126 Kevin Willis - Atlanta Hawks RC",
-        "subset": "_batch_2",
+        "subset": "126 Kevin Willis - Atlanta Hawks RC",
         "images": []
       },
       {
         "text": "127 Randy Wittman - Atlanta Hawks",
-        "subset": "_batch_2",
+        "subset": "127 Randy Wittman - Atlanta Hawks",
         "images": []
       },
       {
         "text": "128 Al Wood - Seattle SuperSonics",
-        "subset": "_batch_2",
+        "subset": "128 Al Wood - Seattle SuperSonics",
         "images": []
       },
       {
         "text": "129 Mike Woodson - Sacramento Kings RC",
-        "subset": "_batch_2",
+        "subset": "129 Mike Woodson - Sacramento Kings RC",
         "images": []
       },
       {
         "text": "130 Orlando Woolridge - Chicago Bulls RC",
-        "subset": "_batch_2",
+        "subset": "130 Orlando Woolridge - Chicago Bulls RC",
         "images": []
       },
       {
         "text": "131 James Worthy - Los Angeles Lakers",
-        "subset": "_batch_2",
+        "subset": "131 James Worthy - Los Angeles Lakers",
         "images": []
       },
       {
         "text": "132 Checklist",
-        "subset": "_batch_2",
+        "subset": "132 Checklist",
         "images": []
       }
     ],
@@ -6284,7 +6284,7 @@ const collectionData = [
     "checklist": [
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "1 Charles Barkley",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_125_1776690855662_0.png",
@@ -6304,7 +6304,7 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "2 Dell Curry",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_1_1776768343124_0.png",
@@ -6317,7 +6317,7 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "3 Derek Fisher",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_2_1776755527554_0.png",
@@ -6330,102 +6330,102 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "4 Derek Harper",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "5 Avery Johnson",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "6 Steve Smith",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "7 Alonzo Mourning",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "8 Rod Strickland",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "9 Chris Mullin",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "10 Rony Seikaly",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "11 Vin Baker",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "12 Austin Croshere RC",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "13 Vinny Del Negro",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "14 Sherman Douglas",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "15 Priest Lauderdale",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "16 Cedric Ceballos",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "17 LaPhonso Ellis",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "18 Luc Longley",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "19 Brian Grant",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "20 Allen Iverson",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "21 Anthony Mason",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "22 Bryant Reeves",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "23 Michael Jordan",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_22_1776755758783_0.png",
@@ -6445,72 +6445,72 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "24 Dale Ellis",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "25 Terrell Brandon",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "26 Patrick Ewing",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "27 Allan Houston",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "28 Damon Stoudamire",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "29 Loy Vaught",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "30 Walt Williams",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "31 Shareef Abdur-Rahim",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "32 Mario Elie",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "33 Juwan Howard",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "34 Tom Gugliotta",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "35 Glen Rice",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "36 Isaiah Rider",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "37 Arvydas Sabonis",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_36_1776767196084_0.png",
@@ -6523,27 +6523,27 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "38 Derrick Coleman",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "39 Kevin Willis",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "40 Kendall Gill",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "41 John Wallace",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "42 Tracy McGrady RC",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_41_1776755786895_0.png",
@@ -6563,42 +6563,42 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "43 Travis Best",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "44 Malik Rose",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "45 Anfernee Hardaway",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "46 Roy Rogers",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "47 Kerry Kittles",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "48 Matt Maloney",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "49 Antonio McDyess",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_0",
+        "subset": "50 Shaquille O'Neal",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_49_1776767993051_0.png",
@@ -6611,17 +6611,17 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "51 George McCloud",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "52 Wesley Person",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "53 Shawn Bradley",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_52_1776755773863_0.png",
@@ -6634,12 +6634,12 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "54 Antonio Davis",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "55 P.J. Brown",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_54_1776766114374_0.png",
@@ -6652,7 +6652,7 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "56 Joe Dumars",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_55_1776773341570_0.png",
@@ -6665,27 +6665,27 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "57 Horace Grant",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "58 Steve Kerr",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "59 Hakeem Olajuwon",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "60 Tim Hardaway",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "61 Toni Kukoc",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_60_1776756146527_0.png",
@@ -6698,12 +6698,12 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "62 Ron Mercer RC",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "63 Gary Payton",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_62_1776767068891_0.png",
@@ -6716,7 +6716,7 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "64 Grant Hill",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_63_1776768095880_0.png",
@@ -6729,12 +6729,12 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "65 Detlef Schrempf",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "66 Tim Duncan RC",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_65_1776755507918_0.png",
@@ -6747,7 +6747,7 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "67 Shawn Kemp",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_66_1776766433735_0.png",
@@ -6760,57 +6760,57 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "68 Voshon Lenard",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "69 Othella Harrington",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "70 Hersey Hawkins",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "71 Lindsey Hunter",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "72 Antoine Walker",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "73 Jamal Mashburn",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "74 Kenny Anderson",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "75 Todd Day",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "76 Todd Fuller",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "77 Jermaine O'Neal",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "78 David Robinson",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_202_1776690403914_0.png",
@@ -6823,12 +6823,12 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "79 Erick Dampier",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "80 Keith Van Horn RC",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_79_1776755685736_0.png",
@@ -6841,7 +6841,7 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "81 Kobe Bryant",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_80_1776764447514_0.png",
@@ -6854,12 +6854,12 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "82 Chris Childs",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "83 Scottie Pippen",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_82_1776767802404_0.png",
@@ -6872,27 +6872,27 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "84 Marcus Camby",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "85 Danny Ferry",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "86 Jeff Hornacek",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "87 Bo Outlaw",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "88 Larry Johnson",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_87_1776766964909_0.png",
@@ -6905,22 +6905,22 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "89 Tony Delk",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "90 Stephon Marbury",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "91 Robert Pack",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "92 Chris Webber",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_91_1776767388536_0.png",
@@ -6933,12 +6933,12 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "93 Clyde Drexler",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "94 Eddie Jones",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_218_1776690419728_0.png",
@@ -6951,17 +6951,17 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "95 Jerry Stackhouse",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "96 Tyrone Hill",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "97 Karl Malone",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_221_1776698493211_0.png",
@@ -6974,7 +6974,7 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "98 Reggie Miller",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_222_1776690838182_0.png",
@@ -6994,17 +6994,17 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "99 Bryon Russell",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_1",
+        "subset": "100 Dale Davis",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "101 Steve Nash",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_100_1776755740305_0.png",
@@ -7017,17 +7017,17 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "102 Vitaly Potapenko",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "103 Nick Anderson",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "104 Ray Allen",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_228_1776690847249_0.png",
@@ -7040,27 +7040,27 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "105 Sean Elliott",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "106 Dikembe Mutombo",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "107 Dennis Rodman",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "108 Lorenzen Wright",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "109 Kevin Garnett",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_108_1776756162692_0.png",
@@ -7073,7 +7073,7 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "110 Christian Laettner",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_109_1776767217986_0.png",
@@ -7086,17 +7086,17 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "111 Mitch Richmond",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "112 Joe Smith",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "113 Jason Kidd",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_112_1776766415623_0.png",
@@ -7109,17 +7109,17 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "114 Glenn Robinson",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "115 Mark Price",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "116 Mark Jackson",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_115_1776767166188_0.png",
@@ -7132,37 +7132,37 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "117 Bobby Phills",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "118 John Starks",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "119 John Stockton",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "120 Mookie Blaylock",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "121 Dean Garrett",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "122 Olden Polynice",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "123 Latrell Sprewell",
         "images": [
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_122_1776767233550_0.png",
@@ -7175,12 +7175,12 @@ const collectionData = [
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "124 Checklist",
         "images": []
       },
       {
         "text": "",
-        "subset": "_batch_2",
+        "subset": "125 Checklist",
         "images": []
       }
     ],
@@ -7193,7 +7193,7 @@ const collectionData = [
     "checklist": [
       {
         "text": "LL-AJ Antawn Jamison - Dallas Mavericks /75",
-        "subset": "_batch_0",
+        "subset": "LL-AJ Antawn Jamison - Dallas Mavericks /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_0_LL-AJ_Antawn_Jamison_front.jpg",
@@ -7206,7 +7206,7 @@ const collectionData = [
       },
       {
         "text": "LL-AM Andre Miller - Denver Nuggets /75",
-        "subset": "_batch_0",
+        "subset": "LL-AM Andre Miller - Denver Nuggets /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_2_LL-AM_Andre_Miller_front.jpg",
@@ -7219,7 +7219,7 @@ const collectionData = [
       },
       {
         "text": "LL-AS Amare Stoudemire - Phoenix Suns /75",
-        "subset": "_batch_0",
+        "subset": "LL-AS Amare Stoudemire - Phoenix Suns /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_4_LL-AS_Amare_Stoudemire_front.jpg",
@@ -7232,7 +7232,7 @@ const collectionData = [
       },
       {
         "text": "LL-BD Baron Davis - New Orleans Hornets /75",
-        "subset": "_batch_0",
+        "subset": "LL-BD Baron Davis - New Orleans Hornets /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_6_LL-BD_Baron_Davis_front.jpg",
@@ -7245,7 +7245,7 @@ const collectionData = [
       },
       {
         "text": "LL-CA Carmelo Anthony - Denver Nuggets /75",
-        "subset": "_batch_0",
+        "subset": "LL-CA Carmelo Anthony - Denver Nuggets /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_8_LL-CA1_Carmelo_Anthony_front.jpg",
@@ -7258,7 +7258,7 @@ const collectionData = [
       },
       {
         "text": "LL-CA1 Carmelo Anthony - Denver Nuggets /75",
-        "subset": "_batch_0",
+        "subset": "LL-CA1 Carmelo Anthony - Denver Nuggets /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_10_LL-CA2_Carmelo_Anthony_Throwback_front.jpg",
@@ -7278,7 +7278,7 @@ const collectionData = [
       },
       {
         "text": "LL-CM Corey Maggette - Los Angeles Clippers /75",
-        "subset": "_batch_0",
+        "subset": "LL-CM Corey Maggette - Los Angeles Clippers /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_12_LL-CM_Corey_Maggette_front.jpg",
@@ -7291,7 +7291,7 @@ const collectionData = [
       },
       {
         "text": "LL-DA David Robinson - San Antonio Spurs /75",
-        "subset": "_batch_0",
+        "subset": "LL-DA David Robinson - San Antonio Spurs /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_13_LL-DA_David_Robinson_front.jpg",
@@ -7304,7 +7304,7 @@ const collectionData = [
       },
       {
         "text": "LL-DM Darko Milicic - Detroit Pistons /75",
-        "subset": "_batch_0",
+        "subset": "LL-DM Darko Milicic - Detroit Pistons /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_15_LL-DM_Darko_Milicic_front.jpg",
@@ -7317,7 +7317,7 @@ const collectionData = [
       },
       {
         "text": "LL-DR Dennis Rodman - Chicago Bulls /75",
-        "subset": "_batch_0",
+        "subset": "LL-DR Dennis Rodman - Chicago Bulls /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_16_LL-DR_Dennis_Rodman_front.jpg",
@@ -7344,7 +7344,7 @@ const collectionData = [
       },
       {
         "text": "LL-DY Dwyane Wade - Miami Heat /75",
-        "subset": "_batch_0",
+        "subset": "LL-DY Dwyane Wade - Miami Heat /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_18_LL-DY_Dwyane_Wade_front.jpg",
@@ -7364,7 +7364,7 @@ const collectionData = [
       },
       {
         "text": "LL-GA Gilbert Arenas - Washington Wizards /75",
-        "subset": "_batch_0",
+        "subset": "LL-GA Gilbert Arenas - Washington Wizards /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_20_LL-GA_Gilbert_Arenas_front.jpg",
@@ -7377,7 +7377,7 @@ const collectionData = [
       },
       {
         "text": "LL-GP Gary Payton - Los Angeles Lakers /75",
-        "subset": "_batch_0",
+        "subset": "LL-GP Gary Payton - Los Angeles Lakers /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_22_LL-GP_Gary_Payton_front.jpg",
@@ -7404,7 +7404,7 @@ const collectionData = [
       },
       {
         "text": "LL-JK Jason Kidd - New Jersey Nets /75",
-        "subset": "_batch_0",
+        "subset": "LL-JK Jason Kidd - New Jersey Nets /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_24_LL-JK_Jason_Kidd_front.jpg",
@@ -7417,7 +7417,7 @@ const collectionData = [
       },
       {
         "text": "LL-JM John Stockton - Utah Jazz /75",
-        "subset": "_batch_0",
+        "subset": "LL-JM John Stockton - Utah Jazz /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_26_LL-JM_John_Stockton_front.jpg",
@@ -7430,7 +7430,7 @@ const collectionData = [
       },
       {
         "text": "LL-KB Kobe Bryant - Los Angeles Lakers /75",
-        "subset": "_batch_0",
+        "subset": "LL-KB Kobe Bryant - Los Angeles Lakers /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_28_LL-KB_Kobe_Bryant_front.jpg",
@@ -7450,7 +7450,7 @@ const collectionData = [
       },
       {
         "text": "LL-KG Kevin Garnett - Minnesota Timberwolves /75",
-        "subset": "_batch_0",
+        "subset": "LL-KG Kevin Garnett - Minnesota Timberwolves /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_30_LL-KG_Kevin_Garnett_front.jpg",
@@ -7470,7 +7470,7 @@ const collectionData = [
       },
       {
         "text": "LL-LB Larry Bird - Boston Celtics /75",
-        "subset": "_batch_0",
+        "subset": "LL-LB Larry Bird - Boston Celtics /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_32_LL-LB_Larry_Bird_front.jpg",
@@ -7497,7 +7497,7 @@ const collectionData = [
       },
       {
         "text": "LL-LJ LeBron James - Cleveland Cavaliers /75",
-        "subset": "_batch_0",
+        "subset": "LL-LJ LeBron James - Cleveland Cavaliers /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_34_LL-LJ_LeBron_James_front.jpg",
@@ -7517,7 +7517,7 @@ const collectionData = [
       },
       {
         "text": "LL-MA Magic Johnson - Los Angeles Lakers /75",
-        "subset": "_batch_0",
+        "subset": "LL-MA Magic Johnson - Los Angeles Lakers /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_36_LL-MA_Magic_Johnson_front.jpg",
@@ -7530,7 +7530,7 @@ const collectionData = [
       },
       {
         "text": "LL-MJ Michael Jordan - Chicago Bulls /75",
-        "subset": "_batch_0",
+        "subset": "LL-MJ Michael Jordan - Chicago Bulls /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_38_LL-MJ_Michael_Jordan_front.jpg",
@@ -7557,7 +7557,7 @@ const collectionData = [
       },
       {
         "text": "LL-PE Patrick Ewing - New York Knicks /75",
-        "subset": "_batch_0",
+        "subset": "LL-PE Patrick Ewing - New York Knicks /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_40_LL-PE_Patrick_Ewing_front.jpg",
@@ -7577,7 +7577,7 @@ const collectionData = [
       },
       {
         "text": "LL-PP Paul Pierce - Boston Celtics /75",
-        "subset": "_batch_0",
+        "subset": "LL-PP Paul Pierce - Boston Celtics /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_42_LL-PP_Paul_Pierce_front.jpg",
@@ -7590,7 +7590,7 @@ const collectionData = [
       },
       {
         "text": "LL-PS Peja Stojakovic - Sacramento Kings /75",
-        "subset": "_batch_0",
+        "subset": "LL-PS Peja Stojakovic - Sacramento Kings /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_44_LL-PS_Peja_Stojakovic_front.jpg",
@@ -7610,7 +7610,7 @@ const collectionData = [
       },
       {
         "text": "LL-SA Shareef Abdur-Rahim - Portland Trail Blazers /75",
-        "subset": "_batch_0",
+        "subset": "LL-SA Shareef Abdur-Rahim - Portland Trail Blazers /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_46_LL-SA_Shareef_Abdur-Rahim_front.jpg",
@@ -7623,7 +7623,7 @@ const collectionData = [
       },
       {
         "text": "LL-SC Sam Cassell - Minnesota Timberwolves /75",
-        "subset": "_batch_0",
+        "subset": "LL-SC Sam Cassell - Minnesota Timberwolves /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_48_LL-SC_Sam_Cassell_front.jpg",
@@ -7636,7 +7636,7 @@ const collectionData = [
       },
       {
         "text": "LL-SM Shawn Marion - Phoenix Suns /75",
-        "subset": "_batch_0",
+        "subset": "LL-SM Shawn Marion - Phoenix Suns /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_50_LL-SM_Shawn_Marion_front.jpg",
@@ -7649,7 +7649,7 @@ const collectionData = [
       },
       {
         "text": "LL-ST Stephon Marbury - New York Knicks /75",
-        "subset": "_batch_0",
+        "subset": "LL-ST Stephon Marbury - New York Knicks /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_51_LL-ST_Stephon_Marbury_front.jpg",
@@ -7662,7 +7662,7 @@ const collectionData = [
       },
       {
         "text": "LL-TM Tracy McGrady - Orlando Magic /75",
-        "subset": "_batch_0",
+        "subset": "LL-TM Tracy McGrady - Orlando Magic /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_52_LL-TM_Tracy_McGrady_front.jpg",
@@ -7689,7 +7689,7 @@ const collectionData = [
       },
       {
         "text": "LL-ZO Alonzo Mourning - New Jersey Nets /75",
-        "subset": "_batch_0",
+        "subset": "LL-ZO Alonzo Mourning - New Jersey Nets /75",
         "images": [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_53_LL-ZO_Alonzo_Mourning_front.jpg",
@@ -7710,27 +7710,27 @@ const collectionData = [
     "checklist": [
       {
         "text": "AK Andrei Kirilenko /50",
-        "subset": "_batch_0",
+        "subset": "AK Andrei Kirilenko /50",
         "images": []
       },
       {
         "text": "AS Amare Stoudemire /50",
-        "subset": "_batch_0",
+        "subset": "AS Amare Stoudemire /50",
         "images": []
       },
       {
         "text": "BD Baron Davis /50",
-        "subset": "_batch_0",
+        "subset": "BD Baron Davis /50",
         "images": []
       },
       {
         "text": "BG Ben Gordon /50",
-        "subset": "_batch_0",
+        "subset": "BG Ben Gordon /50",
         "images": []
       },
       {
         "text": "BW Ben Wallace /50",
-        "subset": "_batch_0",
+        "subset": "BW Ben Wallace /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_4_1776774510942_0.png",
@@ -7743,27 +7743,27 @@ const collectionData = [
       },
       {
         "text": "CA Carmelo Anthony /50",
-        "subset": "_batch_0",
+        "subset": "CA Carmelo Anthony /50",
         "images": []
       },
       {
         "text": "CB Carlos Boozer /50",
-        "subset": "_batch_0",
+        "subset": "CB Carlos Boozer /50",
         "images": []
       },
       {
         "text": "CM Corey Maggette /50",
-        "subset": "_batch_0",
+        "subset": "CM Corey Maggette /50",
         "images": []
       },
       {
         "text": "DH1 Dwight Howard Blue /50",
-        "subset": "_batch_0",
+        "subset": "DH1 Dwight Howard Blue /50",
         "images": []
       },
       {
         "text": "DH2 Dwight Howard White /50",
-        "subset": "_batch_0",
+        "subset": "DH2 Dwight Howard White /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_9_1776757170571_0.png",
@@ -7776,27 +7776,27 @@ const collectionData = [
       },
       {
         "text": "DR David Robinson /50",
-        "subset": "_batch_0",
+        "subset": "DR David Robinson /50",
         "images": []
       },
       {
         "text": "GA Gilbert Arenas /50",
-        "subset": "_batch_0",
+        "subset": "GA Gilbert Arenas /50",
         "images": []
       },
       {
         "text": "HO Hakeem Olajuwon /50",
-        "subset": "_batch_0",
+        "subset": "HO Hakeem Olajuwon /50",
         "images": []
       },
       {
         "text": "IT Isiah Thomas /50",
-        "subset": "_batch_0",
+        "subset": "IT Isiah Thomas /50",
         "images": []
       },
       {
         "text": "JK Jason Kidd /50",
-        "subset": "_batch_0",
+        "subset": "JK Jason Kidd /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_14_1776756263487_0.png",
@@ -7816,7 +7816,7 @@ const collectionData = [
       },
       {
         "text": "JS John Stockton /50",
-        "subset": "_batch_0",
+        "subset": "JS John Stockton /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_15_1776757148737_0.png",
@@ -7829,12 +7829,12 @@ const collectionData = [
       },
       {
         "text": "JW Jason Williams /50",
-        "subset": "_batch_0",
+        "subset": "JW Jason Williams /50",
         "images": []
       },
       {
         "text": "KB1 Kobe Bryant Purple /50",
-        "subset": "_batch_0",
+        "subset": "KB1 Kobe Bryant Purple /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_17_1776757305204_0.png",
@@ -7854,7 +7854,7 @@ const collectionData = [
       },
       {
         "text": "KB2 Kobe Bryant Yellow /50",
-        "subset": "_batch_0",
+        "subset": "KB2 Kobe Bryant Yellow /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_18_1776765912583_0.png",
@@ -7874,7 +7874,7 @@ const collectionData = [
       },
       {
         "text": "KG1 Kevin Garnett Black /50",
-        "subset": "_batch_0",
+        "subset": "KG1 Kevin Garnett Black /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_19_1776757121357_0.png",
@@ -7887,7 +7887,7 @@ const collectionData = [
       },
       {
         "text": "KG2 Kevin Garnett Blue /50",
-        "subset": "_batch_0",
+        "subset": "KG2 Kevin Garnett Blue /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_20_1776757103309_0.png",
@@ -7900,22 +7900,22 @@ const collectionData = [
       },
       {
         "text": "KH Kirk Hinrich /50",
-        "subset": "_batch_0",
+        "subset": "KH Kirk Hinrich /50",
         "images": []
       },
       {
         "text": "LB Larry Bird /50",
-        "subset": "_batch_0",
+        "subset": "LB Larry Bird /50",
         "images": []
       },
       {
         "text": "LD Luol Deng /50",
-        "subset": "_batch_0",
+        "subset": "LD Luol Deng /50",
         "images": []
       },
       {
         "text": "LJ1 LeBron James Red /50",
-        "subset": "_batch_0",
+        "subset": "LJ1 LeBron James Red /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_24_1776757345252_0.png",
@@ -7928,17 +7928,17 @@ const collectionData = [
       },
       {
         "text": "LJ2 LeBron James White /50",
-        "subset": "_batch_0",
+        "subset": "LJ2 LeBron James White /50",
         "images": []
       },
       {
         "text": "LO Lamar Odom /50",
-        "subset": "_batch_0",
+        "subset": "LO Lamar Odom /50",
         "images": []
       },
       {
         "text": "MA Magic Johnson /50",
-        "subset": "_batch_0",
+        "subset": "MA Magic Johnson /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_27_1776677483927_0.png",
@@ -7958,42 +7958,42 @@ const collectionData = [
       },
       {
         "text": "MJ Michael Jordan /50",
-        "subset": "_batch_0",
+        "subset": "MJ Michael Jordan /50",
         "images": []
       },
       {
         "text": "MR Michael Redd /50",
-        "subset": "_batch_0",
+        "subset": "MR Michael Redd /50",
         "images": []
       },
       {
         "text": "PG Pau Gasol /50",
-        "subset": "_batch_0",
+        "subset": "PG Pau Gasol /50",
         "images": []
       },
       {
         "text": "PP Paul Pierce /50",
-        "subset": "_batch_0",
+        "subset": "PP Paul Pierce /50",
         "images": []
       },
       {
         "text": "PS Peja Stojakovic /50",
-        "subset": "_batch_0",
+        "subset": "PS Peja Stojakovic /50",
         "images": []
       },
       {
         "text": "RA Ray Allen /50",
-        "subset": "_batch_0",
+        "subset": "RA Ray Allen /50",
         "images": []
       },
       {
         "text": "RJ Richard Jefferson /50",
-        "subset": "_batch_0",
+        "subset": "RJ Richard Jefferson /50",
         "images": []
       },
       {
         "text": "RO Dennis Rodman /50",
-        "subset": "_batch_0",
+        "subset": "RO Dennis Rodman /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_35_1776766599569_0.png",
@@ -8006,27 +8006,27 @@ const collectionData = [
       },
       {
         "text": "SM Shawn Marion /50",
-        "subset": "_batch_0",
+        "subset": "SM Shawn Marion /50",
         "images": []
       },
       {
         "text": "SN Steve Nash /50",
-        "subset": "_batch_0",
+        "subset": "SN Steve Nash /50",
         "images": []
       },
       {
         "text": "ST Stephon Marbury /50",
-        "subset": "_batch_0",
+        "subset": "ST Stephon Marbury /50",
         "images": []
       },
       {
         "text": "TM Tracy McGrady /50",
-        "subset": "_batch_0",
+        "subset": "TM Tracy McGrady /50",
         "images": []
       },
       {
         "text": "TP Tony Parker /50",
-        "subset": "_batch_0",
+        "subset": "TP Tony Parker /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_40_1776774368682_0.png",
@@ -8039,7 +8039,7 @@ const collectionData = [
       },
       {
         "text": "YM Yao Ming /50",
-        "subset": "_batch_0",
+        "subset": "YM Yao Ming /50",
         "images": [
           {
             "url": "images/collection/f0b1036a69e5c6fb004844144c2699b9_41_1776757327310_0.png",
@@ -8060,77 +8060,77 @@ const collectionData = [
     "checklist": [
       {
         "text": "LL-AB Andrea Bargnani /50",
-        "subset": "_batch_0",
+        "subset": "LL-AB Andrea Bargnani /50",
         "images": []
       },
       {
         "text": "LL-BD Boris Diaw /50",
-        "subset": "_batch_0",
+        "subset": "LL-BD Boris Diaw /50",
         "images": []
       },
       {
         "text": "LL-BG Ben Gordon /50",
-        "subset": "_batch_0",
+        "subset": "LL-BG Ben Gordon /50",
         "images": []
       },
       {
         "text": "LL-BI Chauncey Billups /50",
-        "subset": "_batch_0",
+        "subset": "LL-BI Chauncey Billups /50",
         "images": []
       },
       {
         "text": "LL-BR Ronnie Brewer /50",
-        "subset": "_batch_0",
+        "subset": "LL-BR Ronnie Brewer /50",
         "images": []
       },
       {
         "text": "LL-CA Carmelo Anthony /50",
-        "subset": "_batch_0",
+        "subset": "LL-CA Carmelo Anthony /50",
         "images": []
       },
       {
         "text": "LL-CB Chris Bosh /50",
-        "subset": "_batch_0",
+        "subset": "LL-CB Chris Bosh /50",
         "images": []
       },
       {
         "text": "LL-CD Clyde Drexler /50",
-        "subset": "_batch_0",
+        "subset": "LL-CD Clyde Drexler /50",
         "images": []
       },
       {
         "text": "LL-CP Chris Paul /50",
-        "subset": "_batch_0",
+        "subset": "LL-CP Chris Paul /50",
         "images": []
       },
       {
         "text": "LL-CS Craig Smith /50",
-        "subset": "_batch_0",
+        "subset": "LL-CS Craig Smith /50",
         "images": []
       },
       {
         "text": "LL-DA Baron Davis /50",
-        "subset": "_batch_0",
+        "subset": "LL-DA Baron Davis /50",
         "images": []
       },
       {
         "text": "LL-DE Dennis Rodman /50",
-        "subset": "_batch_0",
+        "subset": "LL-DE Dennis Rodman /50",
         "images": []
       },
       {
         "text": "LL-DG Daniel Gibson /50",
-        "subset": "_batch_0",
+        "subset": "LL-DG Daniel Gibson /50",
         "images": []
       },
       {
         "text": "LL-DN David Noel /50",
-        "subset": "_batch_0",
+        "subset": "LL-DN David Noel /50",
         "images": []
       },
       {
         "text": "LL-DR David Robinson /50",
-        "subset": "_batch_0",
+        "subset": "LL-DR David Robinson /50",
         "images": [
           {
             "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_14_1776756222522_0.png",
@@ -8143,37 +8143,37 @@ const collectionData = [
       },
       {
         "text": "LL-EO Emeka Okafor /50",
-        "subset": "_batch_0",
+        "subset": "LL-EO Emeka Okafor /50",
         "images": []
       },
       {
         "text": "LL-HO Hakeem Olajuwon /50",
-        "subset": "_batch_0",
+        "subset": "LL-HO Hakeem Olajuwon /50",
         "images": []
       },
       {
         "text": "LL-JE Julius Erving /50",
-        "subset": "_batch_0",
+        "subset": "LL-JE Julius Erving /50",
         "images": []
       },
       {
         "text": "LL-JF Jordan Farmar /50",
-        "subset": "_batch_0",
+        "subset": "LL-JF Jordan Farmar /50",
         "images": []
       },
       {
         "text": "LL-JO Jermaine O'Neal /50",
-        "subset": "_batch_0",
+        "subset": "LL-JO Jermaine O'Neal /50",
         "images": []
       },
       {
         "text": "LL-JS J.R. Smith /50",
-        "subset": "_batch_0",
+        "subset": "LL-JS J.R. Smith /50",
         "images": []
       },
       {
         "text": "LL-KB Kobe Bryant /50",
-        "subset": "_batch_0",
+        "subset": "LL-KB Kobe Bryant /50",
         "images": [
           {
             "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_21_1776768032048_0.png",
@@ -8186,17 +8186,17 @@ const collectionData = [
       },
       {
         "text": "LL-LA LaMarcus Aldridge /50",
-        "subset": "_batch_0",
+        "subset": "LL-LA LaMarcus Aldridge /50",
         "images": []
       },
       {
         "text": "LL-LB Larry Bird /50",
-        "subset": "_batch_0",
+        "subset": "LL-LB Larry Bird /50",
         "images": []
       },
       {
         "text": "LL-LJ LeBron James /50",
-        "subset": "_batch_0",
+        "subset": "LL-LJ LeBron James /50",
         "images": [
           {
             "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_24_1776769666527_0.png",
@@ -8209,12 +8209,12 @@ const collectionData = [
       },
       {
         "text": "LL-MA Magic Johnson /50",
-        "subset": "_batch_0",
+        "subset": "LL-MA Magic Johnson /50",
         "images": []
       },
       {
         "text": "LL-MJ Michael Jordan /50",
-        "subset": "_batch_0",
+        "subset": "LL-MJ Michael Jordan /50",
         "images": [
           {
             "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_26_1776691449531_0.png",
@@ -8241,77 +8241,77 @@ const collectionData = [
       },
       {
         "text": "LL-MW Marcus Williams /50",
-        "subset": "_batch_0",
+        "subset": "LL-MW Marcus Williams /50",
         "images": []
       },
       {
         "text": "LL-RB Renaldo Balkman /50",
-        "subset": "_batch_0",
+        "subset": "LL-RB Renaldo Balkman /50",
         "images": []
       },
       {
         "text": "LL-RC Rodney Carney /50",
-        "subset": "_batch_0",
+        "subset": "LL-RC Rodney Carney /50",
         "images": []
       },
       {
         "text": "LL-RF Randy Foye /50",
-        "subset": "_batch_0",
+        "subset": "LL-RF Randy Foye /50",
         "images": []
       },
       {
         "text": "LL-RG Rudy Gay /50",
-        "subset": "_batch_0",
+        "subset": "LL-RG Rudy Gay /50",
         "images": []
       },
       {
         "text": "LL-RJ Richard Jefferson /50",
-        "subset": "_batch_0",
+        "subset": "LL-RJ Richard Jefferson /50",
         "images": []
       },
       {
         "text": "LL-RO Brandon Roy /50",
-        "subset": "_batch_0",
+        "subset": "LL-RO Brandon Roy /50",
         "images": []
       },
       {
         "text": "LL-SN Steve Nash /50",
-        "subset": "_batch_0",
+        "subset": "LL-SN Steve Nash /50",
         "images": []
       },
       {
         "text": "LL-ST John Stockton /50",
-        "subset": "_batch_0",
+        "subset": "LL-ST John Stockton /50",
         "images": []
       },
       {
         "text": "LL-SW Shawne Williams /50",
-        "subset": "_batch_0",
+        "subset": "LL-SW Shawne Williams /50",
         "images": []
       },
       {
         "text": "LL-TF T.J. Ford /50",
-        "subset": "_batch_0",
+        "subset": "LL-TF T.J. Ford /50",
         "images": []
       },
       {
         "text": "LL-TT Tyrus Thomas /50",
-        "subset": "_batch_0",
+        "subset": "LL-TT Tyrus Thomas /50",
         "images": []
       },
       {
         "text": "LL-VC Vince Carter /50",
-        "subset": "_batch_0",
+        "subset": "LL-VC Vince Carter /50",
         "images": []
       },
       {
         "text": "LL-WI Shelden Williams /50",
-        "subset": "_batch_0",
+        "subset": "LL-WI Shelden Williams /50",
         "images": []
       },
       {
         "text": "LL-WM Marvin Williams /50",
-        "subset": "_batch_0",
+        "subset": "LL-WM Marvin Williams /50",
         "images": []
       }
     ],
