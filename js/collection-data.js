@@ -6439,7 +6439,7 @@ const collectionData = [
             "ownedBy": [],
             "number": "",
             "year": "",
-            "cardKind": ""
+            "cardKind": "Base"
           }
         ]
       },
