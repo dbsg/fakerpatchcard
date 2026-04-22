@@ -1,6 +1,7 @@
 const seriesDetail = {
   seriesData: typeof collectionData !== 'undefined' ? collectionData : [],
   series: null,
+  viewMode: localStorage.getItem('imageViewMode') || 'large',
 
   isFreeMode(s) {
     const cl = s.checklist || []
@@ -35,7 +36,33 @@ const seriesDetail = {
 
   showContent() {
     document.getElementById('mainContent').style.display = 'block'
+    this.renderToolbar()
     this.renderDetail()
+  },
+
+  countAllImages() {
+    const s = this.series
+    if (this.isFreeMode(s)) return (s.freeImages || []).length
+    return (s.checklist || []).reduce((sum, item) => sum + (item.images || []).length, 0)
+  },
+
+  renderToolbar() {
+    const total = this.countAllImages()
+    const toolbar = document.getElementById('detailToolbar')
+    if (!toolbar) return
+    toolbar.innerHTML = `
+      ${total > 0 ? `<span class="detail-total-count">共 ${total} 张图片</span>` : ''}
+      <button class="detail-view-toggle" onclick="seriesDetail.toggleViewMode()">${this.viewMode === 'large' ? '小图' : '大图'}</button>
+    `
+  },
+
+  toggleViewMode() {
+    this.viewMode = this.viewMode === 'large' ? 'small' : 'large'
+    localStorage.setItem('imageViewMode', this.viewMode)
+    this.renderToolbar()
+    document.querySelectorAll('.col-images').forEach(el => {
+      el.classList.toggle('col-images-small', this.viewMode === 'small')
+    })
   },
 
   renderDetail() {
@@ -43,32 +70,34 @@ const seriesDetail = {
     const cl = s.checklist || []
     const content = document.getElementById('seriesContent')
 
+    const smallCls = this.viewMode === 'small' ? ' col-images-small' : ''
     if (this.isFreeMode(s)) {
-      const images = s.freeImages || []
+      const images = this.sortImages(s.freeImages || [], '')
       content.innerHTML = images.length
-        ? `<div class="col-images">${images.map(img => this.renderImage(img)).join('')}</div>`
+        ? `<div class="col-images${smallCls}">${images.map(img => this.renderImage(img)).join('')}</div>`
         : '<div class="col-empty-detail">暂无图片</div>'
     } else {
       const groups = this.buildGroups(cl)
-      content.innerHTML = groups.map((g, gi) => `
-        ${g.subset ? `<div class="col-subset-header" data-gi="${gi}" onclick="seriesDetail.toggleCollapse(${gi})">
-          <span class="col-subset-collapse-icon" id="collapseIcon${gi}">▼</span>
-          <span class="col-subset-header-name">${this.escHtml(g.subset)}</span>
-          <span class="col-subset-count-badge">${g.items.length} 卡种</span>
-        </div>` : ''}
-        <div class="col-checklist" id="collapseBody${gi}">
-          ${g.items.map(item => {
-            const sorted = this.sortImages(item.images, item.text)
-            const hasImages = sorted.length > 0
-            return `
-              <div class="col-card-block ${hasImages ? 'col-card-has-images' : ''}">
-                <div class="col-card-text">${this.escHtml(item.text)}</div>
-                ${hasImages ? `<div class="col-images">${sorted.map(img => this.renderImage(img)).join('')}</div>` : ''}
-              </div>
-            `
-          }).join('')}
-        </div>
-      `).join('')
+      content.innerHTML = groups.map((g, gi) => {
+        return `
+          ${g.subset ? `<div class="col-subset-header" data-gi="${gi}" onclick="seriesDetail.toggleCollapse(${gi})">
+            <span class="col-subset-collapse-icon" id="collapseIcon${gi}">▼</span>
+            <span class="col-subset-header-name">${this.escHtml(g.subset)}</span>
+          </div>` : ''}
+          <div class="col-checklist" id="collapseBody${gi}">
+            ${g.items.map(item => {
+              const sorted = this.sortImages(item.images, item.text)
+              const hasImages = sorted.length > 0
+              return `
+                <div class="col-card-block ${hasImages ? 'col-card-has-images' : ''}">
+                  <div class="col-card-text">${this.escHtml(item.text)}</div>
+                  ${hasImages ? `<div class="col-images${smallCls}">${sorted.map(img => this.renderImage(img)).join('')}</div>` : ''}
+                </div>
+              `
+            }).join('')}
+          </div>
+        `
+      }).join('')
     }
   },
 
@@ -94,8 +123,10 @@ const seriesDetail = {
     const groups = []
     let current = null
     checklist.forEach(item => {
-      if (!current || item.subset !== current.subset) {
-        current = { subset: item.subset || '', items: [] }
+      const raw = item.subset || ''
+      const subset = raw.startsWith('_batch_') ? '' : raw
+      if (!current || subset !== current.subset) {
+        current = { subset, items: [] }
         groups.push(current)
       }
       current.items.push(item)

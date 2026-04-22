@@ -170,6 +170,32 @@
   font-size: 16px;
 }
 
+/* 详情工具栏 */
+.detail-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0 0;
+}
+.detail-total-count { font-size: 14px; color: #999; }
+.detail-view-toggle {
+  font-size: 13px;
+  color: #388e3c;
+  padding: 6px 16px;
+  background: #e8f5e9;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.detail-view-toggle:hover { background: #c8e6c9; }
+
+/* 小图模式 */
+.col-images-small .col-img-wrap { height: 100px; }
+.col-images-small .col-img-number { font-size: 8px; padding: 0 4px; }
+
 /* 系列详情内容 */
 .series-detail-content { padding: 24px 0; }
 
@@ -199,7 +225,7 @@
 }
 .col-img-wrap {
   position: relative;
-  height: 185px;
+  height: 260px;
   cursor: pointer;
   border-radius: 6px;
   overflow: hidden;
@@ -331,7 +357,8 @@
 
 /* 移动端适配 */
 @media (max-width: 640px) {
-  .col-img-wrap { height: 130px; }
+  .col-img-wrap { height: 180px; }
+  .col-images-small .col-img-wrap { height: 80px; }
   .auth-box { padding: 36px 24px; }
   .series-toolbar { flex-direction: column; gap: 8px; }
   .series-sort-btn { align-self: flex-end; }
