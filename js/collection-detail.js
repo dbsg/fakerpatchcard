@@ -31,6 +31,10 @@ const seriesDetail = {
 
     document.getElementById('seriesTitle').textContent = this.series.name
     document.title = `${this.series.name} - 小丁卡册`
+    if (this.series.description) {
+      const descEl = document.getElementById('seriesDesc')
+      if (descEl) descEl.textContent = this.series.description
+    }
     this.showContent()
   },
 
@@ -156,10 +160,10 @@ const seriesDetail = {
       return { num: parseInt(s) || 9999, den: -1 }
     }
     return [...images].sort((a, b) => {
-      const ckCmp = String(a.cardKind || '').localeCompare(String(b.cardKind || ''))
-      if (ckCmp !== 0) return ckCmp
       const ya = parseYear(a.year), yb = parseYear(b.year)
       if (ya !== yb) return ya - yb
+      const ckCmp = String(a.cardKind || '').localeCompare(String(b.cardKind || ''))
+      if (ckCmp !== 0) return ckCmp
       const pa = parseNum(a.number), pb = parseNum(b.number)
       if (pa.num !== pb.num) return pa.num - pb.num
       if (pa.den === -1 && pb.den !== -1) return -1

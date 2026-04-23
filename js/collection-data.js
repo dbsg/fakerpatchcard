@@ -2,6 +2,7 @@ const collectionData = [
   {
     "_id": "f0df711e69e0abf80486fafe28f4cb3b",
     "name": "2024-25 Panini Silhouette NBA Finals 骑士",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -971,6 +972,7 @@ const collectionData = [
   {
     "_id": "f6fcfb9c69e0b4ee0485c6c602c17789",
     "name": "2015-16 Panini Preferred NBA Finals 骑士",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -1264,6 +1266,7 @@ const collectionData = [
   {
     "_id": "b3c6c3d569e0d1ea04905f351399853f",
     "name": "勒布朗 撒镁粉",
+    "description": "",
     "hasSubset": false,
     "checklist": [],
     "freeImages": [
@@ -1328,6 +1331,7 @@ const collectionData = [
   {
     "_id": "f0df711e69e1af3f04a448232b40520f",
     "name": "1986 Fleer",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -1996,6 +2000,7 @@ const collectionData = [
   {
     "_id": "71fe4ab869e1affe04a4e64863b69327",
     "name": "2016 Flawless 钻石",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -3920,6 +3925,7 @@ const collectionData = [
   {
     "_id": "b3c6c3d569e1cd1704a8a69046da85f6",
     "name": "2016-17 Panini Preferred NBA Final 骑士",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -4142,6 +4148,7 @@ const collectionData = [
   {
     "_id": "f6fcfb9c69e1cfa904a268447069dc57",
     "name": "2017-18 Panini Opulence NBA Final 骑士",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -4316,6 +4323,7 @@ const collectionData = [
   {
     "_id": "f0b1036a69e1e645000050f730b70c9e",
     "name": "2018-19 Panini Opulence NBA Final 骑士",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -4557,6 +4565,7 @@ const collectionData = [
   {
     "_id": "b3bf7c4c69e214650004146476e8cd0a",
     "name": "暴力切割",
+    "description": "",
     "hasSubset": false,
     "checklist": [],
     "freeImages": [
@@ -6280,6 +6289,7 @@ const collectionData = [
   {
     "_id": "3b15ceb869e339fa00190544418b2826",
     "name": "1997-98 Metal Universe",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -6964,7 +6974,15 @@ const collectionData = [
       {
         "text": "",
         "subset": "85 Danny Ferry",
-        "images": []
+        "images": [
+          {
+            "url": "images/collection/3b15ceb869e339fa00190544418b2826_84_1776860464337_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": "",
+            "cardKind": "红宝"
+          }
+        ]
       },
       {
         "text": "",
@@ -7366,6 +7384,7 @@ const collectionData = [
   {
     "_id": "291ff3e969e588a0004236b93bfae3ab",
     "name": "2003-04 Limited Logos Autographs",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -7526,7 +7545,7 @@ const collectionData = [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_18_LL-DY_Dwyane_Wade_front.jpg",
             "ownedBy": [],
-            "number": "",
+            "number": "43",
             "year": "",
             "cardKind": ""
           },
@@ -7559,7 +7578,7 @@ const collectionData = [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_22_LL-GP_Gary_Payton_front.jpg",
             "ownedBy": [],
-            "number": "",
+            "number": "49",
             "year": "",
             "cardKind": ""
           },
@@ -7713,7 +7732,7 @@ const collectionData = [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_36_LL-MA_Magic_Johnson_front.jpg",
             "ownedBy": [],
-            "number": "",
+            "number": "16",
             "year": "",
             "cardKind": ""
           }
@@ -7813,7 +7832,7 @@ const collectionData = [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_46_LL-SA_Shareef_Abdur-Rahim_front.jpg",
             "ownedBy": [],
-            "number": "",
+            "number": "29",
             "year": "",
             "cardKind": ""
           }
@@ -7827,6 +7846,13 @@ const collectionData = [
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_48_LL-SC_Sam_Cassell_front.jpg",
             "ownedBy": [],
             "number": "11",
+            "year": "",
+            "cardKind": ""
+          },
+          {
+            "url": "images/collection/291ff3e969e588a0004236b93bfae3ab_25_1776860429028_0.png",
+            "ownedBy": [],
+            "number": "4",
             "year": "",
             "cardKind": ""
           }
@@ -7852,7 +7878,7 @@ const collectionData = [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_51_LL-ST_Stephon_Marbury_front.jpg",
             "ownedBy": [],
-            "number": "",
+            "number": "57",
             "year": "",
             "cardKind": ""
           }
@@ -7892,7 +7918,7 @@ const collectionData = [
           {
             "url": "images/collection/bdc6452e69e33d2d0018b72410c7f400_ll_1776506379801_53_LL-ZO_Alonzo_Mourning_front.jpg",
             "ownedBy": [],
-            "number": "",
+            "number": "56",
             "year": "",
             "cardKind": ""
           }
@@ -7904,6 +7930,7 @@ const collectionData = [
   {
     "_id": "f0b1036a69e5c6fb004844144c2699b9",
     "name": "2004-05 Limited Logos Autographs",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -8306,6 +8333,7 @@ const collectionData = [
   {
     "_id": "dc1452ab69e5cbbf00484f324b077289",
     "name": "2006-07 Limited Logos Autographs",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -8570,21 +8598,9 @@ const collectionData = [
   {
     "_id": "6cd8d0ff69e5cec10049bb0f6a07306f",
     "name": "勒布朗 经典球星卡",
+    "description": "",
     "hasSubset": true,
     "checklist": [
-      {
-        "text": "",
-        "subset": "暴力切割",
-        "images": [
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_1_1776849903633_0.png",
-            "ownedBy": [],
-            "number": "1/1",
-            "year": "2024",
-            "cardKind": "Flawless"
-          }
-        ]
-      },
       {
         "text": "",
         "subset": "Gold Prizm",
@@ -8753,6 +8769,151 @@ const collectionData = [
             "cardKind": ""
           }
         ]
+      },
+      {
+        "text": "",
+        "subset": "Logoman",
+        "images": [
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_1_1776849903633_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2024",
+            "cardKind": "手提"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776854120420_0.png",
+            "ownedBy": [],
+            "number": "/3",
+            "year": "2013",
+            "cardKind": "国宝"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_9_1776861272088_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2020",
+            "cardKind": "手提"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_9_1776861344020_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2024",
+            "cardKind": "手提"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_9_1776861395388_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2015",
+            "cardKind": "木盒"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_9_1776861525935_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2024",
+            "cardKind": "手提"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_9_1776866761579_0.png",
+            "ownedBy": [],
+            "number": "/3",
+            "year": "2015",
+            "cardKind": "Immaculate"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_9_1776866864923_0.png",
+            "ownedBy": [],
+            "number": "/3",
+            "year": "2014",
+            "cardKind": "Immaculate"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776869036534_0.png",
+            "ownedBy": [],
+            "number": "/3",
+            "year": "2016",
+            "cardKind": "国宝"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776869070649_0.png",
+            "ownedBy": [],
+            "number": "/2",
+            "year": "2023",
+            "cardKind": "国宝"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776869101999_0.png",
+            "ownedBy": [],
+            "number": "/5",
+            "year": "2013",
+            "cardKind": "国宝"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776869150778_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2023",
+            "cardKind": "国宝"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776869205280_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2021",
+            "cardKind": "手提"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776869235112_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2020",
+            "cardKind": "手提"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776869264391_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2019",
+            "cardKind": "手提"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776869305770_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2006",
+            "cardKind": "UD"
+          }
+        ]
+      },
+      {
+        "text": "",
+        "subset": "Tag",
+        "images": [
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_10_1776854204046_0.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2009",
+            "cardKind": "国宝"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_10_1776854258489_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": "2024",
+            "cardKind": "手提"
+          },
+          {
+            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_10_1776854259315_1.png",
+            "ownedBy": [],
+            "number": "1/1",
+            "year": "2024",
+            "cardKind": "手提"
+          }
+        ]
       }
     ],
     "freeImages": []
@@ -8760,6 +8921,7 @@ const collectionData = [
   {
     "_id": "c946dc2a69e7347100010a507fdf4cf5",
     "name": "Panini Kaboom!",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {
@@ -9193,6 +9355,7 @@ const collectionData = [
   {
     "_id": "6bdc73f469e754e70003aee07a6075e4",
     "name": "2009-10 Limited Logos Autographs",
+    "description": "",
     "hasSubset": true,
     "checklist": [
       {

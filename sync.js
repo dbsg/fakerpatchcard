@@ -238,6 +238,7 @@ async function fetchSeriesFromCloudDB(accessToken) {
     return {
       _id: s._id,
       name: s.name || '',
+      description: s.description || '',
       hasSubset: !!s.hasSubset,
       checklist,
       freeImages: (s.freeImages || []).map(normalizeImage)
