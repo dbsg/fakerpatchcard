@@ -119,7 +119,9 @@ const collectionData = [
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_6_1776411264304_0.png",
-            "ownedBy": [],
+            "ownedBy": [
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
+            ],
             "number": "1",
             "year": "",
             "cardKind": ""
