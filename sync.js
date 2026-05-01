@@ -3,6 +3,7 @@ const http = require('http')
 const fs = require('fs')
 const path = require('path')
 const { execSync } = require('child_process')
+const progressData = require('../miniprogram-card/utils/collectionProgress')
 
 const APPID = 'wx13497267f3b92c0f'
 const CDN_BASE = 'https://7072-prod-8g8ay186059e4264-1418320285.tcb.qcloud.la'
@@ -190,17 +191,38 @@ function normalizeImage(img) {
   return { url: img.url || '', ownedBy, number: img.number || '', year: img.year || '', cardKind: img.cardKind != null ? String(img.cardKind) : '' }
 }
 
+function normalizeChecklistItem(item, subset) {
+  const normalized = {
+    text: item.text || '',
+    subset,
+    images: (item.images || []).map(normalizeImage)
+  }
+  const printRun = progressData.getPrintRun(item)
+  const completionTarget = progressData.getCompletionTarget(item)
+  if (printRun) normalized.printRun = printRun
+  if (completionTarget) normalized.completionTarget = completionTarget
+  return normalized
+}
+
+function buildFreeSeriesStats(freeImages, completionTarget) {
+  const images = Array.isArray(freeImages) ? freeImages : []
+  const rawTarget = Number(completionTarget)
+  const total = Number.isInteger(rawTarget) && rawTarget > 0 ? rawTarget : images.filter(img => img.url).length
+  const collected = total ? Math.min(total, images.filter(img => img.url).length) : images.filter(img => img.url).length
+  return {
+    totalCards: total,
+    withImages: collected,
+    missing: Math.max(0, total - collected)
+  }
+}
+
 function subsetDocsToChecklist(subsetDocs) {
   const checklist = []
   for (const doc of subsetDocs) {
     const docSubset = doc.subset || ''
     const isBatch = docSubset.startsWith('_batch_')
     for (const item of (doc.items || [])) {
-      checklist.push({
-        text: item.text || '',
-        subset: isBatch ? (item.subset || '') : docSubset,
-        images: (item.images || []).map(normalizeImage)
-      })
+      checklist.push(normalizeChecklistItem(item, isBatch ? (item.subset || '') : docSubset))
     }
   }
   return checklist
@@ -228,20 +250,28 @@ async function fetchSeriesFromCloudDB(accessToken) {
     if (subDocs && subDocs.length > 0) {
       checklist = subsetDocsToChecklist(subDocs)
     } else {
-      checklist = (s.checklist || []).map(item => ({
-        text: item.text || '',
-        subset: item.subset || '',
-        images: (item.images || []).map(normalizeImage)
-      }))
+      checklist = (s.checklist || []).map(item => normalizeChecklistItem(item, item.subset || ''))
     }
+    const freeImages = (s.freeImages || []).map(normalizeImage)
+    const isFreeMode = checklist.length === 0 && !s.hasSubset
+    const checklistStats = isFreeMode
+      ? buildFreeSeriesStats(freeImages, s.completionTarget)
+      : progressData.buildChecklistProgressStats(checklist)
 
     return {
       _id: s._id,
       name: s.name || '',
       description: s.description || '',
       hasSubset: !!s.hasSubset,
+      checklistComplete: !!s.checklistComplete,
+      completionTarget: Number.isInteger(Number(s.completionTarget)) && Number(s.completionTarget) > 0 ? Number(s.completionTarget) : undefined,
+      totalCards: checklistStats.totalCards,
+      withImages: checklistStats.withImages,
+      missing: checklistStats.missing,
+      createdAt: s.createdAt || s.createTime || '',
+      updatedAt: s.updatedAt || s.updateTime || '',
       checklist,
-      freeImages: (s.freeImages || []).map(normalizeImage)
+      freeImages
     }
   })
 }

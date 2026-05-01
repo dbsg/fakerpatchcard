@@ -163,6 +163,32 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.col-series-desc {
+  margin-top: 6px;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.45;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.col-series-progress {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #888;
+}
+.col-series-progress span {
+  background: #f7f8ff;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+.col-series-progress strong {
+  color: #667eea;
+  margin-left: 3px;
+}
 .col-empty {
   text-align: center;
   padding: 80px 0;
@@ -202,6 +228,41 @@
 /* 系列详情内容 */
 .series-detail-content { padding: 24px 0; }
 
+.detail-progress-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.detail-progress-item {
+  text-align: center;
+  background: #f8f9fb;
+  border-radius: 10px;
+  padding: 12px 8px;
+  color: #888;
+}
+.detail-progress-item.active {
+  background: #eef2ff;
+  box-shadow: inset 0 0 0 2px #7b8cff;
+}
+.detail-progress-item strong {
+  display: block;
+  color: #222;
+  font-size: 24px;
+  line-height: 1.1;
+}
+.detail-progress-item.active strong { color: #667eea; }
+.detail-progress-item span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .col-subset-title {
   font-size: 18px;
   font-weight: 600;
@@ -218,7 +279,7 @@
 }
 .col-card-block:last-child { border-bottom: none; }
 .col-card-has-images { padding-bottom: 18px; }
-.col-card-text { font-size: 15px; color: #333; margin-bottom: 10px; }
+.col-card-text { font-size: 15px; color: #333; margin-bottom: 10px; font-weight: 600; }
 
 /* 图片网格 */
 .col-images {

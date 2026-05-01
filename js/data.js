@@ -5539,6 +5539,25 @@ const cardsData = [
         type: "after"
       }
     ]
+  },
+  {
+    id: 307,
+    player: "Devin Booker",
+    playerCN: "德文 布克",
+    brand: "Panini",
+    year: "2016-17",
+    series: "National Treasures",
+    number: "73/76",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "https://v.douyin.com/kCdwpri2Aw8/",
+    images: [
+      {
+        url: "images/sample/card_1777642210827_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      }
+    ]
   }
 ];
 
