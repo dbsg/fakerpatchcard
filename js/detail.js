@@ -3,6 +3,71 @@ let currentCard = null;
 let currentImageIndex = 0;
 
 const placeholderNoteRe = /^(after|before|compare)_\d+$/;
+const QUALITY_TAG_LABELS = {
+  patch: 'Patch/材质',
+  auto: '签字',
+  serial: '编号',
+  slab: '评级盒',
+  comparison: '对比图'
+};
+
+const SOURCE_TYPE_LABELS = {
+  web_public: '网络公开资料',
+  user_submission: '用户投稿',
+  manual_curation: '小丁卡册人工整理',
+  official_image: '官方/评级资料',
+  user_photo: '用户实拍',
+  auction_platform: '拍卖平台',
+  social_share: '网络分享'
+};
+
+function getWarningText(category, status) {
+  const warningTexts = {
+    'fake-patch': {
+      confirmed: {
+        title: '资料提示：明确异常记录',
+        desc: '这张卡已进入明确 Patch 异常记录：同一张卡已出现不同 Patch 版本，或已有明确换 Patch / 冲突来源记录，不应按普通同款差异理解。'
+      },
+      suspected: {
+        title: '资料提示：高度存疑线索',
+        desc: '这张卡已进入高度存疑 Patch 线索：疑点来自同款卡 Patch 材质、位置、复杂度或球队/年份合理性对比，尚未形成同卡冲突或明确来源记录。'
+      }
+    },
+    counterfeit: {
+      confirmed: {
+        title: '资料提示：明确异常记录',
+        desc: '这张卡已进入明确卡片异常记录：已有明确假卡、伪造、复刻或卡片本体异常证据，查看或流通前应按强风险样本处理。'
+      },
+      suspected: {
+        title: '资料提示：高度存疑线索',
+        desc: '这张卡已进入高度存疑线索：疑点主要来自同款卡、版式、编号或公开图片对比，尚缺同一张卡的直接冲突记录或明确异常来源。'
+      }
+    },
+    'fake-auto': {
+      confirmed: {
+        title: '资料提示：明确异常记录',
+        desc: '这张卡已进入明确签字异常记录：已有明确伪签、后签、涂改，或签字与可信资料明显冲突的记录。'
+      },
+      suspected: {
+        title: '资料提示：高度存疑线索',
+        desc: '这张卡已进入高度存疑签字线索：疑点来自同款签字特征、笔迹、位置或公开图片对比，当前证据仍需补充。'
+      }
+    }
+  };
+  return (warningTexts[category] || warningTexts['fake-patch'])[status];
+}
+
+function getAfterTitle(category) {
+  if (category === 'counterfeit') return '异常样本';
+  if (category === 'fake-auto') return '签字样本';
+  return 'Patch 异常样本';
+}
+
+function getBeforeTitle(category) {
+  if (category === 'counterfeit') return '参考对比';
+  if (category === 'fake-auto') return '原始签字参考';
+  return '原始 Patch 参考';
+}
 
 function renderImageGroup(card, type, title) {
   const types = type === 'after' ? ['after', 'compare'] : [type];
@@ -71,23 +136,8 @@ function renderDetail() {
   const detailContent = document.getElementById('detailContent');
 
   const category = currentCard.category || 'fake-patch';
-  const warningTexts = {
-    'fake-patch': {
-      confirmed: { title: '🚫 确认警告：此卡片已确认为换Patch卡', desc: '该卡片经过对比和验证，已确认Patch被替换。<strong>强烈建议不要购买此类卡片。</strong>' },
-      suspected: { title: '⚠️ 高危警示：此卡片疑似换Patch', desc: '根据同款卡片对比或相关经验判断，该卡换Patch的概率很大。<strong>请谨慎购买，建议进一步核实。</strong>' }
-    },
-    'counterfeit': {
-      confirmed: { title: '🚫 确认警告：此卡片已确认为假卡（伪造/复刻）', desc: '该卡片经过验证，已确认为伪造或复刻卡。<strong>强烈建议不要购买此类卡片。</strong>' },
-      suspected: { title: '⚠️ 高危警示：此卡片疑似为假卡', desc: '根据相关经验判断，该卡为伪造/复刻的概率很大。<strong>请谨慎购买，建议进一步核实。</strong>' }
-    },
-    'fake-auto': {
-      confirmed: { title: '🚫 确认警告：此卡片签字已确认被涂改或伪造', desc: '该卡片签字经过验证，已确认存在涂改或伪造。<strong>强烈建议不要购买此类卡片。</strong>' },
-      suspected: { title: '⚠️ 高危警示：此卡片签字疑似被涂改或伪造', desc: '根据相关经验判断，该卡签字被涂改或伪造的概率很大。<strong>请谨慎购买，建议进一步核实。</strong>' }
-    }
-  };
-
   let warningBox = '';
-  const wt = (warningTexts[category] || warningTexts['fake-patch'])[currentCard.status];
+  const wt = getWarningText(category, currentCard.status);
   if (wt) {
     const cls = currentCard.status === 'confirmed' ? 'warning-danger' : 'warning-caution';
     warningBox = `
@@ -98,17 +148,33 @@ function renderDetail() {
     `;
   }
 
-  // 构建高危原因的信息项（如果有的话）
+  // 构建问题说明的信息项（如果有的话）
   const highRiskReasonItem = currentCard.highRiskReason
     ? `<div class="detail-info-item detail-info-full">
-        <span class="detail-label">高危原因</span>
+        <span class="detail-label">问题说明</span>
         <span class="detail-value">${currentCard.highRiskReason}</span>
+      </div>`
+    : '';
+
+  const qualityTagLabels = Array.isArray(currentCard.qualityTags)
+    ? currentCard.qualityTags.map(tag => QUALITY_TAG_LABELS[tag] || tag).filter(Boolean)
+    : [];
+  const qualityTagItem = qualityTagLabels.length
+    ? `<div class="detail-info-item detail-info-full">
+        <span class="detail-label">识别项</span>
+        <span class="detail-value">${qualityTagLabels.join('、')}</span>
+      </div>`
+    : '';
+  const sourceTypeItem = currentCard.sourceType && SOURCE_TYPE_LABELS[currentCard.sourceType]
+    ? `<div class="detail-info-item">
+        <span class="detail-label">来源类型</span>
+        <span class="detail-value">${SOURCE_TYPE_LABELS[currentCard.sourceType]}</span>
       </div>`
     : '';
 
   const sourceItem = currentCard.source
     ? `<div class="detail-info-item detail-info-full">
-        <span class="detail-label">来源</span>
+        <span class="detail-label">资料来源</span>
         <span class="detail-value">${currentCard.source.startsWith('http') ? `<a href="${currentCard.source}" target="_blank" rel="noopener" class="source-link">${currentCard.source}</a>` : currentCard.source}</span>
       </div>`
     : '';
@@ -138,11 +204,14 @@ function renderDetail() {
             <span class="detail-value">${currentCard.number}</span>
           </div>
           ${highRiskReasonItem}
+          ${qualityTagItem}
+          ${sourceTypeItem}
           ${sourceItem}
         </div>
 
-        ${renderImageGroup(currentCard, 'after', category === 'counterfeit' ? '🔴 问题卡片照片' : category === 'fake-auto' ? '🔴 涂改/伪造后' : '🔴 换 Patch 后')}
-        ${category !== 'counterfeit' ? renderImageGroup(currentCard, 'before', category === 'fake-auto' ? '🟢 原始签字' : '🟢 换 Patch 前') : ''}
+        ${renderImageGroup(currentCard, 'after', getAfterTitle(category))}
+        ${renderImageGroup(currentCard, 'before', getBeforeTitle(category))}
+        <div class="reference-note">本资料仅用于收藏研究与卡片特征对比，不构成鉴定结论、交易建议或维权依据。</div>
       </div>
     </div>
   `;

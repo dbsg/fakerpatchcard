@@ -10,9 +10,9 @@ const app = {
   pageSize: 6,
 
   categoryLabel(category) {
-    if (category === 'fake-auto') return '假签'
-    if (category === 'counterfeit') return '假卡'
-    return '换Patch'
+    if (category === 'fake-auto') return '签字异常'
+    if (category === 'counterfeit') return '卡片异常'
+    return 'Patch 异常'
   },
 
   categoryClass(category) {
@@ -34,6 +34,42 @@ const app = {
     const d = document.createElement('div')
     d.textContent = String(s)
     return d.innerHTML
+  },
+
+  normalizeSearch(value) {
+    return String(value == null ? '' : value)
+      .trim()
+      .toLowerCase()
+      .replace(/[\s·.\-_'’`/，,、:：()（）[\]【】]+/g, '')
+  },
+
+  buildKeywordTerms(keyword = '') {
+    const raw = String(keyword || '').trim()
+    if (!raw) return []
+    const parts = raw.split(/[\s,，、]+/).map(value => this.normalizeSearch(value)).filter(Boolean)
+    if (parts.length > 1) return [...new Set(parts)]
+    const compact = this.normalizeSearch(raw)
+    if (!compact) return []
+    const mixedParts = compact.match(/[a-z\u3400-\u9fff]+|\d+/g)
+    if (mixedParts && mixedParts.length > 1 && mixedParts.join('') === compact) {
+      return [...new Set(mixedParts)]
+    }
+    return [compact]
+  },
+
+  buildCardSearchText(card = {}) {
+    return [
+      card.id,
+      card.player,
+      card.playerCN,
+      card.brand,
+      card.year,
+      card.series,
+      card.number,
+      card.highRiskReason,
+      card.source,
+      Array.isArray(card.qualityTags) ? card.qualityTags.join(' ') : ''
+    ].filter(Boolean).join(' ')
   },
 
   init() {
@@ -147,7 +183,7 @@ const app = {
       const latestImage = afterImg || (card.images && card.images[card.images.length - 1])
       const imgUrl = latestImage && latestImage.url ? this.escAttr(latestImage.url) : 'images/placeholder.jpg'
       const badgeClass = card.status === 'suspected' ? 'suspected' : 'fake'
-      const badgeText = card.status === 'suspected' ? '高危' : '假'
+      const badgeText = card.status === 'suspected' ? '高度存疑' : '明确异常'
       const cat = card.category || 'fake-patch'
       const catClass = this.categoryClass(cat)
       const catText = this.categoryLabel(cat)
@@ -167,7 +203,7 @@ const app = {
             <div class="card-details">${this.escHtml(card.brand)} · ${this.escHtml(card.year)} · ${this.escHtml(card.series)}</div>
             <div class="card-meta">
               <span class="card-images-count">📸 ${card.images.length} 张照片</span>
-              <span class="card-number">${card.number}</span>
+              <span class="card-number">${this.escHtml(card.number)}</span>
             </div>
           </div>
         </div>
@@ -185,18 +221,15 @@ const app = {
     const player = document.getElementById('playerFilter').value
     const brand = document.getElementById('brandFilter').value
     const year = document.getElementById('yearFilter').value
-    const keyword = document.getElementById('searchInput').value.toLowerCase().trim()
+    const keyword = document.getElementById('searchInput').value.trim()
+    const terms = this.buildKeywordTerms(keyword)
 
     this.currentCards = this.allCards.filter(card => {
       const matchPlayer = !player || card.player === player
       const matchBrand = !brand || card.brand === brand
       const matchYear = !year || card.year === year
-      const matchKeyword = !keyword ||
-        String(card.id) === keyword ||
-        card.player.toLowerCase().includes(keyword) ||
-        (card.playerCN && card.playerCN.includes(keyword)) ||
-        card.series.toLowerCase().includes(keyword) ||
-        card.number.toLowerCase().includes(keyword)
+      const matchKeyword = terms.length === 0 ||
+        terms.every(term => this.normalizeSearch(this.buildCardSearchText(card)).includes(term))
 
       return matchPlayer && matchBrand && matchYear && matchKeyword
     })

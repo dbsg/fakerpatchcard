@@ -79,4 +79,34 @@ assert.strictEqual(progress.parsePrintRunValue('abc'), 0)
   assert.strictEqual(stats.missing, 1)
 }
 
+{
+  const slots = progress.buildPrintRunSlots(
+    {
+      text: 'Base /30',
+      printRun: 30,
+      completionTarget: 1,
+      images: [image('6', 'numbered'), image('', 'blank')]
+    },
+    {}
+  )
+  assert.deepStrictEqual(slots.map(slot => slot.type), ['image', 'unknownGroup'])
+  assert.strictEqual(slots[0].displayLabel, '6/30')
+  assert.strictEqual(slots[1].title, '更多图片')
+  assert.strictEqual(slots[1].images[0].displayLabel, '未标编号')
+}
+
+{
+  const slots = progress.buildPrintRunSlots(
+    {
+      text: 'Base /30',
+      printRun: 30,
+      completionTarget: 1,
+      images: []
+    },
+    {}
+  )
+  assert.deepStrictEqual(slots.map(slot => slot.type), ['upload'])
+  assert.strictEqual(slots[0].displayLabel, '1/30')
+}
+
 console.log('print-run slot tests passed')

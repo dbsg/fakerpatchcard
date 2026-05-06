@@ -9,7 +9,7 @@ const collectionData = [
     "withImages": 90,
     "missing": 414,
     "createdAt": "2026-04-16T09:29:28.043Z",
-    "updatedAt": "2026-05-01T15:01:58.837Z",
+    "updatedAt": "2026-05-06T03:21:35.312Z",
     "checklist": [
       {
         "text": "9 LeBron James/Kyrie Irving, Cleveland Cavaliers /3",
@@ -140,9 +140,7 @@ const collectionData = [
           },
           {
             "url": "images/collection/f0df711e69e0abf80486fafe28f4cb3b_6_1776411264304_0.png",
-            "ownedBy": [
-              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
-            ],
+            "ownedBy": [],
             "number": "1/21",
             "year": "",
             "cardKind": ""
@@ -1310,7 +1308,7 @@ const collectionData = [
     "withImages": 25,
     "missing": 1200,
     "createdAt": "2026-04-16T10:07:41.606Z",
-    "updatedAt": "2026-04-30T11:11:39.245Z",
+    "updatedAt": "2026-05-06T03:22:44.164Z",
     "checklist": [
       {
         "text": "1 LeBron James (勒布朗詹姆斯) /99",
@@ -1749,10 +1747,10 @@ const collectionData = [
     "hasSubset": true,
     "checklistComplete": true,
     "totalCards": 132,
-    "withImages": 0,
-    "missing": 132,
+    "withImages": 1,
+    "missing": 131,
     "createdAt": "2026-04-17T03:55:42.457Z",
-    "updatedAt": "2026-04-30T05:19:01.790Z",
+    "updatedAt": "2026-05-03T08:47:12.259Z",
     "checklist": [
       {
         "text": "1 Kareem Abdul-Jabbar - Los Angeles Lakers",
@@ -2297,7 +2295,15 @@ const collectionData = [
       {
         "text": "91 Doc Rivers - Atlanta Hawks RC",
         "subset": "91 Doc Rivers - Atlanta Hawks RC",
-        "images": [],
+        "images": [
+          {
+            "url": "images/collection/f0df711e69e1af3f04a448232b40520f_90_1777726731241_0.png",
+            "ownedBy": [],
+            "number": "",
+            "year": "",
+            "cardKind": ""
+          }
+        ],
         "completionTarget": 1
       },
       {
@@ -2556,10 +2562,10 @@ const collectionData = [
     "hasSubset": true,
     "checklistComplete": true,
     "totalCards": 650,
-    "withImages": 119,
-    "missing": 531,
+    "withImages": 120,
+    "missing": 530,
     "createdAt": "2026-04-17T03:58:53.903Z",
-    "updatedAt": "2026-05-01T11:39:49.879Z",
+    "updatedAt": "2026-05-06T03:20:31.407Z",
     "checklist": [
       {
         "text": "1 Kobe Bryant - Los Angeles Lakers",
@@ -2685,7 +2691,8 @@ const collectionData = [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_80_8.2015-16_FLAWLESS_BRANDON_KNIGHT_10-10.jpg.jpg",
             "ownedBy": [
-              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg",
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
             ],
             "number": "/10",
             "year": "",
@@ -2902,8 +2909,10 @@ const collectionData = [
             "cardKind": ""
           },
           {
-            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_19_1776685267014_0.png",
-            "ownedBy": [],
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_replace_1777810059818.png",
+            "ownedBy": [
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
+            ],
             "number": "/20",
             "year": "",
             "cardKind": ""
@@ -3156,6 +3165,15 @@ const collectionData = [
             ],
             "number": "/10",
             "year": "",
+            "cardKind": ""
+          },
+          {
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_38_1777892431878_0.png",
+            "ownedBy": [
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
+            ],
+            "number": "/15",
+            "year": "2015-16",
             "cardKind": ""
           }
         ],
@@ -3480,15 +3498,6 @@ const collectionData = [
             "number": "/15",
             "year": "",
             "cardKind": ""
-          },
-          {
-            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_61_59.2015-16_FLAWLESS_PAU_GASOL_7-10.jpg.jpg",
-            "ownedBy": [
-              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
-            ],
-            "number": "/10",
-            "year": "",
-            "cardKind": ""
           }
         ],
         "completionTarget": 5
@@ -3733,6 +3742,15 @@ const collectionData = [
             ],
             "number": "/15",
             "year": "",
+            "cardKind": ""
+          },
+          {
+            "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_76_1777989768603_0.png",
+            "ownedBy": [
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
+            ],
+            "number": "/5",
+            "year": "2015-16",
             "cardKind": ""
           }
         ],
@@ -4063,7 +4081,8 @@ const collectionData = [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_1_101.2015-16_FLAWLESS_TREVOR_ARIZA_1-15.jpg.jpg",
             "ownedBy": [
-              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg",
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
             ],
             "number": "/15",
             "year": "",
@@ -4079,7 +4098,8 @@ const collectionData = [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_2_102.2015-16_FLAWLESS_ALEX_LEN_10-10.jpg.jpg",
             "ownedBy": [
-              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg",
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
             ],
             "number": "/10",
             "year": "",
@@ -4139,7 +4159,8 @@ const collectionData = [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_5_107.2015-16_FLAWLESS_TRISTAN_THOMPSON_11-15_PSA10.jpg.jpg",
             "ownedBy": [
-              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg",
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
             ],
             "number": "/15",
             "year": "",
@@ -4319,7 +4340,8 @@ const collectionData = [
           {
             "url": "images/collection/71fe4ab869e1affe04a4e64863b69327_flawless_1776678566125_15_122.2015-16_FLAWLESS_MARCUS_MORRIS_10-15.jpg.jpg",
             "ownedBy": [
-              "o6zAJs_a1GPfnHjIOEaucuxpkazg"
+              "o6zAJs_a1GPfnHjIOEaucuxpkazg",
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
             ],
             "number": "/15",
             "year": "",
@@ -4651,7 +4673,7 @@ const collectionData = [
     "withImages": 9,
     "missing": 958,
     "createdAt": "2026-04-17T06:03:02.624Z",
-    "updatedAt": "2026-04-30T11:11:40.347Z",
+    "updatedAt": "2026-05-06T03:21:44.218Z",
     "checklist": [
       {
         "text": "1 Channing Frye /99",
@@ -4775,9 +4797,11 @@ const collectionData = [
         "subset": "Prime",
         "images": [
           {
-            "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_11_1776412674702_0.png",
-            "ownedBy": [],
-            "number": "7",
+            "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_replace_1777880455482.png",
+            "ownedBy": [
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
+            ],
+            "number": "7/10",
             "year": "",
             "cardKind": ""
           }
@@ -4799,7 +4823,7 @@ const collectionData = [
           {
             "url": "images/collection/b3c6c3d569e1cd1704a8a69046da85f6_13_1776408636800_0.png",
             "ownedBy": [],
-            "number": "3",
+            "number": "3/4",
             "year": "",
             "cardKind": ""
           }
@@ -4948,7 +4972,7 @@ const collectionData = [
     "withImages": 10,
     "missing": 194,
     "createdAt": "2026-04-17T06:14:00.687Z",
-    "updatedAt": "2026-04-30T11:11:40.859Z",
+    "updatedAt": "2026-05-06T03:22:36.511Z",
     "checklist": [
       {
         "text": "1 LeBron James /26",
@@ -5165,7 +5189,7 @@ const collectionData = [
     "withImages": 7,
     "missing": 129,
     "createdAt": "2026-04-17T07:50:28.816Z",
-    "updatedAt": "2026-04-30T15:18:07.629Z",
+    "updatedAt": "2026-05-06T03:22:28.196Z",
     "checklist": [
       {
         "text": "1 Jeff Green /16",
@@ -7218,7 +7242,7 @@ const collectionData = [
     "withImages": 80,
     "missing": 295,
     "createdAt": "2026-04-18T07:59:50.859Z",
-    "updatedAt": "2026-05-01T11:42:21.094Z",
+    "updatedAt": "2026-05-06T03:09:01.559Z",
     "checklist": [
       {
         "text": "",
@@ -8388,7 +8412,7 @@ const collectionData = [
             "ownedBy": [],
             "number": "",
             "year": "",
-            "cardKind": "红"
+            "cardKind": "红宝"
           },
           {
             "url": "images/collection/3b15ceb869e339fa00190544418b2826_106_1777027801860_0.png",
@@ -8565,10 +8589,10 @@ const collectionData = [
         "subset": "123 Latrell Sprewell",
         "images": [
           {
-            "url": "images/collection/3b15ceb869e339fa00190544418b2826_122_1776767233550_0.png",
+            "url": "images/collection/3b15ceb869e339fa00190544418b2826_replace_1778036924450.png",
             "ownedBy": [],
             "number": "",
-            "year": "",
+            "year": "1997-98",
             "cardKind": "红宝"
           }
         ],
@@ -8599,7 +8623,7 @@ const collectionData = [
     "withImages": 52,
     "missing": 2198,
     "createdAt": "2026-04-20T01:59:57.627Z",
-    "updatedAt": "2026-04-30T05:19:04.738Z",
+    "updatedAt": "2026-05-06T03:22:20.085Z",
     "checklist": [
       {
         "text": "LL-AJ Antawn Jamison - Dallas Mavericks /75",
@@ -9218,7 +9242,7 @@ const collectionData = [
     "withImages": 24,
     "missing": 2076,
     "createdAt": "",
-    "updatedAt": "2026-04-30T05:19:05.173Z",
+    "updatedAt": "2026-05-03T08:47:22.554Z",
     "checklist": [
       {
         "text": "AK Andrei Kirilenko /50",
@@ -9708,10 +9732,10 @@ const collectionData = [
     "hasSubset": true,
     "checklistComplete": true,
     "totalCards": 2100,
-    "withImages": 6,
-    "missing": 2094,
+    "withImages": 8,
+    "missing": 2092,
     "createdAt": "",
-    "updatedAt": "2026-04-30T05:19:05.577Z",
+    "updatedAt": "2026-05-05T13:37:39.208Z",
     "checklist": [
       {
         "text": "LL-AB Andrea Bargnani /50",
@@ -9751,7 +9775,15 @@ const collectionData = [
       {
         "text": "LL-CA Carmelo Anthony /50",
         "subset": "LL-CA Carmelo Anthony /50",
-        "images": [],
+        "images": [
+          {
+            "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_5_1777819314170_0.png",
+            "ownedBy": [],
+            "number": "16/50",
+            "year": "2006-07",
+            "cardKind": ""
+          }
+        ],
         "printRun": 50,
         "completionTarget": 50
       },
@@ -9818,7 +9850,7 @@ const collectionData = [
           {
             "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_14_1776756222522_0.png",
             "ownedBy": [],
-            "number": "46",
+            "number": "46/50",
             "year": "",
             "cardKind": ""
           }
@@ -9875,7 +9907,7 @@ const collectionData = [
           {
             "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_21_1776768032048_0.png",
             "ownedBy": [],
-            "number": "36",
+            "number": "36/50",
             "year": "",
             "cardKind": ""
           }
@@ -9886,7 +9918,17 @@ const collectionData = [
       {
         "text": "LL-LA LaMarcus Aldridge /50",
         "subset": "LL-LA LaMarcus Aldridge /50",
-        "images": [],
+        "images": [
+          {
+            "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_22_1777988255905_0.png",
+            "ownedBy": [
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
+            ],
+            "number": "28/50",
+            "year": "2006-07",
+            "cardKind": ""
+          }
+        ],
         "printRun": 50,
         "completionTarget": 50
       },
@@ -9904,7 +9946,7 @@ const collectionData = [
           {
             "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_24_1776769666527_0.png",
             "ownedBy": [],
-            "number": "5",
+            "number": "5/50",
             "year": "",
             "cardKind": ""
           }
@@ -9933,14 +9975,14 @@ const collectionData = [
           {
             "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_26_1776765962262_0.png",
             "ownedBy": [],
-            "number": "22",
+            "number": "22/50",
             "year": "",
             "cardKind": ""
           },
           {
             "url": "images/collection/dc1452ab69e5cbbf00484f324b077289_26_1776768166691_0.png",
             "ownedBy": [],
-            "number": "32",
+            "number": "32/50",
             "year": "",
             "cardKind": ""
           }
@@ -10514,7 +10556,7 @@ const collectionData = [
     "withImages": 88,
     "missing": 7,
     "createdAt": "2026-04-21T08:25:21.411Z",
-    "updatedAt": "2026-04-30T05:19:06.426Z",
+    "updatedAt": "2026-05-03T08:47:23.593Z",
     "checklist": [
       {
         "text": "",
@@ -12496,7 +12538,7 @@ const collectionData = [
     "withImages": 1,
     "missing": 0,
     "createdAt": "2026-04-21T10:43:50.595Z",
-    "updatedAt": "2026-04-30T05:19:06.823Z",
+    "updatedAt": "2026-05-03T08:47:24.143Z",
     "checklist": [
       {
         "text": "",
@@ -12521,12 +12563,1327 @@ const collectionData = [
     "description": "2008 年 Topps Chrome 篮球卡图鉴，承接 Chrome 系列一贯的折射质感和新秀阵容，是 Topps 时代末期的重要收藏节点。",
     "hasSubset": true,
     "checklistComplete": false,
-    "totalCards": 0,
+    "totalCards": 219,
     "withImages": 0,
-    "missing": 0,
+    "missing": 219,
     "createdAt": "2026-04-24T03:08:39.333Z",
-    "updatedAt": "2026-04-30T05:19:07.194Z",
-    "checklist": [],
+    "updatedAt": "2026-05-03T08:47:24.799Z",
+    "checklist": [
+      {
+        "text": "",
+        "subset": "1 Chris Paul - New Orleans Hornets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "2 Joe Johnson - Atlanta Hawks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "3 Allen Iverson - Denver Nuggets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "4 Luis Scola - Houston Rockets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "5 Kevin Garnett - Boston Celtics",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "6 Andrew Bogut - Milwaukee Bucks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "7 Ben Gordon - Chicago Bulls",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "8 Carlos Boozer - Utah Jazz",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "9 Tony Parker - San Antonio Spurs",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "10 Gilbert Arenas - Washington Wizards",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "11 Yao Ming - Houston Rockets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "12 Dwight Howard - Orlando Magic",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "13 Steve Nash - Phoenix Suns",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "14 Daequan Cook - Miami Heat",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "15 Carmelo Anthony - Denver Nuggets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "16 Pau Gasol - Los Angeles Lakers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "17 Mike Dunleavy Jr. - Indiana Pacers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "18 Jason Maxiell - Detroit Pistons",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "19 Al Thornton - Los Angeles Clippers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "20 Ray Allen - Boston Celtics",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "21 Tim Duncan - San Antonio Spurs",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "22 Michael Redd - Milwaukee Bucks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "23 LeBron James - Cleveland Cavaliers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "24 Kobe Bryant - Los Angeles Lakers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "25 Al Jefferson - Minnesota Timberwolves",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "26 Raymond Felton - Charlotte Bobcats",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "27 LaMarcus Aldridge - Portland Trail Blazers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "28 Jose Calderon - Toronto Raptors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "29 Andris Biedrins - Golden State Warriors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "30 Rasheed Wallace - Detroit Pistons",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "31 Shawn Marion - Miami Heat",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "32 Shaquille O'Neal - Phoenix Suns",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "33 Mike Miller - Minnesota Timberwolves",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "34 Paul Pierce - Boston Celtics",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "35 Brad Miller - Sacramento Kings",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "36 Richard Jefferson - Milwaukee Bucks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "37 DeShawn Stevenson - Washington Wizards",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "38 Zach Randolph - New York Knicks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "39 Daniel Gibson - Cleveland Cavaliers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "40 Nazr Mohammed - Charlotte Bobcats",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "41 Dirk Nowitzki - Dallas Mavericks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "42 Elton Brand - Philadelphia 76ers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "43 Linas Kleiza - Denver Nuggets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "44 Andrea Bargnani - Toronto Raptors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "45 Josh Smith - Atlanta Hawks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "46 Luol Deng - Chicago Bulls",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "47 Andrei Kirilenko - Utah Jazz",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "48 Danny Granger - Indiana Pacers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "49 Rashad McCants - Minnesota Timberwolves",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "50 Emeka Okafor - Charlotte Bobcats",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "51 Kyle Korver - Utah Jazz",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "52 Jamario Moon - Toronto Raptors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "53 Nick Young - Washington Wizards",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "54 Rashard Lewis - Orlando Magic",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "55 Jason Kidd - Dallas Mavericks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "56 Josh Howard - Dallas Mavericks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "57 Desmond Mason - Oklahoma City Thunder",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "58 Andre Miller - Philadelphia 76ers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "59 Rafer Alston - Houston Rockets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "60 Baron Davis - Los Angeles Clippers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "61 Zydrunas Ilgauskas - Cleveland Cavaliers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "62 Marvin Williams - Atlanta Hawks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "63 Manu Ginobili - San Antonio Spurs",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "64 David West - New Orleans Hornets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "65 Rajon Rondo - Boston Celtics",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "66 Kenyon Martin - Denver Nuggets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "67 Josh Boone - New Jersey Nets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "68 Travis Outlaw - Portland Trail Blazers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "69 Andre Iguodala - Philadelphia 76ers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "70 Yi Jianlian - New Jersey Nets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "71 Jordan Farmar - Los Angeles Lakers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "72 Udonis Haslem - Miami Heat",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "73 Caron Butler - Washington Wizards",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "74 Craig Smith - Minnesota Timberwolves",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "75 Tayshaun Prince - Detroit Pistons",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "76 Rudy Gay - Memphis Grizzlies",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "77 Jermaine O'Neal - Toronto Raptors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "78 Devin Harris - New Jersey Nets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "79 Fabricio Oberto - San Antonio Spurs",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "80 Hedo Turkoglu - Orlando Magic",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "81 James Posey - New Orleans Hornets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "82 Corey Maggette - Golden State Warriors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "83 Ricky Davis - Los Angeles Clippers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "84 Grant Hill - Phoenix Suns",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "85 Eddie House - Boston Celtics",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "86 Jeff Green - Oklahoma City Thunder",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "87 Lamar Odom - Los Angeles Lakers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "88 Brandan Wright - Golden State Warriors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "89 Sean Williams - New Jersey Nets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "90 Drew Gooden - Chicago Bulls",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "91 Amare Stoudemire - Phoenix Suns",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "92 Charlie Villanueva - Milwaukee Bucks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "93 Ron Artest - Houston Rockets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "94 Derek Fisher - Los Angeles Lakers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "95 Willie Green - Philadelphia 76ers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "96 Kirk Hinrich - Chicago Bulls",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "97 Jameer Nelson - Orlando Magic",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "98 Al Harrington - Golden State Warriors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "99 Ronnie Brewer - Utah Jazz",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "100 Dwyane Wade - Miami Heat",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "101 Jamal Crawford - New York Knicks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "102 Ryan Gomes - Minnesota Timberwolves",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "103 Marcus Camby - Los Angeles Clippers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "104 Antawn Jamison - Washington Wizards",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "105 Cuttino Mobley - Los Angeles Clippers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "106 Tyson Chandler - New Orleans Hornets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "107 Al Horford - Atlanta Hawks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "108 Chris Wilcox - Oklahoma City Thunder",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "109 Gerald Wallace - Charlotte Bobcats",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "110 Andrew Bynum - Los Angeles Lakers111 Tracy McGrady - Houston Rockets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "112 Mo Williams - Cleveland Cavaliers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "113 Nate Robinson - New York Knicks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "114 Wally Szczerbiak - Cleveland Cavaliers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "115 Vince Carter - New Jersey Nets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "116 T.J. Ford - Indiana Pacers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "117 Kevin Martin - Sacramento Kings",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "118 Steve Blake - Portland Trail Blazers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "119 Anderson Varejao - Cleveland Cavaliers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "120 Mike Conley - Memphis Grizzlies",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "121 Chris Kaman - Los Angeles Clippers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "122 Louis Williams - Philadelphia 76ers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "123 Jason Richardson - Charlotte Bobcats",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "124 John Salmons - Sacramento Kings",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "125 Martell Webster - Portland Trail Blazers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "126 Kurt Thomas - San Antonio Spurs",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "127 Raja Bell - Phoenix Suns",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "128 Jason Terry - Dallas Mavericks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "129 Corey Brewer - Minnesota Timberwolves",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "130 Bruce Bowen - San Antonio Spurs",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "131 Glen Davis - Boston Celtics",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "132 Richard Hamilton - Detroit Pistons",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "133 Ben Wallace - Cleveland Cavaliers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "134 Chris Bosh - Toronto Raptors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "135 Beno Udrih - Sacramento Kings",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "136 Jarrett Jack - Indiana Pacers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "137 Stephen Jackson - Golden State Warriors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "138 Damien Wilkins - Oklahoma City Thunder",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "139 Jamaal Tinsley - Indiana Pacers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "140 Deron Williams - Utah Jazz",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "141 Andres Nocioni - Chicago Bulls",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "142 David Lee - New York Knicks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "143 Rodney Stuckey - Detroit Pistons",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "144 Luke Walton - Los Angeles Lakers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "145 Jerry Stackhouse - Dallas Mavericks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "146 Samuel Dalembert - Philadelphia 76ers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "147 Brandon Roy - Portland Trail Blazers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "148 Chauncey Billups - Detroit Pistons",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "149 Michael Finley - San Antonio Spurs",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "150 Leandro Barbosa - Phoenix Suns",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "151 Keith Bogans - Orlando Magic",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "152 Mike Bibby - Atlanta Hawks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "153 Troy Murphy - Indiana Pacers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "154 Eddy Curry - New York Knicks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "155 Anthony Parker - Toronto Raptors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "156 Kevin Durant - Oklahoma City Thunder",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "157 Larry Hughes - Chicago Bulls",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "158 Peja Stojakovic - New Orleans Hornets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "159 Shane Battier - Houston Rockets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "160 Kendrick Perkins - Boston Celtics",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "161 Mehmet Okur - Utah Jazz",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "162 Brendan Haywood - Washington Wizards",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "163 Monta Ellis - Golden State Warriors",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "164 J.R. Smith - Denver Nuggets",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "165 Greg Oden - Portland Trail Blazers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "166 John Stockton - Utah Jazz",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "167 Dennis Rodman - Chicago Bulls",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "168 Dominique Wilkins - Atlanta Hawks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "169 Larry Bird - Boston Celtics",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "170 Isiah Thomas - Detroit Pistons",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "171 Magic Johnson - Los Angeles Lakers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "172 Bill Russell - Boston Celtics",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "173 David Robinson - San Antonio Spurs",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "174 Jerry West - Los Angeles Lakers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "175 Micheal Ray Richardson - New York Knicks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "176 Jo Jo White - Boston Celtics",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "177 Pete Maravich - Atlanta Hawks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "178 Wilt Chamberlain - Philadelphia 76ers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "179 Patrick Ewing - New York Knicks",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "180 Julius Erving - Philadelphia 76ers",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "181 Derrick Rose - Chicago Bulls RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "182 Michael Beasley - Miami Heat RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "183 O.J. Mayo - Memphis Grizzlies RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "184 Russell Westbrook - Oklahoma City Thunder RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "185 Kevin Love - Minnesota Timberwolves RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "186 Danilo Gallinari - New York Knicks RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "187 Eric Gordon - Los Angeles Clippers RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "188 Joe Alexander - Milwaukee Bucks RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "189 D.J. Augustin - Charlotte Bobcats RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "190 Brook Lopez - New Jersey Nets RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "191 Jerryd Bayless - Portland Trail Blazers RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "192 Jason Thompson - Sacramento Kings RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "193 Anthony Randolph - Golden State Warriors RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "194 Robin Lopez - Phoenix Suns RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "195 Marreese Speights - Philadelphia 76ers RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "196 Roy Hibbert - Indiana Pacers RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "197 JaVale McGee - Washington Wizards RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "198 J.J. Hickson - Cleveland Cavaliers RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "199 Alexis Ajinca - Charlotte Bobcats RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "200 Ryan Anderson - New Jersey Nets RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "201 Courtney Lee - Orlando Magic RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "202 Kosta Koufos - Utah Jazz RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "203 Donte Greene - Sacramento Kings RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "204 George Hill - San Antonio Spurs RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "205 D.J. White - Oklahoma City Thunder RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "206 J.R. Giddens - Boston Celtics RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "207 Joey Dorsey - Houston Rockets RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "208 Mario Chalmers - Miami Heat RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "209 DeAndre Jordan - Los Angeles Clippers RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "210 Chris Douglas-Roberts - New Jersey Nets RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "211 Malik Hairston - San Antonio Spurs RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "212 Marc Gasol - Memphis Grizzlies RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "213 Kyle Weaver - Oklahoma City Thunder RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "214 Patrick Ewing Jr. - Sacramento Kings RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "215 Walter Sharpe - Detroit Pistons RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "216 Sonny Weems - Denver Nuggets RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "217 Trent Plaisted - Detroit Pistons RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "218 Nicolas Batum - Portland Trail Blazers RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "219 Brandon Rush - Indiana Pacers RC",
+        "images": [],
+        "completionTarget": 1
+      },
+      {
+        "text": "",
+        "subset": "220 Darrell Arthur - Memphis Grizzlies RC",
+        "images": [],
+        "completionTarget": 1
+      }
+    ],
     "freeImages": []
   },
   {
@@ -12539,7 +13896,7 @@ const collectionData = [
     "withImages": 114,
     "missing": 186,
     "createdAt": "2026-04-27T08:51:27.254Z",
-    "updatedAt": "2026-04-30T05:19:07.599Z",
+    "updatedAt": "2026-05-06T03:21:23.134Z",
     "checklist": [
       {
         "text": "",
@@ -14409,7 +15766,7 @@ const collectionData = [
             "url": "images/collection/037e75a269ef238f00d62a6502c2c3db_prizm_gold_203_1777380063629.png",
             "ownedBy": [],
             "number": "203",
-            "year": "",
+            "year": "2012",
             "cardKind": ""
           }
         ],
@@ -15266,7 +16623,7 @@ const collectionData = [
     "withImages": 17,
     "missing": 82,
     "createdAt": "2026-04-30T03:54:47.956Z",
-    "updatedAt": "2026-04-30T05:05:03.163Z",
+    "updatedAt": "2026-05-06T03:22:07.235Z",
     "checklist": [
       {
         "text": "",
@@ -15415,7 +16772,7 @@ const collectionData = [
     "withImages": 119,
     "missing": 808,
     "createdAt": "2026-04-30T06:47:19.310Z",
-    "updatedAt": "2026-04-30T10:31:40.284Z",
+    "updatedAt": "2026-05-03T08:47:26.749Z",
     "checklist": [
       {
         "text": "GDM-AD Adrian Dantley",
@@ -16966,7 +18323,7 @@ const collectionData = [
     "withImages": 0,
     "missing": 664,
     "createdAt": "2026-04-30T06:58:44.022Z",
-    "updatedAt": "2026-04-30T06:58:44.022Z",
+    "updatedAt": "2026-05-03T08:47:27.489Z",
     "checklist": [
       {
         "text": "1 Kobe Bryant - Los Angeles Lakers",
@@ -17423,37 +18780,9 @@ const collectionData = [
     "withImages": 7,
     "missing": 0,
     "createdAt": "2026-04-30T10:52:15.100Z",
-    "updatedAt": "2026-05-01T12:17:28.353Z",
+    "updatedAt": "2026-05-04T15:01:31.141Z",
     "checklist": [],
     "freeImages": [
-      {
-        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1777020270808_0.png",
-        "ownedBy": [],
-        "number": "",
-        "year": "2024",
-        "cardKind": ""
-      },
-      {
-        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1777020274474_1.png",
-        "ownedBy": [],
-        "number": "",
-        "year": "2022",
-        "cardKind": ""
-      },
-      {
-        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1777020276167_2.png",
-        "ownedBy": [],
-        "number": "",
-        "year": "2023",
-        "cardKind": ""
-      },
-      {
-        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1777020277082_3.png",
-        "ownedBy": [],
-        "number": "",
-        "year": "2021",
-        "cardKind": ""
-      },
       {
         "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1777020317259_0.png",
         "ownedBy": [],
@@ -17474,6 +18803,34 @@ const collectionData = [
         "number": "",
         "year": "2020",
         "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1777020277082_3.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2021",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1777020274474_1.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2022",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1777020276167_2.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2023",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1777020270808_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2024",
+        "cardKind": ""
       }
     ]
   },
@@ -17487,7 +18844,7 @@ const collectionData = [
     "withImages": 1,
     "missing": 0,
     "createdAt": "2026-04-30T10:52:15.100Z",
-    "updatedAt": "2026-04-30T10:52:15.100Z",
+    "updatedAt": "2026-05-03T08:47:28.968Z",
     "checklist": [
       {
         "text": "",
@@ -17587,112 +18944,4525 @@ const collectionData = [
     "_id": "98d3bbc169f33463005b2ef26fd74937",
     "name": "勒布朗 Prizm 金折",
     "description": "收录勒布朗·詹姆斯 Prizm Gold 金折题材卡，Prizm 代表性的金色折射与低编属性结合，是其现代折射卡收藏中的核心高端线。",
-    "hasSubset": true,
+    "hasSubset": false,
     "checklistComplete": true,
-    "completionTarget": 13,
-    "totalCards": 13,
-    "withImages": 13,
+    "completionTarget": 14,
+    "totalCards": 14,
+    "withImages": 14,
     "missing": 0,
     "createdAt": "2026-04-30T10:52:15.100Z",
-    "updatedAt": "2026-05-01T10:56:29.886Z",
+    "updatedAt": "2026-05-03T08:47:29.703Z",
+    "checklist": [],
+    "freeImages": [
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776683335277_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2012",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670309289_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2013",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670950916_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2016",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670938298_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2015",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670917269_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2014",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670971458_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2017",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670985474_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2018",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670997009_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2019",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671063917_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2022",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776683566799_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2021",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671038373_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2020",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776683567850_1.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2023",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671083172_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2024",
+        "cardKind": ""
+      },
+      {
+        "url": "images/collection/98d3bbc169f33463005b2ef26fd74937_top_1777725312447_0.png",
+        "ownedBy": [],
+        "number": "",
+        "year": "2024",
+        "cardKind": "Black"
+      }
+    ]
+  },
+  {
+    "_id": "9756e76169f4c381007e65fc31a7b492",
+    "name": "勒布朗 2016-17 Panini National Treasures Colossal Materials",
+    "description": "2016-17 Panini National Treasures Colossal Materials 勒布朗骑士大球衣图鉴，围绕 Base、Prime、Super Prime 三个低编版本展开，以大幅实物球衣窗口和 National Treasures 高端配置为核心，是勒布朗骑士时期材质卡收藏中辨识度很高的一支。",
+    "hasSubset": true,
+    "checklistComplete": true,
+    "totalCards": 29,
+    "withImages": 4,
+    "missing": 25,
+    "createdAt": "2026-05-01T15:15:12.860Z",
+    "updatedAt": "2026-05-04T06:44:27.777Z",
     "checklist": [
       {
-        "text": "",
-        "subset": "勒布朗 Prizm 金折",
+        "text": "Base",
+        "subset": "Colossal Materials",
         "images": [
           {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776683335277_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2012",
+            "url": "images/collection/9756e76169f4c381007e65fc31a7b492_0_1777648809120_0.png",
+            "ownedBy": [
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
+            ],
+            "number": "28/30",
+            "year": "",
             "cardKind": ""
           },
           {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670309289_0.png",
+            "url": "images/collection/9756e76169f4c381007e65fc31a7b492_0_1777648918274_0.png",
             "ownedBy": [],
-            "number": "",
-            "year": "2013",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670950916_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2016",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670938298_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2015",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670917269_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2014",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670971458_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2017",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670985474_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2018",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776670997009_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2019",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671063917_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2022",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776683566799_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2021",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671038373_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2020",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776683567850_1.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2023",
-            "cardKind": ""
-          },
-          {
-            "url": "images/collection/6cd8d0ff69e5cec10049bb0f6a07306f_0_1776671083172_0.png",
-            "ownedBy": [],
-            "number": "",
-            "year": "2024",
+            "number": "1/30",
+            "year": "",
             "cardKind": ""
           }
         ],
-        "completionTarget": 13
+        "printRun": 30,
+        "completionTarget": 1
+      },
+      {
+        "text": "Prime",
+        "subset": "Colossal Materials",
+        "images": [
+          {
+            "url": "images/collection/9756e76169f4c381007e65fc31a7b492_1_1777648944975_0.png",
+            "ownedBy": [],
+            "number": "3/25",
+            "year": "",
+            "cardKind": ""
+          },
+          {
+            "url": "images/collection/9756e76169f4c381007e65fc31a7b492_1_1777648957248_0.png",
+            "ownedBy": [],
+            "number": "18/25",
+            "year": "",
+            "cardKind": ""
+          }
+        ],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "Super Prime",
+        "subset": "Colossal Materials",
+        "images": [
+          {
+            "url": "images/collection/9756e76169f4c381007e65fc31a7b492_2_1777648979335_0.png",
+            "ownedBy": [],
+            "number": "3/3",
+            "year": "",
+            "cardKind": ""
+          }
+        ],
+        "printRun": 3,
+        "completionTarget": 3
+      }
+    ],
+    "freeImages": []
+  },
+  {
+    "_id": "148caf5069f9bee401081e0212a6618a",
+    "name": "2012-13 Panini Flawless Patches",
+    "description": "2012-13 Panini Flawless Patches patch 实物系列，包含 Base、Ruby、Gold、Emerald、Platinum 1/1 多个平行版本，收录 LeBron James、Kevin Durant、Anthony Davis、Kyrie Irving、Damian Lillard 等球星及多位名宿。",
+    "hasSubset": true,
+    "checklistComplete": true,
+    "totalCards": 5211,
+    "withImages": 3,
+    "missing": 5208,
+    "createdAt": "2026-05-05T09:56:52.330Z",
+    "updatedAt": "2026-05-06T03:21:10.396Z",
+    "checklist": [
+      {
+        "text": "1 Russell Westbrook - Oklahoma City Thunder",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "2 Amar'e Stoudemire - New York Knicks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "3 Andrei Kirilenko - Minnesota Timberwolves",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "4 David Lee - Golden State Warriors",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "5 David West - Indiana Pacers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "6 Goran Dragic - Phoenix Suns",
+        "subset": "Base",
+        "images": [],
+        "printRun": 14,
+        "completionTarget": 14
+      },
+      {
+        "text": "7 Grant Hill - Los Angeles Clippers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "8 Alex English - Dallas Mavericks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "9 LaMarcus Aldridge - Portland Trail Blazers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "10 Roy Hibbert - Indiana Pacers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "11 Ricky Rubio - Minnesota Timberwolves",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "12 Jason Terry - Boston Celtics",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "14 Reggie Lewis - Boston Celtics",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "15 DeMarcus Cousins - Sacramento Kings",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "16 Glen Davis - Orlando Magic",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "17 Greg Monroe - Detroit Pistons",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "18 Kevin Love - Minnesota Timberwolves",
+        "subset": "Base",
+        "images": [
+          {
+            "url": "images/collection/148caf5069f9bee401081e0212a6618a_16_1777975261180_0.png",
+            "ownedBy": [
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
+            ],
+            "number": "25/25",
+            "year": "2012-13",
+            "cardKind": ""
+          }
+        ],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "19 Magic Johnson - Los Angeles Lakers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "20 Tim Duncan - San Antonio Spurs",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "21 Ray Allen - Miami Heat",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "22 Andre Iguodala - Denver Nuggets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "23 Blake Griffin - Los Angeles Clippers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "24 John Wall - Washington Wizards",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "25 Derrick Favors - Utah Jazz",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "26 Eric Gordon - New Orleans Pelicans",
+        "subset": "Base",
+        "images": [],
+        "printRun": 21,
+        "completionTarget": 21
+      },
+      {
+        "text": "27 James Harden - Houston Rockets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 21,
+        "completionTarget": 21
+      },
+      {
+        "text": "28 Kevin Garnett - Boston Celtics",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "29 Marc Gasol - Memphis Grizzlies",
+        "subset": "Base",
+        "images": [],
+        "printRun": 12,
+        "completionTarget": 12
+      },
+      {
+        "text": "30 Tony Parker - San Antonio Spurs",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "31 Rajon Rondo - Boston Celtics",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "32 Al Jefferson - Utah Jazz",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "33 Brandon Jennings - Milwaukee Bucks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "34 Chris Paul - Los Angeles Clippers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 17,
+        "completionTarget": 17
+      },
+      {
+        "text": "35 Allen Iverson - Philadelphia 76ers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 18,
+        "completionTarget": 18
+      },
+      {
+        "text": "36 Dwyane Wade - Miami Heat",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "37 Jeremy Lin - Houston Rockets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "38 Kevin Durant - Oklahoma City Thunder",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "39 Marcin Gortat - Phoenix Suns",
+        "subset": "Base",
+        "images": [],
+        "printRun": 18,
+        "completionTarget": 18
+      },
+      {
+        "text": "40 Tyreke Evans - Sacramento Kings",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "41 Paul Pierce - Boston Celtics",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "42 Manu Ginobili - San Antonio Spurs",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "43 Carlos Boozer - Chicago Bulls",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "44 Carmelo Anthony - New York Knicks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "45 Dirk Nowitzki - Dallas Mavericks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "46 Dwight Howard - Los Angeles Lakers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "47 Joakim Noah - Chicago Bulls",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "48 Josh Smith - Atlanta Hawks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "49 O.J. Mayo - Dallas Mavericks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "50 LeBron James - Miami Heat",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "51 Alonzo Mourning - Charlotte Hornets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "52 Karl Malone - Utah Jazz",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "53 Wilt Chamberlain - Los Angeles Lakers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "54 Shaquille O'Neal - Orlando Magic",
+        "subset": "Base",
+        "images": [],
+        "printRun": 22,
+        "completionTarget": 22
+      },
+      {
+        "text": "55 David Robinson - San Antonio Spurs",
+        "subset": "Base",
+        "images": [],
+        "printRun": 24,
+        "completionTarget": 24
+      },
+      {
+        "text": "56 Kevin McHale - Boston Celtics",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "57 Jason Williams - Orlando Magic",
+        "subset": "Base",
+        "images": [],
+        "printRun": 19,
+        "completionTarget": 19
+      },
+      {
+        "text": "58 Manute Bol - Philadelphia 76ers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "59 Fat Lever - Denver Nuggets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 24,
+        "completionTarget": 24
+      },
+      {
+        "text": "60 Larry Bird - Boston Celtics",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "61 Gus Williams - Washington Bullets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "62 John Stockton - Utah Jazz",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "64 Lou Hudson - Atlanta Hawks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 23,
+        "completionTarget": 23
+      },
+      {
+        "text": "65 Pete Maravich - Boston Celtics",
+        "subset": "Base",
+        "images": [],
+        "printRun": 9,
+        "completionTarget": 9
+      },
+      {
+        "text": "67 Hakeem Olajuwon - Houston Rockets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "69 Rasheed Wallace - New York Knicks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 17,
+        "completionTarget": 17
+      },
+      {
+        "text": "70 Jamaal Wilkes - Los Angeles Lakers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "71 Hal Greer - Philadelphia 76ers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "73 Patrick Ewing - New York Knicks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "74 Jack Sikma - Milwaukee Bucks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 14,
+        "completionTarget": 14
+      },
+      {
+        "text": "75 Isiah Thomas - Detroit Pistons",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "1 Rookie Patches - Harrison Barnes",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "2 Rookie Patches - Kenneth Faried",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "3 Rookie Patches - Chandler Parsons",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "4 Rookie Patches - Damian Lillard",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "5 Rookie Patches - Klay Thompson",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "6 Rookie Patches - Andre Drummond",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "7 Rookie Patches - Jared Sullinger",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "8 Rookie Patches - Anthony Davis",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "9 Rookie Patches - Jonas Valanciunas",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "10 Rookie Patches - Michael Kidd-Gilchrist",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "11 Rookie Patches - Isaiah Thomas",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "12 Rookie Patches - Austin Rivers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "13 Rookie Patches - Kawhi Leonard",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "14 Rookie Patches - John Henson",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "15 Rookie Patches - Iman Shumpert",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "16 Rookie Patches - Bradley Beal",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "17 Rookie Patches - Kemba Walker",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "18 Rookie Patches - Kyrie Irving",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "19 Rookie Patches - Dion Waiters",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "20 Rookie Patches - Brandon Knight",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "21 Rookie Patches - Thomas Robinson",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "22 Rookie Patches - Tristan Thompson",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "23 Rookie Patches - Jimmer Fredette",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "24 Rookie Patches - Kyrie Irving",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "25 Rookie Patches - Damian Lillard",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "1 Russell Westbrook - Oklahoma City Thunder",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "2 Amar'e Stoudemire - New York Knicks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "3 Andrei Kirilenko - Minnesota Timberwolves",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "4 David Lee - Golden State Warriors",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "5 David West - Indiana Pacers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "6 Goran Dragic - Phoenix Suns",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 12,
+        "completionTarget": 12
+      },
+      {
+        "text": "7 Grant Hill - Los Angeles Clippers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "8 Alex English - Dallas Mavericks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "9 LaMarcus Aldridge - Portland Trail Blazers",
+        "subset": "Ruby",
+        "images": [
+          {
+            "url": "images/collection/148caf5069f9bee401081e0212a6618a_103_1777987883461_0.png",
+            "ownedBy": [
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
+            ],
+            "number": "13/15",
+            "year": "2012-13",
+            "cardKind": ""
+          }
+        ],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "10 Roy Hibbert - Indiana Pacers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "11 Ricky Rubio - Minnesota Timberwolves",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "12 Jason Terry - Boston Celtics",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "13 Moses Malone - Atlanta Hawks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 11,
+        "completionTarget": 11
+      },
+      {
+        "text": "14 Reggie Lewis - Boston Celtics",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "15 DeMarcus Cousins - Sacramento Kings",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "16 Glen Davis - Orlando Magic",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "17 Greg Monroe - Detroit Pistons",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "18 Kevin Love - Minnesota Timberwolves",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "19 Magic Johnson - Los Angeles Lakers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "20 Tim Duncan - San Antonio Spurs",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "21 Ray Allen - Miami Heat",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "22 Andre Iguodala - Denver Nuggets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "23 Blake Griffin - Los Angeles Clippers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "24 John Wall - Washington Wizards",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "25 Derrick Favors - Utah Jazz",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "26 Eric Gordon - New Orleans Pelicans",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "27 James Harden - Houston Rockets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "28 Kevin Garnett - Boston Celtics",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "29 Marc Gasol - Memphis Grizzlies",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "30 Tony Parker - San Antonio Spurs",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "31 Rajon Rondo - Boston Celtics",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "32 Al Jefferson - Utah Jazz",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "33 Brandon Jennings - Milwaukee Bucks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "34 Chris Paul - Los Angeles Clippers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "35 Allen Iverson - Philadelphia 76ers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "36 Dwyane Wade - Miami Heat",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "37 Jeremy Lin - Houston Rockets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "38 Kevin Durant - Oklahoma City Thunder",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "39 Marcin Gortat - Phoenix Suns",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "40 Tyreke Evans - Sacramento Kings",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "41 Paul Pierce - Boston Celtics",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "42 Manu Ginobili - San Antonio Spurs",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "43 Carlos Boozer - Chicago Bulls",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "44 Carmelo Anthony - New York Knicks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "45 Dirk Nowitzki - Dallas Mavericks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "46 Dwight Howard - Los Angeles Lakers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "47 Joakim Noah - Chicago Bulls",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "48 Josh Smith - Atlanta Hawks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "49 O.J. Mayo - Dallas Mavericks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "50 LeBron James - Miami Heat",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "51 Alonzo Mourning - Charlotte Hornets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 12,
+        "completionTarget": 12
+      },
+      {
+        "text": "52 Karl Malone - Utah Jazz",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "53 Wilt Chamberlain - Los Angeles Lakers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 8,
+        "completionTarget": 8
+      },
+      {
+        "text": "54 Shaquille O'Neal - Orlando Magic",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "55 David Robinson - San Antonio Spurs",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "56 Kevin McHale - Boston Celtics",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "57 Jason Williams - Orlando Magic",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 12,
+        "completionTarget": 12
+      },
+      {
+        "text": "58 Manute Bol - Philadelphia 76ers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "59 Fat Lever - Denver Nuggets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "60 Larry Bird - Boston Celtics",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "61 Gus Williams - Washington Bullets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "62 John Stockton - Utah Jazz",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "63 Gail Goodrich - Phoenix Suns",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 14,
+        "completionTarget": 14
+      },
+      {
+        "text": "64 Lou Hudson - Atlanta Hawks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "65 Pete Maravich - Boston Celtics",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "67 Hakeem Olajuwon - Houston Rockets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "69 Rasheed Wallace - New York Knicks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "70 Jamaal Wilkes - Los Angeles Lakers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "71 Hal Greer - Philadelphia 76ers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "72 Nate Thurmond - Golden State Warriors",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 11,
+        "completionTarget": 11
+      },
+      {
+        "text": "73 Patrick Ewing - New York Knicks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "74 Jack Sikma - Milwaukee Bucks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 12,
+        "completionTarget": 12
+      },
+      {
+        "text": "75 Isiah Thomas - Detroit Pistons",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "1 Rookie Patches - Harrison Barnes",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "2 Rookie Patches - Kenneth Faried",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "3 Rookie Patches - Chandler Parsons",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "4 Rookie Patches - Damian Lillard",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "5 Rookie Patches - Klay Thompson",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "6 Rookie Patches - Andre Drummond",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "7 Rookie Patches - Jared Sullinger",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "8 Rookie Patches - Anthony Davis",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "9 Rookie Patches - Jonas Valanciunas",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "10 Rookie Patches - Michael Kidd-Gilchrist",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "11 Rookie Patches - Isaiah Thomas",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "12 Rookie Patches - Austin Rivers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "13 Rookie Patches - Kawhi Leonard",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "14 Rookie Patches - John Henson",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "15 Rookie Patches - Iman Shumpert",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "16 Rookie Patches - Bradley Beal",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "17 Rookie Patches - Kemba Walker",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "18 Rookie Patches - Kyrie Irving",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "19 Rookie Patches - Dion Waiters",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "20 Rookie Patches - Brandon Knight",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "21 Rookie Patches - Thomas Robinson",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "22 Rookie Patches - Tristan Thompson",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "23 Rookie Patches - Jimmer Fredette",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "24 Rookie Patches - Kyrie Irving",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "25 Rookie Patches - Damian Lillard",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "1 Russell Westbrook - Oklahoma City Thunder",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "2 Amar'e Stoudemire - New York Knicks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "3 Andrei Kirilenko - Minnesota Timberwolves",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "4 David Lee - Golden State Warriors",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "5 David West - Indiana Pacers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "6 Goran Dragic - Phoenix Suns",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "7 Grant Hill - Los Angeles Clippers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "8 Alex English - Dallas Mavericks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "9 LaMarcus Aldridge - Portland Trail Blazers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "10 Roy Hibbert - Indiana Pacers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "11 Ricky Rubio - Minnesota Timberwolves",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "12 Jason Terry - Boston Celtics",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "13 Moses Malone - Atlanta Hawks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "14 Reggie Lewis - Boston Celtics",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "15 DeMarcus Cousins - Sacramento Kings",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "16 Glen Davis - Orlando Magic",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "17 Greg Monroe - Detroit Pistons",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "18 Kevin Love - Minnesota Timberwolves",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "19 Magic Johnson - Los Angeles Lakers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "20 Tim Duncan - San Antonio Spurs",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "21 Ray Allen - Miami Heat",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "22 Andre Iguodala - Denver Nuggets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "23 Blake Griffin - Los Angeles Clippers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "24 John Wall - Washington Wizards",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "25 Derrick Favors - Utah Jazz",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "26 Eric Gordon - New Orleans Pelicans",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "27 James Harden - Houston Rockets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "28 Kevin Garnett - Boston Celtics",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "29 Marc Gasol - Memphis Grizzlies",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "30 Tony Parker - San Antonio Spurs",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "31 Rajon Rondo - Boston Celtics",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "32 Al Jefferson - Utah Jazz",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "33 Brandon Jennings - Milwaukee Bucks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "34 Chris Paul - Los Angeles Clippers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "35 Allen Iverson - Philadelphia 76ers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "36 Dwyane Wade - Miami Heat",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "37 Jeremy Lin - Houston Rockets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "38 Kevin Durant - Oklahoma City Thunder",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "39 Marcin Gortat - Phoenix Suns",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 8,
+        "completionTarget": 8
+      },
+      {
+        "text": "40 Tyreke Evans - Sacramento Kings",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "41 Paul Pierce - Boston Celtics",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "42 Manu Ginobili - San Antonio Spurs",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "43 Carlos Boozer - Chicago Bulls",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "44 Carmelo Anthony - New York Knicks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "45 Dirk Nowitzki - Dallas Mavericks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "46 Dwight Howard - Los Angeles Lakers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "47 Joakim Noah - Chicago Bulls",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "48 Josh Smith - Atlanta Hawks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "49 O.J. Mayo - Dallas Mavericks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "50 LeBron James - Miami Heat",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "51 Alonzo Mourning - Charlotte Hornets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "52 Karl Malone - Utah Jazz",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "53 Wilt Chamberlain - Los Angeles Lakers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "54 Shaquille O'Neal - Orlando Magic",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "55 David Robinson - San Antonio Spurs",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "56 Kevin McHale - Boston Celtics",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "57 Jason Williams - Orlando Magic",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "58 Manute Bol - Philadelphia 76ers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "59 Fat Lever - Denver Nuggets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "60 Larry Bird - Boston Celtics",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "61 Gus Williams - Washington Bullets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "62 John Stockton - Utah Jazz",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "63 Gail Goodrich - Phoenix Suns",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "64 Lou Hudson - Atlanta Hawks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "65 Pete Maravich - Boston Celtics",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 3,
+        "completionTarget": 3
+      },
+      {
+        "text": "66 James Worthy - Los Angeles Lakers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "67 Hakeem Olajuwon - Houston Rockets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "68 Moses Malone - Philadelphia 76ers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "69 Rasheed Wallace - New York Knicks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "70 Jamaal Wilkes - Los Angeles Lakers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "71 Hal Greer - Philadelphia 76ers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 8,
+        "completionTarget": 8
+      },
+      {
+        "text": "72 Nate Thurmond - Golden State Warriors",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "73 Patrick Ewing - New York Knicks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "74 Jack Sikma - Milwaukee Bucks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 8,
+        "completionTarget": 8
+      },
+      {
+        "text": "75 Isiah Thomas - Detroit Pistons",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "1 Rookie Patches - Harrison Barnes",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "2 Rookie Patches - Kenneth Faried",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "3 Rookie Patches - Chandler Parsons",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "4 Rookie Patches - Damian Lillard",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "5 Rookie Patches - Klay Thompson",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "6 Rookie Patches - Andre Drummond",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "7 Rookie Patches - Jared Sullinger",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "8 Rookie Patches - Anthony Davis",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "9 Rookie Patches - Jonas Valanciunas",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "10 Rookie Patches - Michael Kidd-Gilchrist",
+        "subset": "Gold",
+        "images": [
+          {
+            "url": "images/collection/148caf5069f9bee401081e0212a6618a_277_1777988071301_0.png",
+            "ownedBy": [
+              "oaQG05Ax1I_QRhOkD4lwqOXEucV8"
+            ],
+            "number": "7/10",
+            "year": "2012-13",
+            "cardKind": ""
+          }
+        ],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "11 Rookie Patches - Isaiah Thomas",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "12 Rookie Patches - Austin Rivers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "13 Rookie Patches - Kawhi Leonard",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "14 Rookie Patches - John Henson",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "15 Rookie Patches - Iman Shumpert",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "16 Rookie Patches - Bradley Beal",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "17 Rookie Patches - Kemba Walker",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "18 Rookie Patches - Kyrie Irving",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "19 Rookie Patches - Dion Waiters",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "20 Rookie Patches - Brandon Knight",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "21 Rookie Patches - Thomas Robinson",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "22 Rookie Patches - Tristan Thompson",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "23 Rookie Patches - Jimmer Fredette",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "24 Rookie Patches - Kyrie Irving",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "25 Rookie Patches - Damian Lillard",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "1 Russell Westbrook - Oklahoma City Thunder",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "2 Amar'e Stoudemire - New York Knicks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "3 Andrei Kirilenko - Minnesota Timberwolves",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "4 David Lee - Golden State Warriors",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "5 David West - Indiana Pacers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "6 Goran Dragic - Phoenix Suns",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "7 Grant Hill - Los Angeles Clippers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "8 Alex English - Dallas Mavericks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "9 LaMarcus Aldridge - Portland Trail Blazers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "10 Roy Hibbert - Indiana Pacers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "11 Ricky Rubio - Minnesota Timberwolves",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "12 Jason Terry - Boston Celtics",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "13 Moses Malone - Atlanta Hawks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "14 Reggie Lewis - Boston Celtics",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "15 DeMarcus Cousins - Sacramento Kings",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "16 Glen Davis - Orlando Magic",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "17 Greg Monroe - Detroit Pistons",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "18 Kevin Love - Minnesota Timberwolves",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "19 Magic Johnson - Los Angeles Lakers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "20 Tim Duncan - San Antonio Spurs",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "21 Ray Allen - Miami Heat",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "22 Andre Iguodala - Denver Nuggets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "23 Blake Griffin - Los Angeles Clippers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "24 John Wall - Washington Wizards",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "25 Derrick Favors - Utah Jazz",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "26 Eric Gordon - New Orleans Pelicans",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "27 James Harden - Houston Rockets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "28 Kevin Garnett - Boston Celtics",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "29 Marc Gasol - Memphis Grizzlies",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "30 Tony Parker - San Antonio Spurs",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "31 Rajon Rondo - Boston Celtics",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "32 Al Jefferson - Utah Jazz",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "33 Brandon Jennings - Milwaukee Bucks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "34 Chris Paul - Los Angeles Clippers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "35 Allen Iverson - Philadelphia 76ers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "36 Dwyane Wade - Miami Heat",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "37 Jeremy Lin - Houston Rockets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "38 Kevin Durant - Oklahoma City Thunder",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "39 Marcin Gortat - Phoenix Suns",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "40 Tyreke Evans - Sacramento Kings",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "41 Paul Pierce - Boston Celtics",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "42 Manu Ginobili - San Antonio Spurs",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "43 Carlos Boozer - Chicago Bulls",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "44 Carmelo Anthony - New York Knicks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "45 Dirk Nowitzki - Dallas Mavericks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "46 Dwight Howard - Los Angeles Lakers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "47 Joakim Noah - Chicago Bulls",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "48 Josh Smith - Atlanta Hawks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "49 O.J. Mayo - Dallas Mavericks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "50 LeBron James - Miami Heat",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "51 Alonzo Mourning - Charlotte Hornets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "52 Karl Malone - Utah Jazz",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "53 Wilt Chamberlain - Los Angeles Lakers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 2,
+        "completionTarget": 2
+      },
+      {
+        "text": "54 Shaquille O'Neal - Orlando Magic",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 4,
+        "completionTarget": 4
+      },
+      {
+        "text": "55 David Robinson - San Antonio Spurs",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "56 Kevin McHale - Boston Celtics",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "57 Jason Williams - Orlando Magic",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "58 Manute Bol - Philadelphia 76ers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "59 Fat Lever - Denver Nuggets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "60 Larry Bird - Boston Celtics",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "61 Gus Williams - Washington Bullets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "62 John Stockton - Utah Jazz",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "63 Gail Goodrich - Phoenix Suns",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "64 Lou Hudson - Atlanta Hawks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "65 Pete Maravich - Boston Celtics",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 2,
+        "completionTarget": 2
+      },
+      {
+        "text": "66 James Worthy - Los Angeles Lakers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "67 Hakeem Olajuwon - Houston Rockets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "68 Moses Malone - Philadelphia 76ers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "69 Rasheed Wallace - New York Knicks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "70 Jamaal Wilkes - Los Angeles Lakers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "71 Hal Greer - Philadelphia 76ers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 3,
+        "completionTarget": 3
+      },
+      {
+        "text": "72 Nate Thurmond - Golden State Warriors",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "73 Patrick Ewing - New York Knicks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "74 Jack Sikma - Milwaukee Bucks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 3,
+        "completionTarget": 3
+      },
+      {
+        "text": "75 Isiah Thomas - Detroit Pistons",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "1 Rookie Patches - Harrison Barnes",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "2 Rookie Patches - Kenneth Faried",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "3 Rookie Patches - Chandler Parsons",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "4 Rookie Patches - Damian Lillard",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "5 Rookie Patches - Klay Thompson",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "6 Rookie Patches - Andre Drummond",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "7 Rookie Patches - Jared Sullinger",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "8 Rookie Patches - Anthony Davis",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "9 Rookie Patches - Jonas Valanciunas",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "10 Rookie Patches - Michael Kidd-Gilchrist",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "11 Rookie Patches - Isaiah Thomas",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "12 Rookie Patches - Austin Rivers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "13 Rookie Patches - Kawhi Leonard",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "14 Rookie Patches - John Henson",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "15 Rookie Patches - Iman Shumpert",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "16 Rookie Patches - Bradley Beal",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "17 Rookie Patches - Kemba Walker",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "18 Rookie Patches - Kyrie Irving",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "19 Rookie Patches - Dion Waiters",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "20 Rookie Patches - Brandon Knight",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "21 Rookie Patches - Thomas Robinson",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "22 Rookie Patches - Tristan Thompson",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "23 Rookie Patches - Jimmer Fredette",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "24 Rookie Patches - Kyrie Irving",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "25 Rookie Patches - Damian Lillard",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "1 Russell Westbrook - Oklahoma City Thunder",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "2 Amar'e Stoudemire - New York Knicks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "3 Andrei Kirilenko - Minnesota Timberwolves",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "4 David Lee - Golden State Warriors",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "5 David West - Indiana Pacers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "6 Goran Dragic - Phoenix Suns",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "7 Grant Hill - Los Angeles Clippers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "8 Alex English - Dallas Mavericks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "9 LaMarcus Aldridge - Portland Trail Blazers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "10 Roy Hibbert - Indiana Pacers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "11 Ricky Rubio - Minnesota Timberwolves",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "12 Jason Terry - Boston Celtics",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "13 Moses Malone - Atlanta Hawks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "14 Reggie Lewis - Boston Celtics",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "15 DeMarcus Cousins - Sacramento Kings",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "16 Glen Davis - Orlando Magic",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "17 Greg Monroe - Detroit Pistons",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "18 Kevin Love - Minnesota Timberwolves",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "19 Magic Johnson - Los Angeles Lakers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "20 Tim Duncan - San Antonio Spurs",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "21 Ray Allen - Miami Heat",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "22 Andre Iguodala - Denver Nuggets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "23 Blake Griffin - Los Angeles Clippers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "24 John Wall - Washington Wizards",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "25 Derrick Favors - Utah Jazz",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "26 Eric Gordon - New Orleans Pelicans",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "27 James Harden - Houston Rockets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "28 Kevin Garnett - Boston Celtics",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "29 Marc Gasol - Memphis Grizzlies",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "30 Tony Parker - San Antonio Spurs",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "31 Rajon Rondo - Boston Celtics",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "32 Al Jefferson - Utah Jazz",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "33 Brandon Jennings - Milwaukee Bucks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "34 Chris Paul - Los Angeles Clippers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "35 Allen Iverson - Philadelphia 76ers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "36 Dwyane Wade - Miami Heat",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "37 Jeremy Lin - Houston Rockets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "38 Kevin Durant - Oklahoma City Thunder",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "39 Marcin Gortat - Phoenix Suns",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "40 Tyreke Evans - Sacramento Kings",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "41 Paul Pierce - Boston Celtics",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "42 Manu Ginobili - San Antonio Spurs",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "43 Carlos Boozer - Chicago Bulls",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "44 Carmelo Anthony - New York Knicks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "45 Dirk Nowitzki - Dallas Mavericks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "46 Dwight Howard - Los Angeles Lakers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "47 Joakim Noah - Chicago Bulls",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "48 Josh Smith - Atlanta Hawks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "49 O.J. Mayo - Dallas Mavericks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "50 LeBron James - Miami Heat",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "51 Alonzo Mourning - Charlotte Hornets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "52 Karl Malone - Utah Jazz",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "53 Wilt Chamberlain - Los Angeles Lakers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "54 Shaquille O'Neal - Orlando Magic",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "55 David Robinson - San Antonio Spurs",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "56 Kevin McHale - Boston Celtics",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "57 Jason Williams - Orlando Magic",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "58 Manute Bol - Philadelphia 76ers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "59 Fat Lever - Denver Nuggets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "60 Larry Bird - Boston Celtics",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "61 Gus Williams - Washington Bullets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "62 John Stockton - Utah Jazz",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "63 Gail Goodrich - Phoenix Suns",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "64 Lou Hudson - Atlanta Hawks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "65 Pete Maravich - Boston Celtics",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "66 James Worthy - Los Angeles Lakers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "67 Hakeem Olajuwon - Houston Rockets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "68 Moses Malone - Philadelphia 76ers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "69 Rasheed Wallace - New York Knicks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "70 Jamaal Wilkes - Los Angeles Lakers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "71 Hal Greer - Philadelphia 76ers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "72 Nate Thurmond - Golden State Warriors",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "73 Patrick Ewing - New York Knicks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "74 Jack Sikma - Milwaukee Bucks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "75 Isiah Thomas - Detroit Pistons",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "1 Rookie Patches - Harrison Barnes",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "2 Rookie Patches - Kenneth Faried",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "3 Rookie Patches - Chandler Parsons",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "4 Rookie Patches - Damian Lillard",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "5 Rookie Patches - Klay Thompson",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "6 Rookie Patches - Andre Drummond",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "7 Rookie Patches - Jared Sullinger",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "8 Rookie Patches - Anthony Davis",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "9 Rookie Patches - Jonas Valanciunas",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "10 Rookie Patches - Michael Kidd-Gilchrist",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "11 Rookie Patches - Isaiah Thomas",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "12 Rookie Patches - Austin Rivers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "13 Rookie Patches - Kawhi Leonard",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "14 Rookie Patches - John Henson",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "15 Rookie Patches - Iman Shumpert",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "16 Rookie Patches - Bradley Beal",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "17 Rookie Patches - Kemba Walker",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "18 Rookie Patches - Kyrie Irving",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "19 Rookie Patches - Dion Waiters",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "20 Rookie Patches - Brandon Knight",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "21 Rookie Patches - Thomas Robinson",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "22 Rookie Patches - Tristan Thompson",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "23 Rookie Patches - Jimmer Fredette",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "24 Rookie Patches - Kyrie Irving",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "25 Rookie Patches - Damian Lillard",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      }
+    ],
+    "freeImages": []
+  },
+  {
+    "_id": "98d3bbc169f9c028010aadc65aa2d164",
+    "name": "2012-13 Panini Flawless Greats Dual Patches Autographs",
+    "description": "2012-13 Panini Flawless Greats Dual Patches Autographs 高端名宿双 Patch 签字系列，包含 Base、Ruby、Gold、Emerald、Platinum 1/1 多个平行版本，收录 Kobe Bryant、Kareem Abdul-Jabbar、Julius Erving、Larry Bird、Shaquille O’Neal 等球星与名宿。",
+    "hasSubset": true,
+    "checklistComplete": true,
+    "totalCards": 1204,
+    "withImages": 0,
+    "missing": 1204,
+    "createdAt": "2026-05-05T10:02:15.882Z",
+    "updatedAt": "2026-05-05T10:02:15.882Z",
+    "checklist": [
+      {
+        "text": "1 Kobe Bryant - Los Angeles Lakers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "2 Kareem Abdul-Jabbar - Los Angeles Lakers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "3 Julius Erving - Philadelphia 76ers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "4 Grant Hill - Detroit Pistons",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "5 David Robinson - San Antonio Spurs",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "6 Shaquille O'Neal - Los Angeles Lakers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "8 Danny Manning - Los Angeles Clippers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "9 Scottie Pippen - Chicago Bulls",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "10 Grant Hill - Los Angeles Clippers",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "11 John Stockton - Utah Jazz",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "13 Artis Gilmore - San Antonio Spurs",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "14 Clyde Drexler - Houston Rockets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "15 Larry Bird - Boston Celtics",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "16 Mitch Richmond - Sacramento Kings",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "17 Anfernee Hardaway - Orlando Magic",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "18 Ralph Sampson - Houston Rockets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "19 Robert Parish - Boston Celtics",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "20 Larry Johnson - Charlotte Hornets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "21 World B. Free - Golden State Warriors",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "22 Calvin Murphy - Houston Rockets",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "23 Bill Laimbeer - Detroit Pistons",
+        "subset": "Base",
+        "images": [],
+        "printRun": 20,
+        "completionTarget": 20
+      },
+      {
+        "text": "24 Paul Westphal - New York Knicks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 25,
+        "completionTarget": 25
+      },
+      {
+        "text": "25 Vince Carter - Dallas Mavericks",
+        "subset": "Base",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "1 Kobe Bryant - Los Angeles Lakers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "2 Kareem Abdul-Jabbar - Los Angeles Lakers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "3 Julius Erving - Philadelphia 76ers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "4 Grant Hill - Detroit Pistons",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "5 David Robinson - San Antonio Spurs",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "6 Shaquille O'Neal - Los Angeles Lakers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "8 Danny Manning - Los Angeles Clippers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "9 Scottie Pippen - Chicago Bulls",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "10 Grant Hill - Los Angeles Clippers",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "11 John Stockton - Utah Jazz",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "13 Artis Gilmore - San Antonio Spurs",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "14 Clyde Drexler - Houston Rockets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "15 Larry Bird - Boston Celtics",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "16 Mitch Richmond - Sacramento Kings",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "17 Anfernee Hardaway - Orlando Magic",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "18 Ralph Sampson - Houston Rockets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "19 Robert Parish - Boston Celtics",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "20 Larry Johnson - Charlotte Hornets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "21 World B. Free - Golden State Warriors",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "22 Calvin Murphy - Houston Rockets",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "23 Bill Laimbeer - Detroit Pistons",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "24 Paul Westphal - New York Knicks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 15,
+        "completionTarget": 15
+      },
+      {
+        "text": "25 Vince Carter - Dallas Mavericks",
+        "subset": "Ruby",
+        "images": [],
+        "printRun": 12,
+        "completionTarget": 12
+      },
+      {
+        "text": "1 Kobe Bryant - Los Angeles Lakers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "2 Kareem Abdul-Jabbar - Los Angeles Lakers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "3 Julius Erving - Philadelphia 76ers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "4 Grant Hill - Detroit Pistons",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "5 David Robinson - San Antonio Spurs",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "6 Shaquille O'Neal - Los Angeles Lakers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "7 Tom Chambers - Utah Jazz",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "8 Danny Manning - Los Angeles Clippers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "9 Scottie Pippen - Chicago Bulls",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "10 Grant Hill - Los Angeles Clippers",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "11 John Stockton - Utah Jazz",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "13 Artis Gilmore - San Antonio Spurs",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "14 Clyde Drexler - Houston Rockets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "15 Larry Bird - Boston Celtics",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "16 Mitch Richmond - Sacramento Kings",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "17 Anfernee Hardaway - Orlando Magic",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "18 Ralph Sampson - Houston Rockets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "19 Robert Parish - Boston Celtics",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "20 Larry Johnson - Charlotte Hornets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "21 World B. Free - Golden State Warriors",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "22 Calvin Murphy - Houston Rockets",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "23 Bill Laimbeer - Detroit Pistons",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "24 Paul Westphal - New York Knicks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "25 Vince Carter - Dallas Mavericks",
+        "subset": "Gold",
+        "images": [],
+        "printRun": 10,
+        "completionTarget": 10
+      },
+      {
+        "text": "1 Kobe Bryant - Los Angeles Lakers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "2 Kareem Abdul-Jabbar - Los Angeles Lakers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 3,
+        "completionTarget": 3
+      },
+      {
+        "text": "3 Julius Erving - Philadelphia 76ers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "4 Grant Hill - Detroit Pistons",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "5 David Robinson - San Antonio Spurs",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "6 Shaquille O'Neal - Los Angeles Lakers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "7 Tom Chambers - Utah Jazz",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 3,
+        "completionTarget": 3
+      },
+      {
+        "text": "8 Danny Manning - Los Angeles Clippers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "9 Scottie Pippen - Chicago Bulls",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 4,
+        "completionTarget": 4
+      },
+      {
+        "text": "10 Grant Hill - Los Angeles Clippers",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "11 John Stockton - Utah Jazz",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "13 Artis Gilmore - San Antonio Spurs",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "14 Clyde Drexler - Houston Rockets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "15 Larry Bird - Boston Celtics",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 3,
+        "completionTarget": 3
+      },
+      {
+        "text": "16 Mitch Richmond - Sacramento Kings",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "17 Anfernee Hardaway - Orlando Magic",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "18 Ralph Sampson - Houston Rockets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "19 Robert Parish - Boston Celtics",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "20 Larry Johnson - Charlotte Hornets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "21 World B. Free - Golden State Warriors",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "22 Calvin Murphy - Houston Rockets",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "23 Bill Laimbeer - Detroit Pistons",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "24 Paul Westphal - New York Knicks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "25 Vince Carter - Dallas Mavericks",
+        "subset": "Emerald",
+        "images": [],
+        "printRun": 5,
+        "completionTarget": 5
+      },
+      {
+        "text": "1 Kobe Bryant - Los Angeles Lakers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "2 Kareem Abdul-Jabbar - Los Angeles Lakers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "3 Julius Erving - Philadelphia 76ers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "4 Grant Hill - Detroit Pistons",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "5 David Robinson - San Antonio Spurs",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "6 Shaquille O'Neal - Los Angeles Lakers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "7 Tom Chambers - Utah Jazz",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "8 Danny Manning - Los Angeles Clippers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "9 Scottie Pippen - Chicago Bulls",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "10 Grant Hill - Los Angeles Clippers",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "11 John Stockton - Utah Jazz",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "13 Artis Gilmore - San Antonio Spurs",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "14 Clyde Drexler - Houston Rockets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "15 Larry Bird - Boston Celtics",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "16 Mitch Richmond - Sacramento Kings",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "17 Anfernee Hardaway - Orlando Magic",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "18 Ralph Sampson - Houston Rockets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "19 Robert Parish - Boston Celtics",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "20 Larry Johnson - Charlotte Hornets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "21 World B. Free - Golden State Warriors",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "22 Calvin Murphy - Houston Rockets",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "23 Bill Laimbeer - Detroit Pistons",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "24 Paul Westphal - New York Knicks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
+      },
+      {
+        "text": "25 Vince Carter - Dallas Mavericks",
+        "subset": "Platinum",
+        "images": [],
+        "printRun": 1,
+        "completionTarget": 1
       }
     ],
     "freeImages": []

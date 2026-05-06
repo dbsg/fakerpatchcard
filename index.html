@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>小丁卡册 - 球星卡收藏图鉴与问题卡鉴别</title>
+  <title>小丁卡册 - 球星卡图鉴与鉴别资料库</title>
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="小丁卡册，球星卡收藏图鉴与问题卡鉴别数据库。收录球星卡图鉴收集记录，以及换Patch、假卡、假签等问题球星卡案例，帮助收藏者鉴别真伪。">
-  <meta name="keywords" content="球星卡,球星卡图鉴,球星卡收藏,小丁卡册,换patch,假patch,假卡,假签,NBA球星卡,Panini,Upper Deck,Immaculate,National Treasures,球星卡鉴定,球星卡真伪,basketball cards">
+  <meta name="description" content="小丁卡册，球星卡收藏图鉴与鉴别资料库。收录球星卡图鉴收集记录，以及 Patch 异常、卡片异常、签字异常等资料，帮助收藏者做特征对比。">
+  <meta name="keywords" content="球星卡,球星卡图鉴,球星卡收藏,小丁卡册,Patch异常,卡片异常,签字异常,明确异常,高度存疑,NBA球星卡,Panini,Upper Deck,Immaculate,National Treasures,球星卡鉴别资料,basketball cards">
   <meta name="author" content="球星卡TV">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dbsg.github.io/fakerpatchcard/">
-  <meta property="og:title" content="小丁卡册 - 球星卡收藏图鉴与问题卡鉴别">
-  <meta property="og:description" content="小丁卡册，球星卡收藏图鉴与问题卡鉴别数据库。帮助收藏者鉴别真伪，记录收藏。">
+  <meta property="og:title" content="小丁卡册 - 球星卡图鉴与鉴别资料库">
+  <meta property="og:description" content="小丁卡册，球星卡图鉴与鉴别资料库。帮助收藏者整理图鉴、做特征对比。">
   <meta property="og:image" content="https://dbsg.github.io/fakerpatchcard/images/og-image.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://dbsg.github.io/fakerpatchcard/">
-  <meta property="twitter:title" content="小丁卡册 - 球星卡收藏图鉴与问题卡鉴别">
-  <meta property="twitter:description" content="小丁卡册，球星卡收藏图鉴与问题卡鉴别数据库。帮助收藏者鉴别真伪，记录收藏。">
+  <meta property="twitter:title" content="小丁卡册 - 球星卡图鉴与鉴别资料库">
+  <meta property="twitter:description" content="小丁卡册，球星卡图鉴与鉴别资料库。帮助收藏者整理图鉴、做特征对比。">
   <meta property="twitter:image" content="https://dbsg.github.io/fakerpatchcard/images/og-image.jpg">
 
   <!-- Canonical URL -->
@@ -37,7 +37,7 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "小丁卡册",
-    "description": "球星卡收藏图鉴与问题卡鉴别数据库，帮助收藏者记录收藏、鉴别真伪",
+    "description": "球星卡图鉴与鉴别资料库，帮助收藏者整理图鉴、做特征对比",
     "url": "https://dbsg.github.io/fakerpatchcard/",
     "author": {
       "@type": "Organization",
@@ -54,7 +54,7 @@
       <div class="container header-inner">
         <div class="header-left">
           <h1 class="logo">🃏 小丁卡册</h1>
-          <p class="subtitle">球星卡收藏图鉴 · 问题卡鉴别数据库</p>
+          <p class="subtitle">球星卡图鉴 · 鉴别资料库</p>
         </div>
         <div class="header-right">
           <img src="images/miniprogram-qrcode.png" alt="小程序码" class="miniprogram-qr" />
@@ -67,12 +67,12 @@
       <div class="container">
         <div class="main-tabs" id="mainTabs" role="tablist">
           <button type="button" class="main-tab active" data-tab="cards" role="tab" aria-selected="true">
-            <span class="tab-title">问题球星卡</span>
-            <span class="tab-desc">收集换patch·假签卡片</span>
+            <span class="tab-title">鉴别资料库</span>
+            <span class="tab-desc">查卡避坑·资料参考</span>
           </button>
           <button type="button" class="main-tab" data-tab="collection" role="tab" aria-selected="false">
             <span class="tab-title">球星卡图鉴</span>
-            <span class="tab-desc">收藏图鉴·卡种管理</span>
+            <span class="tab-desc">整理图鉴·补图进度</span>
           </button>
         </div>
       </div>
@@ -87,7 +87,7 @@
               type="text"
               id="searchInput"
               class="search-input"
-              placeholder="搜索球员名（支持中英文）、系列、编号..."
+              placeholder="搜索球员、系列、编号、识别点；如 勒布朗 99"
             >
 
             <select id="playerFilter" class="filter-select" onchange="app.applyFilters()">
@@ -106,7 +106,7 @@
           </div>
 
           <div class="stats">
-            <span class="stat-item">记录总数: <strong id="totalCount">0</strong> 张</span>
+            <span class="stat-item">共 <strong id="totalCount">0</strong> 条资料</span>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
 
           <div id="emptyState" class="empty-state" style="display: none;">
             <div class="empty-icon">📭</div>
-            <p class="empty-text">未找到相关卡片</p>
+            <p class="empty-text">未找到相关资料</p>
           </div>
 
           <div id="loading" class="loading">
@@ -156,7 +156,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>仅供参考，请谨慎交易</p>
+        <p>资料仅用于收藏研究与卡片特征对比，不构成鉴定结论、交易建议或维权依据。</p>
         <p>发现可疑卡片，可以反馈给<a href="https://space.bilibili.com/1241227510" target="_blank"> 球星卡TV </a>，或者<a href="https://github.com/dbsg/fakerpatchcard/issues" target="_blank"> GitHub </a>提交 Issue</p>
         <p class="footer-stats">
           今日访问 <span id="busuanzi_today_pv">-</span> 次 |

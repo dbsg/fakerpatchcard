@@ -5558,6 +5558,89 @@ const cardsData = [
         type: "after"
       }
     ]
+  },
+  {
+    id: 308,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Silhouette",
+    number: "无编",
+    status: "confirmed",
+    category: "fake-patch",
+    highRiskReason: "无编都是素球衣，切 patch 都是换的",
+    source: "基于公开图片与卡片特征对比收录",
+    images: [
+      {
+        url: "images/sample/fb_1777782445562_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/fb_1777782445562_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 309,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Silhouette",
+    number: "无编",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "基于公开图片与卡片特征对比收录",
+    images: [
+      {
+        url: "images/sample/card_1777784130091_after_0.jpg",
+        note: "无编都是素球衣，切 patch 都是换的",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1777784130091_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 310,
+    player: "Anthony Davis",
+    playerCN: "安东尼·戴维斯",
+    brand: "Panini",
+    year: "2014",
+    series: "Immaculate Collection",
+    number: "4/10",
+    status: "suspected",
+    category: "fake-patch",
+    source: "微信群友讨论",
+    images: [
+      {
+        url: "images/sample/fb_1777985948405_after_0.jpg",
+        note: "蓝色球衣，完整队标",
+        type: "after"
+      },
+      {
+        url: "images/sample/fb_1777985948405_before_0.jpg",
+        note: "同款都为白色球衣，且没有切完整队标",
+        type: "before"
+      },
+      {
+        url: "images/sample/fb_1777985948405_before_1.jpg",
+        note: "同款都为白色球衣，且没有切完整队标",
+        type: "before"
+      },
+      {
+        url: "images/sample/fb_1777985948405_before_2.png",
+        note: "同款都为白色球衣，且没有切完整队标",
+        type: "before"
+      }
+    ]
   }
 ];
 
