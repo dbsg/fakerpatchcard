@@ -39,10 +39,16 @@ test('a hidden-money card has a per-card eye toggle', () => {
   assert(wxml.includes('moneyVisibleForItem'))
 })
 
-test('per-card hidden-money icon uses a minimal closed-eye style', () => {
-  assert(wxss.includes('.item-money-eye::before'))
-  assert(wxss.includes('border-bottom'))
-  assert(wxss.includes('.item-money-eye:not(.open) .item-money-eye-dot'))
-  assert(wxss.includes('box-shadow'))
-  assert(wxss.includes('.item-money-eye.open::before'))
+test('per-card hidden-money icon uses a minimal money privacy style', () => {
+  assert(wxml.includes('item-money-symbol'))
+  assert(wxml.includes('item-money-slash'))
+  assert(wxss.includes('background: transparent'))
+  assert(!wxss.includes('.item-money-eye::before'))
+  assert(wxss.includes('.item-money-symbol'))
+  assert(wxss.includes('font-size: 22rpx'))
+  assert(wxss.includes('font-weight: 600'))
+  assert(wxss.includes('.item-money-slash'))
+  assert(wxss.includes('height: 2rpx'))
+  assert(wxss.includes('.item-money-eye.open .item-money-slash'))
+  assert(wxss.includes('.item-money-eye.open { opacity: 1; background: transparent; }'))
 })

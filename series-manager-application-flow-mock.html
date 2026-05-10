@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>图鉴管理员申请流程 Mock</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #222;
+      background: #eef2f7;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 20px 40px;
+    }
+
+    .header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: #6b7280;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .steps {
+      display: flex;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(24, 35, 68, 0.08);
+    }
+
+    .step-btn {
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 14px;
+      color: #64748b;
+      background: transparent;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .step-btn.active {
+      color: #fff;
+      background: #6578ee;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(340px, 430px) 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .phone {
+      overflow: hidden;
+      border: 10px solid #111827;
+      border-radius: 34px;
+      background: #f4f6fb;
+      box-shadow: 0 26px 70px rgba(15, 23, 42, 0.28);
+    }
+
+    .phone-bar {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 54px;
+      color: #fff;
+      background: #6578e8;
+      font-size: 17px;
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .screen {
+      min-height: 710px;
+      padding: 20px 16px 26px;
+    }
+
+    .series-card,
+    .stats-card,
+    .panel,
+    .application-card {
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(18, 25, 42, 0.05);
+    }
+
+    .series-card {
+      padding: 20px;
+    }
+
+    .series-title {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .series-title h2 {
+      flex: 1;
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.24;
+    }
+
+    .edit-icon {
+      flex: 0 0 auto;
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #6578ee;
+      background: #f0edff;
+      font-size: 20px;
+    }
+
+    .description {
+      margin: 14px 0 0;
+      color: #8a8f98;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .badge.blue {
+      color: #6578ee;
+      background: #eef2ff;
+    }
+
+    .badge.green {
+      color: #16834b;
+      background: #e8f8ef;
+    }
+
+    .badge.orange {
+      color: #b45309;
+      background: #fff7ed;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    .action-btn {
+      border: 0;
+      border-radius: 10px;
+      min-height: 46px;
+      padding: 0 16px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .action-btn.blue {
+      color: #5f73eb;
+      background: #eef2ff;
+    }
+
+    .action-btn.green {
+      color: #07945d;
+      background: #eafaf2;
+    }
+
+    .action-btn.orange {
+      color: #c2410c;
+      background: #fff3e6;
+    }
+
+    .action-btn.disabled {
+      color: #94a3b8;
+      background: #f1f5f9;
+      cursor: default;
+    }
+
+    .search-btn {
+      width: 46px;
+      padding: 0;
+      border-radius: 50%;
+      color: #6578ee;
+      background: #f0edff;
+    }
+
+    .stats-card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 12px;
+      margin-bottom: 18px;
+    }
+
+    .stat {
+      min-height: 74px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: #f8fafc;
+      color: #777;
+      font-weight: 700;
+    }
+
+    .stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #111;
+      font-size: 22px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .slot {
+      min-height: 150px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(18, 25, 42, 0.05);
+    }
+
+    .slot.placeholder {
+      border: 1px dashed #bdd1ff;
+      display: grid;
+      place-items: center;
+      color: #6578ee;
+      font-weight: 800;
+      background: #f8fbff;
+    }
+
+    .slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .slot-label {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      max-width: calc(100% - 12px);
+      border-radius: 6px;
+      padding: 3px 6px;
+      color: #fff;
+      background: rgba(17, 24, 39, 0.68);
+      font-size: 11px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .panel {
+      padding: 20px;
+    }
+
+    .panel + .panel {
+      margin-top: 16px;
+    }
+
+    .panel h3 {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    .panel p {
+      margin: 0 0 12px;
+      color: #64748b;
+      line-height: 1.75;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 10px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: #6578ee;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .timeline-title {
+      font-weight: 800;
+    }
+
+    .timeline-desc {
+      margin-top: 3px;
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    th,
+    td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #eef2f7;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    th {
+      color: #64748b;
+      background: #f8fafc;
+    }
+
+    td {
+      color: #222;
+    }
+
+    .application-card {
+      padding: 16px;
+      border: 1px solid #eef2ff;
+    }
+
+    .application-title {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .application-title strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 16px;
+    }
+
+    .application-title span {
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    .admin-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .modal-mask {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(15, 23, 42, 0.42);
+    }
+
+    .modal-mask.visible {
+      display: flex;
+    }
+
+    .modal {
+      width: min(390px, 100%);
+      border-radius: 18px;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(15, 23, 42, 0.35);
+    }
+
+    .modal-body {
+      padding: 22px;
+    }
+
+    .modal-body h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .modal-body p {
+      margin: 0;
+      color: #64748b;
+      line-height: 1.7;
+    }
+
+    .reason-field {
+      margin-top: 16px;
+    }
+
+    .reason-field label {
+      display: block;
+      margin-bottom: 8px;
+      color: #374151;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .reason-field textarea {
+      width: 100%;
+      min-height: 92px;
+      resize: vertical;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px;
+      color: #1f2937;
+      background: #f8fafc;
+      font: inherit;
+      line-height: 1.55;
+      outline: none;
+    }
+
+    .reason-field textarea:focus {
+      border-color: #6578ee;
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(101, 120, 238, 0.12);
+    }
+
+    .modal-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid #eef2f7;
+    }
+
+    .modal-actions button {
+      min-height: 48px;
+      border: 0;
+      background: #fff;
+      color: #6578ee;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .modal-actions button:first-child {
+      color: #64748b;
+      border-right: 1px solid #eef2f7;
+    }
+
+    @media (max-width: 880px) {
+      .header {
+        display: block;
+      }
+
+      .steps {
+        margin-top: 18px;
+        overflow-x: auto;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>申请图鉴管理员流程 Mock</h1>
+        <p class="subtitle">模拟用户提交申请、管理员审核、审核通过后获得内容管理权限但不能删除图鉴。</p>
+      </div>
+      <nav class="steps" aria-label="流程状态">
+        <button class="step-btn active" data-view="before">申请前</button>
+        <button class="step-btn" data-view="pending">待审核</button>
+        <button class="step-btn" data-view="admin">管理员审核</button>
+        <button class="step-btn" data-view="approved">通过后</button>
+      </nav>
+    </header>
+
+    <section class="layout">
+      <div class="phone">
+        <div class="phone-bar">2016-17 Panini Hoops Road To The Finals - 骑士</div>
+        <div class="screen" id="screen"></div>
+      </div>
+
+      <aside>
+        <section class="panel">
+          <h3>流程设计</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="dot">1</div>
+              <div>
+                <div class="timeline-title">普通用户在图鉴详情申请</div>
+                <div class="timeline-desc">只在已登录且没有图鉴管理权限时展示“申请管理”。提交后进入“申请中”状态，按钮不可重复提交。</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot">2</div>
+              <div>
+                <div class="timeline-title">小程序管理员审核</div>
+                <div class="timeline-desc">后台“图鉴申请”Tab 汇总申请，管理员可通过或拒绝。</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot">3</div>
+              <div>
+                <div class="timeline-title">通过后获得内容管理权限</div>
+                <div class="timeline-desc">可以管理图片、新增卡种、编辑图鉴信息；删除图鉴仍不可用。</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h3>权限边界</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>角色</th>
+                <th>图鉴内容管理</th>
+                <th>删除图鉴</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>小程序管理员</td>
+                <td>可以</td>
+                <td>可以</td>
+              </tr>
+              <tr>
+                <td>已授权图鉴管理员</td>
+                <td>可以</td>
+                <td>不可以</td>
+              </tr>
+              <tr>
+                <td>普通用户</td>
+                <td>公共图鉴可贡献，不能全量管理</td>
+                <td>不可以</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <div class="modal-mask" id="applyModal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-body">
+        <h3 id="modalTitle">申请成为图鉴管理员</h3>
+        <p>通过后可管理该图鉴的图片、卡种和基本信息，但不能删除整个图鉴。申请需要小程序管理员审核。</p>
+        <div class="reason-field">
+          <label for="applyReason">申请理由（选填）</label>
+          <textarea id="applyReason" maxlength="200" placeholder="可以说明你熟悉这套图鉴、能补充哪些资料，或为什么需要管理权限"></textarea>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="cancelApply">取消</button>
+        <button id="confirmApply">提交申请</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const screen = document.querySelector('#screen')
+    const stepButtons = Array.from(document.querySelectorAll('.step-btn'))
+    const modal = document.querySelector('#applyModal')
+    const cancelApply = document.querySelector('#cancelApply')
+    const confirmApply = document.querySelector('#confirmApply')
+    const applyReason = document.querySelector('#applyReason')
+    let currentView = 'before'
+    let submittedReason = ''
+
+    const seriesDescription = '2016-17 Panini Hoops Road To The Finals 骑士队相关图鉴，记录 2016 年骑士夺冠之路，按季后赛轮次和冠军主题整理 Cleveland Cavaliers 相关卡种。这次总冠军结束了克利夫兰 52 年冠军荒，也是 LeBron James、Kyrie Irving、Kevin Love 率队完成 1-3 逆转的重要纪念。'
+
+    function setView(view) {
+      currentView = view
+      stepButtons.forEach(button => {
+        button.classList.toggle('active', button.dataset.view === view)
+      })
+      render()
+    }
+
+    function renderSeriesHeader(statusHtml) {
+      return `
+        <section class="series-card">
+          <div class="series-title">
+            <h2>2016-17 Panini Hoops Road To The Finals - 骑士</h2>
+            <div class="edit-icon">✎</div>
+          </div>
+          <p class="description">${seriesDescription}</p>
+          <div class="badges">
+            <span class="badge blue">Checklist 完整</span>
+            <span class="badge green">公共</span>
+            ${statusHtml || ''}
+          </div>
+        </section>
+      `
+    }
+
+    function renderActions(view) {
+      if (view === 'approved') {
+        return `
+          <div class="actions">
+            <button class="action-btn blue">管理图片</button>
+            <button class="action-btn orange">待补图优先</button>
+            <button class="action-btn green">看图</button>
+            <button class="action-btn blue">布局 3列</button>
+            <button class="action-btn search-btn">⌕</button>
+          </div>
+        `
+      }
+      if (view === 'pending') {
+        return `
+          <div class="actions">
+            <button class="action-btn disabled">申请中</button>
+            <button class="action-btn green">看图</button>
+            <button class="action-btn orange">待补图优先</button>
+            <button class="action-btn blue">布局·3列</button>
+            <button class="action-btn search-btn">⌕</button>
+          </div>
+        `
+      }
+      return `
+        <div class="actions">
+          <button class="action-btn blue" id="applyBtn">申请管理</button>
+          <button class="action-btn green">看图</button>
+          <button class="action-btn orange">待补图优先</button>
+          <button class="action-btn blue">布局·3列</button>
+          <button class="action-btn search-btn">⌕</button>
+        </div>
+      `
+    }
+
+    function renderStats() {
+      return `
+        <section class="stats-card">
+          <div class="stat"><span><strong>19</strong>总数</span></div>
+          <div class="stat"><span><strong>3</strong>已收录</span></div>
+          <div class="stat"><span><strong>16</strong>待补图</span></div>
+        </section>
+      `
+    }
+
+    function renderGrid() {
+      return `
+        <section class="grid">
+          <div class="slot">
+            <img src="images/placeholder.jpg" alt="">
+            <span class="slot-label">#2 LeBron James</span>
+          </div>
+          <div class="slot placeholder">+<br>上传</div>
+          <div class="slot placeholder">+<br>上传</div>
+          <div class="slot placeholder">+<br>上传</div>
+          <div class="slot">
+            <img src="images/placeholder.jpg" alt="">
+            <span class="slot-label">#84 Kyrie Irving</span>
+          </div>
+          <div class="slot placeholder">+<br>上传</div>
+        </section>
+      `
+    }
+
+    function renderAdmin() {
+      screen.innerHTML = `
+        <section class="series-card">
+          <div class="series-title">
+            <h2>管理员后台</h2>
+            <div class="edit-icon">审</div>
+          </div>
+          <p class="description">图鉴申请 Tab 展示待审核申请，小程序管理员决定是否授权。</p>
+          <div class="badges">
+            <span class="badge orange">待审核 1</span>
+          </div>
+        </section>
+        <div class="actions">
+          <button class="action-btn blue">投稿审核</button>
+          <button class="action-btn blue">图鉴申请</button>
+        </div>
+        <section class="application-card">
+          <div class="application-title">
+            <div>
+              <strong>2016-17 Panini Hoops Road To The Finals - 骑士</strong>
+              <span>申请人：普通用户 · 申请成为图鉴管理员</span>
+            </div>
+            <span class="badge orange">待审核</span>
+          </div>
+          <p class="description">${submittedReason ? `申请理由：${submittedReason}` : '申请理由：未填写'}</p>
+          <div class="admin-actions">
+            <button class="action-btn green" id="approveBtn">通过</button>
+            <button class="action-btn orange">拒绝</button>
+          </div>
+        </section>
+      `
+      document.querySelector('#approveBtn').addEventListener('click', () => setView('approved'))
+    }
+
+    function render() {
+      if (currentView === 'admin') {
+        renderAdmin()
+        return
+      }
+      const statusMap = {
+        before: '',
+        pending: '<span class="badge orange">管理申请待审核</span>',
+        approved: '<span class="badge green">图鉴管理员</span>'
+      }
+      screen.innerHTML = `
+        ${renderSeriesHeader(statusMap[currentView])}
+        ${renderActions(currentView)}
+        ${renderStats()}
+        ${renderGrid()}
+      `
+      const applyBtn = document.querySelector('#applyBtn')
+      if (applyBtn) applyBtn.addEventListener('click', () => modal.classList.add('visible'))
+    }
+
+    stepButtons.forEach(button => {
+      button.addEventListener('click', () => setView(button.dataset.view))
+    })
+    cancelApply.addEventListener('click', () => modal.classList.remove('visible'))
+    confirmApply.addEventListener('click', () => {
+      submittedReason = (applyReason.value || '').trim()
+      applyReason.value = ''
+      modal.classList.remove('visible')
+      setView('pending')
+    })
+    modal.addEventListener('click', event => {
+      if (event.target === modal) modal.classList.remove('visible')
+    })
+
+    render()
+  </script>
+</body>
+</html>

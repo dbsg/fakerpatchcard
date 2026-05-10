@@ -24,8 +24,11 @@ const collectionProgress = (() => {
   }
 
   function getCompletionTarget(item) {
-    const raw = Number(item && item.completionTarget)
-    if (Number.isInteger(raw) && raw > 0) return raw
+    if (item && Object.prototype.hasOwnProperty.call(item, 'completionTarget')) {
+      const raw = Number(item.completionTarget)
+      if (Number.isInteger(raw) && raw > 0) return raw
+      return 0
+    }
     return getPrintRun(item) || 1
   }
 

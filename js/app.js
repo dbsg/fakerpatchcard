@@ -5,14 +5,21 @@ const app = {
   allCards: cardsData.map(c => ({ ...c, category: c.category || 'fake-patch' })),
 
   activeTab: 'cards',
+  activeCategory: '',
+  categoryOptions: [
+    { value: '', label: '全部类型' },
+    { value: 'fake-patch', label: '换 Patch' },
+    { value: 'fake-auto', label: '签字异常' },
+    { value: 'counterfeit', label: '假卡' }
+  ],
 
   currentPage: 1,
   pageSize: 6,
 
   categoryLabel(category) {
     if (category === 'fake-auto') return '签字异常'
-    if (category === 'counterfeit') return '卡片异常'
-    return 'Patch 异常'
+    if (category === 'counterfeit') return '假卡'
+    return '换 Patch'
   },
 
   categoryClass(category) {
@@ -74,9 +81,7 @@ const app = {
 
   init() {
     this.currentCards = [...this.allCards]
-    this.populatePlayerFilter()
-    this.populateBrandFilter()
-    this.populateYearFilter()
+    this.renderCategoryFilters()
     this.renderCards()
     this.updateStats()
     this.renderPagination()
@@ -111,8 +116,7 @@ const app = {
     if (panelCards) panelCards.style.display = tab === 'cards' ? '' : 'none'
     if (panelCollection) panelCollection.style.display = tab === 'collection' ? '' : 'none'
     if (tab === 'collection' && typeof collection !== 'undefined') {
-      const idxEl = document.getElementById('seriesListIndex')
-      if (idxEl) collection.renderInto(idxEl)
+      collection.applyFilter()
     }
     if (tab === 'collection') {
       window.location.hash = 'collection'
@@ -124,37 +128,29 @@ const app = {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   },
 
-  populatePlayerFilter() {
-    const players = [...new Set(this.allCards.map(card => card.player))].sort()
-    const playerFilter = document.getElementById('playerFilter')
-    players.forEach(player => {
-      const option = document.createElement('option')
-      option.value = player
-      option.textContent = player
-      playerFilter.appendChild(option)
+  renderCategoryFilters() {
+    const root = document.getElementById('categoryFilterTags')
+    if (!root) return
+    root.innerHTML = this.categoryOptions.map(item => `
+      <button
+        type="button"
+        class="category-filter-tag ${this.activeCategory === item.value ? 'active' : ''}"
+        data-category="${this.escAttr(item.value)}"
+      >${this.escHtml(item.label)}</button>
+    `).join('')
+    root.addEventListener('click', e => {
+      const btn = e.target.closest('.category-filter-tag')
+      if (!btn) return
+      this.setCategoryFilter(btn.dataset.category || '')
     })
   },
 
-  populateBrandFilter() {
-    const brands = [...new Set(this.allCards.map(card => card.brand))].sort()
-    const brandFilter = document.getElementById('brandFilter')
-    brands.forEach(brand => {
-      const option = document.createElement('option')
-      option.value = brand
-      option.textContent = brand
-      brandFilter.appendChild(option)
+  setCategoryFilter(category) {
+    this.activeCategory = category || ''
+    document.querySelectorAll('.category-filter-tag').forEach(tag => {
+      tag.classList.toggle('active', (tag.dataset.category || '') === this.activeCategory)
     })
-  },
-
-  populateYearFilter() {
-    const years = [...new Set(this.allCards.map(card => card.year))].sort((a, b) => b - a)
-    const yearFilter = document.getElementById('yearFilter')
-    years.forEach(year => {
-      const option = document.createElement('option')
-      option.value = year
-      option.textContent = year
-      yearFilter.appendChild(option)
-    })
+    this.applyFilters()
   },
 
   renderCards() {
@@ -218,20 +214,17 @@ const app = {
   },
 
   applyFilters() {
-    const player = document.getElementById('playerFilter').value
-    const brand = document.getElementById('brandFilter').value
-    const year = document.getElementById('yearFilter').value
-    const keyword = document.getElementById('searchInput').value.trim()
+    const searchInput = document.getElementById('searchInput')
+    const keyword = searchInput ? searchInput.value.trim() : ''
     const terms = this.buildKeywordTerms(keyword)
+    const activeCategory = this.activeCategory
 
     this.currentCards = this.allCards.filter(card => {
-      const matchPlayer = !player || card.player === player
-      const matchBrand = !brand || card.brand === brand
-      const matchYear = !year || card.year === year
+      const matchCategory = !activeCategory || (card.category || 'fake-patch') === activeCategory
       const matchKeyword = terms.length === 0 ||
         terms.every(term => this.normalizeSearch(this.buildCardSearchText(card)).includes(term))
 
-      return matchPlayer && matchBrand && matchYear && matchKeyword
+      return matchCategory && matchKeyword
     })
 
     this.currentPage = 1
@@ -240,10 +233,12 @@ const app = {
   },
 
   resetFilters() {
-    document.getElementById('searchInput').value = ''
-    document.getElementById('playerFilter').value = ''
-    document.getElementById('brandFilter').value = ''
-    document.getElementById('yearFilter').value = ''
+    const searchInput = document.getElementById('searchInput')
+    if (searchInput) searchInput.value = ''
+    this.activeCategory = ''
+    document.querySelectorAll('.category-filter-tag').forEach(tag => {
+      tag.classList.toggle('active', (tag.dataset.category || '') === '')
+    })
     this.currentCards = [...this.allCards]
     this.currentPage = 1
     this.renderCards()
@@ -341,6 +336,7 @@ const app = {
 
   setupSearchEnter() {
     const searchInput = document.getElementById('searchInput')
+    if (!searchInput) return
     searchInput.addEventListener('input', () => {
       this.applyFilters()
     })

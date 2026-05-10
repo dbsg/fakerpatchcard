@@ -89,20 +89,10 @@
               class="search-input"
               placeholder="搜索球员、系列、编号、识别点；如 勒布朗 99"
             >
+          </div>
 
-            <select id="playerFilter" class="filter-select" onchange="app.applyFilters()">
-              <option value="">全部球员</option>
-            </select>
-
-            <select id="brandFilter" class="filter-select" onchange="app.applyFilters()">
-              <option value="">全部品牌</option>
-            </select>
-
-            <select id="yearFilter" class="filter-select" onchange="app.applyFilters()">
-              <option value="">全部年份</option>
-            </select>
-
-            <button class="reset-btn" onclick="app.resetFilters()">重置</button>
+          <div class="category-filter-scroll" aria-label="资料类型筛选">
+            <div id="categoryFilterTags" class="category-filter-tags"></div>
           </div>
 
           <div class="stats">

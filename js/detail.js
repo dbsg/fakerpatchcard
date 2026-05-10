@@ -13,12 +13,17 @@ const QUALITY_TAG_LABELS = {
 
 const SOURCE_TYPE_LABELS = {
   web_public: '网络公开资料',
-  user_submission: '用户投稿',
+  user_submission: '公开反馈',
   manual_curation: '小丁卡册人工整理',
   official_image: '官方/评级资料',
-  user_photo: '用户实拍',
+  user_photo: '实拍图片',
   auction_platform: '拍卖平台',
-  social_share: '网络分享'
+  auction: '拍卖平台',
+  social_share: '网络分享',
+  web_ref: '网络分享',
+  official: '官方图',
+  grading_db: '评级机构数据库',
+  other: '其他'
 };
 
 function getWarningText(category, status) {
@@ -26,35 +31,44 @@ function getWarningText(category, status) {
     'fake-patch': {
       confirmed: {
         title: '资料提示：明确异常记录',
-        desc: '这张卡已进入明确 Patch 异常记录：同一张卡已出现不同 Patch 版本，或已有明确换 Patch / 冲突来源记录，不应按普通同款差异理解。'
+        desc: '这张卡已进入明确 Patch 异常记录：同一张卡出现 Patch 不一致，或已有明确换 Patch / 来源冲突记录。请仔细查看来源资料或者当前页面相关信息后再做判断，本网站不构成任何鉴定结论、交易建议或维权证据。'
       },
       suspected: {
         title: '资料提示：高度存疑线索',
-        desc: '这张卡已进入高度存疑 Patch 线索：疑点来自同款卡 Patch 材质、位置、复杂度或球队/年份合理性对比，尚未形成同卡冲突或明确来源记录。'
+        desc: '这张卡已进入高度存疑 Patch 线索：疑点来自同款卡 Patch 材质、位置、复杂度或球队/年份合理性对比，但尚未形成明确结论。请仔细查看来源资料或者当前页面相关信息后再做判断，本网站不构成任何鉴定结论、交易建议或维权证据。'
       }
     },
     counterfeit: {
       confirmed: {
         title: '资料提示：明确异常记录',
-        desc: '这张卡已进入明确卡片异常记录：已有明确假卡、伪造、复刻或卡片本体异常证据，查看或流通前应按强风险样本处理。'
+        desc: '这张卡已进入明确假卡记录：假卡仅凭图片通常难以完全判断。请仔细查看来源资料或者当前页面相关信息后再做判断，本网站不构成任何鉴定结论、交易建议或维权证据。'
       },
       suspected: {
         title: '资料提示：高度存疑线索',
-        desc: '这张卡已进入高度存疑线索：疑点主要来自同款卡、版式、编号或公开图片对比，尚缺同一张卡的直接冲突记录或明确异常来源。'
+        desc: '这张卡已进入高度存疑假卡线索：疑点主要来自同款卡、版式、编号或公开图片对比。假卡仅凭图片通常难以完全判断。请仔细查看来源资料或者当前页面相关信息后再做判断，本网站不构成任何鉴定结论、交易建议或维权证据。'
       }
     },
     'fake-auto': {
       confirmed: {
         title: '资料提示：明确异常记录',
-        desc: '这张卡已进入明确签字异常记录：已有明确伪签、后签、涂改，或签字与可信资料明显冲突的记录。'
+        desc: '这张卡已进入明确签字异常记录：已有明确伪签、后签、涂改，或签字与可信资料明显冲突的记录。请仔细查看来源资料或者当前页面相关信息后再做判断，本网站不构成任何鉴定结论、交易建议或维权证据。'
       },
       suspected: {
         title: '资料提示：高度存疑线索',
-        desc: '这张卡已进入高度存疑签字线索：疑点来自同款签字特征、笔迹、位置或公开图片对比，当前证据仍需补充。'
+        desc: '这张卡已进入高度存疑签字线索：疑点来自同款签字特征、笔迹、位置或公开图片对比，当前证据仍需补充。请仔细查看来源资料或者当前页面相关信息后再做判断，本网站不构成任何鉴定结论、交易建议或维权证据。'
       }
     }
   };
   return (warningTexts[category] || warningTexts['fake-patch'])[status];
+}
+
+function sanitizePublicSourceText(value) {
+  return String(value || '')
+    .replace(/小程序用[户戶]反馈/g, '小程序反馈')
+    .replace(/用[户戶]投稿/g, '公开反馈')
+    .replace(/用[户戶]实拍/g, '实拍图片')
+    .replace(/上传用[户戶]\s*[:：]?\s*[A-Za-z0-9_-]*/g, '')
+    .trim();
 }
 
 function getAfterTitle(category) {
@@ -172,10 +186,11 @@ function renderDetail() {
       </div>`
     : '';
 
-  const sourceItem = currentCard.source
+  const sourceText = sanitizePublicSourceText(currentCard.source);
+  const sourceItem = sourceText
     ? `<div class="detail-info-item detail-info-full">
         <span class="detail-label">资料来源</span>
-        <span class="detail-value">${currentCard.source.startsWith('http') ? `<a href="${currentCard.source}" target="_blank" rel="noopener" class="source-link">${currentCard.source}</a>` : currentCard.source}</span>
+        <span class="detail-value">${sourceText.startsWith('http') ? `<a href="${sourceText}" target="_blank" rel="noopener" class="source-link">${sourceText}</a>` : sourceText}</span>
       </div>`
     : '';
 

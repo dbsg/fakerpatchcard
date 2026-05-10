@@ -19,8 +19,9 @@ const collection = {
       return !!u
     })
     const rawTarget = Number(series.completionTarget)
-    const total = Number.isInteger(rawTarget) && rawTarget > 0 ? rawTarget : images.length
-    const collected = total ? Math.min(total, images.length) : images.length
+    let total = Number.isInteger(rawTarget) && rawTarget > 0 ? rawTarget : images.length
+    if (rawTarget === 0) total = 0
+    const collected = total ? Math.min(total, images.length) : 0
     return {
       totalCards: total,
       withImages: collected,
@@ -33,6 +34,17 @@ const collection = {
   seriesProgressStats(series) {
     const progress = this.progress()
     if (this.isFreeMode(series)) return this.buildFreeStats(series)
+    if (this.hasSeriesListStats(series)) {
+      const total = Number(series.listTotalCount) || 0
+      const collected = Number(series.listCollectedCount) || 0
+      return {
+        totalCards: total,
+        withImages: collected,
+        missing: Math.max(0, total - collected),
+        listImageCount: Number(series.listImageCount) || 0,
+        listRecentImages: Array.isArray(series.listRecentImages) ? series.listRecentImages : []
+      }
+    }
     if (progress) return progress.buildChecklistProgressStats(series.checklist || [])
 
     const images = []
@@ -71,6 +83,14 @@ const collection = {
       })
     }
     return urls.slice(-5).reverse()
+  },
+
+  hasSeriesListStats(series = {}) {
+    return typeof series.listImageCount === 'number'
+      || typeof series.listProgress === 'number'
+      || typeof series.listCollectedCount === 'number'
+      || typeof series.listTotalCount === 'number'
+      || Array.isArray(series.listRecentImages)
   },
 
   seriesImageCount(series) {

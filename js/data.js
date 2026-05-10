@@ -5641,6 +5641,35 @@ const cardsData = [
         type: "before"
       }
     ]
+  },
+  {
+    id: 311,
+    player: "Luka Dončić",
+    playerCN: "卢卡·东契奇",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Noir",
+    number: "2/49",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "球星卡TV https://b23.tv/EFeyWDK",
+    images: [
+      {
+        url: "images/sample/card_1778253443978_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1778253443978_after_1.png",
+        note: "after_1",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1778253443978_after_2.png",
+        note: "after_2",
+        type: "after"
+      }
+    ]
   }
 ];
 

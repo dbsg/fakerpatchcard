@@ -39,18 +39,23 @@ const seriesDetail = {
   },
 
   sourceTypeLabels: {
-    user_photo: '用户实拍',
+    user_photo: '实拍图片',
     auction_platform: '拍卖平台',
+    auction: '拍卖平台',
     social_share: '网络分享',
+    web_ref: '网络分享',
     web_public: '网络公开资料',
-    user_submission: '用户投稿',
+    user_submission: '公开反馈',
     manual_curation: '小丁卡册人工整理',
-    official_image: '官方/评级资料'
+    official_image: '官方/评级资料',
+    official: '官方图',
+    grading_db: '评级机构数据库',
+    other: '其他'
   },
 
   referenceCategoryLabels: {
     'fake-patch': 'Patch 异常',
-    counterfeit: '卡片异常',
+    counterfeit: '假卡',
     'fake-auto': '签字异常'
   },
 
@@ -107,8 +112,9 @@ const seriesDetail = {
     const images = this.sortImages(series.freeImages || [], '')
     const urls = images.map(img => (typeof img === 'string' ? img : img.url)).filter(Boolean)
     const rawTarget = Number(series.completionTarget)
-    const total = Number.isInteger(rawTarget) && rawTarget > 0 ? rawTarget : urls.length
-    const collected = total ? Math.min(total, urls.length) : urls.length
+    let total = Number.isInteger(rawTarget) && rawTarget > 0 ? rawTarget : urls.length
+    if (rawTarget === 0) total = 0
+    const collected = total ? Math.min(total, urls.length) : 0
     return {
       totalCards: total,
       withImages: collected,
@@ -322,8 +328,17 @@ const seriesDetail = {
 
   buildSourceDisplay(image = {}) {
     const typeLabel = this.sourceTypeLabels[image.sourceType] || ''
-    const note = image.source || image.sourceNote || image.sourceUrl || ''
+    const note = this.sanitizePublicSourceText(image.source || image.sourceNote || image.sourceUrl || '')
     return [typeLabel, note].filter(Boolean).join(' · ')
+  },
+
+  sanitizePublicSourceText(value) {
+    return String(value || '')
+      .replace(/小程序用[户戶]反馈/g, '小程序反馈')
+      .replace(/用[户戶]投稿/g, '公开反馈')
+      .replace(/用[户戶]实拍/g, '实拍图片')
+      .replace(/上传用[户戶]\s*[:：]?\s*[A-Za-z0-9_-]*/g, '')
+      .trim()
   },
 
   buildImageDetailMeta(image = {}, item = {}) {

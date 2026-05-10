@@ -130,6 +130,8 @@ function buildSeriesView(series, subsetDocs) {
     _id: series._id,
     name: series.name || '',
     description: series.description || '',
+    structureType: series.structureType || '',
+    displayMode: series.displayMode || '',
     hasSubset: !!series.hasSubset,
     subsetType: series.subsetType || '',
     cardType: series.cardType || '',
@@ -156,11 +158,21 @@ function parseArgs(argv) {
   const args = argv.slice(2)
   const options = {
     keyword: '',
-    exact: false
+    exact: false,
+    all: false,
+    namesOnly: false
   }
 
   for (let i = 0; i < args.length; i++) {
     const arg = args[i]
+    if (arg === '--all') {
+      options.all = true
+      continue
+    }
+    if (arg === '--names') {
+      options.namesOnly = true
+      continue
+    }
     if (arg === '--exact') {
       options.exact = true
       continue
@@ -174,9 +186,9 @@ function parseArgs(argv) {
 }
 
 async function main() {
-  const { keyword, exact } = parseArgs(process.argv)
-  if (!keyword) {
-    console.error('用法: node card/query-series.js "Panini Kaboom!" [--exact]')
+  const { keyword, exact, all, namesOnly } = parseArgs(process.argv)
+  if (!keyword && !all) {
+    console.error('用法: node card/query-series.js "Panini Kaboom!" [--exact]\n      node card/query-series.js --all --names')
     process.exit(1)
   }
 
@@ -187,13 +199,11 @@ async function main() {
   }
 
   const token = await getAccessToken(appSecret)
-  const [seriesDocs, subsetDocs] = await Promise.all([
-    fetchAllDocs(token, 'my_series', 100),
-    fetchAllDocs(token, 'my_series_subsets', 100)
-  ])
+  const seriesDocs = await fetchAllDocs(token, 'my_series', 100)
+  const subsetDocs = namesOnly ? [] : await fetchAllDocs(token, 'my_series_subsets', 100)
 
   const normalizedKeyword = keyword.trim().toLowerCase()
-  const matchedSeries = seriesDocs.filter(series => {
+  const matchedSeries = all ? seriesDocs : seriesDocs.filter(series => {
     const name = String(series.name || '')
     return exact
       ? name === keyword
@@ -206,6 +216,15 @@ async function main() {
     if (!subsetsBySeriesId.has(doc.seriesId)) subsetsBySeriesId.set(doc.seriesId, [])
     subsetsBySeriesId.get(doc.seriesId).push(doc)
   })
+
+  if (namesOnly) {
+    matchedSeries
+      .map(series => series.name || '')
+      .filter(Boolean)
+      .sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'))
+      .forEach(name => console.log(name))
+    return
+  }
 
   const result = matchedSeries.map(series => (
     buildSeriesView(series, subsetsBySeriesId.get(series._id) || [])

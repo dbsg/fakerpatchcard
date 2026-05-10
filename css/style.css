@@ -175,7 +175,7 @@ a:hover {
 .filters-row {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   flex-wrap: wrap;
 }
 
@@ -214,6 +214,43 @@ a:hover {
 .filter-select:focus {
   outline: none;
   border-color: #667eea;
+}
+
+.category-filter-scroll {
+  overflow-x: auto;
+  padding-bottom: 2px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-filter-tags {
+  display: flex;
+  gap: 8px;
+  min-width: max-content;
+}
+
+.category-filter-tag {
+  flex-shrink: 0;
+  padding: 7px 15px;
+  border-radius: 999px;
+  border: none;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.category-filter-tag:hover {
+  color: #667eea;
+  background: #eef2ff;
+}
+
+.category-filter-tag.active {
+  background: #667eea;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(102, 126, 234, 0.22);
 }
 
 .reset-btn {
