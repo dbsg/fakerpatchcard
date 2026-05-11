@@ -31,7 +31,7 @@ test('series default info supports a shared card kind end to end', () => {
   assert(collectionSeriesJs.includes('defaultCardKind'))
   assert(collectionSeriesJs.includes('cardKind: String(series.defaultCardKind || \'\').trim()'))
   assert(collectionSeriesJs.includes('cardKind: defaults.cardKind'))
-  assert(collectionSeriesWxml.includes('placeholder="卡种，如 Base、RPA、Gold"'))
+  assert(collectionSeriesWxml.includes('placeholder="如 Base、红宝"'))
   assert(seriesOpsJs.includes("'defaultCardKind'"))
   assert(seriesOpsJs.includes('series.defaultCardKind'))
   assert(adminOpsJs.includes('series.defaultCardKind'))
@@ -72,6 +72,13 @@ test('same-card average price grouping is split by grade and auto grade', () => 
   assert(myCollectionJs.includes('const gradeGroup = buildGradeGroupForGrouping(item)'))
   assert(myCollectionJs.includes('gradeGroup'))
   assert(myCollectionJs.includes('item.autoGrade'))
+})
+
+test('same-card average price grouping is split by condition', () => {
+  assert(myCollectionJs.includes("const CONDITION_OPTIONS = ['通行', '瑕疵']"))
+  assert(myCollectionJs.includes('function normalizeCondition'))
+  assert(myCollectionJs.includes('const conditionGroup = normalizeCondition(item.condition)'))
+  assert(myCollectionJs.includes('conditionLabel: condition'))
 })
 
 test('Gold Prizm is no longer a standalone series option', () => {
