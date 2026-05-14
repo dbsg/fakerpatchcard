@@ -15,6 +15,7 @@ const seriesOpsJs = read('miniprogram-card/cloudfunctions/seriesOps/index.js')
 const adminOpsJs = read('miniprogram-card/cloudfunctions/adminOps/index.js')
 const cardDetailJs = read('miniprogram-card/pages/collection-card-detail/collection-card-detail.js')
 const taxonomyJs = read('miniprogram-card/utils/cardTaxonomy.js')
+const numberDisplayWxs = read('miniprogram-card/pages/collection-series/numberDisplay.wxs')
 
 function test(name, fn) {
   try {
@@ -75,20 +76,37 @@ test('same-card average price grouping is split by grade and auto grade', () => 
 })
 
 test('same-card average price grouping is split by condition', () => {
-  assert(myCollectionJs.includes("const CONDITION_OPTIONS = ['通行', '瑕疵']"))
+  assert(myCollectionJs.includes("const CONDITION_OPTIONS = ['通行', '瑕疵', '非原封']"))
   assert(myCollectionJs.includes('function normalizeCondition'))
   assert(myCollectionJs.includes('const conditionGroup = normalizeCondition(item.condition)'))
-  assert(myCollectionJs.includes('conditionLabel: condition'))
+  assert(myCollectionJs.includes("conditionLabel: condition === '通行' ? '' : condition"))
 })
 
 test('Gold Prizm is no longer a standalone series option', () => {
   assert(!taxonomyJs.includes("  'Gold Prizm'"))
   assert(!taxonomyJs.includes("'Gold Prizm':"))
-  assert(taxonomyJs.includes("'Prizm': ['折射', 'prizm折射', '金折', 'prizm金折', 'gold prizm']"))
+  assert(taxonomyJs.includes('"Prizm": ['))
+  assert(taxonomyJs.includes('"gold prizm"'))
 })
 
 test('new collection image uploads default to auction source', () => {
   assert(collectionSeriesJs.includes("const DEFAULT_IMAGE_SOURCE_TYPE = 'auction'"))
   assert(collectionSeriesJs.includes('sourceType: DEFAULT_IMAGE_SOURCE_TYPE'))
   assert(collectionSeriesJs.includes('sourceIndex: this._getImageSourceIndex(base.sourceType)'))
+})
+
+test('collection image labels avoid repeating series default year and card kind', () => {
+  assert(numberDisplayWxs.includes('function metaLabel(number, year, cardKind, defaultYear, defaultCardKind'), 'thumbnail label formatter should accept default card kind')
+  assert(numberDisplayWxs.includes('sameMeta(year, defaultYear)'), 'thumbnail label formatter should hide duplicate default year')
+  assert(numberDisplayWxs.includes('sameMeta(cardKind, defaultCardKind)'), 'thumbnail label formatter should hide duplicate default card kind')
+  assert(collectionSeriesWxml.includes('numfmt.metaLabel(item.number, item.year, item.cardKind, series.defaultYear, series.defaultCardKind'), 'free image labels should use default-aware formatter')
+  assert(collectionSeriesWxml.includes('numfmt.metaLabel(img.number, img.year, img.cardKind, series.defaultYear, series.defaultCardKind'), 'card image labels should use default-aware formatter')
+  assert(collectionSeriesWxml.includes("numfmt.metaLabel('', '', card.cardKind, '', series.defaultCardKind"), 'fixed-grid card kind labels should avoid repeating series default card kind')
+})
+
+test('checklist uploads infer player from the selected card kind', () => {
+  assert(collectionSeriesJs.includes('_extractChecklistPlayerCandidate(sourceText)'), 'upload defaults need a text fallback for checklist player inference')
+  assert(collectionSeriesJs.includes('this._extractChecklistPlayerCandidate(row && row.text)'), 'upload defaults should parse player from checklist card text')
+  assert(collectionSeriesJs.includes('this._extractChecklistPlayerCandidate(row && row.cardKind)'), 'upload defaults should parse player from checklist card kind')
+  assert(collectionSeriesJs.includes('this._extractChecklistPlayerCandidate(row && row.subset)'), 'upload defaults should parse player from subset title')
 })

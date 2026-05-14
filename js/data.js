@@ -5670,6 +5670,35 @@ const cardsData = [
         type: "after"
       }
     ]
+  },
+  {
+    id: 312,
+    player: "Luka Doncic",
+    playerCN: "卢卡·东契奇",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Noir",
+    number: "4/49",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "球星卡 TV： http://xhslink.com/o/9iPXpC1cyIz",
+    images: [
+      {
+        url: "images/sample/card_1778512802511_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1778512802511_after_1.png",
+        note: "after_1",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1778512802511_after_2.jpg",
+        note: "after_2",
+        type: "after"
+      }
+    ]
   }
 ];
 

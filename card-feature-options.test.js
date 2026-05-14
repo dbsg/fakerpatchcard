@@ -20,6 +20,7 @@ function test(name, fn) {
 
 const files = [
   'miniprogram-card/pages/my-collection/my-collection.js',
+  'miniprogram-card/pages/my-collection-series-detail/my-collection-series-detail.js',
   'miniprogram-card/pages/collection-series/collection-series.js',
   'miniprogram-card/pages/collection-card-detail/collection-card-detail.js',
   'miniprogram-card/cloudfunctions/seriesOps/index.js',
@@ -33,7 +34,9 @@ const requiredFeatures = [
   ['np', 'np'],
   ['npa', 'npa'],
   ['lake_blue', '湖水蓝'],
-  ['data_stat', '数据']
+  ['signature_pose', '招牌动作'],
+  ['data_stat', '数据'],
+  ['sealed_brick', '原封砖']
 ]
 
 test('feature enums include current card feature vocabulary everywhere', () => {
@@ -50,10 +53,10 @@ test('feature chips expose current vocabulary in collection forms', () => {
   const myCollection = read('miniprogram-card/pages/my-collection/my-collection.wxml')
   const collectionSeries = read('miniprogram-card/pages/collection-series/collection-series.wxml')
   ;[myCollection, collectionSeries].forEach(text => {
-    requiredFeatures.forEach(([key]) => {
-      assert(text.includes(`.${key}`), `feature map missing ${key}`)
-      assert(text.includes(`data-feature="${key}"`), `feature chip missing ${key}`)
-    })
+    assert(text.includes('wx:for="{{cardFeatureOptions}}"'), 'feature chips should render from cardFeatureOptions')
+    assert(text.includes('feature.value'), 'feature chips should bind the option value dynamically')
+    assert(text.includes('feature.label'), 'feature chips should render the option label dynamically')
+    assert(text.includes('data-feature="{{feature.value}}"'), 'feature chip taps should pass the selected value')
   })
 })
 
@@ -100,13 +103,13 @@ test('series supports preset card features', () => {
   assert(cloud.includes('presetCardFeatures'), 'cloud missing presetCardFeatures')
 })
 
-test('series shared features are edited from basic info, not added as upload presets', () => {
+test('series shared features are editable from basic info and normalized through preset storage', () => {
   const page = read('miniprogram-card/pages/collection-series/collection-series.js')
   const wxml = read('miniprogram-card/pages/collection-series/collection-series.wxml')
   const cloud = read('miniprogram-card/cloudfunctions/seriesOps/index.js')
-  assert(wxml.includes('图鉴共享特色'), 'manage modal should expose shared features in basic info')
+  assert(wxml.includes('共享特色'), 'manage modal should expose shared features in basic info')
   assert(wxml.includes('toggleEditSeriesFeature'), 'shared feature chips should be directly selectable')
-  assert(!wxml.includes('data-type="feature" bindtap="openPresetManage"'), 'shared features should not be managed by add-preset modal')
+  assert(wxml.includes('data-type="feature" bindtap="openPresetManage"'), 'shared features should keep the existing preset management entry')
   assert(page.includes('editSeriesFeatureMap'), 'page missing shared feature form state')
   assert(page.includes('toggleEditSeriesFeature'), 'page missing shared feature toggle handler')
   assert(/presetCardFeatures:\s*normalizeCardFeatures/.test(page), 'saveSeriesMeta should save shared features directly')

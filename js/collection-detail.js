@@ -33,7 +33,10 @@ const seriesDetail = {
     np: 'NP',
     npa: 'NPA',
     lake_blue: '湖水蓝',
+    signature_pose: '招牌动作',
     data: '数据',
+    data_stat: '数据',
+    sealed_brick: '原封砖',
     rookie_year: '元年',
     final_year: '末年'
   },
@@ -244,6 +247,16 @@ const seriesDetail = {
     return !this.getSeriesKnownYears().has(year)
   },
 
+  shouldShowImageCardKind(img) {
+    const cardKind = String((img && img.cardKind) || '').trim()
+    if (!cardKind) return false
+    const s = this.series || {}
+    if (s.defaultInfoEnabled === false) return true
+    const defaultCardKind = String(s.defaultCardKind || '').trim()
+    if (!defaultCardKind) return true
+    return this.normalizeCompareText(cardKind) !== this.normalizeCompareText(defaultCardKind)
+  },
+
   registerImageDetail(img, item) {
     if (!this._imageDetailMap) this._imageDetailMap = {}
     const key = `img_${this._imageDetailCounter || 0}`
@@ -263,7 +276,7 @@ const seriesDetail = {
       parts.push(this.formatNumberLabel(number))
     }
     if (this.shouldShowImageYear(img)) parts.push(this.escHtml(img.year))
-    const ckRaw = (img.cardKind && String(img.cardKind).trim()) ? img.cardKind.trim() : ''
+    const ckRaw = this.shouldShowImageCardKind(img) ? String(img.cardKind || '').trim() : ''
     const ck = ckRaw ? this.escHtml(ckRaw.charAt(0).toUpperCase() + ckRaw.slice(1)) : ''
     if (ck) {
       if (parts.length) parts.push('· ' + ck)
@@ -286,6 +299,9 @@ const seriesDetail = {
     if (text === 'rpa') return 'rookie_patch_auto'
     if (text === 'true_rpa' || text === '正_rpa') return 'true_rookie_patch_auto'
     if (text === '1/1' || text === 'one_of_1') return 'one_of_one'
+    if (text === 'signature_pose' || text === 'signaturepose' || text === '招牌动作' || text === '标志动作') return 'signature_pose'
+    if (text === 'data_stat' || text === 'datastat' || text === '数据') return 'data_stat'
+    if (text === 'sealed_brick' || text === 'sealedbrick' || text === 'factory_sealed_brick' || text === 'factorysealedbrick' || text === '原封砖' || text === '原封磚') return 'sealed_brick'
     return text
   },
 
