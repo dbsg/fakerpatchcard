@@ -2,7 +2,10 @@ const assert = require('assert')
 const {
   findLedgerLinkCandidates,
   scoreLedgerLinkCandidate,
-  buildLedgerLinkPatch
+  buildLedgerLinkPatch,
+  findBestChecklistItemMatch,
+  buildSameCardIdentityKey,
+  findLinkedSameCardPeers
 } = require('../miniprogram-card/cloudfunctions/seriesOps/ledgerMatcher')
 
 function test(name, fn) {
@@ -99,6 +102,142 @@ test('rejects sold records and records already linked to another live series ima
 
   assert.strictEqual(scoreLedgerLinkCandidate(sold, target).matched, false)
   assert.strictEqual(scoreLedgerLinkCandidate(linkedElsewhere, target).matched, false)
+})
+
+test('allows a series-scoped repurchase with a private front image to link to a concrete series image', () => {
+  const item = {
+    _id: 'repurchased',
+    seriesId: 'current_series',
+    imageId: '',
+    imageUrl: 'cloud://user-card-front-17',
+    player: 'Matthew Dellavedova',
+    playerCN: '马修·德拉维多瓦',
+    year: '2024-25',
+    brand: 'Panini',
+    cardSeries: 'Silhouette',
+    cardName: '22 Matthew Dellavedova, Cleveland Cavaliers /21',
+    cardNumber: '17/21',
+    status: 'holding'
+  }
+  const target = {
+    seriesId: 'current_series',
+    imageId: 'series_image_17',
+    imageUrl: 'cloud://series-front-17',
+    player: 'Matthew Dellavedova',
+    playerCN: '马修·德拉维多瓦',
+    year: '2024-25',
+    brand: 'Panini',
+    cardSeries: 'Silhouette',
+    cardName: '22 Matthew Dellavedova, Cleveland Cavaliers /21',
+    cardNumber: '17/21'
+  }
+
+  const score = scoreLedgerLinkCandidate(item, target)
+
+  assert.strictEqual(score.matched, true)
+  assert(score.reasons.includes('编号'))
+})
+
+test('allows a stale image id to be relinked when the edited card number matches the target image', () => {
+  const item = {
+    _id: 'repurchased',
+    seriesId: 'current_series',
+    imageId: 'series_image_19',
+    imageUrl: 'cloud://series-front-19',
+    player: 'Matthew Dellavedova',
+    year: '2024-25',
+    brand: 'Panini',
+    cardSeries: 'Silhouette',
+    cardName: '22 Matthew Dellavedova, Cleveland Cavaliers /21',
+    cardNumber: '17/21',
+    status: 'holding'
+  }
+  const target = {
+    seriesId: 'current_series',
+    imageId: 'series_image_17',
+    imageUrl: 'cloud://series-front-17',
+    player: 'Matthew Dellavedova',
+    year: '2024-25',
+    brand: 'Panini',
+    cardSeries: 'Silhouette',
+    cardName: '22 Matthew Dellavedova, Cleveland Cavaliers /21',
+    cardNumber: '17/21'
+  }
+
+  assert.strictEqual(scoreLedgerLinkCandidate(item, target).matched, true)
+})
+
+test('chooses the checklist card kind with the same print run over a loose title prefix', () => {
+  const items = [
+    {
+      itemId: 'base',
+      text: '22 Matthew Dellavedova, Cleveland Cavaliers',
+      subset: 'NBA Finals Memorabilia',
+      completionTarget: 1
+    },
+    {
+      itemId: 'holo-silver',
+      text: '22 Matthew Dellavedova, Cleveland Cavaliers /21',
+      subset: 'NBA Finals Memorabilia Holo Silver',
+      printRun: 21,
+      completionTarget: 21
+    }
+  ]
+  const userItem = {
+    itemId: 'base',
+    cardName: '22 Matthew Dellavedova, Cleveland Cavaliers /21',
+    cardNumber: '17/21'
+  }
+
+  const match = findBestChecklistItemMatch(items, userItem)
+
+  assert(match, 'expected a checklist match')
+  assert.strictEqual(match.item.itemId, 'holo-silver')
+})
+
+test('finds linked peers from the same owned-card group while ignoring serial numerator', () => {
+  const target = {
+    _id: 'target',
+    player: 'Matthew Dellavedova',
+    playerCN: '马修·德拉维多瓦',
+    year: '2024-25',
+    brand: 'Panini',
+    cardSeries: 'Silhouette',
+    cardName: '22 Matthew Dellavedova, Cleveland Cavaliers /21',
+    cardNumber: '17/21',
+    condition: '通行'
+  }
+  const linkedPeer = {
+    _id: 'peer',
+    seriesId: 'series_a',
+    itemId: '',
+    imageId: 'img_19',
+    player: 'Matthew Dellavedova',
+    playerCN: '马修·德拉维多瓦',
+    year: '2024-25',
+    brand: 'Panini',
+    cardSeries: 'Silhouette',
+    cardName: '22 Matthew Dellavedova, Cleveland Cavaliers /21',
+    cardNumber: '19/21',
+    condition: '通行',
+    updateTime: '2026-05-16T01:00:00.000Z'
+  }
+  const otherPrintRun = {
+    _id: 'other',
+    seriesId: 'series_a',
+    itemId: 'item_49',
+    player: 'Matthew Dellavedova',
+    year: '2024-25',
+    brand: 'Panini',
+    cardSeries: 'Silhouette',
+    cardName: '22 Matthew Dellavedova, Cleveland Cavaliers /49',
+    cardNumber: '19/49',
+    condition: '通行'
+  }
+
+  assert.strictEqual(buildSameCardIdentityKey(target), buildSameCardIdentityKey(linkedPeer))
+  assert.notStrictEqual(buildSameCardIdentityKey(target), buildSameCardIdentityKey(otherPrintRun))
+  assert.deepStrictEqual(findLinkedSameCardPeers(target, [otherPrintRun, linkedPeer]).map(item => item._id), ['peer'])
 })
 
 test('builds a link patch without replacing private purchase data or an existing cover image', () => {

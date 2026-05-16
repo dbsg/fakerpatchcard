@@ -13,6 +13,8 @@ const collectionProgress = (() => {
   function parsePrintRunValue(value) {
     const text = String(value || '').trim()
     if (!text) return 0
+    const serialMatch = text.match(/^\d+\s*\/\s*([1-9]\d{0,5})\s*(?:编)?$/)
+    if (serialMatch) return Number(serialMatch[1])
     const match = text.match(/^\/?\s*([1-9]\d{0,5})\s*(?:编)?$/)
     return match ? Number(match[1]) : 0
   }

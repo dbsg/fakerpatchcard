@@ -8,6 +8,8 @@ function image(number, url) {
 assert.strictEqual(progress.parsePrintRunValue('99'), 99)
 assert.strictEqual(progress.parsePrintRunValue('/99'), 99)
 assert.strictEqual(progress.parsePrintRunValue('99编'), 99)
+assert.strictEqual(progress.parsePrintRunValue('1/1'), 1)
+assert.strictEqual(progress.parsePrintRunValue('17/21'), 21)
 assert.strictEqual(progress.parsePrintRunValue('0'), 0)
 assert.strictEqual(progress.parsePrintRunValue('abc'), 0)
 
