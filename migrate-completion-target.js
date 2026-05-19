@@ -104,7 +104,7 @@ async function fetchAll(accessToken, collectionName) {
 
 function parsePrintRunText(value) {
   const text = String(value || '').trim()
-  const match = text.match(/\/\s*([1-9]\d{0,5})\s*$/)
+  const match = text.match(/(?:^|\s)#?\/\s*([1-9]\d{0,5})\s*(?:编)?$/)
   return match ? Number(match[1]) : 0
 }
 

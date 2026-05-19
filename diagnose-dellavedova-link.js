@@ -106,7 +106,7 @@ function normalizeNumber(value) {
 }
 
 function parsePrintRunText(value) {
-  const match = String(value || '').trim().match(/\/\s*([1-9]\d{0,5})\s*$/)
+  const match = String(value || '').trim().match(/(?:^|\s)#?\/\s*([1-9]\d{0,5})\s*(?:编)?$/)
   return match ? Number(match[1]) : 0
 }
 

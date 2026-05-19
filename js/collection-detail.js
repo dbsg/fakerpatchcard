@@ -37,6 +37,8 @@ const seriesDetail = {
     data: '数据',
     data_stat: '数据',
     sealed_brick: '原封砖',
+    gold_label: '金标',
+    double_ten: '双10',
     rookie_year: '元年',
     final_year: '末年'
   },
@@ -302,6 +304,8 @@ const seriesDetail = {
     if (text === 'signature_pose' || text === 'signaturepose' || text === '招牌动作' || text === '标志动作') return 'signature_pose'
     if (text === 'data_stat' || text === 'datastat' || text === '数据') return 'data_stat'
     if (text === 'sealed_brick' || text === 'sealedbrick' || text === 'factory_sealed_brick' || text === 'factorysealedbrick' || text === '原封砖' || text === '原封磚') return 'sealed_brick'
+    if (text === 'gold_label' || text === 'goldlabel' || text === 'goldtag' || text === '金标' || text === '金標') return 'gold_label'
+    if (text === 'double_ten' || text === 'doubleten' || text === 'double10' || text === '双10' || text === '雙10') return 'double_ten'
     return text
   },
 

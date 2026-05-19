@@ -19,6 +19,15 @@ function test(name, fn) {
   }
 }
 
+function assertInOrder(source, markers, message) {
+  let cursor = -1
+  markers.forEach((marker) => {
+    const next = source.indexOf(marker, cursor + 1)
+    assert(next > cursor, `${message}: ${marker}`)
+    cursor = next
+  })
+}
+
 test('1986 Fleer checklist players are covered by roster data', () => {
   const collectionSource = read('card/js/collection-data.js')
   const ctx = {}
@@ -140,8 +149,8 @@ test('collection series manage modal supports default meta suggestions', () => {
   const js = read('miniprogram-card/pages/collection-series/collection-series.js')
   const wxml = read('miniprogram-card/pages/collection-series/collection-series.wxml')
   const rules = read('miniprogram-card/PRODUCT_RULES.md')
-  assert(wxml.includes('value="{{item.year}}" data-i="{{index}}" data-field="year" bindfocus="onUploadMetaSuggestFocus" bindinput="onUploadItemYear"'), 'upload image year should use the shared suggestion input')
-  assert(wxml.includes("activeUploadSuggest === 'year' && uploadSuggestIdx === index && uploadSuggestFiltered.length > 0"), 'upload image year should render a dropdown suggestion list')
+  assert(wxml.includes('value="{{item.year}}" data-i="{{uploadIndex}}" data-field="year" bindfocus="onUploadMetaSuggestFocus" bindinput="onUploadItemYear"'), 'upload image year should use the shared suggestion input')
+  assert(wxml.includes("activeUploadSuggest === 'year' && uploadSuggestIdx === uploadIndex && uploadSuggestFiltered.length > 0"), 'upload image year should render a dropdown suggestion list')
   assert(wxml.includes('value="{{editImageYear}}" data-field="year" bindfocus="onEditMetaSuggestFocus" bindinput="onEditImageYear"'), 'edit image year should use the shared suggestion input')
   assert(wxml.includes("activeEditSuggest === 'year' && editSuggestFiltered.length > 0"), 'edit image year should render a dropdown suggestion list')
   assert(wxml.includes('value="{{editSeriesDefaultYear}}" data-field="year" bindfocus="onManageMetaSuggestFocus" bindinput="onEditSeriesDefaultYear"'), 'default year should use the manage suggestion input')
@@ -213,8 +222,8 @@ test('collection detail keeps search and pure/upload display controls', () => {
   assert(wxml.includes('class="detail-desc-text" user-select="{{true}}"'), 'long detail description text should be selectable')
   assert(wxml.includes('class="row-text" user-select="{{true}}"'), 'long card titles should be selectable')
   assert(js.includes('_imageLabelDefaultYear: this._getImageLabelDefaultYear(series, defaultInfoEnabled)'), 'image labels should use series-level year fallback for duplicate suppression')
-  assert(js.includes('_buildGroups(checklist, series)'), 'initial collection load should build checklist groups with the freshly computed series metadata')
-  assert(js.includes('_buildGroups(cl, series)'), 'checklist updates should rebuild groups with the freshly computed series metadata')
+  assert(js.includes('_buildChecklistGroupSetData(checklist, series)'), 'initial collection load should build checklist groups with the freshly computed series metadata')
+  assert(js.includes('_buildChecklistGroupSetData(cl, series)'), 'checklist updates should rebuild groups with the freshly computed series metadata')
   assert(js.includes('_buildGroups(checklist, seriesContext = this.data.series || {})'), 'group builder should accept an explicit series context instead of only reading stale page data')
   assert(wxml.includes('series._imageLabelDefaultYear'), 'image meta labels should compare against the effective series year')
   assert(numberDisplay.includes('function seasonKey'), 'image meta label matching should normalize season year formats')
@@ -249,6 +258,24 @@ test('collection image edit opens full card-kind editor with print run fields', 
   assert(js.includes("if (Number(editImageIdx) === Number(editCardIdx)) this.setData({ editImageCardTitle: nextItem.text || '' })"), 'saving card-kind edits should refresh the image edit modal title')
   assert(!js.includes("title: '修改名称'"), 'card-kind title editing should not use a rename-only modal')
   assert(!js.includes("title: '修改卡片名称'"), 'image edit card entry should not use a rename-only modal')
+})
+
+test('print run parser only trusts explicit trailing print run tokens', () => {
+  const progress = require('../miniprogram-card/utils/collectionProgress')
+  const seriesOps = read('miniprogram-card/cloudfunctions/seriesOps/index.js')
+  const adminOps = read('miniprogram-card/cloudfunctions/adminOps/index.js')
+  const ledgerMatcher = read('miniprogram-card/cloudfunctions/seriesOps/ledgerMatcher.js')
+  const staticProgress = read('card/js/collection-progress.js')
+  assert.strictEqual(progress.parsePrintRunText('Title Card 1/9'), 0, 'card-kind text like Title Card 1/9 should not be treated as print run')
+  assert.strictEqual(progress.getPrintRun({ text: '1 Title Card 1/9', completionTarget: 1 }), 0, 'Slam Dunk fixed slot text should not infer /9 print run')
+  assert.strictEqual(progress.parsePrintRunText('NBA Championship /199'), 199, 'space-separated /199 should remain a print run')
+  assert.strictEqual(progress.parsePrintRunText('NBA Championship #/199'), 199, '#/199 should remain a print run')
+  assert.strictEqual(progress.parsePrintRunText('NBA Championship /199编'), 199, '/199编 should remain a print run')
+  assert.strictEqual(progress.parsePrintRunText('Normal Card 199'), 0, 'plain trailing numbers should not be print run')
+  assert(ledgerMatcher.includes("return parsePrintRunText((item && (item.text || item.subset)) || '')"), 'ledger matching should not infer print run from cardKind')
+  ;[seriesOps, adminOps, ledgerMatcher, staticProgress].forEach(source => {
+    assert(source.includes('(?:^|\\s)#?\\/\\s*([1-9]\\d{0,5})\\s*(?:编)?$'), 'all runtime print-run parsers should use the explicit trailing-token rule')
+  })
 })
 
 test('pure image collections show the top upload action', () => {
@@ -501,10 +528,13 @@ test('series image uploads require a mutable globally unique public uploader id'
 test('series upload owned flow can capture purchase and grading details', () => {
   const seriesJs = read('miniprogram-card/pages/collection-series/collection-series.js')
   const seriesWxml = read('miniprogram-card/pages/collection-series/collection-series.wxml')
-  const uploadOwnedStart = seriesWxml.indexOf('<view wx:if="{{item.owned}}" class="upload-owned-fields">')
-  const uploadOwnedEnd = seriesWxml.indexOf('<view class="form-row-inline">\n              <text class="form-label-sm">来源</text>', uploadOwnedStart)
-  const uploadOwnedBlock = seriesWxml.slice(uploadOwnedStart, uploadOwnedEnd)
-  assert(uploadOwnedStart >= 0 && uploadOwnedEnd > uploadOwnedStart, 'upload owned fields block should be present')
+  const uploadHoldStart = seriesWxml.indexOf('<text class="modal-section-title">持有记录</text>\n              <view wx:if="{{item.owned}}" class="upload-owned-fields">')
+  const uploadRatingStart = seriesWxml.indexOf('<text class="modal-section-title">评级信息</text>', uploadHoldStart)
+  const uploadNoteStart = seriesWxml.indexOf('<text class="modal-section-title">备注</text>', uploadRatingStart)
+  const uploadHoldBlock = seriesWxml.slice(uploadHoldStart, uploadRatingStart)
+  const uploadRatingBlock = seriesWxml.slice(uploadRatingStart, uploadNoteStart)
+  const uploadNoteBlock = seriesWxml.slice(uploadNoteStart, seriesWxml.indexOf('</scroll-view>', uploadNoteStart))
+  assert(uploadHoldStart >= 0 && uploadRatingStart > uploadHoldStart && uploadNoteStart > uploadRatingStart, 'upload owned fields should be split into hold, grading, and note sections')
   assert(seriesJs.includes('UPLOAD_GRADE_OPTIONS'), 'upload flow should expose grade choices')
   assert(seriesJs.includes('onUploadItemLedgerInput'), 'upload owned fields should update purchase form state')
   assert(seriesJs.includes('onUploadItemGradingCompanyChange'), 'upload owned fields should support grading company selection')
@@ -512,32 +542,39 @@ test('series upload owned flow can capture purchase and grading details', () => 
   assert(seriesJs.includes('this._buildHoldLedgerPayload(newImage.url, item, uploadItem, newImage)'), 'ledger creation should use the uploaded image metadata')
   assert(seriesJs.includes('cardVariant: base.cardVariant'), 'direct upload should initialize card variant from image defaults')
   assert(seriesJs.includes("cardVariant: String(item.cardVariant || '').trim().slice(0, 80)"), 'direct upload should persist card variant on the uploaded image')
-  assert(uploadOwnedBlock.includes('class="form-group-modal"'), 'owned upload form should use the same vertical field style as long-press hold')
-  assert(uploadOwnedBlock.includes('class="hold-ledger-grid"'), 'owned upload form should use the same two-column grid as long-press hold')
-  assert(uploadOwnedBlock.includes('class="form-input-modal"'), 'owned upload form inputs should match long-press hold inputs')
-  assert(uploadOwnedBlock.includes('form-input-modal form-picker-modal'), 'owned upload form pickers should match long-press hold pickers')
-  assert(uploadOwnedBlock.includes('买入成本'), 'owned upload form should show purchase cost')
-  assert(uploadOwnedBlock.includes('data-field="quantity"'), 'owned upload form should capture quantity like long-press hold')
-  assert(uploadOwnedBlock.includes('value="{{item.cardVariant}}" data-i="{{index}}" data-field="cardVariant"'), 'owned upload form should capture card variant')
+  assert(uploadHoldBlock.includes('class="form-group-modal"'), 'owned upload form should use the same vertical field style as long-press hold')
+  assert(uploadHoldBlock.includes('class="hold-ledger-grid"'), 'owned upload form should use the same two-column grid as long-press hold')
+  assert(uploadHoldBlock.includes('class="form-input-modal"'), 'owned upload form inputs should match long-press hold inputs')
+  assert(uploadHoldBlock.includes('form-input-modal form-picker-modal'), 'owned upload form pickers should match long-press hold pickers')
+  assert(uploadHoldBlock.includes('买入成本'), 'owned upload form should show purchase cost')
+  assert(uploadHoldBlock.includes('data-field="quantity"'), 'owned upload form should capture quantity like long-press hold')
+  assert(seriesWxml.includes('value="{{item.cardVariant}}" data-i="{{uploadIndex}}" data-field="cardVariant"'), 'owned upload form should capture card variant in the card info section')
   assert(seriesWxml.includes('如 2017 总决赛、2018 总决赛'), 'owned upload form should use the same card variant example as long-press hold')
-  assert(uploadOwnedBlock.includes('评级公司'), 'owned upload form should show grading company')
-  assert(seriesWxml.includes('评级分数'), 'owned upload form should show grade selector')
+  assert(uploadRatingBlock.includes('评级公司'), 'owned upload form should show grading company')
+  assert(uploadRatingBlock.includes('评级分数'), 'owned upload form should show grade selector')
+  assert(uploadRatingBlock.includes('data-field="autoGrade"'), 'owned upload form should capture autograph grade')
+  assert(uploadRatingBlock.includes('data-field="certNo"'), 'owned upload form should capture certificate number')
+  assert(uploadNoteBlock.includes('bindinput="onUploadItemNote"'), 'owned upload form should capture note in the note section')
   assert(seriesJs.includes('AUTHENTIC / 鉴真'), 'grade selector should include authentic-only grading')
 })
 
 test('series edit image owned flow can capture purchase and grading details', () => {
   const seriesJs = read('miniprogram-card/pages/collection-series/collection-series.js')
   const seriesWxml = read('miniprogram-card/pages/collection-series/collection-series.wxml')
-  const editOwnedStart = seriesWxml.indexOf('<view wx:if="{{editImageOwned}}" class="upload-owned-fields edit-owned-fields">')
-  const editOwnedEnd = seriesWxml.indexOf('<view wx:if="{{editImageCanEdit}}" class="modal-section">', editOwnedStart)
-  const editOwnedBlock = seriesWxml.slice(editOwnedStart, editOwnedEnd)
-  assert(editOwnedStart >= 0 && editOwnedEnd > editOwnedStart, 'edit image owned fields block should be present')
-  assert(editOwnedBlock.includes('买入成本'), 'edit image owned form should show purchase cost')
-  assert(editOwnedBlock.includes('value="{{editImageHoldForm.cardVariant}}" data-field="cardVariant"'), 'edit image owned form should capture card variant')
-  assert(editOwnedBlock.includes('value="{{editImageHoldForm.quantity}}" data-field="quantity"'), 'edit image owned form should capture quantity')
-  assert(editOwnedBlock.includes('评级公司'), 'edit image owned form should show grading company')
-  assert(editOwnedBlock.includes('评级分数'), 'edit image owned form should show grade selector')
-  assert(editOwnedBlock.includes('value="{{editImageHoldForm.note}}" data-field="note"'), 'edit image owned form should keep note in the same ledger form')
+  const editModalStart = seriesWxml.indexOf('<view wx:if="{{showEditImageModal}}" class="modal-mask">')
+  const editHoldStart = seriesWxml.indexOf('<text class="modal-section-title">持有记录</text>\n              <view class="form-row-inline form-row-switch">', editModalStart)
+  const editRatingStart = seriesWxml.indexOf('<text class="modal-section-title">评级信息</text>', editHoldStart)
+  const editNoteStart = seriesWxml.indexOf('<text class="modal-section-title">备注</text>', editRatingStart)
+  const editHoldBlock = seriesWxml.slice(editHoldStart, editRatingStart)
+  const editRatingBlock = seriesWxml.slice(editRatingStart, editNoteStart)
+  const editNoteBlock = seriesWxml.slice(editNoteStart, seriesWxml.indexOf('</scroll-view>', editNoteStart))
+  assert(editModalStart >= 0 && editHoldStart > editModalStart && editRatingStart > editHoldStart && editNoteStart > editRatingStart, 'edit image owned fields should be split into hold, grading, and note sections')
+  assert(editHoldBlock.includes('买入成本'), 'edit image owned form should show purchase cost')
+  assert(seriesWxml.includes('value="{{editImageHoldForm.cardVariant}}" data-field="cardVariant"'), 'edit image owned form should capture card variant in the card info section')
+  assert(editHoldBlock.includes('value="{{editImageHoldForm.quantity}}" data-field="quantity"'), 'edit image owned form should capture quantity')
+  assert(editRatingBlock.includes('评级公司'), 'edit image owned form should show grading company')
+  assert(editRatingBlock.includes('评级分数'), 'edit image owned form should show grade selector')
+  assert(editNoteBlock.includes('value="{{editImageHoldForm.note}}" data-field="note"'), 'edit image owned form should keep note in the note section')
   assert(seriesJs.includes('editImageInitiallyOwned'), 'edit image modal should remember the original owned state')
   assert(seriesJs.includes('onEditImageHoldLedgerInput'), 'edit image owned fields should update ledger form state')
   assert(seriesJs.includes('onEditImageHoldGradingCompanyChange'), 'edit image owned fields should support grading company selection')
@@ -552,6 +589,172 @@ test('long-press hold ledger can capture card variant', () => {
   assert(seriesWxml.includes('如 2017 总决赛、2018 总决赛'), 'card variant input should use the same example copy as my cards')
   assert(seriesJs.includes("cardVariant: payload.cardVariant || ''"), 'hold modal should initialize card variant from the selected image')
   assert(seriesJs.includes("cardVariant: String(form.cardVariant || img.cardVariant || '').trim().slice(0, 80)"), 'hold ledger payload should persist user-entered card variant')
+})
+
+test('collection detail my-owned progress filters the current page in place', () => {
+  const seriesJs = read('miniprogram-card/pages/collection-series/collection-series.js')
+  const seriesWxml = read('miniprogram-card/pages/collection-series/collection-series.wxml')
+  const seriesWxss = read('miniprogram-card/pages/collection-series/collection-series.wxss')
+  assert(seriesWxml.includes('bindtap="toggleMyOwnedOnly"'), 'my owned progress panel should toggle the current-page owned filter')
+  assert(!seriesWxml.includes('只看持有'), 'my owned progress panel should not render a separate owned-only text button')
+  assert(!seriesWxml.includes('显示全部'), 'my owned progress panel should not render a separate show-all text button')
+  assert(seriesWxml.includes('myOwnedOnly && visibleChecklistItemCount === 0'), 'owned-only checklist view should show an empty state when nothing is visible')
+  assert(seriesWxml.includes("{{myOwnedOnly ? '暂无我的持有图片' : '还没有图片'}}"), 'owned-only free-image view should show an owned-specific empty state')
+  assert(seriesWxss.includes('.my-owned-progress:active'), 'clickable my owned progress should provide touch feedback')
+  assert(seriesWxss.includes('.my-owned-progress.active'), 'owned-only progress panel should have an active state')
+  assert(seriesWxss.includes('.my-owned-progress.active .my-owned-progress-title'), 'owned-only progress title should indicate the active green state without a text button')
+  assert(seriesJs.includes('toggleMyOwnedOnly()'), 'collection detail should implement the in-page owned filter toggle')
+  assert(seriesJs.includes('_getFreeImagesForDisplay'), 'free image mode should page over the filtered owned image list')
+  assert(seriesJs.includes('const myOwnedOnly = !!this.data.myOwnedOnly'), 'checklist groups should read the owned-only filter state')
+  assert(seriesJs.includes('const displayImages = myOwnedOnly ? this._filterMyOwnedImages(sourceImages) : sourceImages'), 'checklist cards should display only owned images when the filter is active')
+  assert(!seriesJs.includes('openMyOwnedSeriesDetail()'), 'my owned progress should not navigate away from the collection detail page')
+})
+
+test('card info form fields keep the shared order across collection and anomaly forms', () => {
+  const seriesWxml = read('miniprogram-card/pages/collection-series/collection-series.wxml')
+  const myWxml = read('miniprogram-card/pages/my-collection/my-collection.wxml')
+  const myDetailWxml = read('miniprogram-card/pages/my-collection-series-detail/my-collection-series-detail.wxml')
+  const detailWxml = read('miniprogram-card/pages/detail/detail.wxml')
+  const adminWxml = read('miniprogram-card/pages/admin/admin.wxml')
+
+  assertInOrder(seriesWxml.slice(seriesWxml.indexOf('<view wx:if="{{showUploadModal}}"')), [
+    'modal-section-title">图片',
+    'modal-section-title">卡片信息',
+    'form-label-sm">球员',
+    'form-label-sm">多人卡',
+    'form-label-sm">年份',
+    'form-label-sm">编号',
+    'form-label-sm">厂商',
+    'form-label-sm">系列',
+    'form-label-sm">卡种',
+    'form-label-sm">卡片种类',
+    'form-label-sm">特色',
+    'modal-section-title">上传设置',
+    'modal-section-title">来源信息',
+    'modal-section-title">持有记录',
+    'form-label-modal">买入成本',
+    'form-label-modal">品相',
+    'form-label-modal">数量',
+    'form-label-modal">购买日期',
+    'modal-section-title">评级信息',
+    'form-label-modal">评级公司',
+    'form-label-modal">评级分数',
+    'form-label-modal">签字评级',
+    'form-label-modal">评级编号',
+    'modal-section-title">备注'
+  ], 'series upload modal should follow the shared form order')
+
+  assertInOrder(myWxml.slice(myWxml.indexOf('<view wx:if="{{showItemModal}}"')), [
+    'modal-section-title">图片',
+    'modal-section-title">卡片信息',
+    'form-label">球员',
+    'form-label">多人卡',
+    'form-label">球员中文名',
+    'form-label">年份',
+    'form-label">编号',
+    'form-label">厂商/品牌',
+    'form-label">系列',
+    'form-label">卡片名称',
+    'form-label">卡片种类',
+    'form-label">特色',
+    'modal-section-title">持有记录',
+    'form-label">买入成本',
+    'form-label">品相',
+    'form-label">数量',
+    'form-label">购买日期',
+    'modal-section-title">评级信息',
+    'form-label">评级公司',
+    'form-label">评级分数',
+    'form-label">签字评级',
+    'form-label">评级编号',
+    'modal-section-title">卖出信息',
+    'form-label">卖出数量',
+    'form-label">卖出到手',
+    'form-label">卖出日期',
+    'modal-section-title">备注'
+  ], 'my collection modal should follow the shared form order')
+
+  assertInOrder(myDetailWxml.slice(myDetailWxml.indexOf('<view wx:if="{{showItemModal}}"')), [
+    'modal-section-title">图片',
+    'modal-section-title">卡片信息',
+    'form-label">球员',
+    'form-label">多人卡',
+    'form-label">球员中文名',
+    'form-label">年份',
+    'form-label">编号',
+    'form-label">厂商/品牌',
+    'form-label">系列',
+    'form-label">卡片名称',
+    'form-label">卡片种类',
+    'form-label">特色',
+    'modal-section-title">持有记录',
+    'form-label">买入成本',
+    'form-label">品相',
+    'form-label">数量',
+    'form-label">购买日期',
+    'modal-section-title">评级信息',
+    'form-label">评级公司',
+    'form-label">评级分数',
+    'form-label">签字评级',
+    'form-label">评级编号',
+    'modal-section-title">卖出信息',
+    'form-label">卖出数量',
+    'form-label">卖出到手',
+    'form-label">卖出日期',
+    'modal-section-title">备注'
+  ], 'my collection series detail modal should follow the shared form order')
+
+  assertInOrder(detailWxml.slice(detailWxml.indexOf('<view class="modal-mask" wx:if="{{showEditModal}}"')), [
+    'modal-section-title">卡片信息',
+    'data-field="player"',
+    'data-field="playerCN"',
+    'data-field="year"',
+    'data-field="number"',
+    'data-field="brand"',
+    'data-field="series"',
+    'modal-section-title">异常结论',
+    'modal-section-title">图片资料',
+    'modal-section-title">来源信息'
+  ], 'detail admin edit modal should follow the shared card info order')
+
+  assertInOrder(adminWxml.slice(adminWxml.indexOf('<view class="modal-mask" wx:if="{{showApproveModal}}"')), [
+    'modal-section-title">卡片信息',
+    'data-field="player"',
+    'data-field="playerCN"',
+    'data-field="year"',
+    'data-field="number"',
+    'data-field="brand"',
+    'data-field="series"',
+    'modal-section-title">异常结论',
+    'modal-section-title">图片资料',
+    'modal-section-title">来源信息'
+  ], 'admin approve modal should follow the shared card info order')
+
+  assertInOrder(adminWxml.slice(adminWxml.indexOf('<view class="modal-mask" wx:if="{{showAddCardModal}}"')), [
+    'modal-section-title">卡片信息',
+    'data-field="player"',
+    'data-field="playerCN"',
+    'data-field="year"',
+    'data-field="number"',
+    'data-field="brand"',
+    'data-field="series"',
+    'modal-section-title">异常结论',
+    'modal-section-title">图片资料',
+    'modal-section-title">来源信息'
+  ], 'admin add-card modal should follow the shared card info order')
+
+  assertInOrder(adminWxml.slice(adminWxml.indexOf('<view class="modal-mask" wx:if="{{showCorrectionEdit}}"')), [
+    'modal-section-title">卡片信息',
+    'data-field="player"',
+    'data-field="playerCN"',
+    'data-field="year"',
+    'data-field="number"',
+    'data-field="brand"',
+    'data-field="series"',
+    'modal-section-title">异常结论',
+    'modal-section-title">图片资料',
+    'modal-section-title">来源信息'
+  ], 'admin correction edit modal should follow the shared card info order')
 })
 
 test('grading can be cleared and back image removal uses corner icons', () => {
@@ -695,14 +898,31 @@ test('my collection shows batch quantity for unnumbered multi-card ledger rows',
   const detailWxml = read('miniprogram-card/pages/my-collection-series-detail/my-collection-series-detail.wxml')
   const rules = read('miniprogram-card/PRODUCT_RULES.md')
   assert(js.includes('function buildQuantityLabel(item = {}, quantity = 1)'), 'my collection should derive a title quantity label')
-  assert(js.includes('if (cleanCardNumber(item.cardNumber || item.number || \'\')) return \'\''), 'numbered cards should not duplicate quantity in the title')
+  assert(js.includes('if (userCardLedger.shouldResetRepurchaseInstance(item)) return \'\''), 'only concrete serial-numbered cards should hide title quantity')
+  assert(!js.includes('if (cleanCardNumber(item.cardNumber || item.number || \'\')) return \'\''), 'plain checklist card numbers should still show title quantity')
   assert(js.includes('quantityLabel: buildQuantityLabel(item, quantity)'), 'my collection rows should expose the quantity label')
   assert(wxml.includes('<text wx:if="{{item.quantityLabel}}" class="title-quantity">{{item.quantityLabel}}</text>'), 'my collection title rows should render quantity next to the title')
   assert(detailJs.includes('function buildQuantityLabel(item = {}, quantity = 1)'), 'series detail should derive the same title quantity label')
+  assert(detailJs.includes('if (userCardLedger.shouldResetRepurchaseInstance(item)) return \'\''), 'series detail should only hide quantity for concrete serial-numbered cards')
   assert(detailJs.includes('quantityLabel: buildQuantityLabel(item, quantity)'), 'series detail rows should expose the quantity label')
   assert(detailWxml.includes('<text wx:if="{{item.quantityLabel}}" class="title-quantity">{{item.quantityLabel}}</text>'), 'series detail title rows should render quantity next to the title')
   assert(!detailWxml.includes('x{{item.quantity}}</text>'), 'series detail should not render raw quantity in metadata')
-  assert(rules.includes('没有编号且数量大于 1 的单条台账'), 'product rules should document unnumbered batch quantity display')
+  assert(rules.includes('没有限编具体编号且数量大于 1 的单条台账'), 'product rules should document unnumbered batch quantity display')
+})
+
+test('collection series existing-ledger link modal is compact and selectable', () => {
+  const js = read('miniprogram-card/pages/collection-series/collection-series.js')
+  const wxml = read('miniprogram-card/pages/collection-series/collection-series.wxml')
+  const wxss = read('miniprogram-card/pages/collection-series/collection-series.wxss')
+  assert(!js.includes('candidates.length === 1'), 'single ledger-link candidate should use the closeable custom modal, not wx.showModal')
+  assert(js.includes('if (candidates.length > 0)'), 'all ledger-link candidates should open the same closeable custom modal')
+  assert(wxml.includes('wx:for="{{ledgerLinkCandidates}}"'), 'link modal should render all existing ledger candidates')
+  assert(wxml.includes('class="ledger-link-candidate" data-id="{{item._id}}" bindtap="selectLedgerLinkCandidate"'), 'candidate rows should use the real ledger id and click handler')
+  assert(wxml.includes('class="ledger-link-cover"'), 'candidate cover should use compact ledger-link cover styling')
+  assert(wxml.includes('class="ledger-link-body"'), 'candidate content should use compact ledger-link body styling')
+  assert(!wxml.includes('class="series-link-candidate" data-id="{{item.id}}"'), 'candidate rows should not use stale series-link classes or id fields')
+  assert(wxss.includes('.ledger-link-candidate { display: flex;'), 'candidate row layout should be defined')
+  assert(wxss.includes('.ledger-link-cover { width: 104rpx; height: 132rpx;'), 'candidate cover should be constrained instead of stretching')
 })
 
 test('user card item condition is persisted by cloud normalization', () => {
@@ -716,7 +936,7 @@ test('user card item condition is persisted by cloud normalization', () => {
   assert(collectionSeries.includes("const CONDITION_OPTIONS = ['通行', '瑕疵', '非原封']"), 'series upload and long-press hold forms should expose 非原封 as a condition option')
   assert(seriesOps.includes("const USER_CARD_ITEM_CONDITION_VALUES = ['通行', '瑕疵', '非原封']"), 'cloud function should whitelist supported condition values')
   assert(seriesOps.includes('function normalizeUserCardItemCondition(condition)'), 'cloud function should normalize user card condition')
-  assert(seriesOps.includes('condition: normalizeUserCardItemCondition(input.condition)'), 'cloud function should persist condition into user_card_items')
+  assert(/const condition = normalizeUserCardItemCondition\(input.condition\)[\s\S]*condition,/.test(seriesOps), 'cloud function should persist condition into user_card_items')
   assert(!myCollection.includes("{ value: 'non_sealed'"), '非原封 should not be modeled as a card feature')
   assert(!collectionSeries.includes("{ value: 'non_sealed'"), '非原封 should not be modeled as a series image feature')
   assert(rules.includes('默认品相是 `通行`，另有 `瑕疵` 和 `非原封` 分类。'), 'product rules should document the three supported condition values')
@@ -735,7 +955,7 @@ test('repurchase keeps series linkage and skips stale series image sync warnings
     assert(source.includes('...userCardLedger.buildRepurchaseInstancePatch(item)'), 'repurchase form should clear concrete numbered-card instance fields')
     assert(source.includes('...buildRepurchaseSeriesLinkPatch(item)'), 'repurchase form should apply the series-link patch')
     assert(source.includes('duplicateKey: userCardLedger.buildDuplicateKey(item)'), 'duplicate detection should use an exact card key instead of the same-card grouping key')
-    assert(source.includes('hasSeriesImageLink: userCardLedger.hasSeriesImageLink(item)'), 'series link actions should depend on concrete image linkage')
+    assert(source.includes('hasSeriesImageLink: !!(item.hasCurrentSeriesImageLink || userCardLedger.hasSeriesImageLink(item))'), 'series link actions should respect synced url-only historical image links')
     assert(source.includes('userCardLedger.isSeriesImageNumberMismatch(item, currentMeta)'), 'stale image links should be detected when saved card number differs from the linked series image number')
     assert(source.includes('userCardLedger.unlinkStaleRepurchaseSeriesImage(form, originalItem)'), 'repurchase should clear stale image linkage when the user changes serial number')
     assert(source.includes('function isMissingSeriesDocumentError(err)'), 'stale series sync should detect missing series documents')
@@ -758,6 +978,23 @@ test('series link can offer a create-from-user-card candidate for empty numbered
   assert(seriesOps.includes('const linkedPeers = findLinkedSameCardPeers(userItem, siblingSourceItems)'), 'series link search should first inspect linked cards from the same owned-card group')
   assert(seriesOps.includes('if (linkedPeers.length > 0)'), 'same-card linked peers should constrain series link candidates before global search')
   assert(seriesOps.includes('buildSiblingSeriesLinkCandidates(userItem, linkedPeers, seriesMap, subsetDocs, openid)'), 'same-card linked peers should produce scoped candidates from their bound series card kind')
+  assert(seriesOps.includes('function buildSeriesImageLinkCandidateKey'), 'series link candidates should use one canonical key for old url-only images')
+  assert(seriesOps.includes('function normalizeSeriesImageUrlForIdentity'), 'series link candidate keys should normalize cloud and CDN urls before dedupe')
+  assert(seriesOps.includes('const imageUrlKey = normalizeSeriesImageUrlForIdentity(draft.imageUrl)'), 'series link candidate keys should prefer stable image urls over generated legacy image ids')
+  assert(seriesOps.includes('dedupeSeriesImageLinkCandidates(siblingCandidates)'), 'same-card scoped candidates should be deduped before returning')
+  assert(seriesOps.includes('buildSeriesImageLinkCandidateKey(draft)'), 'candidate response and dedupe should share the same encoded url key')
+  assert(seriesOps.includes('function canUseExistingSeriesImageForUserCard'), 'existing image candidates should be checked against concrete serial numbers')
+  assert(seriesOps.includes('if (!canUseExistingSeriesImageForUserCard(userItem, item, draft)) return'), 'specific numbered user cards should not match broad base images from a different print run')
+})
+
+test('url-only historical series links are treated as linked after current-series sync', () => {
+  const js = read('miniprogram-card/pages/my-collection/my-collection.js')
+  const detailJs = read('miniprogram-card/pages/my-collection-series-detail/my-collection-series-detail.js')
+  ;[js, detailJs].forEach(source => {
+    assert(source.includes('hasCurrentSeriesImageLink: true'), 'valid url-only historical links should be marked during current image sync')
+    assert(source.includes('hasCurrentSeriesImageLink: false'), 'stale number mismatches should explicitly clear the synced link marker')
+    assert(source.includes('hasSeriesImageLink: !!(item.hasCurrentSeriesImageLink || userCardLedger.hasSeriesImageLink(item))'), 'link action should be hidden for url-only links that still match current series images')
+  })
 })
 
 test('my collection series detail drills into grouped cards', () => {
@@ -1012,4 +1249,94 @@ test('card image uploads support front back and detail images', () => {
   assert(myWxml.includes('chooseDetailImages'), 'my collection modal should allow detail images')
   assert(detailJs.includes('img.detailImageUrls'), 'collection card detail should include detail images in the carousel')
   assert(seriesOps.includes('detailImageUrls: Array.isArray(input.detailImageUrls)'), 'cloud function should persist user card detail image URLs')
+})
+
+test('collection series can export whole series or one card kind image grid', () => {
+  const seriesJs = read('miniprogram-card/pages/collection-series/collection-series.js')
+  const seriesWxml = read('miniprogram-card/pages/collection-series/collection-series.wxml')
+  const seriesWxss = read('miniprogram-card/pages/collection-series/collection-series.wxss')
+  const rules = read('miniprogram-card/PRODUCT_RULES.md')
+  assert(seriesJs.includes('showSeriesExportModal'), 'collection detail should keep export modal state')
+  assert(seriesJs.includes('openSeriesExportModal'), 'collection detail should expose a whole-series export entry')
+  assert(seriesJs.includes('openCardKindExportModal'), 'collection detail should expose a card-kind export entry')
+  assert(seriesJs.includes('_collectExportImages'), 'collection export should collect images by scope and ownership')
+  assert(seriesJs.includes('exportImageFace'), 'collection export should choose front or back image')
+  assert(seriesJs.includes('exportOwnedScope'), 'collection export should choose all or owned images')
+  assert(seriesJs.includes('exportGridColumns'), 'collection export should choose grid column layouts')
+  assert(seriesJs.includes('function normalizeExportGridColumns'), 'collection export should normalize column limits by image face mode')
+  assert(seriesJs.includes("const maxColumns = imageFace === 'both' ? 3 : 5"), 'front-back export should cap layout at 3 columns while other exports allow 5')
+  assert(seriesJs.includes('normalizeExportGridColumns(columns, value)'), 'changing image face should clamp an invalid current column count')
+  assert(seriesJs.includes("entry.backUrl ? { ...(await getImageInfo(entry.backUrl)) } : null"), 'front-back export should load back images when available')
+  assert(seriesJs.includes('drawExportImageSide(ctx, image, info, sideX, top'), 'front-back export should draw front and back sides inside one card cell')
+  assert(seriesJs.includes('SERIES_EXPORT_MAX_CANVAS_WIDTH'), 'export canvas should be allowed to grow beyond the old fixed width')
+  assert(seriesJs.includes('buildSeriesExportCanvasLayout(infos, columns, imageFace)'), 'export should size the canvas from image dimensions and selected columns')
+  assert(seriesJs.includes('getExportNaturalSideWidth(info, imageFace)'), 'export should use source image dimensions when sizing cells')
+  assert(!seriesJs.includes('const canvasWidth = 900'), 'export should not squeeze every column layout into a fixed 900px canvas')
+  assert(seriesJs.includes('getCanvas2DContext(\'#seriesExportCanvas\''), 'collection export should use Canvas 2D node API')
+  assert(seriesJs.includes('seriesExportRunningInBackground'), 'background exports should track a page-level tap guard state')
+  assert(seriesJs.includes('showSeriesExportBusyToast()'), 'background export tap guard should show a clear busy prompt')
+  assert(seriesJs.includes('可继续滚动浏览'), 'busy prompt should explain that scrolling is still allowed')
+  assert(seriesWxml.includes('bindtap="openSeriesExportModal">导出图鉴'), 'action bar should render the whole-series export button')
+  assert(seriesWxml.includes('openCardKindExportModal'), 'card-kind rows should render an export button')
+  assert(seriesWxml.includes('card._exportableImageCount > 0'), 'card-kind export should use the normalized card image count')
+  assert(!seriesWxml.includes('fixed-grid-export-btn'), 'fixed card slots should not render per-slot export buttons')
+  assert(!seriesWxss.includes('.fixed-grid-export-btn'), 'fixed slot export button styles should be removed')
+  assert(seriesWxml.includes('series-export-option'), 'export modal should render selectable export options')
+  assert(seriesWxml.includes('data-value="both"'), 'export modal should expose a front-back combined option')
+  assert(seriesWxml.includes('>4列</view>'), 'export modal should expose four-column layout')
+  assert(seriesWxml.includes('>5列</view>'), 'export modal should expose five-column layout')
+  assert(seriesWxml.includes("exportImageFace === 'both' ? 'disabled' : ''"), 'four and five column options should be visually disabled for front-back export')
+  assert(seriesWxml.includes('series-export-tap-shield'), 'background export should render a tap shield over page interactions')
+  assert(seriesWxml.includes('catchtap="showSeriesExportBusyToast"'), 'tap shield should explain why clicks are temporarily blocked')
+  assert(seriesWxml.includes('<canvas type="2d" id="seriesExportCanvas"'), 'export should provide a hidden Canvas 2D node')
+  assert(seriesWxss.includes('.series-export-canvas'), 'hidden export canvas should be styled off screen')
+  assert(seriesWxss.includes('.series-export-option.disabled'), 'disabled front-back column options should be styled')
+  assert(seriesWxss.includes('.series-export-tap-shield'), 'background export tap shield should be styled as a transparent fixed layer')
+  assert(seriesJs.includes('SERIES_EXPORT_BACKGROUND_THRESHOLD'), 'large image exports should use a background-task threshold')
+  assert(seriesJs.includes('_confirmLargeExportIfNeeded(exportEntries.length)'), 'large image exports should ask before running in the page background')
+  assert(seriesJs.includes('_runSeriesImageExport(exportEntries, { background })'), 'export should delegate drawing to a reusable async runner')
+  assert(seriesJs.includes('_loadExportImageInfos(exportEntries)'), 'large export should load images in batches instead of one giant request burst')
+  assert(seriesJs.includes('_getExportContextPlayerName'), 'export labels should know whether the current scope already identifies one player')
+  assert(seriesJs.includes('_getExportImagePlayerName'), 'export labels should include the player English name when needed')
+  assert(seriesJs.includes('[number, includePlayer ? playerName : \'\']'), 'export labels should keep number and English name on one line')
+  assert(!seriesJs.includes('const metaText = ['), 'export canvas should not draw the description line under the title')
+  assert(rules.includes('导出布局支持 1/2/3/4/5 列'), 'product rules should document the expanded export layout range')
+  assert(rules.includes('正面+背面'), 'product rules should document combined front-back export')
+  assert(rules.includes('正面+背面模式最多 3 列'), 'product rules should document the front-back column cap')
+  assert(rules.includes('导出画布需要按图片原始尺寸和列数动态放大'), 'product rules should document high-resolution export sizing')
+  assert(rules.includes('后台导出生成期间只允许滚动浏览'), 'product rules should document the background export interaction lock')
+})
+
+test('grouped fixed-slot hold actions ask which concrete image to update', () => {
+  const seriesJs = read('miniprogram-card/pages/collection-series/collection-series.js')
+  assert(seriesJs.includes("this._openChecklistImageChoice(idx, 'hold'"), 'grouped long-press hold should open image chooser')
+  assert(seriesJs.includes("action === 'hold' ? '选择要标记持有的图片'"), 'image chooser should label hold selection explicitly')
+  assert(seriesJs.includes("if (action === 'hold')"), 'image chooser runner should handle hold action')
+  assert(seriesJs.includes('this._handleHoldLongPress(img.url, context.item, context.idx, false)'), 'hold action should target the selected image URL')
+})
+
+test('repurchase saves skip duplicate prompt while normal add and edit keep duplicate checks', () => {
+  const myCollectionJs = read('miniprogram-card/pages/my-collection/my-collection.js')
+  const seriesDetailJs = read('miniprogram-card/pages/my-collection-series-detail/my-collection-series-detail.js')
+  ;[myCollectionJs, seriesDetailJs].forEach(source => {
+    const confirmStart = source.indexOf('confirmDuplicateIfNeeded(form, duplicate = null)')
+    assert(confirmStart >= 0, 'duplicate confirmation method should exist')
+    const confirmBody = source.slice(confirmStart, source.indexOf('\n  async saveItem', confirmStart))
+    assert(confirmBody.includes('this.data.repurchaseSourceId'), 'duplicate confirmation should know the repurchase flow')
+    assert(confirmBody.includes('return Promise.resolve(true)'), 'repurchase duplicate checks should resolve without prompting')
+    assert(source.includes('const duplicate = this.findDuplicateItemForForm(form)'), 'normal saves should still build exact duplicate candidates')
+  })
+})
+
+test('item money visibility updates rendered rows without rebuilding paged lists', () => {
+  const myCollectionJs = read('miniprogram-card/pages/my-collection/my-collection.js')
+  const seriesDetailJs = read('miniprogram-card/pages/my-collection-series-detail/my-collection-series-detail.js')
+  ;[myCollectionJs, seriesDetailJs].forEach(source => {
+    assert(source.includes('_refreshMoneyVisibilityOnly'), 'page should expose a money-only refresh helper')
+    const toggleStart = source.indexOf('toggleItemMoneyVisible(e)')
+    assert(toggleStart >= 0, 'item money toggle should exist')
+    const toggleBody = source.slice(toggleStart, source.indexOf('\n  async loadData', toggleStart) > 0 ? source.indexOf('\n  async loadData', toggleStart) : source.indexOf('\n  openDashboard', toggleStart))
+    assert(toggleBody.includes('_refreshMoneyVisibilityOnly'), 'item money toggle should refresh rendered money flags only')
+    assert(!toggleBody.includes('applyFilter()'), 'item money toggle should not rebuild filter pages and scroll position')
+  })
 })

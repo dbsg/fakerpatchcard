@@ -104,6 +104,90 @@ test('rejects sold records and records already linked to another live series ima
   assert.strictEqual(scoreLedgerLinkCandidate(linkedElsewhere, target).matched, false)
 })
 
+test('rejects link candidates with same serial and series but different players', () => {
+  const target = {
+    player: 'Khris Middleton',
+    playerCN: '克里斯·米德尔顿',
+    year: '2015-16',
+    brand: 'Panini',
+    cardSeries: 'Flawless',
+    cardName: '74 Khris Middleton - Milwaukee Bucks /5',
+    cardNumber: '2/5',
+    status: 'holding'
+  }
+  const wrongPlayer = {
+    _id: 'wrong-player',
+    player: 'Victor Oladipo',
+    playerCN: '维克托·奥拉迪波',
+    year: '2015-16',
+    brand: 'Panini',
+    cardSeries: 'Flawless',
+    cardName: '84 Victor Oladipo - Orlando Magic /5',
+    cardNumber: '2/5',
+    status: 'holding'
+  }
+
+  const score = scoreLedgerLinkCandidate(wrongPlayer, target)
+
+  assert.strictEqual(score.matched, false)
+  assert.strictEqual(score.rejectReason, 'player_conflict')
+  assert.deepStrictEqual(findLedgerLinkCandidates([wrongPlayer], target), [])
+
+  const targetWithoutStructuredPlayer = {
+    year: '2015-16',
+    brand: 'Panini',
+    cardSeries: 'Flawless',
+    itemText: '74 Khris Middleton - Milwaukee Bucks /5',
+    cardName: '74 Khris Middleton - Milwaukee Bucks /5',
+    cardNumber: '2/5',
+    status: 'holding'
+  }
+  const scoreWithoutStructuredPlayer = scoreLedgerLinkCandidate(wrongPlayer, targetWithoutStructuredPlayer)
+  assert.strictEqual(scoreWithoutStructuredPlayer.matched, false)
+  assert.strictEqual(scoreWithoutStructuredPlayer.rejectReason, 'player_conflict')
+
+  const wrongPlayerWithoutStructuredPlayer = {
+    _id: 'wrong-player-without-structured-player',
+    year: '2015-16',
+    brand: 'Panini',
+    cardSeries: 'Flawless',
+    cardName: '84 Victor Oladipo - Orlando Magic /5',
+    cardNumber: '2/5',
+    status: 'holding'
+  }
+  const scoreWithoutCandidatePlayer = scoreLedgerLinkCandidate(wrongPlayerWithoutStructuredPlayer, target)
+  assert.strictEqual(scoreWithoutCandidatePlayer.matched, false)
+  assert.strictEqual(scoreWithoutCandidatePlayer.rejectReason, 'player_conflict')
+  assert.deepStrictEqual(findLedgerLinkCandidates([wrongPlayerWithoutStructuredPlayer], target), [])
+
+  const scoreWithoutAnyStructuredPlayer = scoreLedgerLinkCandidate(wrongPlayerWithoutStructuredPlayer, targetWithoutStructuredPlayer)
+  assert.strictEqual(scoreWithoutAnyStructuredPlayer.matched, false)
+  assert.strictEqual(scoreWithoutAnyStructuredPlayer.rejectReason, 'identity_conflict')
+
+  const genericCardKindTarget = {
+    year: '2015-16',
+    brand: 'Panini',
+    cardSeries: 'Flawless',
+    itemText: '15 Gordon Hayward - Utah Jazz',
+    cardName: 'Flawless Diamond',
+    cardNumber: '/10',
+    status: 'holding'
+  }
+  const genericCardKindWrongPlayer = {
+    _id: 'generic-card-kind-wrong-player',
+    year: '2015-16',
+    brand: 'Panini',
+    cardSeries: 'Flawless',
+    itemText: '43 Zach LaVine - Minnesota Timberwolves /10',
+    cardName: 'Flawless Diamond',
+    cardNumber: '/10',
+    status: 'holding'
+  }
+  const genericCardKindScore = scoreLedgerLinkCandidate(genericCardKindWrongPlayer, genericCardKindTarget)
+  assert.strictEqual(genericCardKindScore.matched, false)
+  assert.strictEqual(genericCardKindScore.rejectReason, 'identity_conflict')
+})
+
 test('allows a series-scoped repurchase with a private front image to link to a concrete series image', () => {
   const item = {
     _id: 'repurchased',
