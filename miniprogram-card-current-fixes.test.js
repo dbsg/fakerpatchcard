@@ -117,6 +117,18 @@ test('Slam Dunk card subjects are covered by roster data', () => {
   assert.strictEqual(playerRoster.findPlayerMeta(allRoster, '三井').enName, 'Hisashi Mitsui')
 })
 
+test('player suggestion display does not duplicate bilingual names', () => {
+  const playerRoster = require(path.join(root, 'miniprogram-card/utils/playerRoster.js'))
+  const option = playerRoster.buildPlayerSuggestOption('Jaylen Brown / 杰伦·布朗', '杰伦·布朗')
+  assert.strictEqual(option.value, 'Jaylen Brown')
+  assert.strictEqual(option.cn, '杰伦·布朗')
+  assert.strictEqual(option.label, 'Jaylen Brown / 杰伦·布朗')
+  assert.strictEqual(
+    playerRoster.buildPlayerInputDisplay('Jaylen Brown / 杰伦·布朗', '杰伦·布朗'),
+    'Jaylen Brown / 杰伦·布朗'
+  )
+})
+
 test('catalog enum caches are invalidated by remote manifest versions', () => {
   const collectionDataJs = read('miniprogram-card/utils/collectionData.js')
   const myCollectionJs = read('miniprogram-card/pages/my-collection/my-collection.js')
@@ -443,6 +455,10 @@ test('collection detail keeps search and pure/upload display controls', () => {
   assert.strictEqual(numberSandbox.module.exports.galleryLabel('1/1', '2006', 'UD', '', 'LeBron James', '', 1, '', '', '', '', '', 0, '', true), '1/1 · 2006 · UD · LeBron James', 'one-column image labels should include number, year, series and player')
   assert.strictEqual(numberSandbox.module.exports.galleryLabel('1/1', '2006', 'UD', '', 'LeBron James', '', 2, '', '', '', '', '', 0, '', true), '2006 · UD · LeBron James', 'two-column image labels should include year, series and player')
   assert.strictEqual(numberSandbox.module.exports.galleryLabel('1/1', '2006', 'UD', '', 'LeBron James', '', 3, '', '', '', '', '', 0, '', true), '2006 · UD', 'three-column image labels should include only year and series')
+  assert.strictEqual(numberSandbox.module.exports.galleryLabel('1/1', '', '', '木盒', '', '', 1, '', '', '', '', '', 0, '', true), '1/1 · 木盒', 'one-column labels should not duplicate a print run already shown in the number')
+  assert.strictEqual(numberSandbox.module.exports.galleryLabel('1/1', '', '', '木盒', '', '', 3, '', '', '', '', '', 0, '', true), '木盒 · /1', 'compact labels may append print run when the number is hidden')
+  assert.strictEqual(numberSandbox.module.exports.galleryLabelWithNumber('1/1', '', '', '木盒', '', '', 3, '', '', '', '', '', 0, '', true, 'year'), '1/1 · 木盒', 'labels that prepend the number should not append the same print run to card kind')
+  assert.strictEqual(numberSandbox.module.exports.metaLabel('1/1', '', '木盒', '', '', 0, '', true), '1/1 · 木盒', 'metadata labels should not duplicate a print run already shown in the number')
   assert.strictEqual(numberSandbox.module.exports.galleryLabel('', '', '', '', '', '', 3, '2004-05', 'Exquisite Collection', 'Limited Logos', '', '', 0, '', true), '', 'three-column image labels should not repeat series-level default info')
   assert.strictEqual(numberSandbox.module.exports.galleryLabel('', '2004-05', 'Exquisite Collection', '', '', '', 3, '2004-05', 'Exquisite Collection', 'Limited Logos', '', '', 0, '', true), '', 'explicit image labels matching series defaults should stay hidden')
   assert.strictEqual(numberSandbox.module.exports.galleryLabel('', '2005-06', 'Exquisite Collection', '', '', '', 3, '2004-05', 'Exquisite Collection', 'Limited Logos', '', '', 0, '', true), '2005-06', 'image labels should still show fields that differ from series defaults')
