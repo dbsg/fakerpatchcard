@@ -436,6 +436,8 @@ test('collection detail keeps search and pure/upload display controls', () => {
   assert(wxml.includes('series._imageLabelDefaultPlayer'), 'collection detail image labels should receive player defaults')
   assert(json.includes('"/components/image-meta-label/image-meta-label"'), 'collection detail should register the shared image label component')
   assert(wxml.includes('<image-meta-label mode="single"'), 'collection image labels should use the shared single-label component')
+  assert(wxml.includes('numfmt.fixedGridLabel'), 'fixed-grid image labels should be built by the shared WXS label helper')
+  assert(!wxml.includes('<view class="fixed-grid-top-labels">'), 'fixed-grid image labels should not duplicate hand-written label markup')
   assert(!wxml.includes('<image-meta-label mode="fixed-pair"'), 'fixed-grid labels should no longer split number and series into separate labels')
   assert(!wxss.includes('.view-small .image-number-label'), 'collection detail should not keep per-page image label sizing')
   assert(!wxss.includes('.image-number-label {'), 'collection detail should not duplicate the shared image label base style')
@@ -459,12 +461,15 @@ test('collection detail keeps search and pure/upload display controls', () => {
   assert.strictEqual(numberSandbox.module.exports.galleryLabel('1/1', '', '', '木盒', '', '', 3, '', '', '', '', '', 0, '', true), '木盒 · /1', 'compact labels may append print run when the number is hidden')
   assert.strictEqual(numberSandbox.module.exports.galleryLabelWithNumber('1/1', '', '', '木盒', '', '', 3, '', '', '', '', '', 0, '', true, 'year'), '1/1 · 木盒', 'labels that prepend the number should not append the same print run to card kind')
   assert.strictEqual(numberSandbox.module.exports.metaLabel('1/1', '', '木盒', '', '', 0, '', true), '1/1 · 木盒', 'metadata labels should not duplicate a print run already shown in the number')
+  assert.strictEqual(numberSandbox.module.exports.fixedGridLabel(false, '', false, '', '', true, '1/1', '', 1, '', '木盒', '', false, false, '', '', '', '', '', 3, '', '', '', '', '', true), '1/1', 'fixed-card-slot labels should keep the visible serial number compact')
   assert.strictEqual(numberSandbox.module.exports.galleryLabel('', '', '', '', '', '', 3, '2004-05', 'Exquisite Collection', 'Limited Logos', '', '', 0, '', true), '', 'three-column image labels should not repeat series-level default info')
   assert.strictEqual(numberSandbox.module.exports.galleryLabel('', '2004-05', 'Exquisite Collection', '', '', '', 3, '2004-05', 'Exquisite Collection', 'Limited Logos', '', '', 0, '', true), '', 'explicit image labels matching series defaults should stay hidden')
   assert.strictEqual(numberSandbox.module.exports.galleryLabel('', '2005-06', 'Exquisite Collection', '', '', '', 3, '2004-05', 'Exquisite Collection', 'Limited Logos', '', '', 0, '', true), '2005-06', 'image labels should still show fields that differ from series defaults')
   assert.strictEqual(numberSandbox.module.exports.metaLabel('', '1997-98', '红宝', '1997-1998', '', 0, '', true), '红宝', 'same season labels should not repeat the series year')
   assert.strictEqual(numberSandbox.module.exports.metaLabel('', '1998-99', '红宝', '1997-1998', '', 0, '', true), '1998-99 · 红宝', 'different season labels should still show the image year')
   const progress = require('../miniprogram-card/utils/collectionProgress')
+  assert.strictEqual(progress.sanitizeImageCardKindForDisplay('木盒 /1', '1/1'), '木盒', 'progress-slot labels should strip card-kind print runs already shown by serial number')
+  assert.strictEqual(progress.sanitizeImageCardKindForDisplay('木盒 /2', '1/1'), '木盒 /2', 'progress-slot labels should only strip matching print runs')
   const slots = progress.buildPrintRunSlots({
     text: 'Avery Johnson',
     completionTarget: 2,
@@ -472,6 +477,9 @@ test('collection detail keeps search and pure/upload display controls', () => {
   }, {}, { imageLabelDefaults: { defaultYear: '1997-1998', defaultInfoEnabled: true } })
   const firstImageSlot = slots.find(slot => slot.type === 'image')
   assert.strictEqual(firstImageSlot.displayLabel, '红宝', 'progress-slot image labels should also suppress the series default year')
+  const publicDetailJs = read('miniprogram-card/pages/public-card-detail/public-card-detail.js')
+  assert(publicDetailJs.includes('return joinPublicImageLabel([parts.cardNumber, parts.year, parts.cardSeries, parts.player])'), 'public card shelf labels should follow the same number-year-series-player rule')
+  assert(!publicDetailJs.includes('cleanText(item.memorabiliaNote), parts.player'), 'public card shelf image labels should not add extra fields outside the shared rule')
 })
 
 test('collection image edit opens full card-kind editor with print run fields', () => {
@@ -878,7 +886,8 @@ test('public card shelf exposes only voluntary public ledger cards', () => {
   assert(publicDetailJs.includes('buildPublicCompactImageLabel'), 'public detail page should build three-column public image labels')
   assert(publicDetailJs.includes('const cardSeries = cleanText(item.cardSeries) || cleanText(item.series)'), 'public detail image labels should prefer the card series over the serial number')
   assert(publicDetailJs.includes('cleanText(item.productNumber || item.cardNo),') && publicDetailJs.includes('cleanText(item.serialNumber || item.serialNo)'), 'public detail one-column labels should include standard card number fields when available')
-  assert(publicDetailJs.includes('return joinPublicImageLabel([parts.cardNumber, parts.year, parts.cardSeries, cleanText(item.memorabiliaNote), parts.player])'), 'public detail one-column labels should render number, year, series, memorabilia note and player')
+  assert(publicDetailJs.includes('return joinPublicImageLabel([parts.cardNumber, parts.year, parts.cardSeries, parts.player])'), 'public detail one-column labels should render number, year, series and player')
+  assert(!publicDetailJs.includes('cleanText(item.memorabiliaNote), parts.player'), 'public detail image labels should not add memorabilia note outside the shared label rule')
   assert(publicDetailJs.includes('return joinPublicImageLabel([parts.year, parts.cardSeries, parts.player])'), 'public detail two-column labels should render year, series and player')
   assert(publicDetailJs.includes('return joinPublicImageLabel([parts.year, parts.cardSeries])'), 'public detail three-column labels should render only year and series')
   assert(publicDetailJs.includes('mediumImageLabel: buildPublicMediumImageLabel(item)'), 'public detail should keep medium labels for two-column cards')
