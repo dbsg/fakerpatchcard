@@ -3,33 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>小丁卡册 - 球星卡图鉴与异常卡片库</title>
+  <title>小丁卡册 - 异常卡片库</title>
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="小丁卡册，球星卡收藏图鉴与异常卡片库。收录球星卡图鉴收集记录，以及 Patch 异常、卡片异常、签字异常等资料，帮助收藏者做特征对比。">
-  <meta name="keywords" content="球星卡,球星卡图鉴,球星卡收藏,小丁卡册,Patch异常,卡片异常,签字异常,明确异常,高度存疑,NBA球星卡,Panini,Upper Deck,Immaculate,National Treasures,球星卡鉴别资料,basketball cards">
+  <meta name="description" content="小丁卡册异常卡片库，收录 Patch 异常、卡片异常、签字异常等资料，帮助收藏者做特征对比。">
+  <meta name="keywords" content="球星卡,小丁卡册,Patch异常,卡片异常,签字异常,明确异常,高度存疑,NBA球星卡,Panini,Upper Deck,Immaculate,National Treasures,球星卡鉴别资料,basketball cards">
   <meta name="author" content="球星卡TV">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dbsg.github.io/fakerpatchcard/">
-  <meta property="og:title" content="小丁卡册 - 球星卡图鉴与异常卡片库">
-  <meta property="og:description" content="小丁卡册，球星卡图鉴与异常卡片库。帮助收藏者整理图鉴、做特征对比。">
+  <meta property="og:title" content="小丁卡册 - 异常卡片库">
+  <meta property="og:description" content="小丁卡册异常卡片库，帮助收藏者查卡避坑、做特征对比。">
   <meta property="og:image" content="https://dbsg.github.io/fakerpatchcard/images/og-image.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://dbsg.github.io/fakerpatchcard/">
-  <meta property="twitter:title" content="小丁卡册 - 球星卡图鉴与异常卡片库">
-  <meta property="twitter:description" content="小丁卡册，球星卡图鉴与异常卡片库。帮助收藏者整理图鉴、做特征对比。">
+  <meta property="twitter:title" content="小丁卡册 - 异常卡片库">
+  <meta property="twitter:description" content="小丁卡册异常卡片库，帮助收藏者查卡避坑、做特征对比。">
   <meta property="twitter:image" content="https://dbsg.github.io/fakerpatchcard/images/og-image.jpg">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://dbsg.github.io/fakerpatchcard/">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/collection.css">
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -37,7 +36,7 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "小丁卡册",
-    "description": "球星卡图鉴与异常卡片库，帮助收藏者整理图鉴、做特征对比",
+    "description": "球星卡异常资料库，帮助收藏者查卡避坑、做特征对比",
     "url": "https://dbsg.github.io/fakerpatchcard/",
     "author": {
       "@type": "Organization",
@@ -54,7 +53,7 @@
       <div class="container header-inner">
         <div class="header-left">
           <h1 class="logo">🃏 小丁卡册</h1>
-          <p class="subtitle">球星卡图鉴 · 异常卡片库</p>
+          <p class="subtitle">异常卡片资料库</p>
         </div>
         <div class="header-right">
           <img src="images/miniprogram-qrcode.png" alt="小程序码" class="miniprogram-qr" />
@@ -63,40 +62,36 @@
       </div>
     </header>
 
-    <div class="main-tabs-wrapper">
-      <div class="container">
-        <div class="main-tabs" id="mainTabs" role="tablist">
-          <button type="button" class="main-tab active" data-tab="cards" role="tab" aria-selected="true">
-            <span class="tab-title">异常卡片库</span>
-            <span class="tab-desc">查卡避坑·资料参考</span>
-          </button>
-          <button type="button" class="main-tab" data-tab="collection" role="tab" aria-selected="false">
-            <span class="tab-title">球星卡图鉴</span>
-            <span class="tab-desc">整理图鉴·补图进度</span>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <div id="panelCards">
-      <!-- Search & Filter -->
+      <section id="backupHero" class="archive-hero" hidden>
+        <div class="container archive-hero-inner">
+          <div>
+            <h2>备份资料</h2>
+            <p>记录重大瑕疵、低编素球衣、易被换 Patch 或签字处理的高改造风险卡，仅作公开状态留档和后续对比参考。</p>
+          </div>
+          <button type="button" class="archive-back" id="backToProblems">← 返回异常卡片库</button>
+        </div>
+      </section>
+
       <div class="search-section">
         <div class="container">
-          <div class="filters-row">
-            <input
-              type="text"
-              id="searchInput"
-              class="search-input"
-              placeholder="搜索球员、系列、编号、识别点；如 勒布朗 99"
-            >
+          <div class="search-bar">
+            <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+            <input type="search" id="searchInput" class="search-input" placeholder="搜索球员、系列、卡片编号、限编、识别点..." autocomplete="off">
+            <button type="button" id="searchClear" class="search-clear" aria-label="清空搜索" hidden>×</button>
           </div>
 
-          <div class="category-filter-scroll" aria-label="资料类型筛选">
+          <div id="problemFilters" class="category-filter-scroll" aria-label="资料类型筛选">
             <div id="categoryFilterTags" class="category-filter-tags"></div>
           </div>
 
           <div class="stats">
-            <span class="stat-item">共 <strong id="totalCount">0</strong> 条资料</span>
+            <span class="stat-item">共 <strong id="totalCount">0</strong> <span id="countUnit">条资料</span></span>
+            <div class="stats-actions">
+              <button type="button" class="inline-action guide-inline" id="guideButton">查看说明</button>
+              <button type="button" class="inline-action backup-inline" id="backupButton">备份资料</button>
+              <a class="inline-action submit-inline" id="feedbackButton" href="https://github.com/dbsg/fakerpatchcard/issues" target="_blank" rel="noopener">反馈异常卡片</a>
+            </div>
           </div>
         </div>
       </div>
@@ -104,13 +99,10 @@
       <!-- Card List -->
       <main class="main-content">
         <div class="container">
-          <div id="cardList" class="card-grid">
-            <!-- 卡片将通过JavaScript动态生成 -->
-          </div>
+          <div id="cardList" class="card-grid"></div>
 
-          <div id="pagination" class="pagination">
-            <!-- 分页按钮将通过JavaScript动态生成 -->
-          </div>
+          <button type="button" id="loadMore" class="load-more" hidden>加载更多</button>
+          <div id="loadDone" class="load-done" hidden></div>
 
           <div id="emptyState" class="empty-state" style="display: none;">
             <div class="empty-icon">📭</div>
@@ -125,23 +117,20 @@
       </main>
     </div>
 
-    <div id="panelCollection" class="collection-home-panel" style="display: none;">
-      <main class="main-content">
-        <div class="container">
-          <p class="collection-home-hint">以下为球星卡图鉴收集记录，点击系列进入详情。</p>
-          <div class="series-toolbar">
-            <div class="series-search-bar">
-              <svg class="series-search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#999" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-              <input type="text" id="seriesSearchInput" class="series-search-input" placeholder="搜索图鉴...">
-              <span id="seriesSearchClear" class="series-search-clear" style="display:none;">✕</span>
-            </div>
-            <button type="button" id="seriesSortBtn" class="series-sort-btn">名称排序</button>
-          </div>
-          <div id="seriesListIndex" class="series-list"></div>
-          <div id="seriesEmptyState" class="col-empty" style="display:none;">未找到匹配的图鉴</div>
-        </div>
-      </main>
-    </div>
+    <button type="button" id="backTop" class="back-top" aria-label="回到顶部">↑</button>
+
+    <dialog id="guideDialog" class="guide-dialog">
+      <div class="guide-dialog-header">
+        <h2>资料说明</h2>
+        <button type="button" id="guideClose" class="guide-close" aria-label="关闭">×</button>
+      </div>
+      <div class="guide-dialog-body">
+        <p><strong>换 Patch</strong>：同一张卡出现 Patch 不一致，或存在来源冲突记录。</p>
+        <p><strong>签字异常</strong>：签字、笔迹、位置或来源存在可对比的异常线索。</p>
+        <p><strong>假卡</strong>：版式、编号或公开图片对比存在明显异常；仅凭图片通常难以完全判断。</p>
+        <p class="guide-disclaimer">请仔细查看来源资料或者当前页面相关信息后再做判断，本网站不构成任何鉴定结论、交易建议或维权证据。</p>
+      </div>
+    </dialog>
 
     <!-- Footer -->
     <footer class="footer">
@@ -160,9 +149,6 @@
 
   <script src="//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
   <script src="js/data.js"></script>
-  <script src="js/collection-data.js"></script>
-  <script src="js/collection-progress.js"></script>
-  <script src="js/collection.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

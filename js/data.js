@@ -6,10 +6,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate",
-    number: "27/75编",
+    serialNumber: "27/75编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/Ugkxzi0YKvO02Cjeln5B58EhX5z8Qjob8N9J",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kyrie-1.jpg",
@@ -30,10 +31,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "Immaculate",
-    number: "1/10编",
+    serialNumber: "1/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/AHDD9kzsYzN",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kyrie-2016-1.jpg",
@@ -49,10 +51,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "Immaculate",
-    number: "6/10编",
+    serialNumber: "6/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/AHDD9kzsYzN",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kyrie-2016-2.jpg",
@@ -68,7 +71,7 @@ const cardsData = [
     brand: "Panini",
     year: "2017-18",
     series: "Immaculate",
-    number: "1/1编",
+    serialNumber: "1/1编",
     status: "confirmed",
     category: "fake-patch",
     source: "微信群聊（球星卡的暴力美学）反馈",
@@ -92,10 +95,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate",
-    number: "3/75编",
+    serialNumber: "3/75编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4980284810595372",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-1.jpg",
@@ -121,10 +125,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2005-06",
     series: "Exquisite Noble Nameplates",
-    number: "10/25编",
+    serialNumber: "10/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/610pIZIB4eq",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/tmac-1.jpg",
@@ -140,10 +145,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Silhouette",
-    number: "9/10编",
+    serialNumber: "9/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxCeOR5dJUZy9UbZB3zmnVU9o-p4ZhbNiE",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/gerald-wallace-2.jpg",
@@ -164,10 +170,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Silhouette Threads",
-    number: "22/25编",
+    serialNumber: "22/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/4aw93aHWjL6",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/alec-burks-1.jpg",
@@ -183,10 +190,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "One and One",
-    number: "15/35编",
+    serialNumber: "15/35编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/Ugkx2hFHJym-ApLRvxLEmrcOUYHIhUk2RhFG",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/pj-washington-old.jpg",
@@ -207,10 +215,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Silhouette",
-    number: "10/10编",
+    serialNumber: "10/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/91gwJiZ4A0S",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/enrique-freeman-old.jpg",
@@ -231,10 +240,11 @@ const cardsData = [
     brand: "Panini",
     year: "2023-24",
     series: "Immaculate Rookie Jerseys",
-    number: "44/75编",
+    serialNumber: "44/75编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/91gwJiZ4A0S",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/black-howard-old.jpg",
@@ -255,10 +265,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Preferred Silhouettes",
-    number: "21/25编",
+    serialNumber: "21/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxwOIh-vBifwJ7G9lnnuRMdvGwGyhYEzk6",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-2015-old.jpg",
@@ -279,10 +290,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Immaculate Rookie Patch Autographs",
-    number: "4/5编",
+    serialNumber: "4/5编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxwL2OkdDBPn2ftS0tUVwqd1VgaPHZ4kQO",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/franz-wagner-old.jpg",
@@ -303,7 +315,7 @@ const cardsData = [
     brand: "Panini",
     year: "2023-24",
     series: "Immaculate Remarkable Jerseys",
-    number: "73/99编",
+    serialNumber: "73/99编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -326,7 +338,7 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Immaculate Jersey Number",
-    number: "16/50编",
+    serialNumber: "16/50编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -349,10 +361,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Flawless Signature Prime Materials Gold",
-    number: "4/10编",
+    serialNumber: "4/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/chris-paul-old.jpg",
@@ -373,7 +386,7 @@ const cardsData = [
     brand: "Panini",
     year: "2023-24",
     series: "Noir Box Office Memorabilia",
-    number: "70/99编",
+    serialNumber: "70/99编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -396,10 +409,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Immaculate Collection Premium Autograph Patches",
-    number: "07/25编",
+    serialNumber: "07/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/4lAIt93S3VP",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/stephen-curry-07-old.jpg",
@@ -420,10 +434,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Immaculate Collection Premium Autograph Patches",
-    number: "08/25编",
+    serialNumber: "08/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/Ugkxvs8qIDMeYaXuoQSTC4eQEkv0ppFXPnnL",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/stephen-curry-08-old.jpg",
@@ -444,10 +459,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "Preferred Silhouettes",
-    number: "06/10编",
+    serialNumber: "06/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/90qBpbHnWd8",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/porzingis-old.jpg",
@@ -468,10 +484,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Impeccable Elegance RC",
-    number: "53/99编",
+    serialNumber: "53/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/1vVMg52VDFS",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/jalen-williams-old.jpg",
@@ -492,10 +509,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2008-09",
     series: "Premier Rare Patches Triple",
-    number: "3/15编",
+    serialNumber: "3/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxU0eu7H5EzzFAUXFLPuJFnJHNO5hHpJH1",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/rockets-triple-old.jpg",
@@ -516,10 +534,11 @@ const cardsData = [
     brand: "Panini",
     year: "2018-19",
     series: "Flawless Vertical Patch Autographs",
-    number: "15/25编",
+    serialNumber: "15/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxT1fYfB-EzJZkgcvxOHI5LsGACmcsAcyW",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-flawless-old.jpg",
@@ -540,10 +559,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "National Treasures Colossal Jersey Autos",
-    number: "15/25编",
+    serialNumber: "15/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5066278490343864",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/magic-johnson-comparison.jpg",
@@ -559,10 +579,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Immaculate Collection",
-    number: "5/10编",
+    serialNumber: "5/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795528413447382",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/edit_25_after_1775809378153_0.png",
@@ -578,10 +599,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Immaculate Collection",
-    number: "5/10编",
+    serialNumber: "5/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795528413447382",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/edit_26_after_1775809308846_0.png",
@@ -597,7 +619,7 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Collection",
-    number: "26/34编",
+    serialNumber: "26/34编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -615,7 +637,7 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Flawless",
-    number: "4/10编",
+    serialNumber: "4/10编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -633,10 +655,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "National Treasures Colossal Jersey Patch Auto",
-    number: "23/25编",
+    serialNumber: "23/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795528413447382",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/edit_29_after_1775809346572_0.png",
@@ -652,10 +675,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Premium Patches Jumbo Patch Auto",
-    number: "19/25编",
+    serialNumber: "19/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795528413447382#&gid=1&pid=6",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/edit_30_after_1775809268797_0.png",
@@ -671,7 +695,7 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Premium Patches",
-    number: "未知",
+    productNumber: "未知",
     status: "suspected",
     category: "fake-patch",
     highRiskReason: "未找到相同编号的换patch记录，此卡通过与同系列其他卡片patch对比判断疑似被换",
@@ -690,10 +714,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "National Treasures Logoman Autograph",
-    number: "1/1编",
+    serialNumber: "1/1编",
     status: "confirmed",
     category: "fake-patch",
     source: "微信好友 Zway 大佬反馈",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kevin-garnett-old.jpg",
@@ -704,6 +729,11 @@ const cardsData = [
         url: "images/sample/kevin-garnett-new.jpg",
         note: "版本2 - PSA评级版 NBA Logoman patch（红白蓝NBA标志）",
         type: "after"
+      },
+      {
+        url: "images/sample/edit_32_before_1786430392812_2.png",
+        note: "",
+        type: "before"
       }
     ]
   },
@@ -714,7 +744,7 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2008-09",
     series: "Exquisite Collection Prime",
-    number: "50/50编",
+    serialNumber: "50/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "微信好友15大佬反馈",
@@ -738,7 +768,7 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2009-10",
     series: "Exquisite Collection Extra Exquisite",
-    number: "10/15编",
+    serialNumber: "10/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "微信好友15大佬反馈",
@@ -762,7 +792,7 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Crown Royale Silhouettes",
-    number: "12/12编",
+    serialNumber: "12/12编",
     status: "confirmed",
     category: "fake-patch",
     source: "微信好友15大佬反馈",
@@ -786,10 +816,11 @@ const cardsData = [
     brand: "Panini",
     year: "2018-19",
     series: "Immaculate Collection",
-    number: "01/35编",
+    serialNumber: "01/35编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5036771676522400",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-imm-old.jpg",
@@ -810,10 +841,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Immaculate Collection",
-    number: "10/10编",
+    serialNumber: "10/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5028804332357723",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/eddie-jones-old.jpg",
@@ -834,10 +866,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Premium Patches",
-    number: "25编",
+    serialNumber: "25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5027348292310113",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/vince-carter-premium.jpg",
@@ -853,10 +886,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Flawless Greats",
-    number: "04/25编",
+    serialNumber: "04/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5026314056107241",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/gary-payton-old.jpg",
@@ -877,10 +911,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Flawless Greats",
-    number: "09/10编",
+    serialNumber: "09/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5026314056107241",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/malone-flawless-greats-old.jpg",
@@ -901,10 +936,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Immaculate Collection Premium Patches",
-    number: "04/10编",
+    serialNumber: "04/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5022777772081640",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kawhi-leonard-comparison.jpg",
@@ -920,10 +956,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Flawless Greats",
-    number: "08/15编",
+    serialNumber: "08/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5006089910748177",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/drexler-flawless.jpg",
@@ -939,10 +976,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Flawless",
-    number: "09/10编",
+    serialNumber: "09/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5006089910748177",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/stockton-flawless.jpg",
@@ -958,10 +996,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Flawless",
-    number: "01/10编",
+    serialNumber: "01/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5006089910748177",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/david-robinson-flawless.jpg",
@@ -977,11 +1016,12 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Spectra",
-    number: "08/10编",
+    serialNumber: "08/10编",
     status: "suspected",
     category: "fake-patch",
     highRiskReason: "仅有正面照片无法100%确认，patch质感与同系列有差异但由于编号在卡片背面无法实锤",
     source: "https://m.weibo.cn/detail/5006089910748177",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/magic-spectra.jpg",
@@ -997,10 +1037,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection",
-    number: "26/50编",
+    serialNumber: "26/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4980307023367771",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-2012-comparison.jpg",
@@ -1021,10 +1062,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection",
-    number: "23/50编",
+    serialNumber: "23/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4980307023367771#&gid=1&pid=4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-2012-23.jpg",
@@ -1045,10 +1087,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Flawless",
-    number: "25/25编",
+    serialNumber: "25/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4980304860941726",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/haliburton-flawless-2.jpg",
@@ -1074,10 +1117,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Immaculate Collection",
-    number: "6/10编",
+    serialNumber: "6/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4980284697349957",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/doncic-1.jpg",
@@ -1098,10 +1142,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Flawless",
-    number: "05/15编",
+    serialNumber: "05/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4924809279177512",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/haliburton-flawless-05-1.jpg",
@@ -1122,10 +1167,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Immaculate Collection",
-    number: "13/50编",
+    serialNumber: "13/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4924809279177512",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/maxey-1.jpg",
@@ -1146,10 +1192,11 @@ const cardsData = [
     brand: "Panini",
     year: "2018-19",
     series: "Impeccable",
-    number: "69/99编",
+    serialNumber: "69/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4924809279177512",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/bridges-1.jpg",
@@ -1170,10 +1217,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Flawless",
-    number: "03/10编",
+    serialNumber: "03/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4906801453079306",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-flawless-03.jpg",
@@ -1189,7 +1237,7 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Flawless",
-    number: "1/1",
+    serialNumber: "1/1",
     status: "confirmed",
     category: "fake-auto",
     images: [
@@ -1212,10 +1260,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "National Treasures",
-    number: "114/199编",
+    serialNumber: "114/199编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4872408383884808",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kawhi-1.jpg",
@@ -1236,10 +1285,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Impeccable",
-    number: "14/25编",
+    serialNumber: "14/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4871586727068736",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/doncic-elegance-1.jpg",
@@ -1260,10 +1310,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "National Treasures Colossal",
-    number: "17/49编",
+    serialNumber: "17/49编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4871255708141192",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/doncic-colossal-1.jpg",
@@ -1284,10 +1335,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Crown Royale Rookie Silhouettes",
-    number: "10/25编",
+    serialNumber: "10/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4835979083386910",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/cunningham-1.jpg",
@@ -1308,10 +1360,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2007-08",
     series: "Chronology Stitches in Time",
-    number: "13/15编",
+    serialNumber: "13/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4834598167513336",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-ud-chronology.jpg",
@@ -1327,10 +1380,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Flawless",
-    number: "1/1",
+    serialNumber: "1/1",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4827834465916887",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/zion-legacy.jpg",
@@ -1346,10 +1400,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Eminence",
-    number: "6/10编",
+    serialNumber: "6/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4826297798494173",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/bird-2.jpg",
@@ -1370,10 +1425,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Immaculate Collection",
-    number: "04/10编",
+    serialNumber: "04/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795983085706277",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-imm-04.jpg",
@@ -1389,10 +1445,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection",
-    number: "61/75编",
+    serialNumber: "61/75编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795975288226656",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-imm-61.jpg",
@@ -1408,10 +1465,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2003-04",
     series: "Exquisite Collection Limited Logos",
-    number: "04/75编",
+    serialNumber: "04/75编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795528413447382",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-exquisite-04.jpg",
@@ -1427,10 +1485,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection",
-    number: "30/75编",
+    serialNumber: "30/75编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795528413447382",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-imm-30.jpg",
@@ -1446,10 +1505,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2008-09",
     series: "Exquisite Collection",
-    number: "14/24编",
+    serialNumber: "14/24编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795528413447382",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-exquisite-14.jpg",
@@ -1465,10 +1525,11 @@ const cardsData = [
     brand: "Panini",
     year: "2017-18",
     series: "Flawless",
-    number: "16/25编",
+    serialNumber: "16/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795528413447382",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/nowitzki-flawless.jpg",
@@ -1484,10 +1545,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Collection",
-    number: "13/25编",
+    serialNumber: "13/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795528413447382",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-imm-13.jpg",
@@ -1503,10 +1565,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2007-08",
     series: "Exquisite Collection Rookie",
-    number: "41/99编",
+    serialNumber: "41/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795451745767012",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-rookie-41.jpg",
@@ -1522,10 +1585,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection",
-    number: "17/30编",
+    serialNumber: "17/30编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795267972599285",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/jabbar-imm-17.jpg",
@@ -1541,10 +1605,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2007-08",
     series: "Exquisite Collection Limited Logos",
-    number: "13/50编",
+    serialNumber: "13/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795267972599285",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/mcgrady-exquisite-13.jpg",
@@ -1560,10 +1625,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Flawless",
-    number: "08/25编",
+    serialNumber: "08/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795267972599285",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/wade-flawless-08.jpg",
@@ -1579,10 +1645,11 @@ const cardsData = [
     brand: "Panini",
     year: "2018-19",
     series: "Immaculate Collection",
-    number: "14/30编",
+    serialNumber: "14/30编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795267972599285",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-imm-14.jpg",
@@ -1598,10 +1665,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2006-07",
     series: "Exquisite Collection",
-    number: "/100编",
+    serialNumber: "/100编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795267972599285",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-exquisite-45.jpg",
@@ -1617,10 +1685,11 @@ const cardsData = [
     brand: "Panini",
     year: "2017-18",
     series: "National Treasures",
-    number: "06/99编",
+    serialNumber: "06/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795267972599285",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/mitchell-nt-06.jpg",
@@ -1641,10 +1710,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Collection",
-    number: "04/10编",
+    serialNumber: "04/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795267972599285",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/olajuwon-imm-04.jpg",
@@ -1660,10 +1730,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Collection",
-    number: "10/25编",
+    serialNumber: "10/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/5027348292310113",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/carter-imm-10.jpg",
@@ -1679,10 +1750,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection",
-    number: "25/25编",
+    serialNumber: "25/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795243305636003",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-imm-25.jpg",
@@ -1698,10 +1770,11 @@ const cardsData = [
     brand: "Panini",
     year: "2017-18",
     series: "Flawless",
-    number: "12/15编",
+    serialNumber: "12/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795243305636003",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/nowitzki-flawless-12.jpg",
@@ -1717,10 +1790,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "National Treasures",
-    number: "013/199编",
+    serialNumber: "013/199编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795243305636003",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/davis-nt-013.jpg",
@@ -1736,10 +1810,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "National Treasures",
-    number: "019/199编",
+    serialNumber: "019/199编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795243305636003",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/davis-nt-019.jpg",
@@ -1755,7 +1830,7 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "National Treasures",
-    number: "071/199编",
+    serialNumber: "071/199编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -1773,10 +1848,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "National Treasures",
-    number: "076/199编",
+    serialNumber: "076/199编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795243305636003",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/davis-nt-076.jpg",
@@ -1792,10 +1868,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "National Treasures",
-    number: "170/199编",
+    serialNumber: "170/199编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795243305636003",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/davis-nt-170.jpg",
@@ -1811,10 +1888,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "National Treasures",
-    number: "009/199编",
+    serialNumber: "009/199编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795243305636003",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/davis-nt-009.jpg",
@@ -1830,10 +1908,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Flawless",
-    number: "7/10编",
+    serialNumber: "7/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795243305636003",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/wade-flawless-07.jpg",
@@ -1849,10 +1928,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Immaculate Collection",
-    number: "9/10编",
+    serialNumber: "9/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795243305636003",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-imm-14-09.jpg",
@@ -1868,10 +1948,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2005-06",
     series: "Exquisite Collection Limited Logos",
-    number: "32/50编",
+    serialNumber: "32/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795235769260829",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/mcgrady-exquisite-32.jpg",
@@ -1887,10 +1968,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Flawless",
-    number: "02/25编",
+    serialNumber: "02/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795205843157402",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/olajuwon-flawless-02.jpg",
@@ -1906,10 +1988,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Eminence",
-    number: "5/5编",
+    serialNumber: "5/5编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795203876290698",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/malone-immense-05.jpg",
@@ -1925,10 +2008,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Flawless",
-    number: "24/25编",
+    serialNumber: "24/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795203876290698",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/allen-flawless-24.jpg",
@@ -1944,10 +2028,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Flawless",
-    number: "5/15编",
+    serialNumber: "5/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795203876290698",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/olajuwon-flawless-05.jpg",
@@ -1963,10 +2048,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "National Treasures",
-    number: "编号待确认",
+    productNumber: "编号待确认",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4795203876290698",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/allen-nt-15.jpg",
@@ -1982,10 +2068,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2004-05",
     series: "Ultimate Collection",
-    number: "60/75编",
+    serialNumber: "60/75编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/gordon-ultimate-60-2.jpg",
@@ -2006,10 +2093,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2004",
     series: "SP Game Used",
-    number: "041/100编",
+    serialNumber: "041/100编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/jordan-sp-041-2.jpg",
@@ -2030,10 +2118,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2005-06",
     series: "Trilogy Rookie Premiere Patch Auto",
-    number: "05/10编",
+    serialNumber: "05/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/simien-trilogy-05-2.jpg",
@@ -2054,10 +2143,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2006-07",
     series: "Ultimate Collection",
-    number: "09/15编",
+    serialNumber: "09/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/iguodala-ultimate-09-2.jpg",
@@ -2078,10 +2168,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2007-08",
     series: "Exquisite Collection Limited Logos",
-    number: "42/50编",
+    serialNumber: "42/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/paul-exquisite-42-2.jpg",
@@ -2102,10 +2193,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "National Treasures NBA Gear Dual Patch",
-    number: "10/99编",
+    serialNumber: "10/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-nt-gear-10-2.jpg",
@@ -2126,10 +2218,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "National Treasures NBA Gear Dual Patch",
-    number: "13/99编",
+    serialNumber: "13/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-nt-gear-13-2.jpg",
@@ -2150,10 +2243,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2003-04",
     series: "Exquisite Collection Rookie Patch Autograph",
-    number: "编号待确认",
+    productNumber: "编号待确认",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-exquisite-rpa-2.jpg",
@@ -2174,10 +2268,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2007-08",
     series: "Exquisite Collection Limited Logos",
-    number: "22/50编",
+    serialNumber: "22/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/mourning-exquisite-22-2.jpg",
@@ -2198,10 +2293,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2007-08",
     series: "Exquisite Collection Rookie Patch Autograph",
-    number: "97/99编",
+    serialNumber: "97/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-exquisite-97.jpg",
@@ -2217,10 +2313,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection Patch Auto",
-    number: "04/75编",
+    serialNumber: "04/75编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-imm-04.jpg",
@@ -2236,10 +2333,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection Patch Auto",
-    number: "12/25编",
+    serialNumber: "12/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/hill-imm-12.jpg",
@@ -2255,10 +2353,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2008-09",
     series: "Exquisite Collection 6 Color Patch Jersey Logo",
-    number: "04/10编",
+    serialNumber: "04/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-iverson-exquisite-04.jpg",
@@ -2274,10 +2373,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Flawless",
-    number: "07/25编",
+    serialNumber: "07/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-flawless-07.jpg",
@@ -2293,10 +2393,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "年份待确认",
     series: "SP Game Used Dual Jersey Patch",
-    number: "08/25编",
+    serialNumber: "08/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-magic-sp-08.jpg",
@@ -2312,10 +2413,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2006-07",
     series: "Exquisite Collection Autograph Logo Jersey Patch",
-    number: "88/100编",
+    serialNumber: "88/100编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://m.weibo.cn/detail/4811905343163162",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-exquisite-88.jpg",
@@ -2336,10 +2438,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Flawless Jumbo GU Patch",
-    number: "16/25编",
+    serialNumber: "16/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-flawless-16.jpg",
@@ -2355,10 +2458,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Flawless Jersey Patch Ruby",
-    number: "11/15编",
+    serialNumber: "11/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/malone-flawless-11.jpg",
@@ -2374,10 +2478,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Flawless Patches Autographs",
-    number: "21/25编",
+    serialNumber: "21/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/parker-flawless-21.jpg",
@@ -2393,10 +2498,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection Patch Auto",
-    number: "10/25编",
+    serialNumber: "10/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/payton-imm-10.jpg",
@@ -2412,10 +2518,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020",
     series: "Crown Royale Silhouettes Autograph RLC FOTL",
-    number: "12/12编",
+    serialNumber: "12/12编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Qf-KtnZHiqI",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/nowitzki-crown-12-2.jpg",
@@ -2436,7 +2543,7 @@ const cardsData = [
     brand: "Panini",
     year: "2018",
     series: "Immaculate Dual Patch Number 22",
-    number: "09/22编",
+    serialNumber: "09/22编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -2454,10 +2561,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate Collection Patch Auto",
-    number: "14/99编",
+    serialNumber: "14/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxnwQgjhqPkj7Yf5TqoUNceta1TZ-nnu6z",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/cunningham-imm-14-2.jpg",
@@ -2478,10 +2586,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015",
     series: "National Treasures Colossal Jersey Auto",
-    number: "03/49编",
+    serialNumber: "03/49编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/russell-nt-03.jpg",
@@ -2497,10 +2606,11 @@ const cardsData = [
     brand: "Panini",
     year: "2017",
     series: "Noir Jersey Auto",
-    number: "96/99编",
+    serialNumber: "96/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/fox-noir-96.jpg",
@@ -2516,10 +2626,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012",
     series: "Anthology Memorabilia",
-    number: "2/8编",
+    serialNumber: "2/8编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-anthology-02.jpg",
@@ -2535,10 +2646,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "National Treasures Legacies",
-    number: "01/25编",
+    serialNumber: "01/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/irving-nt-01.jpg",
@@ -2554,10 +2666,11 @@ const cardsData = [
     brand: "Panini",
     year: "2009",
     series: "Limited Jumbo Jersey",
-    number: "01/10编",
+    serialNumber: "01/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-limited-01.jpg",
@@ -2573,7 +2686,7 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Noir Jumbo Material",
-    number: "01/3编",
+    serialNumber: "01/3编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -2591,10 +2704,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2002",
     series: "Ultimate Collection Game Jersey Patch",
-    number: "47/100编",
+    serialNumber: "47/100编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-ultimate-47.jpg",
@@ -2610,10 +2724,11 @@ const cardsData = [
     brand: "Panini",
     year: "2017",
     series: "Noir Box Office Materials",
-    number: "15/25编",
+    serialNumber: "15/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-noir-15.jpg",
@@ -2629,10 +2744,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015",
     series: "National Treasures NBA Material Prime",
-    number: "09/25编",
+    serialNumber: "09/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-nt-prime-09.jpg",
@@ -2648,10 +2764,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014",
     series: "Threads Authentic Threads Prime",
-    number: "7/7编",
+    serialNumber: "7/7编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-threads-07.jpg",
@@ -2667,7 +2784,7 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate The Standard",
-    number: "16/25编",
+    serialNumber: "16/25编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -2685,10 +2802,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "National Treasures Clutch Factor",
-    number: "06/25编",
+    serialNumber: "06/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=c3kmHKed254",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/cunningham-nt-06-2.jpg",
@@ -2709,10 +2827,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Flawless",
-    number: "1/1编",
+    serialNumber: "1/1编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=do8V9FOIctY",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/williams-flawless-01-1.jpg",
@@ -2733,10 +2852,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Flawless Patch Autograph Emerald",
-    number: "2/5编",
+    serialNumber: "2/5编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Qf-KtnZHiqI",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/laravia-flawless-02-1.jpg",
@@ -2757,10 +2877,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Immaculate Jersey Patch Autographs Au",
-    number: "13/25编",
+    serialNumber: "13/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/carter-imm-13.jpg",
@@ -2776,10 +2897,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Immaculate",
-    number: "29/50编",
+    serialNumber: "29/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/reed-imm-29.jpg",
@@ -2795,10 +2917,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Impeccable",
-    number: "15/88编",
+    serialNumber: "15/88编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/maxey-impeccable-15.jpg",
@@ -2814,10 +2937,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Noir Rookie Patch Autographs",
-    number: "66/99编",
+    serialNumber: "66/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/barnes-noir-66.jpg",
@@ -2833,10 +2957,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Immaculate",
-    number: "46/50编",
+    serialNumber: "46/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/maxey-imm-46.jpg",
@@ -2852,10 +2977,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Flawless",
-    number: "22/25编",
+    serialNumber: "22/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/jokic-flawless-22.jpg",
@@ -2871,10 +2997,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Impeccable",
-    number: "73/99编",
+    serialNumber: "73/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/haliburton-impeccable-73.jpg",
@@ -2890,10 +3017,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Immaculate",
-    number: "60/99编",
+    serialNumber: "60/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/haliburton-imm-60.jpg",
@@ -2909,10 +3037,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Flawless",
-    number: "02/15编",
+    serialNumber: "02/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/haliburton-flawless-02.jpg",
@@ -2928,10 +3057,11 @@ const cardsData = [
     brand: "Panini",
     year: "2018-19",
     series: "Noir Rookie Patch Autographs",
-    number: "16/99编",
+    serialNumber: "16/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/sga-noir-16.jpg",
@@ -2947,10 +3077,11 @@ const cardsData = [
     brand: "Panini",
     year: "2017-18",
     series: "Flawless",
-    number: "12/25编",
+    serialNumber: "12/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=ZcxAHivA2y4",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/markkanen-flawless-12.jpg",
@@ -2966,7 +3097,7 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "National Treasures NBA Game Gear",
-    number: "11/25编",
+    serialNumber: "11/25编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -2994,7 +3125,7 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "National Treasures",
-    number: "26/35编",
+    serialNumber: "26/35编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -3012,7 +3143,7 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "National Treasures Legacies",
-    number: "13/25编",
+    serialNumber: "13/25编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -3030,7 +3161,7 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Flawless",
-    number: "06/25编",
+    serialNumber: "06/25编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -3048,7 +3179,7 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Flawless",
-    number: "08/15编",
+    serialNumber: "08/15编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -3066,7 +3197,7 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Noir Rookie Patch Autographs",
-    number: "28/99编",
+    serialNumber: "28/99编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -3084,7 +3215,7 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "National Treasures Biography Materials",
-    number: "1/1编",
+    serialNumber: "1/1编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -3107,10 +3238,11 @@ const cardsData = [
     brand: "Playoff",
     year: "2009",
     series: "National Treasures NBA Gear Dual Prime",
-    number: "07/49编",
+    serialNumber: "07/49编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=MQT22B2HhH8",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-nt-07.jpg",
@@ -3126,10 +3258,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2008-09",
     series: "Premier Triple",
-    number: "34/50编",
+    serialNumber: "34/50编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=MQT22B2HhH8",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-premier-34.jpg",
@@ -3150,10 +3283,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "Immaculate Special Event Materials",
-    number: "1/4编",
+    serialNumber: "1/4编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=XrMkbhe4r6Y",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-imm-01.jpg",
@@ -3169,7 +3303,7 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "National Treasures Treasured Threads",
-    number: "10编",
+    serialNumber: "10编",
     status: "suspected",
     category: "fake-patch",
     highRiskReason: "与同系列10编出现不同patch的版本",
@@ -3193,11 +3327,12 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Immaculate The Standard",
-    number: "15/25编",
+    serialNumber: "15/25编",
     status: "suspected",
     category: "fake-patch",
     highRiskReason: "来自球星卡TV的视频，为同一换patch团伙送评的卡片",
     source: "https://www.youtube.com/watch?v=XrMkbhe4r6Y",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-imm-15-2.jpg",
@@ -3218,11 +3353,12 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Flawless Patch",
-    number: "14/20编",
+    serialNumber: "14/20编",
     status: "suspected",
     category: "fake-patch",
     highRiskReason: "来自球星卡TV的视频，为同一换patch团伙送评的卡片",
     source: "https://www.youtube.com/watch?v=XrMkbhe4r6Y",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-flawless-14-2.jpg",
@@ -3243,10 +3379,11 @@ const cardsData = [
     brand: "Panini",
     year: "2018-19",
     series: "Opulence Precious Swatch Signatures",
-    number: "3/10编",
+    serialNumber: "3/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=hry80D1N2C0",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-opulence-3-2.jpg",
@@ -3267,10 +3404,11 @@ const cardsData = [
     brand: "Panini",
     year: "2018-19",
     series: "Opulence Precious Swatch Signatures",
-    number: "08/10编",
+    serialNumber: "08/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=hry80D1N2C0",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-opulence-8.jpg",
@@ -3296,10 +3434,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Noir",
-    number: "02/99编",
+    serialNumber: "02/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/ivey-noir-2.jpg",
@@ -3315,10 +3454,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Noir Rookie Patch Autograph",
-    number: "94/99编",
+    serialNumber: "94/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/cunningham-noir-94.jpg",
@@ -3334,10 +3474,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Noir Rookie Patch Autograph",
-    number: "81/99编",
+    serialNumber: "81/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/barnes-noir-81.jpg",
@@ -3353,10 +3494,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Noir Rookie Patch Autograph",
-    number: "72/99编",
+    serialNumber: "72/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/johnson-noir-72.jpg",
@@ -3372,10 +3514,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Impeccable Elegance",
-    number: "99/99编",
+    serialNumber: "99/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/mathurin-elegance-99.jpg",
@@ -3391,10 +3534,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "One and One",
-    number: "21/99编",
+    serialNumber: "21/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/mathurin-one-21.jpg",
@@ -3410,10 +3554,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Noir Rookie Patch Autograph",
-    number: "70/99编",
+    serialNumber: "70/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/williams-noir-70.jpg",
@@ -3429,10 +3574,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Noir New Wave Jerseys",
-    number: "10/25编",
+    serialNumber: "10/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/castle-noir-10.jpg",
@@ -3448,10 +3594,11 @@ const cardsData = [
     brand: "Panini",
     year: "2023-24",
     series: "Impeccable Elegance",
-    number: "02/25编",
+    serialNumber: "02/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/podziemski-elegance-2.jpg",
@@ -3467,10 +3614,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Noir Rookie Patch Autograph",
-    number: "75/99编",
+    serialNumber: "75/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/george-noir-75.jpg",
@@ -3486,10 +3634,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "National Treasures Clutch Factor",
-    number: "08/49编",
+    serialNumber: "08/49编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/missi-nt-8.jpg",
@@ -3505,10 +3654,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "Grand Reserve Cornerstones",
-    number: "02/49编",
+    serialNumber: "02/49编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/turner-grand-2.jpg",
@@ -3524,10 +3674,11 @@ const cardsData = [
     brand: "Panini",
     year: "2023-24",
     series: "National Treasures Colossal",
-    number: "31/49编",
+    serialNumber: "31/49编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/pickett-nt-31.jpg",
@@ -3543,10 +3694,11 @@ const cardsData = [
     brand: "Panini",
     year: "2023-24",
     series: "Immaculate",
-    number: "41/99编",
+    serialNumber: "41/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/pickett-imm-41.jpg",
@@ -3562,10 +3714,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "One and One",
-    number: "25/49编",
+    serialNumber: "25/49编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/mccollum-one-25.jpg",
@@ -3581,10 +3734,11 @@ const cardsData = [
     brand: "Panini",
     year: "2023-24",
     series: "Immaculate",
-    number: "10/99编",
+    serialNumber: "10/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/brown-imm-10.jpg",
@@ -3600,10 +3754,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Noir Rookie Patch Autograph",
-    number: "21/49编",
+    serialNumber: "21/49编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=KC3qq0q6yGc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kolek-noir-21.jpg",
@@ -3619,7 +3774,7 @@ const cardsData = [
     brand: "Panini",
     year: "2017-18",
     series: "Immaculate Standout Memorabilia",
-    number: "47/49编",
+    serialNumber: "47/49编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -3637,7 +3792,7 @@ const cardsData = [
     brand: "Panini",
     year: "2009",
     series: "Absolute Memorabilia Rookie Premiere Materials",
-    number: "1/5编",
+    serialNumber: "1/5编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -3660,10 +3815,11 @@ const cardsData = [
     brand: "Panini",
     year: "2010-11",
     series: "National Treasures NBA Gear Laundry Tag Combos Signatures",
-    number: "1/5",
+    serialNumber: "1/5",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxhxkQJeKnZKHPOa8W5yw0j2YxxzO53jP8",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-nt-gear-5-2.jpg",
@@ -3684,10 +3840,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Obsidian Rookie Patch Autograph",
-    number: "55/75编",
+    serialNumber: "55/75编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/Ugkx60N6d9hId9FcdJJW0RRaNDN5rzmIzdnC",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/watson-obsidian-55-2.jpg",
@@ -3708,7 +3865,7 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Mosaic Rookie Patch Autograph",
-    number: "编号待确认",
+    productNumber: "编号待确认",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -3731,10 +3888,11 @@ const cardsData = [
     brand: "Panini",
     year: "2019-20",
     series: "National Treasures Colossal Game Used Patch Auto",
-    number: "08/10编",
+    serialNumber: "08/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxNeb_NxqkPhhMsoQb3sqpqn5gilBeyGzf",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/irving-nt-colossal-8-2.jpg",
@@ -3755,10 +3913,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Immaculate Collection",
-    number: "18/25编",
+    serialNumber: "18/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxUZ8sw4JV-RTETaNosR5NkRCn1rIpzkKa",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-imm-18-2.jpg",
@@ -3779,10 +3938,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "Flawless",
-    number: "06/25编",
+    serialNumber: "06/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/Ugkx2g5hljIL7hQeAvIAxIUyDPsL82C6dRfj",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lillard-flawless-6-3.jpg",
@@ -3808,10 +3968,11 @@ const cardsData = [
     brand: "Panini",
     year: "2017-18",
     series: "National Treasures",
-    number: "04/25编",
+    serialNumber: "04/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxroyxnOCcnTHCeEKDlZT3hrBbCbznk1SZ",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-nt-4-2.jpg",
@@ -3832,7 +3993,7 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Immaculate",
-    number: "06/49编",
+    serialNumber: "06/49编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -3855,10 +4016,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Noir Rookie Patch Autograph",
-    number: "29/99编",
+    serialNumber: "29/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/Ugkx6cJRJeQNYyFRE71Cwq10rC61H9LGLvyI",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/maxey-noir-29-2.jpg",
@@ -3879,10 +4041,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Noir Rookie Patch Autograph",
-    number: "09/99编",
+    serialNumber: "09/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxrslpADB1_0L6hriIC1OAzEsz3Q9vTZTl",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/haliburton-noir-9-2.jpg",
@@ -3903,10 +4066,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Flawless Signatures Prime Material Emerald",
-    number: "5/5编",
+    serialNumber: "5/5编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxwiEzc1sJ4dz8J7Gw6LLL9h9p2QYsRfpF",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/sga-flawless-5-3.jpg",
@@ -3927,10 +4091,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Noir Rookie Patch Autograph",
-    number: "88/99编",
+    serialNumber: "88/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxWtPKtB6U1FUsTQFCoWObJPY9aPaXK2r7",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/maxey-noir-88-2.jpg",
@@ -3951,10 +4116,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Impeccable Elegance Rookie 3Color Patch",
-    number: "4/10编",
+    serialNumber: "4/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/Ugkx-DLbz3qoYyZQVeDeHZRM7qfFTYQnHqLc",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/haliburton-impeccable-10-2.jpg",
@@ -3975,10 +4141,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Noir Rookie Patch Autograph",
-    number: "02/99编",
+    serialNumber: "02/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/Ugkxn4W1bOPBky_ESNl87r8lX1jxLycmQrbA",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/christie-noir-2-2.jpg",
@@ -3999,10 +4166,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "One And One Rookie Patch Autograph Purple",
-    number: "16/35编",
+    serialNumber: "16/35编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/post/UgkxCbbxaLp4b38nRhlIXV8PXtRn90CdFxZq",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/johnson-oneandone-16-2.jpg",
@@ -4023,7 +4191,7 @@ const cardsData = [
     brand: "Panini",
     year: "2022",
     series: "Flawless Vertical Patch",
-    number: "15/15编",
+    serialNumber: "15/15编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -4041,7 +4209,7 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "National Treasures Colossal",
-    number: "11/25编",
+    serialNumber: "11/25编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -4064,7 +4232,7 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection",
-    number: "14/25编",
+    serialNumber: "14/25编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -4092,10 +4260,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Collection",
-    number: "16/25编",
+    serialNumber: "16/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/7310790568",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/iverson-imm-16.jpg",
@@ -4111,10 +4280,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Collection",
-    number: "08/25编",
+    serialNumber: "08/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/7310790568",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/iverson-imm-8.jpg",
@@ -4130,10 +4300,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Immaculate Collection",
-    number: "24/25编",
+    serialNumber: "24/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/7310790568",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/iverson-imm-24.jpg",
@@ -4149,10 +4320,11 @@ const cardsData = [
     brand: "Panini",
     year: "2018-19",
     series: "National Treasures Colossal",
-    number: "16/49编",
+    serialNumber: "16/49编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/8264469818",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/tatum-nt-16-2.jpg",
@@ -4173,10 +4345,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Immaculate Collection Rookie Patch Autograph",
-    number: "67/99编",
+    serialNumber: "67/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/8667338991?&share=9105&fr=sharewise&is_video=false&unique=16F1211F8050DF8BC02F6F9063415A70&st=1775814667&client_ty",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/haliburton-imm-67-2.jpg",
@@ -4197,10 +4370,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Impeccable Elegance Rookie Patch Autograph",
-    number: "03/99编",
+    serialNumber: "03/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/8783165662?&share=9105&fr=sharewise&is_video=false&unique=5222A92ADB2AEE4DBEEA325812A1750A&st=1775814633&client_ty",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/holmgren-imp-3-2.jpg",
@@ -4221,10 +4395,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Impeccable Elegance Rookie Patch Autograph",
-    number: "24/99编",
+    serialNumber: "24/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/8839060599?&share=9105&fr=sharewise&is_video=false&unique=8B24DAAFDBAC055A17A3B03B24788197&st=1775814583&client_ty",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/cunningham-imp-24-2.jpg",
@@ -4245,10 +4420,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Impeccable Elegance Rookie Patch Autograph",
-    number: "83/99编",
+    serialNumber: "83/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/8900868684?&share=9105&fr=sharewise&is_video=false&unique=3023349E7804E6220439A20C0994D108&st=1775814444&client_ty",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/holmgren-imp-83-2.jpg",
@@ -4269,10 +4445,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2007",
     series: "Exquisite Collection Quad Jersey Extra",
-    number: "04/10编",
+    serialNumber: "04/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/9854349673?&share=9105&fr=sharewise&is_video=false&unique=F8A9F6D3BECB92D19E127CC6DF10530B&st=1775814231&client_ty",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/pierce-ud-4-comment.jpg",
@@ -4293,10 +4470,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Impeccable Elegance Rookie Patch Autograph",
-    number: "06/25编",
+    serialNumber: "06/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/9878615673?&share=9105&fr=sharewise&is_video=false&unique=5C07CE4EDD32DB6B914E03682E5BC873&st=1775814270&client_ty",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/cunningham-imp-6-2.jpg",
@@ -4317,7 +4495,7 @@ const cardsData = [
     brand: "Upper Deck",
     year: "1998-99",
     series: "Game Jerseys",
-    number: "GJ19",
+    productNumber: "GJ19",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -4335,7 +4513,7 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection",
-    number: "19/75编",
+    serialNumber: "19/75编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -4353,10 +4531,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection",
-    number: "27/75编",
+    serialNumber: "27/75编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/AAWbyal8oY1",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-imm-27.jpg",
@@ -4372,7 +4551,7 @@ const cardsData = [
     brand: "Panini",
     year: "2022",
     series: "Flawless Dual Player Patch",
-    number: "13/15编",
+    serialNumber: "13/15编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -4390,10 +4569,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2004",
     series: "Ultimate Collection Game Patches",
-    number: "90/100编",
+    serialNumber: "90/100编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-ud-90.jpg",
@@ -4409,10 +4589,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012",
     series: "Kobe Anthology Memorabilia",
-    number: "4/8编",
+    serialNumber: "4/8编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-anthology-4.jpg",
@@ -4428,10 +4609,11 @@ const cardsData = [
     brand: "Panini",
     year: "2015",
     series: "Noir Jumbo Material Prime",
-    number: "16/25编",
+    serialNumber: "16/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-noir-16.jpg",
@@ -4447,10 +4629,11 @@ const cardsData = [
     brand: "Panini",
     year: "2017",
     series: "National Treasures Century Materials Gold",
-    number: "3/5编",
+    serialNumber: "3/5编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-nt-century-3.jpg",
@@ -4466,10 +4649,11 @@ const cardsData = [
     brand: "Panini",
     year: "2018",
     series: "Spectra Spectacular Swatches Neon Orange",
-    number: "3/5编",
+    serialNumber: "3/5编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/klay-spectra-3.jpg",
@@ -4485,10 +4669,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate The Standard",
-    number: "15/25编",
+    serialNumber: "15/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-imm-standard-15.jpg",
@@ -4504,10 +4689,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate The Standard",
-    number: "16/25编",
+    serialNumber: "16/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-imm-standard-16.jpg",
@@ -4528,10 +4714,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Noir Rookie Jumbo Material Brand Logo",
-    number: "5/5编",
+    serialNumber: "5/5编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/mobley-noir-5.jpg",
@@ -4547,10 +4734,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Prizm Sensational Swatches Prize Green Ice",
-    number: "10/21编",
+    serialNumber: "10/21编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-prizm-10.jpg",
@@ -4566,10 +4754,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020",
     series: "Noir Box Office Memorabilia Prime",
-    number: "11/25编",
+    serialNumber: "11/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-noir-boxoffice-11.jpg",
@@ -4585,10 +4774,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate Materials Gold",
-    number: "5/10编",
+    serialNumber: "5/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-imm-materials-5.jpg",
@@ -4604,7 +4794,7 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate Materials Red",
-    number: "10/25编",
+    serialNumber: "10/25编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -4622,10 +4812,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate The Standard",
-    number: "11/25编",
+    serialNumber: "11/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-imm-standard-11.jpg",
@@ -4641,10 +4832,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate Standout Memorabilia Gold",
-    number: "1/10编",
+    serialNumber: "1/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-imm-standout-1.jpg",
@@ -4660,10 +4852,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate Remarkable Jerseys Red",
-    number: "19/25编",
+    serialNumber: "19/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-imm-jerseys-red-19.jpg",
@@ -4679,10 +4872,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022",
     series: "Origins Origins Memorabilia Turquoise",
-    number: "8/25编",
+    serialNumber: "8/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-origins-turquoise-8.jpg",
@@ -4698,10 +4892,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012",
     series: "Prestige Inside the No. Prime Materials",
-    number: "20/25编",
+    serialNumber: "20/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/kobe-prestige-20.jpg",
@@ -4717,10 +4912,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016",
     series: "National Treasures Lasting Legacies",
-    number: "9/20编",
+    serialNumber: "9/20编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/durant-nt-legacies-9.jpg",
@@ -4736,10 +4932,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016",
     series: "Spectra Spectacular Swatches Gold",
-    number: "3/10编",
+    serialNumber: "3/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/curry-spectra-gold-3.jpg",
@@ -4755,10 +4952,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate Remarkable Jerseys Red",
-    number: "3/25编",
+    serialNumber: "3/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-imm-jerseys-red-3.jpg",
@@ -4774,10 +4972,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Impeccable Elegance Rookie Jersey Auto",
-    number: "25/99编",
+    serialNumber: "25/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/mobley-impeccable-25.jpg",
@@ -4793,10 +4992,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "National Treasures NBA Materials Prime",
-    number: "5/25编",
+    serialNumber: "5/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-nt-materials-5.jpg",
@@ -4812,10 +5012,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Noir Box Office Memorabilia Prime",
-    number: "10/25编",
+    serialNumber: "10/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/morant-noir-boxoffice-10.jpg",
@@ -4831,10 +5032,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Noir Box Office Memorabilia Prime",
-    number: "16/25编",
+    serialNumber: "16/25编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=Xw2yKciVBI0&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/lebron-noir-boxoffice-16.jpg",
@@ -4850,7 +5052,7 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Immaculate Standout Memorabilia",
-    number: "11/99编",
+    serialNumber: "11/99编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -4873,10 +5075,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Immaculate The Standard",
-    number: "84/99编",
+    serialNumber: "84/99编",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/5fdwjBdKrOI",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/sga-imm-standard-84-2.jpg",
@@ -4897,7 +5100,7 @@ const cardsData = [
     brand: "Panini",
     year: "2015-16",
     series: "Immaculate",
-    number: "09/10编",
+    serialNumber: "09/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "微信群聊（球星卡的暴力美学）反馈",
@@ -4921,7 +5124,7 @@ const cardsData = [
     brand: "Panini",
     year: "2011-12",
     series: "Limited Glass Cleaners",
-    number: "1/1编",
+    serialNumber: "1/1编",
     status: "confirmed",
     category: "fake-patch",
     source: "微信群聊（球星卡的暴力美学）反馈",
@@ -4945,7 +5148,7 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Flawless Triple Materials",
-    number: "23/25编",
+    serialNumber: "23/25编",
     status: "confirmed",
     category: "fake-patch",
     images: [
@@ -4968,7 +5171,7 @@ const cardsData = [
     brand: "Panini",
     year: "2024",
     series: "Silhouette Jumbo Memorabilia",
-    number: "09/15编",
+    serialNumber: "09/15编",
     status: "confirmed",
     category: "fake-patch",
     source: "微信好友15大佬反馈",
@@ -4992,10 +5195,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Flawless Signature Prime Material Gold Auto",
-    number: "08/10编",
+    serialNumber: "08/10编",
     status: "confirmed",
     category: "fake-patch",
     source: "https://v.douyin.com/kuSr_nx5IpE/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/sga-flawless-8-1.jpg",
@@ -5016,7 +5220,7 @@ const cardsData = [
     brand: "Panini",
     year: "2014-15",
     series: "Spectra Hall of Fame Signatures",
-    number: "1/1编",
+    serialNumber: "1/1编",
     status: "confirmed",
     category: "fake-patch",
     source: "微信好友15大佬反馈",
@@ -5040,10 +5244,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Noir",
-    number: "16/49",
+    serialNumber: "16/49",
     status: "confirmed",
     category: "fake-auto",
     source: "https://www.xiaohongshu.com/explore/69d27dee000000001a036d4f?app_platform=ios&app_version=9.23&share_from_user_hidden=true&xsec_source=app_s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775731012979_after_0.png",
@@ -5064,7 +5269,7 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "National Treasures",
-    number: "27/65",
+    serialNumber: "27/65",
     status: "confirmed",
     category: "fake-patch",
     source: "微信好友15大佬反馈",
@@ -5088,10 +5293,11 @@ const cardsData = [
     brand: "Panini",
     year: "2011-12",
     series: "Gold Standard",
-    number: "无编",
+    serialNumber: "无编",
     status: "confirmed",
     category: "fake-auto",
-    source: "小程序用户反馈",
+    source: "公开反馈",
+    sourceType: "user_submission",
     images: [
       {
         url: "images/sample/fb_1775731412903_after_0.png",
@@ -5112,10 +5318,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "Immaculate",
-    number: "3/3",
+    serialNumber: "3/3",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.xiaohongshu.com/explore/69cfb4d8000000001b0210cb?app_platform=ios&app_version=9.23&share_from_user_hidden=true&xsec_source=app_s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775738935817_after_0.png",
@@ -5136,10 +5343,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Immaculate Collection",
-    number: "6/49",
+    serialNumber: "6/49",
     status: "confirmed",
     category: "fake-auto",
     source: "https://www.youtube.com/post/UgkxwTviX8T0ykIMWTttWmQuwvVObGslul0W",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775802679928_after_0.png",
@@ -5160,10 +5368,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Immaculate Collection",
-    number: "25/25",
+    serialNumber: "25/25",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=0IiEAk8Nqt8&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775804193269_after_0.png",
@@ -5179,10 +5388,11 @@ const cardsData = [
     brand: "Panini",
     year: "2013-14",
     series: "Spectra",
-    number: "3/15",
+    serialNumber: "3/15",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=0IiEAk8Nqt8&t=2s",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775804457709_after_0.png",
@@ -5198,10 +5408,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2004-05",
     series: "SP",
-    number: "14/100",
+    serialNumber: "14/100",
     status: "confirmed",
     category: "fake-auto",
     source: "https://www.youtube.com/watch?v=MQT22B2HhH8",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775806571875_after_0.png",
@@ -5222,10 +5433,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014",
     series: "Court kings",
-    number: "无编",
+    serialNumber: "无编",
     status: "confirmed",
     category: "fake-auto",
     source: "https://www.youtube.com/watch?v=MQT22B2HhH8",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775806672159_after_0.png",
@@ -5241,10 +5453,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Prizm",
-    number: "-",
+    productNumber: "-",
     status: "confirmed",
     category: "fake-auto",
     source: "https://www.youtube.com/watch?v=MQT22B2HhH8",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775806748071_after_0.png",
@@ -5260,10 +5473,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021",
     series: "Contenders Optic",
-    number: "-",
+    productNumber: "-",
     status: "confirmed",
     category: "fake-auto",
     source: "https://www.youtube.com/watch?v=MQT22B2HhH8",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775806789042_after_0.png",
@@ -5279,10 +5493,11 @@ const cardsData = [
     brand: "Panini",
     year: "2019-20",
     series: "National Treasures",
-    number: "27/99",
+    serialNumber: "27/99",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=IaIFVyGzNzI",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775807566205_after_0.png",
@@ -5298,10 +5513,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2005",
     series: "Exquisite Collection",
-    number: "2/50",
+    serialNumber: "2/50",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=IaIFVyGzNzI",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775807635256_after_0.png",
@@ -5317,10 +5533,11 @@ const cardsData = [
     brand: "Panini",
     year: "2021-22",
     series: "Impeccable Elegance",
-    number: "88/99",
+    serialNumber: "88/99",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=IaIFVyGzNzI",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775807763302_after_0.png",
@@ -5336,10 +5553,11 @@ const cardsData = [
     brand: "Panini",
     year: "2022-23",
     series: "Noir",
-    number: "3/5",
+    serialNumber: "3/5",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.youtube.com/watch?v=IaIFVyGzNzI",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775807839755_after_0.png",
@@ -5355,10 +5573,11 @@ const cardsData = [
     brand: "Panini",
     year: "2012-13",
     series: "Immaculate Collection",
-    number: "30/32",
+    serialNumber: "30/32",
     status: "confirmed",
     category: "fake-patch",
     source: "https://www.ozcardtrader.com.au/threads/official-real-fake-card-thread.174483/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1775813878577_after_0.jpg",
@@ -5374,11 +5593,12 @@ const cardsData = [
     brand: "Panini",
     year: "2009-10",
     series: "National Treasures",
-    number: "24/25",
+    serialNumber: "24/25",
     status: "suspected",
     category: "fake-patch",
     highRiskReason: "详情查看来源的帖子",
     source: "https://tieba.baidu.com/p/7735027390",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1776077811563_after_0.png",
@@ -5394,10 +5614,11 @@ const cardsData = [
     brand: "Panini",
     year: "2018-19",
     series: "Dominion",
-    number: "48/49",
+    serialNumber: "48/49",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/8268459748",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1776078049524_after_0.png",
@@ -5413,10 +5634,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020",
     series: "Select",
-    number: "15/49",
+    serialNumber: "15/49",
     status: "confirmed",
     category: "fake-auto",
     source: "https://tieba.baidu.com/p/10564451682?share_from=weixin",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1776417485299_after_0.png",
@@ -5437,10 +5659,11 @@ const cardsData = [
     brand: "Panini",
     year: "2009",
     series: "National Treasures",
-    number: "7/49",
+    serialNumber: "7/49",
     status: "confirmed",
     category: "fake-patch",
     source: "https://tieba.baidu.com/p/7919981160?share_from=weixin",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1776417713661_after_0.png",
@@ -5461,10 +5684,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Silhouette",
-    number: "29/49",
+    serialNumber: "29/49",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/2pm18yi8NbL",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1776417924671_after_0.jpg",
@@ -5485,10 +5709,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Silhouette",
-    number: "31/49",
+    serialNumber: "31/49",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/9LA2DMCBP9o",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1776418054023_after_0.jpg",
@@ -5504,10 +5729,11 @@ const cardsData = [
     brand: "Upper Deck",
     year: "2004-05",
     series: "Ultimate",
-    number: "64/75",
+    serialNumber: "64/75",
     status: "confirmed",
     category: "fake-patch",
     source: "http://xhslink.com/o/ApJXDMWtaw2",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1776418208185_after_0.jpg",
@@ -5523,10 +5749,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Noir",
-    number: "3/25",
+    serialNumber: "3/25",
     status: "confirmed",
     category: "counterfeit",
     source: "【【球星卡TV】在售塔图姆走秀签字假卡-哔哩哔哩】 https://b23.tv/DOos8oB",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1776697552601_after_0.jpg",
@@ -5547,10 +5774,11 @@ const cardsData = [
     brand: "Panini",
     year: "2016-17",
     series: "National Treasures",
-    number: "73/76",
+    serialNumber: "73/76",
     status: "confirmed",
     category: "counterfeit",
     source: "https://v.douyin.com/kCdwpri2Aw8/",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1777642210827_after_0.jpg",
@@ -5566,11 +5794,11 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Silhouette",
-    number: "无编",
+    serialNumber: "无编",
     status: "confirmed",
     category: "fake-patch",
     highRiskReason: "无编都是素球衣，切 patch 都是换的",
-    source: "基于公开图片与卡片特征对比收录",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/fb_1777782445562_after_0.png",
@@ -5591,10 +5819,10 @@ const cardsData = [
     brand: "Panini",
     year: "2024-25",
     series: "Silhouette",
-    number: "无编",
+    serialNumber: "无编",
     status: "confirmed",
     category: "fake-patch",
-    source: "基于公开图片与卡片特征对比收录",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1777784130091_after_0.jpg",
@@ -5615,10 +5843,11 @@ const cardsData = [
     brand: "Panini",
     year: "2014",
     series: "Immaculate Collection",
-    number: "4/10",
+    serialNumber: "4/10",
     status: "suspected",
     category: "fake-patch",
     source: "微信群友讨论",
+    sourceType: "user_submission",
     images: [
       {
         url: "images/sample/fb_1777985948405_after_0.jpg",
@@ -5649,10 +5878,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Noir",
-    number: "2/49",
+    serialNumber: "2/49",
     status: "confirmed",
     category: "counterfeit",
     source: "球星卡TV https://b23.tv/EFeyWDK",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1778253443978_after_0.jpg",
@@ -5678,10 +5908,11 @@ const cardsData = [
     brand: "Panini",
     year: "2020-21",
     series: "Noir",
-    number: "4/49",
+    serialNumber: "4/49",
     status: "confirmed",
     category: "counterfeit",
     source: "球星卡 TV： http://xhslink.com/o/9iPXpC1cyIz",
+    sourceType: "web_public",
     images: [
       {
         url: "images/sample/card_1778512802511_after_0.png",
@@ -5697,6 +5928,910 @@ const cardsData = [
         url: "images/sample/card_1778512802511_after_2.jpg",
         note: "after_2",
         type: "after"
+      }
+    ]
+  },
+  {
+    id: 313,
+    player: "Shai Gilgeous-Alexander",
+    playerCN: "谢伊·吉尔杰斯-亚历山大",
+    brand: "Panini",
+    year: "",
+    series: "Flawless",
+    serialNumber: "1/10",
+    status: "archived",
+    category: "backup",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/fb_1779706338308_after_0.jpg",
+        note: "签字瑕疵",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 314,
+    player: "Stephon Castle",
+    playerCN: "斯蒂芬·卡斯尔",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Noir",
+    serialNumber: "3/5",
+    status: "archived",
+    category: "backup",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/fb_1779706860017_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 315,
+    player: "Kyrie Irving",
+    playerCN: "凯里·欧文",
+    brand: "Panini",
+    year: "2016-17",
+    series: "National Treasures",
+    serialNumber: "8/35",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "球星卡TV：https://m.bilibili.com/opus/1182609267797000233?plat_id=588&share_from=dynamic&share_medium=iphone&share_plat=ios&share_session_id=759",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1779724039131_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1779724039131_after_1.png",
+        note: "after_1",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 316,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2011-12",
+    series: "Past and Present",
+    status: "confirmed",
+    category: "fake-auto",
+    source: "球星卡TV：https://b23.tv/EzaMolA",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1779724246897_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1779724246897_after_1.png",
+        note: "after_1",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1779724246897_after_2.png",
+        note: "after_2",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 317,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2015-16",
+    series: "Flawless",
+    serialNumber: "11/15",
+    status: "archived",
+    category: "backup",
+    source: "球星卡TV：http://xhslink.com/o/2jbQtDAygtt",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/fb_1779724476552_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/fb_1779724476552_after_1.png",
+        note: "after_1",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 318,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Flawless",
+    serialNumber: "2/5",
+    status: "archived",
+    category: "backup",
+    source: "球星卡TV：http://xhslink.com/o/81gGoKh5w64",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/fb_1779724601903_after_0.png",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 319,
+    player: "Tracy McGrady",
+    playerCN: "特雷西·麦克格雷迪",
+    brand: "Upper Deck",
+    year: "2006-07",
+    series: "Exquisite Collection",
+    cardKind: "Limited Logos",
+    serialNumber: "15/50",
+    status: "archived",
+    category: "backup",
+    source: "卡淘",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/fb_1779866199848_after_0.png",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 320,
+    player: "Klay Thompson",
+    playerCN: "克莱·汤普森",
+    brand: "Panini",
+    year: "2015-16",
+    series: "National Treasures",
+    cardKind: "白盒",
+    serialNumber: "1/1",
+    status: "archived",
+    category: "backup",
+    source: "卡淘",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/fb_1779868021185_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/fb_1779868021185_after_1.png",
+        note: "after_1",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 321,
+    player: "Nikola Jokić",
+    playerCN: "尼古拉·约基奇",
+    brand: "Panini",
+    year: "2017-18",
+    series: "National Treasures",
+    serialNumber: "9/99",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "球星卡TV：https://www.bilibili.com/opus/1184115461250351144",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1781164235425_after_0.png",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 322,
+    player: "Jalen Green",
+    playerCN: "杰伦·格林",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Noir",
+    serialNumber: "66/99",
+    status: "confirmed",
+    category: "fake-auto",
+    highRiskReason: "签字存在补墨",
+    source: "球星卡TV：https://www.bilibili.com/opus/1107289830756188167",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1781164469148_after_0.webp",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1781164469148_before_0.webp",
+        note: "before_0",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 323,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2017",
+    series: "Court Kings",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "球星卡TV：https://www.bilibili.com/opus/1095603254801203224",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1781164582460_after_0.webp",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 324,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2017",
+    series: "Court Kings",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "球星卡TV：https://www.bilibili.com/opus/1095603254801203224",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1781164620634_after_0.webp",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 325,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2014-15",
+    series: "Luxe",
+    serialNumber: "7/10",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "https://v.douyin.com/BzEb89afq7s/",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1781165631439_after_0.webp",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 326,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2016-17",
+    series: "National Treasures",
+    serialNumber: "5/25",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "http://xhslink.com/o/6VGeJgBWQNc",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1781165763904_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 327,
+    player: "James Harden",
+    playerCN: "詹姆斯·哈登",
+    brand: "Panini",
+    year: "2023-24",
+    series: "Immaculate Collection",
+    cardKind: "招牌动作",
+    serialNumber: "/25",
+    status: "confirmed",
+    category: "counterfeit",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783920322050_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783920322050_after_1.png",
+        note: "after_1",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783920322050_after_2.jpg",
+        note: "after_2",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783920322050_after_3.jpg",
+        note: "after_3",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783920322050_after_4.jpg",
+        note: "after_4",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783920322050_after_5.jpg",
+        note: "after_5",
+        type: "after"
+      },
+      {
+        url: "images/sample/edit_327_before_1783922296707_6.png",
+        note: "",
+        type: "before"
+      },
+      {
+        url: "images/sample/edit_327_before_1784472006056_7.jpg",
+        note: "",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 328,
+    player: "LeBron James",
+    playerCN: "勒布朗·詹姆斯",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Silhouette",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "3.87 复制打开抖音，看看【球星卡TV的作品】【球星卡TV】谨慎购买这张詹姆斯总决赛Patch卡... https://v.douyin.com/6T8QIrW8nns/ :7pm 11/30 V@y.TY odn:/",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783920464573_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783920464573_after_1.png",
+        note: "after_1",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 329,
+    player: "Jayson Tatum",
+    playerCN: "杰森·塔图姆",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Noir",
+    serialNumber: "18/25",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "1.00 复制打开抖音，看看【潘潘熊猫球星卡店的图文作品】这张塔图姆noir走秀签是假卡。原真卡之前成交过，... https://v.douyin.com/w6M-rAUN6g4/ :5pm B@G.IV 06/22 oDh:/",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783920727947_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783920727947_after_1.jpg",
+        note: "after_1",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783920727947_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1783920727947_before_1.jpg",
+        note: "before_1",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 330,
+    player: "Ja Morant",
+    playerCN: "贾·莫兰特",
+    brand: "Panini",
+    year: "2023-24",
+    series: "Noir",
+    serialNumber: "5/10",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "6.69 复制打开抖音，看看【潘潘熊猫球星卡店的图文作品】这张莫兰特影子签是假卡。非常明显的假卡，今日在卡淘... https://v.douyin.com/qvtkAhKonLc/ e@o.QK :1pm 03/23 NWM:/",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783920938822_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783920938822_after_1.jpg",
+        note: "after_1",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783920938822_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1783920938822_before_1.jpg",
+        note: "before_1",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 331,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2016-17",
+    series: "Immaculate Collection",
+    serialNumber: "7/40",
+    status: "confirmed",
+    category: "fake-auto",
+    source: "0.28 复制打开抖音，看看【球星卡TV的图文作品】这张刚截标的库里签字是后描/修改过的签字。2016... https://v.douyin.com/lfoo75ieLvA/ xse:/ 01/20 K@j.pQ :7pm",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783921089242_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783921089242_after_1.jpg",
+        note: "after_1",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783921089242_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1783921089242_before_1.jpg",
+        note: "before_1",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1783921089242_before_2.jpg",
+        note: "before_2",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 332,
+    player: "Karl-Anthony Towns",
+    playerCN: "卡尔-安东尼·唐斯",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Noir",
+    serialNumber: "78/99",
+    status: "confirmed",
+    category: "fake-auto",
+    source: "7.46 复制打开抖音，看看【橼荃的图文作品】这张鞋灯补的墨迹 大家小心 请@浩行天下球星卡社 ... https://v.douyin.com/k1ofNOLv4vo/ bNW:/ F@u.fB :9pm 07/16",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783921233814_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783921233814_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 333,
+    player: "Alperen Sengun",
+    playerCN: "阿尔佩伦·申京",
+    brand: "Panini",
+    year: "2021-22",
+    series: "Immaculate Collection",
+    serialNumber: "4/10",
+    status: "confirmed",
+    category: "fake-auto",
+    source: "4.38 复制打开抖音，看看【球星卡TV的图文作品】刚卖出去的Sengun签字是擦掉重签的。2021-... https://v.douyin.com/zZbHbmCxVAM/ IvF:/ O@x.se :0pm 02/23",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783921416669_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783921416669_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1783921416669_before_1.jpg",
+        note: "before_1",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 334,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Panini",
+    year: "2011-12",
+    series: "Past and Present",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "6.94 复制打开抖音，看看【球星卡TV的图文作品】HGA评级的假卡ebay在售。另外PSA评的这8张... https://v.douyin.com/qTH2ul6OBWQ/ :1pm z@G.Ii hbN:/ 07/08",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783921629100_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783921629100_after_1.jpg",
+        note: "after_1",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 335,
+    player: "Kobe Bryant",
+    playerCN: "科比·布莱恩特",
+    brand: "Panini",
+    year: "2011-12",
+    series: "Past and Present",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "6.94 复制打开抖音，看看【球星卡TV的图文作品】HGA评级的假卡ebay在售。另外PSA评的这8张... https://v.douyin.com/qTH2ul6OBWQ/ :1pm z@G.Ii hbN:/ 07/08",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783921665776_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783921665776_after_1.jpg",
+        note: "after_1",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783921665776_after_2.jpg",
+        note: "after_2",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783921665776_after_3.jpg",
+        note: "after_3",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 336,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2011-12",
+    series: "Past and Present",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "6.94 复制打开抖音，看看【球星卡TV的图文作品】HGA评级的假卡ebay在售。另外PSA评的这8张... https://v.douyin.com/qTH2ul6OBWQ/ :1pm z@G.Ii hbN:/ 07/08",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783921699754_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1783921699754_after_1.jpg",
+        note: "after_1",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 337,
+    player: "Chris Paul",
+    playerCN: "克里斯·保罗",
+    brand: "Panini",
+    year: "2011-12",
+    series: "Past and Present",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "6.94 复制打开抖音，看看【球星卡TV的图文作品】HGA评级的假卡ebay在售。另外PSA评的这8张... https://v.douyin.com/qTH2ul6OBWQ/ :1pm z@G.Ii hbN:/ 07/08",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1783921728945_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 338,
+    player: "Russell Westbrook",
+    playerCN: "拉塞尔·威斯布鲁克",
+    brand: "Panini",
+    year: "2016-17",
+    series: "Immaculate Collection",
+    serialNumber: "3/15",
+    status: "confirmed",
+    category: "fake-patch",
+    highRiskReason: "球衣切割来自2015圣诞大战，但这个卡片的patch和当天的球衣匹配不上，颜色就明显不对。",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1784344128458_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1784344128458_after_1.png",
+        note: "after_1",
+        type: "after"
+      },
+      {
+        url: "images/sample/edit_338_before_1786083090009_2.jpg",
+        note: "before_1",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1784344128458_before_2.png",
+        note: "before_2",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1784344128458_before_3.png",
+        note: "before_3",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1784344128458_before_4.png",
+        note: "before_4",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1784344128458_before_5.png",
+        note: "before_5",
+        type: "before"
+      },
+      {
+        url: "images/sample/edit_338_before_1786083091057_7.jpg",
+        note: "这年15编有两版，这张没有换patch的嫌疑",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 339,
+    player: "Ja Morant",
+    playerCN: "贾·莫兰特",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Immaculate Collection",
+    cardKind: "招牌动作",
+    serialNumber: "74/75",
+    status: "confirmed",
+    category: "counterfeit",
+    source: "BGN https://weixin.qq.com/sph/AaOBRTL5i0",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1784471972153_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      }
+    ]
+  },
+  {
+    id: 340,
+    player: "LaMelo Ball",
+    playerCN: "拉梅洛·鲍尔",
+    brand: "Topps",
+    year: "2025-26",
+    series: "Topps Chrome",
+    cardKind: "变化版",
+    serialNumber: "5/50",
+    status: "confirmed",
+    category: "counterfeit",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1784647382217_after_0.png",
+        note: "1.钢印不对 2.同编号真卡已经被评级",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1784647382217_after_1.png",
+        note: "1.钢印不对 2.同编号真卡已经被评级",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1784647382217_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 341,
+    player: "Kevin Durant",
+    playerCN: "凯文·杜兰特",
+    brand: "Panini",
+    year: "2018-19",
+    series: "Immaculate Collection",
+    serialNumber: "7/10",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "2.82 复制打开抖音，看看【嘟嘟的小帅的图文作品】朋友发现这张07/10 是换patch哦。大家还是... https://v.douyin.com/0wrqry53YcM/ 02/25 v@s.RX ygb:/ :6pm",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1785129983853_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1785129983853_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 342,
+    player: "Stephen Curry / Kevin Durant / Klay Thompson",
+    playerCN: "斯蒂芬·库里 / 凯文·杜兰特 / 克莱·汤普森",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Flawless",
+    serialNumber: "5/10",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "6.97 复制打开抖音，看看【ElonMusk的图文作品】Alt上出现换patch的“原封砖”注意避雷这张手... https://v.douyin.com/I0GvUujwF0s/ :0pm 02/05 h@O.XZ oQK:/",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1785130150823_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1785130150823_before_0.png",
+        note: "before_0",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1785130150823_before_1.png",
+        note: "before_1",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 343,
+    player: "Stephen Curry",
+    playerCN: "斯蒂芬·库里",
+    brand: "Topps",
+    year: "2025-26",
+    series: "Topps Chrome",
+    serialNumber: "5/50",
+    status: "confirmed",
+    category: "counterfeit",
+    highRiskReason: "真卡已经评级",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1785132461663_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1785132461663_before_0.jpg",
+        note: "before_0",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1785132461663_before_1.png",
+        note: "before_1",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 344,
+    player: "LaMelo Ball",
+    playerCN: "拉梅洛·鲍尔",
+    brand: "Panini",
+    year: "2020-21",
+    series: "Immaculate Collection",
+    serialNumber: "39/50",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "微信群",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1785234803457_after_0.png",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1785234803457_after_1.png",
+        note: "after_1",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1785234803457_before_0.png",
+        note: "before_0",
+        type: "before"
+      },
+      {
+        url: "images/sample/card_1785234803457_before_1.png",
+        note: "before_1",
+        type: "before"
+      }
+    ]
+  },
+  {
+    id: 345,
+    player: "Scottie Barnes",
+    playerCN: "斯科蒂·巴恩斯",
+    brand: "Panini",
+    year: "2024-25",
+    series: "Immaculate Collection",
+    serialNumber: "1/1",
+    status: "confirmed",
+    category: "fake-patch",
+    source: "微信群聊",
+    sourceType: "web_public",
+    images: [
+      {
+        url: "images/sample/card_1786429214249_after_0.jpg",
+        note: "after_0",
+        type: "after"
+      },
+      {
+        url: "images/sample/card_1786429214249_before_0.jpg",
+        note: "before_0",
+        type: "before"
       }
     ]
   }

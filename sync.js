@@ -3,16 +3,13 @@ const http = require('http')
 const fs = require('fs')
 const path = require('path')
 const { execSync } = require('child_process')
-const progressData = require('../miniprogram-card/utils/collectionProgress')
 
 const APPID = 'wx13497267f3b92c0f'
 const CDN_BASE = 'https://7072-prod-8g8ay186059e4264-1418320285.tcb.qcloud.la'
 const CLOUD_ENV = 'cloudbase-1g5rcsava7547769'
 const CARD_DIR = __dirname
 const IMAGES_DIR = path.join(CARD_DIR, 'images', 'sample')
-const COLLECTION_IMAGES_DIR = path.join(CARD_DIR, 'images', 'collection')
 const DATA_JS_PATH = path.join(CARD_DIR, 'js', 'data.js')
-const COLLECTION_JS_PATH = path.join(CARD_DIR, 'js', 'collection-data.js')
 const ENV_PATH = path.join(CARD_DIR, '.env')
 
 function loadEnv() {
@@ -83,6 +80,15 @@ async function queryCloudDB(accessToken, query) {
   return httpPost(url, { env: CLOUD_ENV, query })
 }
 
+function sanitizePublicSourceText(value) {
+  return String(value || '')
+    .replace(/小程序用[户戶]反馈/g, '公开反馈')
+    .replace(/用[户戶]投稿/g, '公开反馈')
+    .replace(/用[户戶]实拍/g, '实拍图片')
+    .replace(/上传用[户戶]\s*[:：]?\s*[A-Za-z0-9_-]*/g, '')
+    .trim()
+}
+
 async function fetchCardsFromCloudDB(accessToken) {
   console.log('   从云数据库 cards 集合直接读取...')
 
@@ -113,11 +119,15 @@ async function fetchCardsFromCloudDB(accessToken) {
     brand: c.brand,
     year: c.year,
     series: c.series,
-    number: c.number,
+    cardKind: c.cardKind || c.cardName || '',
+    productNumber: c.productNumber || '',
+    serialNumber: c.serialNumber || '',
     status: c.status || 'confirmed',
     highRiskReason: c.highRiskReason || '',
     category: c.category || 'fake-patch',
-    source: c.source || '',
+    source: sanitizePublicSourceText(c.source),
+    sourceType: c.sourceType || '',
+    qualityTags: Array.isArray(c.qualityTags) ? c.qualityTags : [],
     images: (c.images || []).map(img => ({
       url: img.url,
       note: img.note || '',
@@ -160,134 +170,6 @@ function fileIdToCdnUrl(fileId) {
   return `${CDN_BASE}/${cloudPath}`
 }
 
-function collectionUrlToLocalPath(url) {
-  if (!url.startsWith(CDN_BASE + '/')) return url
-  const cloudPath = url.slice(CDN_BASE.length + 1)
-  const filename = cloudPath.replace(/^collection-series\//, '').replace(/\//g, '_')
-  return `images/collection/${filename}`
-}
-
-async function fetchAllDocs(accessToken, collectionName, pageSize = 20) {
-  const firstPage = await queryCloudDB(accessToken,
-    `db.collection("${collectionName}").limit(1).get()`
-  )
-  if (firstPage.errcode !== 0) throw new Error(`查询 ${collectionName} 失败: ${firstPage.errmsg} (${firstPage.errcode})`)
-  const total = firstPage.pager.Total
-  const allDocs = []
-  for (let skip = 0; skip < total; skip += pageSize) {
-    const result = await queryCloudDB(accessToken,
-      `db.collection("${collectionName}").skip(${skip}).limit(${pageSize}).get()`
-    )
-    if (result.errcode !== 0) throw new Error(`查询 ${collectionName}(skip=${skip}) 失败: ${result.errmsg} (${result.errcode})`)
-    result.data.forEach(d => allDocs.push(JSON.parse(d)))
-  }
-  return { total, docs: allDocs }
-}
-
-function normalizeImage(img) {
-  if (typeof img === 'string') return { url: img, number: '', year: '', cardKind: '' }
-  return {
-    url: img.url || '',
-    number: img.number || '',
-    year: img.year || '',
-    cardKind: img.cardKind != null ? String(img.cardKind) : ''
-  }
-}
-
-function normalizeChecklistItem(item, subset) {
-  const normalized = {
-    text: item.text || '',
-    subset,
-    images: (item.images || []).map(normalizeImage)
-  }
-  const printRun = progressData.getPrintRun(item)
-  const completionTarget = progressData.getCompletionTarget(item)
-  if (printRun) normalized.printRun = printRun
-  if (completionTarget) normalized.completionTarget = completionTarget
-  return normalized
-}
-
-function buildFreeSeriesStats(freeImages, completionTarget) {
-  const images = Array.isArray(freeImages) ? freeImages : []
-  const rawTarget = Number(completionTarget)
-  const total = Number.isInteger(rawTarget) && rawTarget > 0 ? rawTarget : images.filter(img => img.url).length
-  const collected = total ? Math.min(total, images.filter(img => img.url).length) : images.filter(img => img.url).length
-  return {
-    totalCards: total,
-    withImages: collected,
-    missing: Math.max(0, total - collected)
-  }
-}
-
-function subsetDocsToChecklist(subsetDocs) {
-  const checklist = []
-  for (const doc of subsetDocs) {
-    const docSubset = doc.subset || ''
-    const isBatch = docSubset.startsWith('_batch_')
-    for (const item of (doc.items || [])) {
-      checklist.push(normalizeChecklistItem(item, isBatch ? (item.subset || '') : docSubset))
-    }
-  }
-  return checklist
-}
-
-async function fetchSeriesFromCloudDB(accessToken) {
-  console.log('   从云数据库 my_series 集合读取...')
-  const { total, docs: seriesDocs } = await fetchAllDocs(accessToken, 'my_series', 20)
-  console.log(`   共 ${total} 个系列`)
-
-  console.log('   从云数据库 my_series_subsets 集合读取...')
-  const { total: subTotal, docs: allSubsetDocs } = await fetchAllDocs(accessToken, 'my_series_subsets', 100)
-  console.log(`   共 ${subTotal} 个子系列文档`)
-
-  const subsetsBySeriesId = new Map()
-  for (const doc of allSubsetDocs) {
-    if (!doc.seriesId) continue
-    if (!subsetsBySeriesId.has(doc.seriesId)) subsetsBySeriesId.set(doc.seriesId, [])
-    subsetsBySeriesId.get(doc.seriesId).push(doc)
-  }
-
-  return seriesDocs.map(s => {
-    const subDocs = subsetsBySeriesId.get(s._id)
-    let checklist
-    if (subDocs && subDocs.length > 0) {
-      checklist = subsetDocsToChecklist(subDocs)
-    } else {
-      checklist = (s.checklist || []).map(item => normalizeChecklistItem(item, item.subset || ''))
-    }
-    const freeImages = (s.freeImages || []).map(normalizeImage)
-    const isFreeMode = checklist.length === 0 && !s.hasSubset
-    const checklistStats = isFreeMode
-      ? buildFreeSeriesStats(freeImages, s.completionTarget)
-      : progressData.buildChecklistProgressStats(checklist)
-
-    return {
-      _id: s._id,
-      name: s.name || '',
-      description: s.description || '',
-      hasSubset: !!s.hasSubset,
-      checklistComplete: !!s.checklistComplete,
-      completionTarget: Number.isInteger(Number(s.completionTarget)) && Number(s.completionTarget) > 0 ? Number(s.completionTarget) : undefined,
-      totalCards: checklistStats.totalCards,
-      withImages: checklistStats.withImages,
-      missing: checklistStats.missing,
-      createdAt: s.createdAt || s.createTime || '',
-      updatedAt: s.updatedAt || s.updateTime || '',
-      checklist,
-      freeImages
-    }
-  })
-}
-
-function generateCollectionJs(seriesList) {
-  return `const collectionData = ${JSON.stringify(seriesList, null, 2)};
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = collectionData;
-}
-`
-}
-
 function generateDataJs(cards) {
   const indent = '  '
   const lines = ['const cardsData = [']
@@ -302,7 +184,9 @@ function generateDataJs(cards) {
     lines.push(`${indent}${indent}brand: ${JSON.stringify(card.brand)},`)
     lines.push(`${indent}${indent}year: ${JSON.stringify(card.year)},`)
     lines.push(`${indent}${indent}series: ${JSON.stringify(card.series)},`)
-    lines.push(`${indent}${indent}number: ${JSON.stringify(card.number)},`)
+    if (card.cardKind) lines.push(`${indent}${indent}cardKind: ${JSON.stringify(card.cardKind)},`)
+    if (card.productNumber) lines.push(`${indent}${indent}productNumber: ${JSON.stringify(card.productNumber)},`)
+    if (card.serialNumber) lines.push(`${indent}${indent}serialNumber: ${JSON.stringify(card.serialNumber)},`)
     lines.push(`${indent}${indent}status: ${JSON.stringify(card.status || 'confirmed')},`)
     lines.push(`${indent}${indent}category: ${JSON.stringify(card.category || 'fake-patch')},`)
     if (card.highRiskReason) {
@@ -310,6 +194,12 @@ function generateDataJs(cards) {
     }
     if (card.source) {
       lines.push(`${indent}${indent}source: ${JSON.stringify(card.source)},`)
+    }
+    if (card.sourceType) {
+      lines.push(`${indent}${indent}sourceType: ${JSON.stringify(card.sourceType)},`)
+    }
+    if (card.qualityTags.length) {
+      lines.push(`${indent}${indent}qualityTags: ${JSON.stringify(card.qualityTags)},`)
     }
     lines.push(`${indent}${indent}images: [`)
     card.images.forEach((img, imgIdx) => {
@@ -397,92 +287,24 @@ async function main() {
   fs.writeFileSync(DATA_JS_PATH, content, 'utf8')
   console.log(`   写入 ${DATA_JS_PATH}\n`)
 
-  console.log('4. 同步收藏数据 (my_series) ...')
-  if (appSecret) {
-    try {
-      const token2 = await getAccessToken(appSecret)
-      const seriesList = await fetchSeriesFromCloudDB(token2)
-
-      if (!fs.existsSync(COLLECTION_IMAGES_DIR)) {
-        fs.mkdirSync(COLLECTION_IMAGES_DIR, { recursive: true })
-      }
-
-      let colDownloaded = 0
-      let colSkipped = 0
-      for (const series of seriesList) {
-        const allImages = [
-          ...series.checklist.flatMap(item => item.images),
-          ...series.freeImages
-        ]
-        for (const img of allImages) {
-          let downloadUrl = img.url
-          if (downloadUrl.startsWith('cloud://')) {
-            downloadUrl = fileIdToCdnUrl(downloadUrl)
-          }
-          if (downloadUrl.startsWith(CDN_BASE + '/')) {
-            const localRelPath = collectionUrlToLocalPath(downloadUrl)
-            const localAbsPath = path.join(CARD_DIR, localRelPath)
-            const didDownload = await downloadImage(downloadUrl, localAbsPath)
-            if (didDownload) { colDownloaded++; console.log(`   下载: ${path.basename(localAbsPath)}`) }
-            else { colSkipped++ }
-            img.url = localRelPath
-          }
-        }
-      }
-      console.log(`   下载 ${colDownloaded} 张收藏图片，跳过 ${colSkipped} 张已有\n`)
-
-      console.log('5. 生成 collection-data.js ...')
-      const colContent = generateCollectionJs(seriesList)
-      fs.writeFileSync(COLLECTION_JS_PATH, colContent, 'utf8')
-      console.log(`   写入 ${COLLECTION_JS_PATH}\n`)
-    } catch (e) {
-      console.warn(`   收藏数据同步失败: ${e.message}\n`)
-    }
-  } else {
-    console.log('   未配置 APP_SECRET，跳过收藏数据同步\n')
-  }
-
-  console.log('6. 清理无用图片 ...')
+  console.log('4. 清理无用图片 ...')
   const usedFiles = new Set()
   for (const card of cards) {
     for (const img of card.images) {
       if (img.url.startsWith('images/')) usedFiles.add(img.url)
     }
   }
-  if (appSecret) {
-    try {
-      const colData = fs.readFileSync(COLLECTION_JS_PATH, 'utf8')
-      const colMatch = colData.match(/const collectionData = (\[[\s\S]*?\]);/)
-      if (colMatch) {
-        const seriesArr = JSON.parse(colMatch[1])
-        for (const s of seriesArr) {
-          for (const item of (s.checklist || [])) {
-            for (const img of (item.images || [])) {
-              if (img.url && img.url.startsWith('images/')) usedFiles.add(img.url)
-            }
-          }
-          for (const img of (s.freeImages || [])) {
-            if (img.url && img.url.startsWith('images/')) usedFiles.add(img.url)
-          }
-        }
-      }
-    } catch (_) {}
-  }
-
   let cleaned = 0
-  for (const dir of [IMAGES_DIR, COLLECTION_IMAGES_DIR]) {
-    if (!fs.existsSync(dir)) continue
-    for (const file of fs.readdirSync(dir)) {
-      const rel = path.relative(CARD_DIR, path.join(dir, file))
-      if (!usedFiles.has(rel)) {
-        fs.unlinkSync(path.join(dir, file))
-        cleaned++
-      }
+  for (const file of fs.readdirSync(IMAGES_DIR)) {
+    const rel = path.relative(CARD_DIR, path.join(IMAGES_DIR, file))
+    if (!usedFiles.has(rel)) {
+      fs.unlinkSync(path.join(IMAGES_DIR, file))
+      cleaned++
     }
   }
   console.log(`   清理 ${cleaned} 个无用图片文件\n`)
 
-  console.log('7. Git 提交并推送 ...')
+  console.log('5. Git 提交并推送 ...')
   try {
     execSync('git add .', { cwd: CARD_DIR, stdio: 'pipe' })
     const status = execSync('git status --porcelain', { cwd: CARD_DIR, encoding: 'utf8' })

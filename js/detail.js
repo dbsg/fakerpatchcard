@@ -26,8 +26,23 @@ const SOURCE_TYPE_LABELS = {
   other: '其他'
 };
 
+function escapeHtml(value) {
+  return String(value == null ? '' : value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 function getWarningText(category, status) {
   const warningTexts = {
+    backup: {
+      archived: {
+        title: '资料提示：备份资料',
+        desc: '这张卡仅记录公开出现过的状态，用于后续对比参考，不表达异常或鉴定结论。请仔细查看来源资料或者当前页面相关信息后再做判断，本网站不构成任何鉴定结论、交易建议或维权证据。'
+      }
+    },
     'fake-patch': {
       confirmed: {
         title: '资料提示：明确异常记录',
@@ -72,12 +87,14 @@ function sanitizePublicSourceText(value) {
 }
 
 function getAfterTitle(category) {
+  if (category === 'backup') return '备份图片';
   if (category === 'counterfeit') return '异常样本';
   if (category === 'fake-auto') return '签字样本';
   return 'Patch 异常样本';
 }
 
 function getBeforeTitle(category) {
+  if (category === 'backup') return '补充对比';
   if (category === 'counterfeit') return '参考对比';
   if (category === 'fake-auto') return '原始签字参考';
   return '原始 Patch 参考';
@@ -106,11 +123,11 @@ function renderImageGroup(card, type, title) {
               <img
                 class="timeline-image"
                 src="${image.url}"
-                alt="${hasNote ? image.note : ''}"
+                alt="${hasNote ? escapeHtml(image.note) : ''}"
                 onerror="this.src='images/placeholder.jpg'"
                 onclick="openModal(${originalIndex})"
               >
-              ${hasNote ? `<div class="timeline-note">📝 ${image.note}</div>` : ''}
+              ${hasNote ? `<div class="timeline-note">📝 ${escapeHtml(image.note)}</div>` : ''}
             </div>
           `;
         }).join('')}
@@ -151,13 +168,13 @@ function renderDetail() {
 
   const category = currentCard.category || 'fake-patch';
   let warningBox = '';
-  const wt = getWarningText(category, currentCard.status);
+  const wt = getWarningText(category, category === 'backup' ? 'archived' : currentCard.status);
   if (wt) {
-    const cls = currentCard.status === 'confirmed' ? 'warning-danger' : 'warning-caution';
+    const cls = category === 'backup' ? 'warning-neutral' : (currentCard.status === 'confirmed' ? 'warning-danger' : 'warning-caution');
     warningBox = `
       <div class="warning-box ${cls}">
-        <p><strong>${wt.title}</strong></p>
-        <p>${wt.desc}</p>
+        <p><strong>${escapeHtml(wt.title)}</strong></p>
+        <p>${escapeHtml(wt.desc)}</p>
       </div>
     `;
   }
@@ -165,8 +182,8 @@ function renderDetail() {
   // 构建问题说明的信息项（如果有的话）
   const highRiskReasonItem = currentCard.highRiskReason
     ? `<div class="detail-info-item detail-info-full">
-        <span class="detail-label">问题说明</span>
-        <span class="detail-value">${currentCard.highRiskReason}</span>
+        <span class="detail-label">${category === 'backup' ? '备份说明' : '问题说明'}</span>
+        <span class="detail-value">${escapeHtml(currentCard.highRiskReason)}</span>
       </div>`
     : '';
 
@@ -176,13 +193,13 @@ function renderDetail() {
   const qualityTagItem = qualityTagLabels.length
     ? `<div class="detail-info-item detail-info-full">
         <span class="detail-label">识别项</span>
-        <span class="detail-value">${qualityTagLabels.join('、')}</span>
+        <span class="detail-value">${escapeHtml(qualityTagLabels.join('、'))}</span>
       </div>`
     : '';
   const sourceTypeItem = currentCard.sourceType && SOURCE_TYPE_LABELS[currentCard.sourceType]
     ? `<div class="detail-info-item">
         <span class="detail-label">来源类型</span>
-        <span class="detail-value">${SOURCE_TYPE_LABELS[currentCard.sourceType]}</span>
+        <span class="detail-value">${escapeHtml(SOURCE_TYPE_LABELS[currentCard.sourceType])}</span>
       </div>`
     : '';
 
@@ -190,34 +207,33 @@ function renderDetail() {
   const sourceItem = sourceText
     ? `<div class="detail-info-item detail-info-full">
         <span class="detail-label">资料来源</span>
-        <span class="detail-value">${sourceText.startsWith('http') ? `<a href="${sourceText}" target="_blank" rel="noopener" class="source-link">${sourceText}</a>` : sourceText}</span>
+        <span class="detail-value">${/^https?:\/\//i.test(sourceText) ? `<a href="${escapeHtml(sourceText)}" target="_blank" rel="noopener" class="source-link">${escapeHtml(sourceText)}</a>` : escapeHtml(sourceText)}</span>
       </div>`
     : '';
 
   detailContent.innerHTML = `
     <div class="detail-container">
       <div class="detail-card">
-        <h2 class="detail-title">${currentCard.player}</h2>
+        <h2 class="detail-title">${escapeHtml([currentCard.player, currentCard.playerCN].filter(Boolean).join(' / '))}</h2>
 
         ${warningBox}
 
         <div class="detail-info-grid">
           <div class="detail-info-item">
             <span class="detail-label">品牌</span>
-            <span class="detail-value">${currentCard.brand}</span>
+            <span class="detail-value">${escapeHtml(currentCard.brand)}</span>
           </div>
           <div class="detail-info-item">
             <span class="detail-label">年份</span>
-            <span class="detail-value">${currentCard.year}</span>
+            <span class="detail-value">${escapeHtml(currentCard.year)}</span>
           </div>
           <div class="detail-info-item">
             <span class="detail-label">系列</span>
-            <span class="detail-value">${currentCard.series}</span>
+            <span class="detail-value">${escapeHtml(currentCard.series)}</span>
           </div>
-          <div class="detail-info-item">
-            <span class="detail-label">编号</span>
-            <span class="detail-value">${currentCard.number}</span>
-          </div>
+          ${currentCard.cardKind ? `<div class="detail-info-item"><span class="detail-label">卡片版本</span><span class="detail-value">${escapeHtml(currentCard.cardKind)}</span></div>` : ''}
+          ${currentCard.productNumber ? `<div class="detail-info-item"><span class="detail-label">卡片编号</span><span class="detail-value">${escapeHtml(currentCard.productNumber)}</span></div>` : ''}
+          ${currentCard.serialNumber ? `<div class="detail-info-item"><span class="detail-label">限编</span><span class="detail-value">${escapeHtml(currentCard.serialNumber)}</span></div>` : ''}
           ${highRiskReasonItem}
           ${qualityTagItem}
           ${sourceTypeItem}
@@ -226,7 +242,7 @@ function renderDetail() {
 
         ${renderImageGroup(currentCard, 'after', getAfterTitle(category))}
         ${renderImageGroup(currentCard, 'before', getBeforeTitle(category))}
-        <div class="reference-note">本资料仅用于收藏研究与卡片特征对比，不构成鉴定结论、交易建议或维权依据。</div>
+        <div class="reference-note">${category === 'backup' ? '本资料仅用于记录公开出现过的卡片状态和后续对比参考，不构成鉴定结论、交易建议或维权依据。' : '本资料仅用于收藏研究与卡片特征对比，不构成鉴定结论、交易建议或维权依据。'}</div>
       </div>
     </div>
   `;
@@ -246,7 +262,7 @@ function openModal(index) {
   modalImg.src = image.url;
   caption.innerHTML = `
     <strong>记录 ${index + 1}</strong>
-    ${hasNote ? `<br>${image.note}` : ''}
+    ${hasNote ? `<br>${escapeHtml(image.note)}` : ''}
   `;
 }
 

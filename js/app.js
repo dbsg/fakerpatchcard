@@ -1,11 +1,11 @@
-// 主应用逻辑
+// 异常资料首页
 const app = {
-  currentCards: [],
-
-  allCards: cardsData.map(c => ({ ...c, category: c.category || 'fake-patch' })),
-
-  activeTab: 'cards',
+  pageSize: 12,
+  displayCount: 12,
   activeCategory: '',
+  viewMode: 'problems',
+  searchTimer: null,
+  filteredCards: [],
   categoryOptions: [
     { value: '', label: '全部类型' },
     { value: 'fake-patch', label: '换 Patch' },
@@ -13,55 +13,45 @@ const app = {
     { value: 'counterfeit', label: '假卡' }
   ],
 
-  currentPage: 1,
-  pageSize: 6,
+  allCards: cardsData.map(card => ({
+    ...card,
+    category: card.category || 'fake-patch',
+    images: Array.isArray(card.images) ? card.images.filter(image => image && image.url) : []
+  })),
 
-  categoryLabel(category) {
-    if (category === 'fake-auto') return '签字异常'
-    if (category === 'counterfeit') return '假卡'
-    return '换 Patch'
-  },
-
-  categoryClass(category) {
-    if (category === 'fake-auto' || category === 'counterfeit' || category === 'fake-patch') return category
-    return 'fake-patch'
-  },
-
-  escAttr(s) {
-    if (s == null) return ''
-    return String(s)
+  escAttr(value) {
+    return String(value == null ? '' : value)
       .replace(/&/g, '&amp;')
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#39;')
       .replace(/</g, '&lt;')
   },
 
-  escHtml(s) {
-    if (s == null) return ''
-    const d = document.createElement('div')
-    d.textContent = String(s)
-    return d.innerHTML
+  escHtml(value) {
+    const div = document.createElement('div')
+    div.textContent = String(value == null ? '' : value)
+    return div.innerHTML
+  },
+
+  cleanText(value) {
+    return String(value || '').trim()
   },
 
   normalizeSearch(value) {
-    return String(value == null ? '' : value)
-      .trim()
+    return this.cleanText(value)
       .toLowerCase()
-      .replace(/[\s·.\-_'’`/，,、:：()（）[\]【】]+/g, '')
+      .replace(/[\s·.\-_'’`/，,、:：()（）[\]【】#]+/g, '')
   },
 
   buildKeywordTerms(keyword = '') {
-    const raw = String(keyword || '').trim()
+    const raw = this.cleanText(keyword)
     if (!raw) return []
     const parts = raw.split(/[\s,，、]+/).map(value => this.normalizeSearch(value)).filter(Boolean)
     if (parts.length > 1) return [...new Set(parts)]
     const compact = this.normalizeSearch(raw)
-    if (!compact) return []
     const mixedParts = compact.match(/[a-z\u3400-\u9fff]+|\d+/g)
-    if (mixedParts && mixedParts.length > 1 && mixedParts.join('') === compact) {
-      return [...new Set(mixedParts)]
-    }
-    return [compact]
+    if (mixedParts && mixedParts.length > 1 && mixedParts.join('') === compact) return [...new Set(mixedParts)]
+    return compact ? [compact] : []
   },
 
   buildCardSearchText(card = {}) {
@@ -72,296 +62,246 @@ const app = {
       card.brand,
       card.year,
       card.series,
-      card.number,
+      card.cardKind,
+      card.cardName,
+      card.productNumber,
+      card.serialNumber,
       card.highRiskReason,
       card.source,
       Array.isArray(card.qualityTags) ? card.qualityTags.join(' ') : ''
     ].filter(Boolean).join(' ')
   },
 
+  categoryLabel(category) {
+    if (category === 'fake-auto') return '签字异常'
+    if (category === 'counterfeit') return '假卡'
+    if (category === 'backup') return '备份资料'
+    return '换 Patch'
+  },
+
+  playerDisplay(card = {}) {
+    const player = this.cleanText(card.player)
+    const playerCN = this.cleanText(card.playerCN)
+    if (!playerCN || player.includes(playerCN)) return player || playerCN
+    return player ? `${player} / ${playerCN}` : playerCN
+  },
+
+  numberText(card = {}) {
+    return [card.productNumber, card.serialNumber].map(value => this.cleanText(value)).filter(Boolean).join(' · ')
+  },
+
+  metaText(card = {}) {
+    return [card.year, card.brand, card.series, card.cardKind || card.cardName]
+      .map(value => this.cleanText(value))
+      .filter(Boolean)
+      .join(' · ')
+  },
+
   init() {
-    this.currentCards = [...this.allCards]
     this.renderCategoryFilters()
-    this.renderCards()
-    this.updateStats()
-    this.renderPagination()
-    this.hideLoading()
-    this.setupSearchEnter()
-    this.setupMainTabs()
-    if (window.location.hash === '#collection') {
-      this.switchTab('collection')
-    }
-  },
-
-  setupMainTabs() {
-    const root = document.getElementById('mainTabs')
-    if (!root) return
-    root.addEventListener('click', e => {
-      const tab = e.target.closest('.main-tab')
-      if (!tab || !tab.dataset.tab) return
-      e.preventDefault()
-      this.switchTab(tab.dataset.tab)
-    })
-  },
-
-  switchTab(tab) {
-    this.activeTab = tab
-    document.querySelectorAll('.main-tab').forEach(t => {
-      const on = t.dataset.tab === tab
-      t.classList.toggle('active', on)
-      t.setAttribute('aria-selected', on ? 'true' : 'false')
-    })
-    const panelCards = document.getElementById('panelCards')
-    const panelCollection = document.getElementById('panelCollection')
-    if (panelCards) panelCards.style.display = tab === 'cards' ? '' : 'none'
-    if (panelCollection) panelCollection.style.display = tab === 'collection' ? '' : 'none'
-    if (tab === 'collection' && typeof collection !== 'undefined') {
-      collection.applyFilter()
-    }
-    if (tab === 'collection') {
-      window.location.hash = 'collection'
-    } else {
-      if (window.location.hash === '#collection') {
-        history.replaceState(null, '', window.location.pathname + window.location.search)
-      }
-    }
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    this.bindInteractions()
+    this.applyFilters()
+    document.getElementById('loading').hidden = true
   },
 
   renderCategoryFilters() {
     const root = document.getElementById('categoryFilterTags')
-    if (!root) return
     root.innerHTML = this.categoryOptions.map(item => `
-      <button
-        type="button"
-        class="category-filter-tag ${this.activeCategory === item.value ? 'active' : ''}"
-        data-category="${this.escAttr(item.value)}"
-      >${this.escHtml(item.label)}</button>
+      <button type="button" class="category-filter-tag ${this.activeCategory === item.value ? 'active' : ''}" data-category="${this.escAttr(item.value)}">
+        ${this.escHtml(item.label)}
+      </button>
     `).join('')
-    root.addEventListener('click', e => {
-      const btn = e.target.closest('.category-filter-tag')
-      if (!btn) return
-      this.setCategoryFilter(btn.dataset.category || '')
+  },
+
+  bindInteractions() {
+    const searchInput = document.getElementById('searchInput')
+    const searchClear = document.getElementById('searchClear')
+
+    searchInput.addEventListener('input', () => {
+      searchClear.hidden = !searchInput.value
+      clearTimeout(this.searchTimer)
+      this.searchTimer = setTimeout(() => this.applyFilters(), 80)
     })
+    searchClear.addEventListener('click', () => {
+      clearTimeout(this.searchTimer)
+      searchInput.value = ''
+      searchClear.hidden = true
+      searchInput.focus()
+      this.applyFilters()
+    })
+
+    document.getElementById('categoryFilterTags').addEventListener('click', event => {
+      const target = event.target.closest('[data-category]')
+      if (!target) return
+      this.setCategoryFilter(target.dataset.category || '')
+    })
+
+    document.getElementById('backupButton').addEventListener('click', () => this.switchMode('backups'))
+    document.getElementById('backToProblems').addEventListener('click', () => this.switchMode('problems'))
+    document.getElementById('loadMore').addEventListener('click', () => this.loadMore())
+
+    const guideDialog = document.getElementById('guideDialog')
+    document.getElementById('guideButton').addEventListener('click', () => guideDialog.showModal())
+    document.getElementById('guideClose').addEventListener('click', () => guideDialog.close())
+    guideDialog.addEventListener('click', event => {
+      if (event.target === guideDialog) guideDialog.close()
+    })
+
+    const backTop = document.getElementById('backTop')
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }))
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('show', window.scrollY > 800)
+    }, { passive: true })
+
+    if ('IntersectionObserver' in window) {
+      this.loadObserver = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting) && !document.getElementById('loadMore').hidden) this.loadMore()
+      }, { rootMargin: '240px' })
+      this.loadObserver.observe(document.getElementById('loadMore'))
+    }
+  },
+
+  switchMode(mode) {
+    this.viewMode = mode === 'backups' ? 'backups' : 'problems'
+    this.activeCategory = ''
+    document.getElementById('searchInput').value = ''
+    document.getElementById('searchClear').hidden = true
+    document.getElementById('backupHero').hidden = this.viewMode !== 'backups'
+    document.getElementById('problemFilters').hidden = this.viewMode === 'backups'
+    document.getElementById('guideButton').hidden = this.viewMode === 'backups'
+    document.getElementById('backupButton').hidden = this.viewMode === 'backups'
+    document.getElementById('countUnit').textContent = this.viewMode === 'backups' ? '条备份' : '条资料'
+    document.getElementById('feedbackButton').textContent = this.viewMode === 'backups' ? '反馈备份资料' : '反馈异常卡片'
+    this.applyFilters()
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   },
 
   setCategoryFilter(category) {
     this.activeCategory = category || ''
-    document.querySelectorAll('.category-filter-tag').forEach(tag => {
-      tag.classList.toggle('active', (tag.dataset.category || '') === this.activeCategory)
-    })
+    this.renderCategoryFilters()
     this.applyFilters()
+  },
+
+  applyFilters() {
+    const keyword = document.getElementById('searchInput').value
+    const terms = this.buildKeywordTerms(keyword)
+    const source = this.allCards.filter(card => this.viewMode === 'backups'
+      ? card.category === 'backup'
+      : card.category !== 'backup')
+
+    this.filteredCards = source
+      .filter(card => {
+        if (this.activeCategory && card.category !== this.activeCategory) return false
+        if (!terms.length) return true
+        const searchText = this.normalizeSearch(this.buildCardSearchText(card))
+        return terms.every(term => searchText.includes(term))
+      })
+      .sort((a, b) => Number(b.id || 0) - Number(a.id || 0))
+
+    this.displayCount = this.pageSize
+    this.renderCards()
   },
 
   renderCards() {
     const cardList = document.getElementById('cardList')
     const emptyState = document.getElementById('emptyState')
+    const visibleCards = this.filteredCards.slice(0, this.displayCount)
 
-    if (this.currentCards.length === 0) {
-      cardList.style.display = 'none'
-      emptyState.style.display = 'block'
-      document.getElementById('pagination').style.display = 'none'
-      return
-    }
+    cardList.className = this.viewMode === 'backups' ? 'backup-list' : 'card-grid'
+    cardList.innerHTML = visibleCards.map(card => this.viewMode === 'backups'
+      ? this.renderBackupCard(card)
+      : this.renderProblemCard(card)).join('')
 
-    cardList.style.display = 'grid'
-    emptyState.style.display = 'none'
-    document.getElementById('pagination').style.display = 'flex'
+    emptyState.style.display = visibleCards.length ? 'none' : 'block'
+    emptyState.querySelector('.empty-text').textContent = this.viewMode === 'backups' ? '暂无备份资料' : '未找到相关资料'
+    document.getElementById('totalCount').textContent = this.filteredCards.length
 
-    const sortedCards = [...this.currentCards].sort((a, b) => b.id - a.id)
-    const totalPages = Math.ceil(sortedCards.length / this.pageSize)
-    const startIndex = (this.currentPage - 1) * this.pageSize
-    const endIndex = startIndex + this.pageSize
-    const paginatedCards = sortedCards.slice(startIndex, endIndex)
+    const hasMore = visibleCards.length < this.filteredCards.length
+    document.getElementById('loadMore').hidden = !hasMore
+    const loadDone = document.getElementById('loadDone')
+    loadDone.hidden = hasMore || !visibleCards.length
+    loadDone.textContent = this.viewMode === 'backups'
+      ? `已显示全部 ${this.filteredCards.length} 条备份`
+      : `— 已显示全部 ${this.filteredCards.length} 条资料 —`
+  },
 
-    cardList.innerHTML = paginatedCards.map(card => {
-      const afterImg = card.images.find(img => img.type === 'after')
-      const latestImage = afterImg || (card.images && card.images[card.images.length - 1])
-      const imgUrl = latestImage && latestImage.url ? this.escAttr(latestImage.url) : 'images/placeholder.jpg'
-      const badgeClass = card.status === 'suspected' ? 'suspected' : 'fake'
-      const badgeText = card.status === 'suspected' ? '高度存疑' : '明确异常'
-      const cat = card.category || 'fake-patch'
-      const catClass = this.categoryClass(cat)
-      const catText = this.categoryLabel(cat)
-      const playerEsc = this.escAttr(card.player)
+  renderProblemCard(card) {
+    const images = card.images.length ? card.images : [{ url: 'images/placeholder.jpg', note: '' }]
+    const category = card.category || 'fake-patch'
+    const statusClass = card.status === 'suspected' ? 'suspected' : 'fake'
+    const statusText = card.status === 'suspected' ? '高度存疑' : '明确异常'
+    const numberText = this.numberText(card)
+    const metaText = this.metaText(card)
 
-      return `
-        <div class="card-item" onclick="window.app.goToDetail(${card.id})">
-          <div class="card-image-wrapper">
-            <img class="card-image" src="${imgUrl}" alt="${playerEsc}" onerror="this.src='images/placeholder.jpg'">
-            <span class="card-category-label ${catClass}">${catText}</span>
-            <span class="card-badge ${badgeClass}">${badgeText}</span>
-            <span class="card-id">ID: ${card.id}</span>
+    return `
+      <article class="card-item" data-id="${card.id}" onclick="app.goToDetail(${card.id})">
+        <div class="card-image-wrapper">
+          <div class="card-image-slider" data-slider-id="${card.id}" onscroll="app.onSliderScroll(event, ${card.id})">
+            ${images.map(image => `<img class="card-image" src="${this.escAttr(image.url)}" alt="${this.escAttr(this.playerDisplay(card))}" loading="lazy" onerror="this.src='images/placeholder.jpg'">`).join('')}
           </div>
-          <div class="card-info">
-            <div class="card-player">${this.escHtml(card.player)}</div>
-            <div class="card-type-line"><span class="card-type-pill ${catClass}">${catText}</span></div>
-            <div class="card-details">${this.escHtml(card.brand)} · ${this.escHtml(card.year)} · ${this.escHtml(card.series)}</div>
-            <div class="card-meta">
-              <span class="card-images-count">📸 ${card.images.length} 张照片</span>
-              <span class="card-number">${this.escHtml(card.number)}</span>
-            </div>
+          ${images.length > 1 ? `
+            <button type="button" class="image-nav image-nav-prev" aria-label="上一张" onclick="app.moveSlider(event, ${card.id}, -1)">‹</button>
+            <button type="button" class="image-nav image-nav-next" aria-label="下一张" onclick="app.moveSlider(event, ${card.id}, 1)">›</button>
+            <div class="image-dots" data-dots-id="${card.id}">${images.map((_, index) => `<span class="image-dot ${index === 0 ? 'active' : ''}"></span>`).join('')}</div>
+          ` : ''}
+          <span class="card-category-label ${category}">${this.categoryLabel(category)}</span>
+          <span class="card-badge ${statusClass}">${statusText}</span>
+          <span class="card-id">#${card.id}</span>
+        </div>
+        <div class="card-info">
+          <h2 class="card-player">${this.escHtml(this.playerDisplay(card))}</h2>
+          ${metaText ? `<p class="card-details">${this.escHtml(metaText)}</p>` : ''}
+          <div class="card-meta">
+            <span class="card-images-count">📷 ${card.images.length}张</span>
+            ${numberText ? `<span class="card-number">${this.escHtml(numberText)}</span>` : ''}
           </div>
         </div>
-      `
-    }).join('')
-
-    this.renderPagination()
-  },
-
-  search() {
-    this.applyFilters()
-  },
-
-  applyFilters() {
-    const searchInput = document.getElementById('searchInput')
-    const keyword = searchInput ? searchInput.value.trim() : ''
-    const terms = this.buildKeywordTerms(keyword)
-    const activeCategory = this.activeCategory
-
-    this.currentCards = this.allCards.filter(card => {
-      const matchCategory = !activeCategory || (card.category || 'fake-patch') === activeCategory
-      const matchKeyword = terms.length === 0 ||
-        terms.every(term => this.normalizeSearch(this.buildCardSearchText(card)).includes(term))
-
-      return matchCategory && matchKeyword
-    })
-
-    this.currentPage = 1
-    this.renderCards()
-    this.updateStats()
-  },
-
-  resetFilters() {
-    const searchInput = document.getElementById('searchInput')
-    if (searchInput) searchInput.value = ''
-    this.activeCategory = ''
-    document.querySelectorAll('.category-filter-tag').forEach(tag => {
-      tag.classList.toggle('active', (tag.dataset.category || '') === '')
-    })
-    this.currentCards = [...this.allCards]
-    this.currentPage = 1
-    this.renderCards()
-    this.updateStats()
-  },
-
-  renderPagination() {
-    const pagination = document.getElementById('pagination')
-    const totalPages = Math.ceil(this.currentCards.length / this.pageSize)
-
-    if (totalPages <= 1) {
-      pagination.style.display = 'none'
-      return
-    }
-
-    pagination.style.display = 'flex'
-
-    let paginationHTML = ''
-
-    paginationHTML += `
-      <button type="button" class="page-btn ${this.currentPage === 1 ? 'disabled' : ''}"
-              onclick="window.app.goToPage(${this.currentPage - 1})"
-              ${this.currentPage === 1 ? 'disabled' : ''}>
-        上一页
-      </button>
+      </article>
     `
+  },
 
-    const maxVisiblePages = 5
-    let startPage = Math.max(1, this.currentPage - Math.floor(maxVisiblePages / 2))
-    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1)
-
-    if (endPage - startPage < maxVisiblePages - 1) {
-      startPage = Math.max(1, endPage - maxVisiblePages + 1)
-    }
-
-    if (startPage > 1) {
-      paginationHTML += `<button type="button" class="page-btn" onclick="window.app.goToPage(1)">1</button>`
-      if (startPage > 2) {
-        paginationHTML += `<span class="page-ellipsis">...</span>`
-      }
-    }
-
-    for (let i = startPage; i <= endPage; i++) {
-      paginationHTML += `
-        <button type="button" class="page-btn ${i === this.currentPage ? 'active' : ''}"
-                onclick="window.app.goToPage(${i})">
-          ${i}
-        </button>
-      `
-    }
-
-    if (endPage < totalPages) {
-      if (endPage < totalPages - 1) {
-        paginationHTML += `<span class="page-ellipsis">...</span>`
-      }
-      paginationHTML += `<button type="button" class="page-btn" onclick="window.app.goToPage(${totalPages})">${totalPages}</button>`
-    }
-
-    paginationHTML += `
-      <button type="button" class="page-btn ${this.currentPage === totalPages ? 'disabled' : ''}"
-              onclick="window.app.goToPage(${this.currentPage + 1})"
-              ${this.currentPage === totalPages ? 'disabled' : ''}>
-        下一页
-      </button>
+  renderBackupCard(card) {
+    const cover = card.images.find(image => image.type === 'after' || image.type === 'compare') || card.images[0] || { url: 'images/placeholder.jpg' }
+    const metaText = this.metaText(card)
+    const numberText = this.numberText(card)
+    return `
+      <article class="backup-card" onclick="app.goToDetail(${card.id})">
+        <img class="backup-cover" src="${this.escAttr(cover.url)}" alt="${this.escAttr(this.playerDisplay(card))}" loading="lazy" onerror="this.src='images/placeholder.jpg'">
+        <div class="backup-info">
+          <h2 class="backup-title">${this.escHtml(this.playerDisplay(card))}</h2>
+          ${metaText ? `<p class="backup-meta">${this.escHtml(metaText)}</p>` : ''}
+          ${numberText ? `<p class="backup-number">${this.escHtml(numberText)}</p>` : ''}
+          ${card.highRiskReason ? `<p class="backup-note">${this.escHtml(card.highRiskReason)}</p>` : ''}
+        </div>
+      </article>
     `
-
-    pagination.innerHTML = paginationHTML
   },
 
-  goToPage(page) {
-    const totalPages = Math.ceil(this.currentCards.length / this.pageSize)
-    if (page < 1 || page > totalPages) return
-
-    this.currentPage = page
+  loadMore() {
+    if (this.displayCount >= this.filteredCards.length) return
+    this.displayCount += this.pageSize
     this.renderCards()
-
-    window.scrollTo({ top: 0, behavior: 'smooth' })
   },
 
-  updateStats() {
-    const total = this.currentCards.length
-    document.getElementById('totalCount').textContent = total
+  moveSlider(event, id, direction) {
+    event.stopPropagation()
+    const slider = document.querySelector(`[data-slider-id="${id}"]`)
+    if (!slider) return
+    slider.scrollBy({ left: slider.clientWidth * direction, behavior: 'smooth' })
+  },
+
+  onSliderScroll(event, id) {
+    const slider = event.currentTarget
+    const index = Math.round(slider.scrollLeft / Math.max(1, slider.clientWidth))
+    document.querySelectorAll(`[data-dots-id="${id}"] .image-dot`).forEach((dot, dotIndex) => {
+      dot.classList.toggle('active', dotIndex === index)
+    })
   },
 
   goToDetail(id) {
     window.location.href = `detail.html?id=${id}`
-  },
-
-  hideLoading() {
-    const loading = document.getElementById('loading')
-    if (loading) {
-      loading.style.display = 'none'
-    }
-  },
-
-  setupSearchEnter() {
-    const searchInput = document.getElementById('searchInput')
-    if (!searchInput) return
-    searchInput.addEventListener('input', () => {
-      this.applyFilters()
-    })
-    searchInput.addEventListener('keypress', e => {
-      if (e.key === 'Enter') {
-        this.applyFilters()
-      }
-    })
-  },
-
-  showAbout() {
-    alert(`球星卡换 Patch 记录系统
-
-这是一个用于记录被换 Patch 的球星卡的公益项目，帮助收藏者识别和避免购买到被篡改的卡片。
-
-注意事项：
-- 本站信息仅供参考，不构成法律依据
-- 交易前请务必仔细核对
-- 建议通过正规渠道购买
-- 发现可疑卡片请及时举报`)
   }
 }
 
 window.app = app
-
-document.addEventListener('DOMContentLoaded', () => {
-  app.init()
-})
+document.addEventListener('DOMContentLoaded', () => app.init())
