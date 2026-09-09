@@ -393,6 +393,7 @@ a:hover {
 .detail-info-item {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .detail-label {
@@ -404,6 +405,10 @@ a:hover {
 .detail-value {
   font-size: 16px;
   color: #333;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .detail-info-full {
@@ -818,7 +823,7 @@ a:hover {
   }
 
   .detail-info-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 15px;
   }
 
