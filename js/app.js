@@ -191,6 +191,7 @@ const app = {
 
     this.filteredCards = source
       .filter(card => {
+        if (!window.abnormalReview.isPubliclyVisible(card)) return false
         if (this.activeCategory && card.category !== this.activeCategory) return false
         if (!terms.length) return true
         const searchText = this.normalizeSearch(this.buildCardSearchText(card))

@@ -167,8 +167,14 @@ function renderDetail() {
   const detailContent = document.getElementById('detailContent');
 
   const category = currentCard.category || 'fake-patch';
+  const reviewHidden = !window.abnormalReview.isPubliclyVisible(currentCard);
   let warningBox = '';
-  const wt = getWarningText(category, category === 'backup' ? 'archived' : currentCard.status);
+  const wt = reviewHidden ? null : getWarningText(category, category === 'backup' ? 'archived' : currentCard.status);
+  if (reviewHidden) {
+    const revoked = currentCard.reviewStatus === 'revoked';
+    const date = currentCard.reviewTime ? new Date(currentCard.reviewTime).toLocaleString('zh-CN', { hour12: false }) : '';
+    warningBox = `<div class="warning-box warning-neutral"><p><strong>${revoked ? '异常认定已撤销' : '异常认定待复核'}</strong></p><p>${escapeHtml(revoked ? currentCard.reviewNote || '' : '已暂停在异常列表和搜索结果中展示。')}</p>${revoked && date ? `<p>${escapeHtml(date)}</p>` : ''}</div>`;
+  }
   if (wt) {
     const cls = category === 'backup' ? 'warning-neutral' : (currentCard.status === 'confirmed' ? 'warning-danger' : 'warning-caution');
     warningBox = `
@@ -182,7 +188,7 @@ function renderDetail() {
   // 构建问题说明的信息项（如果有的话）
   const highRiskReasonItem = currentCard.highRiskReason
     ? `<div class="detail-info-item detail-info-full">
-        <span class="detail-label">${category === 'backup' ? '备份说明' : '问题说明'}</span>
+        <span class="detail-label">${reviewHidden ? '原资料说明' : category === 'backup' ? '备份说明' : '问题说明'}</span>
         <span class="detail-value">${escapeHtml(currentCard.highRiskReason)}</span>
       </div>`
     : '';
@@ -240,7 +246,7 @@ function renderDetail() {
           ${sourceItem}
         </div>
 
-        ${renderImageGroup(currentCard, 'after', getAfterTitle(category))}
+        ${renderImageGroup(currentCard, 'after', reviewHidden ? '原收录图片' : getAfterTitle(category))}
         ${renderImageGroup(currentCard, 'before', getBeforeTitle(category))}
         <div class="reference-note">${category === 'backup' ? '本资料仅用于记录公开出现过的卡片状态和后续对比参考，不构成鉴定结论、交易建议或维权依据。' : '本资料仅用于收藏研究与卡片特征对比，不构成鉴定结论、交易建议或维权依据。'}</div>
       </div>

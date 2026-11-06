@@ -123,6 +123,9 @@ async function fetchCardsFromCloudDB(accessToken) {
     productNumber: c.productNumber || '',
     serialNumber: c.serialNumber || '',
     status: c.status || 'confirmed',
+    reviewStatus: c.reviewStatus || '',
+    reviewNote: c.reviewNote || '',
+    reviewTime: c.reviewTime || '',
     highRiskReason: c.highRiskReason || '',
     category: c.category || 'fake-patch',
     source: sanitizePublicSourceText(c.source),
@@ -188,6 +191,9 @@ function generateDataJs(cards) {
     if (card.productNumber) lines.push(`${indent}${indent}productNumber: ${JSON.stringify(card.productNumber)},`)
     if (card.serialNumber) lines.push(`${indent}${indent}serialNumber: ${JSON.stringify(card.serialNumber)},`)
     lines.push(`${indent}${indent}status: ${JSON.stringify(card.status || 'confirmed')},`)
+    for (const field of ['reviewStatus', 'reviewNote', 'reviewTime']) {
+      if (card[field]) lines.push(`${indent}${indent}${field}: ${JSON.stringify(card[field])},`)
+    }
     lines.push(`${indent}${indent}category: ${JSON.stringify(card.category || 'fake-patch')},`)
     if (card.highRiskReason) {
       lines.push(`${indent}${indent}highRiskReason: ${JSON.stringify(card.highRiskReason)},`)
