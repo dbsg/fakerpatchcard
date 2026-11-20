@@ -1,0 +1,58 @@
+{
+  "season": "2003-04",
+  "products": [
+    {
+      "key": "fleer-avant",
+      "brand": "Fleer",
+      "series": "Avant",
+      "checklistSource": "https://www.tcdb.com/Gallery.cfm/sid/3039/2003-04-Fleer-Avant",
+      "checklistComplete": false,
+      "slots": [
+        {
+          "key": "base-65",
+          "cardSubset": "Base",
+          "productNumber": "65",
+          "subjects": [
+            "LeBron James"
+          ],
+          "scene": {
+            "team": "骑士",
+            "action": "肖像"
+          },
+          "versions": [
+            {
+              "key": "base",
+              "cardVariant": "Base",
+              "cardVariantCN": "普卡",
+              "printRun": 699,
+              "features": [
+                "rc"
+              ],
+              "front": {
+                "file": "2003-04-avant-base-front.jpg",
+                "thumb": "2003-04-avant-base-front-thumb.webp",
+                "source": "https://www.tcdb.com/Images/Cards/Basketball/3039/3039-747073Fr.jpg"
+              },
+              "cardSummary": "卡背记录了勒布朗进入 NBA 前的履历。他两次获评《今日美国》年度高中男子篮球球员，并带领高中球队连续三次夺得俄亥俄州冠军。",
+              "cardSummaryEN": "The back looks at James before the NBA. It credits him with two USA Today high school player of the year honors and three straight Ohio state championships.",
+              "back": {
+                "file": "2bddc74fd2367ea6357c830b8d77edaf.webp",
+                "thumb": "2bddc74fd2367ea6357c830b8d77edaf-thumb.webp",
+                "source": "https://i.ebayimg.com/images/g/qAQAAOSwfApj35jU/s-l1600.webp"
+              }
+            },
+            {
+              "key": "black-and-white",
+              "cardVariant": "Black and White",
+              "cardVariantCN": "黑白版",
+              "printRun": 199,
+              "features": [
+                "rc"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

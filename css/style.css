@@ -721,6 +721,16 @@ a:hover {
   font-size: 16px;
 }
 
+.header .lebron-atlas-link {
+  display: inline-block;
+  margin-top: 12px;
+  min-height: 24px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 /* Header Layout */
 .header-inner {
   display: flex;

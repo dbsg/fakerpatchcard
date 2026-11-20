@@ -1,0 +1,70 @@
+{
+  "season": "2012-13",
+  "products": [
+    {
+      "key": "panini-prizm",
+      "brand": "Panini",
+      "series": "Prizm",
+      "checklistSource": "https://www.tcdb.com/Gallery.cfm/sid/72736/2012-13-Panini-Prizm",
+      "checklistComplete": false,
+      "slots": [
+        {
+          "key": "base-1",
+          "cardSubset": "Base",
+          "productNumber": "1",
+          "subjects": [
+            "LeBron James"
+          ],
+          "scene": {
+            "team": "热火",
+            "color": "白色",
+            "action": "持球"
+          },
+          "versions": [
+            {
+              "key": "base",
+              "cardVariant": "Base",
+              "cardVariantCN": "普卡",
+              "front": {
+                "file": "2012-13-prizm-base-front.jpg",
+                "thumb": "2012-13-prizm-base-front-thumb.webp",
+                "source": "https://www.tcdb.com/Images/Cards/Basketball/72736/72736-5285381Fr.jpg"
+              }
+            },
+            {
+              "key": "prizms",
+              "cardVariant": "Prizms",
+              "cardVariantCN": "银折",
+              "front": {
+                "file": "2012-13-prizm-silver-front.webp",
+                "thumb": "2012-13-prizm-silver-front-thumb.webp",
+                "source": "https://www.psacard.com/cert/65660810/psa"
+              }
+            },
+            {
+              "key": "green",
+              "cardVariant": "Green Prizms",
+              "cardVariantCN": "绿折",
+              "front": {
+                "file": "2012-13-prizm-green-front.webp",
+                "thumb": "2012-13-prizm-green-front-thumb.webp",
+                "source": "https://www.psacard.com/cert/82150264/psa"
+              }
+            },
+            {
+              "key": "gold",
+              "cardVariant": "Gold Prizms",
+              "cardVariantCN": "金折",
+              "printRun": 10,
+              "front": {
+                "file": "2012-13-prizm-gold-front.jpg",
+                "thumb": "2012-13-prizm-gold-front-thumb.webp",
+                "source": "https://www.si.com/collectibles/lebron-james-card-sells-for-793k-setting-record"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

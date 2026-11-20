@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>勒布朗图鉴 · 本地录入</title>
+  <link rel="stylesheet" href="../lebron/style.css">
+  <script type="module" src="./editor.js"></script>
+</head>
+<body>
+  <main class="editor">
+    <a href="../lebron/">← 勒布朗图鉴</a>
+    <h1>卡片录入</h1>
+    <p id="setup-status" class="status" role="status">正在读取本地图鉴…</p>
+    <section id="lookup" hidden aria-label="选择卡位">
+      <label>查找已有卡位<input id="search-slot" type="search" placeholder="例如 Avant #65"></label>
+      <label>卡位<select id="slot"></select></label>
+      <label>版本<select id="version"></select></label>
+      <button class="quiet" type="button" id="new-slot">新增卡位</button>
+    </section>
+    <form id="editor" hidden>
+      <fieldset>
+        <legend>发行资料</legend>
+        <div class="field-grid">
+          <label>球员<input name="subjects" value="LeBron James" required placeholder="多人卡用英文逗号分隔"></label>
+          <label>年份<input name="season" required pattern="[0-9]{4}-[0-9]{2}" placeholder="2012-13" list="seasons"></label>
+          <label>厂商／品牌<input name="brand" required list="brands"></label>
+          <label>系列<input name="series" required list="series"></label>
+          <label>卡片版本（英文）<input name="cardVariant" required list="variants"></label>
+          <label>卡片版本（中文）<input name="cardVariantCN"></label>
+          <label>卡片编号<input name="productNumber" required placeholder="1"></label>
+          <label>发行限编分母<input name="printRun" type="number" min="1" step="1" placeholder="10"></label>
+          <label>子集<input name="cardSubset" value="Base" required></label>
+        </div>
+        <div class="field-grid" id="features"></div>
+        <label>发行卡表来源<input name="checklistSource" type="url" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>画面</legend>
+        <div class="field-grid">
+          <label>画面球队<input name="team" list="teams" placeholder="热火"></label>
+          <label>球衣主色<input name="color" list="colors" placeholder="白色"></label>
+          <label>动作<input name="action" list="actions" placeholder="持球"></label>
+          <label>同框人物<input name="costars" placeholder="多位用逗号分隔"></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>正面与背面</legend>
+        <div class="field-grid">
+          <label>正面图片<input name="frontFile" type="file" accept="image/jpeg,image/png,image/webp"></label>
+          <label>正图来源<input name="frontSource" type="url"></label>
+          <label>背面图片<input name="backFile" type="file" accept="image/jpeg,image/png,image/webp"></label>
+          <label>背图来源<input name="backSource" type="url"></label>
+        </div>
+        <label>卡背摘要<textarea name="cardSummary" maxlength="2000" rows="3"></textarea></label>
+        <label>卡背英文摘要<textarea name="cardSummaryEN" maxlength="2000" rows="3"></textarea></label>
+        <p id="draft-images" class="status"></p>
+      </fieldset>
+      <label class="check"><input name="verified" type="checkbox" required>已核对 NBA 授权、卡表和图片对应版本</label>
+      <button type="submit" class="primary">生成预览</button>
+    </form>
+    <section id="review" hidden aria-label="导出预览">
+      <p id="review-text" class="status"></p>
+      <div class="preview" id="preview-images"></div>
+      <button type="button" id="export" class="primary">下载导出包</button>
+    </section>
+    <p id="editor-status" class="status" role="status"></p>
+    <datalist id="seasons"></datalist>
+    <datalist id="brands"></datalist>
+    <datalist id="series"></datalist>
+    <datalist id="variants"></datalist>
+    <datalist id="teams"></datalist>
+    <datalist id="colors"></datalist>
+    <datalist id="actions"></datalist>
+  </main>
+</body>
+</html>
