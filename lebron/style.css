@@ -8,7 +8,7 @@
   color-scheme: dark;
   font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #f8eee1;
-  background: #0b0d14;
+  background: #0d1017;
   --muted: #bcb2a9;
   --line: #3a3337;
   --accent: #fdab79;
@@ -17,6 +17,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
 body { margin: 0; }
+.atlas-page { background: #0b0d14; }
 a { color: inherit; text-underline-offset: .24em; }
 button, input, select, textarea { font: inherit; }
 button { cursor: pointer; color: inherit; }
@@ -303,7 +304,10 @@ dialog::backdrop { background: #08090de0; backdrop-filter: blur(8px); }
 #zoom-dialog { padding: 36px 12px 13px; max-width: min(94vw, 1050px); }
 #zoom-dialog img { display: block; width: auto; max-width: 100%; max-height: 79dvh; }
 .editor { max-width: 800px; margin: auto; padding: 24px; }
-.editor h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
+.editor h1 { margin: .22em 0 .24em; font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.06; letter-spacing: -.04em; }
+.editor .primary { border: 1px solid #ffc6a4; background: #ffb380; color: #241217; padding: 12px 17px; font-weight: 750; }
+.editor .primary:hover:not(:disabled) { background: #ffcd9f; }
+.editor .primary:disabled { color: var(--muted); background: #24202a; border-color: #66504e; }
 .editor form, .editor section { display: grid; gap: 15px; margin: 18px 0 30px; }
 .editor fieldset { margin: 0; display: grid; gap: 12px; border-color: #685252; padding: 16px; }
 .editor .field-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 12px; }
