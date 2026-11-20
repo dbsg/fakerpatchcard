@@ -1,3 +1,4 @@
+import { mountSky } from './sky.js';
 import { eras, features, filters, loadIndex, loadSeason, flatten, eraOf, imageUrl, variantLabel, filterValues, matches, ordered } from './catalog.js';
 
 const byId = id => document.getElementById(id);
@@ -9,6 +10,10 @@ const spotlight = byId('spotlight');
 const dialog = byId('card-dialog');
 const zoom = byId('zoom-dialog');
 const random = byId('random');
+const observatory = byId('observatory');
+const timeline = byId('timeline');
+const scene = byId('scene');
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const featureLabels = { ...features, numbered: '限编' };
 let index;
 let activeEra;
@@ -20,6 +25,7 @@ let activation;
 let randomSeen = new Set();
 let skyRequest = 0;
 let skyKey;
+let displayedEra;
 let routeRequest = 0;
 
 function element(tag, text, className) {
@@ -53,27 +59,6 @@ function picture(card, side = 'front') {
   return image;
 }
 
-function drawDust() {
-  const canvas = byId('dust');
-  const { width, height } = canvas.getBoundingClientRect();
-  if (!width || !height) return;
-  const ratio = Math.min(devicePixelRatio || 1, 2);
-  canvas.width = width * ratio;
-  canvas.height = height * ratio;
-  const ctx = canvas.getContext('2d');
-  ctx.scale(ratio, ratio);
-  const points = width < 490 ? 70 : 155;
-  for (let index = 1; index <= points; index++) {
-    const x = (index * .6180339887 % 1) * width;
-    const y = (index * .4270509831 % 1) * height;
-    const bright = index % 9 === 0;
-    ctx.fillStyle = bright ? '#ffcf91aa' : '#f7e6ee56';
-    ctx.beginPath();
-    ctx.arc(x, y, bright ? 1.5 : .65, 0, Math.PI * 2);
-    ctx.fill();
-  }
-}
-
 function filterState() {
   const data = new FormData(form);
   const selected = Object.fromEntries(filters.map(([name]) => [name, data.getAll(name).filter(Boolean)]));
@@ -103,9 +88,17 @@ async function catalogCards() {
 }
 
 function highlight(card) {
+  if (spotlight.dataset.cardId === card.id) return;
+  spotlight.dataset.cardId = card.id;
+  for (const star of stars.children) star.classList.toggle('active', star.dataset.cardId === card.id);
   const link = cardLink(card, '', 'spotlight-card');
+  link.draggable = false;
   const visual = picture(card);
-  if (visual instanceof HTMLImageElement) visual.loading = 'eager';
+  if (visual instanceof HTMLImageElement) {
+    visual.loading = 'eager';
+    visual.fetchPriority = 'high';
+    visual.draggable = false;
+  }
   link.append(visual);
   const caption = element('small', card.title);
   caption.append(element('strong', variantLabel(card)));
@@ -113,44 +106,133 @@ function highlight(card) {
   spotlight.replaceChildren(link);
 }
 
+function animateEra(direction) {
+  if (!direction || reducedMotion.matches) return;
+  observatory.querySelector('.is-outgoing')?.remove();
+  scene.getAnimations().forEach(animation => animation.cancel());
+  const outgoing = scene.cloneNode(true);
+  outgoing.removeAttribute('id');
+  for (const node of outgoing.querySelectorAll('[id]')) node.removeAttribute('id');
+  outgoing.classList.add('is-outgoing');
+  outgoing.inert = true;
+  outgoing.setAttribute('aria-hidden', 'true');
+  scene.before(outgoing);
+  const easing = 'cubic-bezier(.16,.82,.22,1)';
+  outgoing.animate([
+    { transform: 'translateX(0)', opacity: 1 },
+    { transform: 'translateX(' + -direction * 102 + 'px)', opacity: 0 }
+  ], { duration: 430, easing }).finished.then(() => outgoing.remove(), () => outgoing.remove());
+  scene.animate([
+    { transform: 'translateX(' + direction * 115 + 'px) scale(.965)', opacity: 0 },
+    { transform: 'translateX(0) scale(1)', opacity: 1 }
+  ], { duration: 690, easing });
+}
+
 async function renderSky() {
   const { search, selected } = filterState();
   const nextKey = JSON.stringify([activeEra, search, selected]);
   const request = ++skyRequest;
   const era = eras[activeEra];
-  byId('sky').style.setProperty('--accent', era.accent);
+  observatory.style.setProperty('--sky-ink', era.accent);
+  observatory.style.setProperty('--chapter', activeEra);
   byId('sky-era').textContent = era.name + ' · ' + era.range;
-  Array.from(byId('timeline').children).forEach((button, index) => {
+  for (const [index, button] of Array.from(timeline.children).entries()) {
     button.setAttribute('aria-pressed', String(index === activeEra));
-  });
+  }
   if (nextKey === skyKey) return;
   const season = index.seasons.findLast(season => eraOf(season) === activeEra);
   const hasFilter = search.trim() || Object.values(selected).some(values => values.length);
   const candidates = hasFilter ? filtered(await catalogCards()).filter(card => eraOf(card.season) === activeEra)
     : season ? flatten(await loadSeason(season)) : [];
   if (request !== skyRequest) return;
+  animateEra(displayedEra === undefined ? 0 : Math.sign(activeEra - displayedEra));
+  displayedEra = activeEra;
   skyKey = nextKey;
   stars.replaceChildren();
   spotlight.replaceChildren();
+  delete spotlight.dataset.cardId;
   if (!candidates.length) {
     spotlight.append(element('p', hasFilter ? '本星区没有匹配版本' : '卡片待收录', 'empty-sky'));
     return;
   }
   const sample = candidates.slice(0, 4);
-  const first = sample.find(card => card.key === 'green' && card.front) || sample.find(card => card.front) || sample[0];
-  highlight(first);
   for (const card of sample) {
     const star = element('button', '', 'star');
     star.type = 'button';
+    star.dataset.cardId = card.id;
     star.setAttribute('aria-label', card.title + ' ' + variantLabel(card));
-    const icon = element('span', '✦');
-    icon.setAttribute('aria-hidden', 'true');
-    star.append(icon);
+    const label = element('span', card.cardVariantCN || card.cardVariant);
+    label.setAttribute('aria-hidden', 'true');
+    star.append(label);
     star.addEventListener('pointerenter', event => { if (event.pointerType !== 'touch') highlight(card); });
     star.addEventListener('focus', () => highlight(card));
     star.addEventListener('click', () => openCard(card.id, star));
     stars.append(star);
   }
+  const first = sample.find(card => card.key === 'green' && card.front) || sample.find(card => card.front) || sample[0];
+  highlight(first);
+}
+
+function selectEra(target) {
+  const next = Math.max(0, Math.min(eras.length - 1, target));
+  if (activeEra === next) return;
+  activeEra = next;
+  renderSky().catch(showError);
+}
+
+function enableEraNavigation() {
+  timeline.addEventListener('keydown', event => {
+    const current = Array.from(timeline.children).indexOf(event.target);
+    if (current < 0) return;
+    const targets = { ArrowLeft: current - 1, ArrowRight: current + 1, Home: 0, End: eras.length - 1 };
+    if (!Object.hasOwn(targets, event.key)) return;
+    event.preventDefault();
+    selectEra(targets[event.key]);
+    timeline.children[activeEra].focus();
+  });
+
+  let drag;
+  let dragFinished = -Infinity;
+  observatory.addEventListener('pointerdown', event => {
+    if (!event.isPrimary || event.button !== 0 || event.target.closest('.sky-actions')) return;
+    drag = { id: event.pointerId, x: event.clientX, y: event.clientY, engaged: false };
+  });
+  observatory.addEventListener('pointermove', event => {
+    if (drag?.id !== event.pointerId) return;
+    const dx = event.clientX - drag.x;
+    const dy = event.clientY - drag.y;
+    if (!drag.engaged) {
+      if (Math.abs(dy) > 12 && Math.abs(dy) > Math.abs(dx)) {
+        drag = null;
+        return;
+      }
+      if (Math.abs(dx) < 12 || Math.abs(dx) <= Math.abs(dy)) return;
+      observatory.setPointerCapture(event.pointerId);
+      observatory.classList.add('is-dragging');
+      drag.engaged = true;
+    }
+    observatory.style.setProperty('--drag', Math.max(-70, Math.min(70, dx * .3)) + 'px');
+  });
+  const finish = event => {
+    if (drag?.id !== event.pointerId) return;
+    const dx = event.clientX - drag.x;
+    if (drag.engaged) {
+      dragFinished = performance.now();
+      if (event.type === 'pointerup' && Math.abs(dx) >= 48) selectEra(activeEra + (dx < 0 ? 1 : -1));
+    }
+    drag = null;
+    observatory.classList.remove('is-dragging');
+    observatory.style.removeProperty('--drag');
+  };
+  observatory.addEventListener('pointerup', finish);
+  observatory.addEventListener('pointercancel', finish);
+  observatory.addEventListener('lostpointercapture', finish);
+  observatory.addEventListener('click', event => {
+    if (event.detail > 0 && performance.now() - dragFinished < 220) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }, { capture: true });
 }
 
 function setupFilters() {
@@ -444,13 +526,11 @@ async function start() {
     button.type = 'button';
     button.style.setProperty('--era-color', era.accent);
     button.append(element('span', era.name), element('small', era.range));
-    button.addEventListener('click', () => {
-      activeEra = index;
-      renderSky().catch(showError);
-    });
-    byId('timeline').append(button);
+    button.addEventListener('click', () => selectEra(index));
+    timeline.append(button);
   }
-  new ResizeObserver(drawDust).observe(byId('sky'));
+  mountSky(byId('dust'));
+  enableEraNavigation();
   random.disabled = false;
   window.addEventListener('hashchange', () => route().catch(showError));
   await route();

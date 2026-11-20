@@ -11,7 +11,10 @@
 </head>
 <body>
   <header class="masthead">
-    <a class="wordmark" href="../index.html"><span>↖</span> 小丁卡册</a>
+    <div class="brand">
+      <a class="home-link" href="../index.html" aria-label="返回小丁卡册">↖</a>
+      <h1 id="atlas-title">勒布朗全图鉴</h1>
+    </div>
     <nav aria-label="图鉴导航">
       <a href="#atlas" id="atlas-link">生涯星图</a>
       <a href="#catalog" id="catalog-link">查目录</a>
@@ -20,25 +23,24 @@
 
   <main>
     <section id="atlas" aria-labelledby="atlas-title">
-      <div class="observatory">
-        <div class="intro">
-          <h1 id="atlas-title"><span class="hero-name" lang="en">LeBron James</span>勒布朗<br>全图鉴<span class="title-dot">.</span></h1>
-          <p class="intro-text">点亮一颗星，翻开一张球星卡。</p>
-          <div class="intro-actions">
-            <button type="button" class="primary" id="random" disabled>✦ <span>随机看一张</span></button>
-            <a href="#catalog" class="catalog-cta">查目录 <span aria-hidden="true">↗</span></a>
-          </div>
-          <p id="random-status" role="status"></p>
-        </div>
+      <div class="observatory" id="observatory">
+        <canvas id="dust" aria-hidden="true"></canvas>
         <div class="sky" id="sky">
-          <canvas id="dust" aria-hidden="true"></canvas>
-          <div class="court" aria-hidden="true"><i></i><i></i><i></i></div>
-          <p class="sky-era" id="sky-era"></p>
-          <div class="stars" id="stars" aria-label="当前星区球星卡"></div>
-          <div id="spotlight"></div>
+          <div id="scene" class="scene">
+            <div class="stars" id="stars" aria-label="当前星区球星卡"></div>
+            <div class="spotlight" id="spotlight"></div>
+          </div>
+          <p class="sky-era" id="sky-era" aria-live="polite"></p>
+          <p class="sky-gesture">← 左右滑动切换时期 →</p>
+          <div class="sky-actions">
+            <button type="button" class="random" id="random" disabled>随机看一张 <span aria-hidden="true">↗</span></button>
+            <p id="random-status" role="status"></p>
+          </div>
+        </div>
+        <div class="trajectory">
+          <div class="timeline" id="timeline" role="group" aria-label="生涯轨迹，支持方向键或左右滑动"></div>
         </div>
       </div>
-      <div class="timeline" id="timeline" aria-label="发行赛季所在的生涯阶段"></div>
       <section class="collection-row" aria-labelledby="coverage-title">
         <div>
           <h2 id="coverage-title">图鉴收录</h2>
@@ -49,7 +51,7 @@
     </section>
 
     <section class="catalog" id="catalog" hidden aria-labelledby="catalog-title">
-      <h1 id="catalog-title">发行目录<span class="title-dot">.</span></h1>
+      <h2 id="catalog-title">发行目录<span class="title-dot">.</span></h2>
       <form class="filters" id="filters" role="search">
         <label class="search">搜索卡片<input type="search" name="q" placeholder="例如 #1 金折" autocomplete="off"></label>
         <div id="select-filters"></div>
