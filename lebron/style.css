@@ -42,13 +42,16 @@ p { margin: 0; }
   background: radial-gradient(ellipse at 77% 72%, #372334 0%, #1a192b 38%, #11141c 72%);
 }
 .intro { position: relative; z-index: 1; align-self: center; padding: 3.35rem 0 2.3rem clamp(25px, 5vw, 80px); }
-.eyebrow {
+.hero-name {
+  display: block;
+  margin-bottom: .78rem;
+  text-transform: uppercase;
   font: 800 clamp(1.1rem, 1.8vw, 1.55rem)/1 'Barlow Condensed', sans-serif;
   letter-spacing: .25em;
   color: var(--accent);
 }
 h1 { margin: .22em 0 .24em; font-size: clamp(3.25rem, 7.3vw, 6rem); line-height: 1.06; letter-spacing: -.04em; }
-h1 span { color: var(--accent); }
+.title-dot { color: var(--accent); }
 .intro-text { color: #d9cbbb; font-size: clamp(.86rem, 1.3vw, 1.12rem); line-height: 1.7; }
 .intro-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 22px; margin-top: 2rem; }
 .primary { border: 1px solid #ffc6a4; background: #ffb380; color: #241217; padding: 12px 17px; font-weight: 750; }
@@ -59,15 +62,6 @@ h1 span { color: var(--accent); }
 #random-status:empty { display: none; }
 .sky { min-width: 0; min-height: 335px; position: relative; }
 #dust { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-.sky::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(0deg, transparent 0 39px, #e5a19d10 40px),
-    repeating-linear-gradient(90deg, transparent 0 39px, #e5a19d10 40px);
-  mask-image: radial-gradient(ellipse at center, #000 10%, transparent 72%);
-  pointer-events: none;
-}
 .court { position: absolute; inset: 15% -14% 13% 2%; display: grid; place-items: center; transform: rotate(-24deg) skewX(-9deg); pointer-events: none; }
 .court i { position: absolute; width: 92%; height: 75%; border: 1px solid #c7887b40; border-radius: 50%; }
 .court i:nth-child(2) { width: 76%; height: 59%; border-color: #c7887b65; }
@@ -117,7 +111,7 @@ h1 span { color: var(--accent); }
   transform: rotate(-10deg);
   border: 1px solid #edb98c99;
   background: #212133;
-  box-shadow: 12px 22px 45px #07070dbb, 0 0 55px #ec9d914a;
+  box-shadow: 12px 22px 45px #07070dbb;
 }
 .spotlight-card small { display: block; margin-top: 7px; line-height: 1.45; color: #f8dcbd; font-size: .76rem; }
 .spotlight-card strong { display: block; font-size: .98rem; }

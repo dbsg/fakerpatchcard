@@ -237,9 +237,11 @@ function showSide(side) {
     button.setAttribute('aria-label', '放大' + (side === 'back' ? '背面' : '正面'));
     button.append(visual);
     button.addEventListener('click', () => {
-      const zoomImage = byId('zoom-image');
+      const zoomImage = element('img');
+      zoom.querySelector('img')?.remove();
       zoomImage.src = imageUrl(currentCard[shownSide]);
       zoomImage.alt = visual.alt;
+      zoom.append(zoomImage);
       zoom.showModal();
     });
     face.replaceChildren(button);
@@ -272,8 +274,8 @@ function renderDetail(card, related) {
   const info = element('section');
   const heading = element('h2', card.title);
   heading.id = 'detail-title';
-  info.append(element('p', card.slot.cardSubset, 'eyebrow'), heading, element('p', variantLabel(card), 'detail-subtitle'));
-  const meta = [...card.slot.subjects, card.scene.team, card.scene.color && card.scene.color + '球衣', card.scene.action,
+  info.append(heading, element('p', variantLabel(card), 'detail-subtitle'));
+  const meta = [card.slot.cardSubset, ...card.slot.subjects, card.scene.team, card.scene.color && card.scene.color + '球衣', card.scene.action,
     ...(card.scene.costars || []), ...(card.features || []).map(feature => featureLabels[feature])].filter(Boolean);
   info.append(element('p', meta.join(' · '), 'detail-meta'));
   info.append(element('h3', '卡背摘要'), element('p', card.cardSummary || '待补充', 'detail-summary'));
